@@ -1,0 +1,397 @@
+{% extends "base.html" %}
+{% block title %} — Kanji{% endblock %}
+
+{% block extra_head %}
+<style>
+  .custom-scrollbar::-webkit-scrollbar { width: 8px; }
+  .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+  .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255,102,0,0.2); border-radius: 10px; }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(255,102,0,0.4); }
+  .kanji-tertiary { color: #FF6600; }
+  .kanji-border { border-color: #FF6600; }
+
+  /* ── Section nav buttons (orange theme, matching subs style) ── */
+  .kanji-nav-btn {
+    clip-path: polygon(0 0, 92% 0, 100% 15%, 100% 100%, 8% 100%, 0 85%);
+    transition: all 0.2s ease;
+    min-width: 64px;
+    height: 40px;
+    padding: 0 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid rgba(255,102,0,0.35);
+    background: rgba(255,102,0,0.07);
+    color: #FF6600;
+    cursor: pointer;
+  }
+  .kanji-nav-btn:hover {
+    background: rgba(255,102,0,0.18);
+    border-color: #FF6600;
+    color: #FF6600;
+  }
+  .kanji-nav-btn.active {
+    background: rgba(255,102,0,0.22);
+    border-color: #FF6600;
+    color: #FF6600;
+    box-shadow: 0 0 12px rgba(255,102,0,0.2);
+  }
+  html.light .kanji-nav-btn {
+    border-color: rgba(200,90,0,0.4);
+    background: rgba(200,90,0,0.08);
+    color: #c85a00;
+  }
+  html.light .kanji-nav-btn:hover {
+    background: rgba(200,90,0,0.16);
+    border-color: #c85a00;
+    color: #c85a00;
+  }
+  html.light .kanji-nav-btn.active {
+    background: rgba(200,90,0,0.2);
+    border-color: #c85a00;
+    color: #c85a00;
+    box-shadow: 0 0 10px rgba(200,90,0,0.15);
+  }
+  .kanji-font {
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", "MS Mincho", serif;
+  }
+</style>
+{% endblock %}
+
+{% block body %}
+<main class="absolute top-16 left-0 right-0 bottom-0 overflow-y-auto custom-scrollbar" id="main-scroll">
+  <div class="-mt-16 pt-16">
+    <div class="pt-8 pb-12 px-6 max-w-[1200px] mx-auto flex flex-col space-y-8">
+
+      <!-- Back -->
+      <div class="flex items-center">
+        <button onclick="window.location.href='/'"
+          class="clip-hex-btn bg-surface-container-low border border-on-surface/20 w-10 h-10 flex items-center justify-center hover:bg-surface-container-highest transition-all group">
+          <span class="material-symbols-outlined text-on-surface group-hover:text-primary">arrow_back</span>
+        </button>
+      </div>
+
+      <!-- Header -->
+      <section class="space-y-4">
+        <div class="flex justify-between items-end border-b border-outline-variant/30 pb-4">
+          <h1 class="text-6xl font-headline font-bold text-on-surface tracking-tighter">{{ text.nav_kanji }}</h1>
+          <div class="text-right">
+            <span class="block text-xs font-headline kanji-tertiary tracking-widest uppercase mb-1">{{ text.total_mastery }}</span>
+            <span class="text-3xl font-headline font-light text-on-surface" id="mastery-display">— / —</span>
+          </div>
+        </div>
+
+        <!-- Sort controls -->
+        <div class="flex items-center gap-4 py-2">
+          <span class="text-xs font-headline text-on-surface-variant tracking-widest uppercase">{{ text.sort_label }}</span>
+          <button id="btn-joyo" onclick="setSort('grade')"
+            class="clip-hex-btn px-4 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-all">
+            {{ text.sort_joyo }}
+          </button>
+          <button id="btn-rtk" onclick="setSort('RTK')"
+            class="clip-hex-btn px-4 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-all">
+            {{ text.sort_rtk }}
+          </button>
+        </div>
+
+        <!-- Section nav (top) — rendered by JS -->
+        <div id="section-nav-top" class="flex flex-wrap gap-2"></div>
+      </section>
+
+      <!-- Kanji grades/groups content -->
+      <div id="kanji-content" class="space-y-10">
+        <div class="text-on-surface-variant text-xs animate-pulse">{{ text.loading }}</div>
+      </div>
+
+      <!-- Section nav (bottom) -->
+      <div id="section-nav-bottom" class="flex flex-wrap gap-2 pb-4"></div>
+
+    </div>
+  </div>
+</main>
+
+<!-- Atmospheric depth -->
+<div class="fixed inset-0 pointer-events-none -z-10">
+  <div class="absolute top-1/4 -left-20 w-96 h-96 bg-primary/5 blur-[120px]"></div>
+  <div class="absolute bottom-1/4 -right-20 w-96 h-96" style="background:radial-gradient(circle, rgba(255,102,0,0.05) 0%, transparent 70%)"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const T = {{ text | tojson }};
+let currentSort  = 'grade';
+let activeSect   = 0;       // currently visible section index
+let allSections  = [];      // [{label, kanji:[{kanji,globalIdx,known}]}]
+
+// ---------------------------------------------------------------------------
+// Sort button styling
+// ---------------------------------------------------------------------------
+function updateSortButtons(sort) {
+  const btnJoyo = document.getElementById('btn-joyo');
+  const btnRtk  = document.getElementById('btn-rtk');
+  if (sort === 'grade') {
+    btnJoyo.className = 'clip-hex-btn px-4 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-all bg-[#FF6600] text-white hover:brightness-110';
+    btnRtk.className  = 'clip-hex-btn px-4 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-all bg-transparent border border-[#FF6600]/60 text-[#FF6600] hover:bg-[#FF6600]/20';
+  } else {
+    btnRtk.className  = 'clip-hex-btn px-4 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-all bg-[#FF6600] text-white hover:brightness-110';
+    btnJoyo.className = 'clip-hex-btn px-4 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-all bg-transparent border border-[#FF6600]/60 text-[#FF6600] hover:bg-[#FF6600]/20';
+  }
+}
+
+async function setSort(sort) {
+  if (sort === currentSort) return;
+  showLoading();
+  await apiPost('/api/kanji/sort', { sort });
+  currentSort = sort;
+  loadKanji();
+}
+
+// ---------------------------------------------------------------------------
+// Kanji tile
+// ---------------------------------------------------------------------------
+function kanjiTile(kanji, globalIdx, known) {
+  const num = String(globalIdx + 1).padStart(3, '0');
+  if (known) {
+    return `<div class="aspect-[4/3] relative cursor-default">
+      <div class="absolute inset-0 clip-kanji-tile flex flex-col items-center justify-center neon-border-orange bg-[#f5f5f0]">
+        <span class="text-6xl font-light kanji-font text-black mb-1" style="user-select:text;cursor:text;">${kanji}</span>
+        <span class="text-[11px] font-headline text-black/30 font-bold uppercase tracking-widest">${num}</span>
+      </div>
+    </div>`;
+  } else {
+    return `<div class="aspect-[4/3] relative opacity-60 cursor-default">
+      <div class="absolute inset-0 bg-surface-container-highest clip-kanji-tile flex flex-col items-center justify-center neon-border-orange-dim">
+        <span class="text-6xl font-light kanji-font text-on-surface-variant/40 mb-1" style="user-select:text;cursor:text;">${kanji}</span>
+        <span class="text-[11px] font-headline text-on-surface-variant/40 font-bold uppercase tracking-widest">${num}</span>
+      </div>
+    </div>`;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Section nav rendering
+// ---------------------------------------------------------------------------
+function renderNavButtons() {
+  const topEl    = document.getElementById('section-nav-top');
+  const bottomEl = document.getElementById('section-nav-bottom');
+
+  function makeButtons(container) {
+    container.innerHTML = '';
+    allSections.forEach((sect, si) => {
+      const btn = document.createElement('button');
+      btn.className = 'kanji-nav-btn' + (si === activeSect ? ' active' : '');
+      btn.textContent = sect.label;
+      btn.addEventListener('click', () => switchSection(si));
+      container.appendChild(btn);
+    });
+  }
+
+  makeButtons(topEl);
+  makeButtons(bottomEl);
+}
+
+function updateNavActive() {
+  document.querySelectorAll('.kanji-nav-btn').forEach((btn, i) => {
+    btn.classList.toggle('active', (i % allSections.length) === activeSect);
+  });
+}
+
+function showLoading() {
+  document.getElementById('kanji-content').innerHTML =
+    `<div class="text-on-surface-variant text-xs animate-pulse">${T.loading}</div>`;
+}
+
+function switchSection(si) {
+  activeSect = si;
+  updateNavActive();
+  showLoading();
+  document.getElementById('main-scroll').scrollTo({ top: 0, behavior: 'smooth' });
+  setTimeout(() => renderSection(allSections[si]), 50);
+}
+
+// ---------------------------------------------------------------------------
+// Render one section into #kanji-content
+// ---------------------------------------------------------------------------
+function renderSection(sect) {
+  const content = document.getElementById('kanji-content');
+  content.innerHTML = '';
+
+  const grpEl = document.createElement('section');
+  grpEl.className = 'space-y-4';
+
+  const known = sect.kanji.filter(k => k.known).length;
+  const total = sect.kanji.length;
+
+  const statsHtml = sect.isRare
+    ? `<span class="text-sm font-headline tracking-widest" style="color:#FF6600">
+        ${total}
+        <span class="ml-2 text-[10px] opacity-60">${T.count_label}</span>
+      </span>`
+    : `<span class="text-sm font-headline tracking-widest" style="color:#FF6600">
+        ${known} / ${total}
+        <span class="ml-2 text-[10px] opacity-60">${T.completed}</span>
+      </span>`;
+
+  grpEl.innerHTML = `
+    <div class="flex items-center justify-between border-b border-[#FF6600]/20 pb-3">
+      <h2 class="text-xl font-headline font-bold text-on-surface tracking-widest uppercase">${sect.label}</h2>
+      ${statsHtml}
+    </div>`;
+
+  const grid = document.createElement('div');
+  grid.className = 'grid grid-cols-2 md:grid-cols-5 gap-6';
+  sect.kanji.forEach(k => {
+    grid.innerHTML += kanjiTile(k.kanji, k.globalIdx, k.known);
+  });
+
+  grpEl.appendChild(grid);
+  content.appendChild(grpEl);
+}
+
+// ---------------------------------------------------------------------------
+// Build sections from API data
+// ---------------------------------------------------------------------------
+function buildSections(data) {
+  const sortedKanji = data.sorted_kanji || [];
+  const knownList   = data.known_list   || [];
+  const rareSet     = new Set((data.rare || {}).kanji || []);
+
+  const sections = [];
+
+  // Helper: split a flat array into chunks of chunkSize, returns labelled sections
+  function splitIntoChunks(arr, chunkSize, labelFn) {
+    const result = [];
+    for (let i = 0; i < arr.length; i += chunkSize) {
+      const chunk = arr.slice(i, i + chunkSize);
+      const partNum = Math.floor(i / chunkSize) + 1;
+      result.push({ label: labelFn(partNum), kanji: chunk });
+    }
+    return result;
+  }
+
+  // Rare kanji come from data.rare.kanji directly — they may not appear in sorted_kanji.
+  // Assign them global indices starting after the last non-rare kanji.
+  const nonRareCount = sortedKanji.filter(k => !rareSet.has(k.kanji)).length;
+  const rareKanji = (data.rare && data.rare.kanji ? data.rare.kanji : []).map((k, ri) => ({
+    kanji: k,
+    globalIdx: nonRareCount + ri,
+    known: true
+  }));
+
+  if (currentSort === 'grade') {
+    const gradeMap = { 1:[], 2:[], 3:[], 4:[], 5:[], 6:[], 7:[], others:[] };
+
+    sortedKanji.forEach((k, i) => {
+      if (rareSet.has(k.kanji)) return;
+      const entry = { kanji: k.kanji, globalIdx: i, known: knownList[i] || false };
+      const g = k.joyo_order;
+      if (g && g >= 1 && g <= 6) {
+        gradeMap[g].push(entry);
+      } else if (g === 7) {
+        gradeMap[7].push(entry);
+      } else {
+        gradeMap.others.push(entry);
+      }
+    });
+
+    // Grades 1–6
+    [1,2,3,4,5,6].forEach(g => {
+      if (gradeMap[g].length > 0)
+        sections.push({ label: `${T.grade_label} ${g}`, kanji: gradeMap[g] });
+    });
+
+    // Grade 7+ split into 2 halves
+    if (gradeMap[7].length > 0) {
+      const half = Math.ceil(gradeMap[7].length / 2);
+      splitIntoChunks(gradeMap[7], half, n => `${T.grade_7plus}(${n})`).forEach(s => sections.push(s));
+    }
+
+    // Others — fixed 432 per chunk so 864 fits in exactly 2 buttons
+    if (gradeMap.others.length > 0) {
+      splitIntoChunks(gradeMap.others, 432, n => `${T.grade_others} ${n}`).forEach(s => sections.push(s));
+    }
+
+    // Rare — chunks of 500
+    if (rareKanji.length > 0) {
+      splitIntoChunks(rareKanji, 500, n => rareKanji.length <= 500 ? T.grade_rare : `${T.grade_rare} ${n}`)
+        .forEach(s => sections.push({ ...s, isRare: true }));
+    }
+
+  } else {
+    // RTK mode
+    const rtk1All = [], rtk3All = [];
+
+    sortedKanji.forEach((k, i) => {
+      if (rareSet.has(k.kanji)) return;
+      const entry = { kanji: k.kanji, globalIdx: i, known: knownList[i] || false };
+      if (k.rtk_order && k.rtk_order <= 2200) {
+        rtk1All.push(entry);
+      } else if (k.rtk_order && k.rtk_order <= 3000) {
+        rtk3All.push(entry);
+      }
+    });
+
+    // RTK1 → 4 equal chunks
+    if (rtk1All.length > 0) {
+      const chunkSize = Math.ceil(rtk1All.length / 4);
+      splitIntoChunks(rtk1All, chunkSize, n => `RTK1-${n}`).forEach(s => sections.push(s));
+    }
+
+    // RTK3 → 2 equal chunks
+    if (rtk3All.length > 0) {
+      const chunkSize = Math.ceil(rtk3All.length / 2);
+      splitIntoChunks(rtk3All, chunkSize, n => `RTK3-${n}`).forEach(s => sections.push(s));
+    }
+
+    // Rare — all in one button
+    if (rareKanji.length > 0)
+      sections.push({ label: T.grade_rare, kanji: rareKanji, isRare: true });
+  }
+
+  return sections;
+}
+
+// ---------------------------------------------------------------------------
+// Load kanji from API
+// ---------------------------------------------------------------------------
+async function loadKanji() {
+  try {
+    const data = await apiGet('/api/kanji');
+    currentSort = data.sort_by;
+    updateSortButtons(currentSort);
+
+    // Update mastery display
+    if (currentSort === 'grade') {
+      const joyo = data.joyo || {};
+      document.getElementById('mastery-display').textContent = `${joyo.known} / ${joyo.total}`;
+    } else {
+      const rtk1 = data.rtk1 || {};
+      const rtk3 = data.rtk3 || {};
+      //document.getElementById('mastery-display').textContent =
+      //  `${(rtk1.known||0) + (rtk3.known||0)} / ${(rtk1.total||0) + (rtk3.total||0)}`;
+      document.getElementById('mastery-display').textContent =
+        `${(rtk1.known||0)} / ${(rtk1.total||0)}`;
+    }
+
+    allSections = buildSections(data);
+    activeSect  = 0;
+
+    renderNavButtons();
+    if (allSections.length > 0) renderSection(allSections[0]);
+
+  } catch(e) {
+    console.error(e);
+    document.getElementById('kanji-content').innerHTML =
+      '<p class="text-error text-xs">Failed to load kanji data.</p>';
+  }
+}
+
+loadKanji();
+</script>
+{% endblock %}

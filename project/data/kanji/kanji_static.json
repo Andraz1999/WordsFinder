@@ -1,0 +1,12002 @@
+{
+  "一": {
+    "RTK_order": 1,
+    "Joyo_order": 1
+  },
+  "二": {
+    "RTK_order": 2,
+    "Joyo_order": 1
+  },
+  "三": {
+    "RTK_order": 3,
+    "Joyo_order": 1
+  },
+  "四": {
+    "RTK_order": 4,
+    "Joyo_order": 1
+  },
+  "五": {
+    "RTK_order": 5,
+    "Joyo_order": 1
+  },
+  "六": {
+    "RTK_order": 6,
+    "Joyo_order": 1
+  },
+  "七": {
+    "RTK_order": 7,
+    "Joyo_order": 1
+  },
+  "八": {
+    "RTK_order": 8,
+    "Joyo_order": 1
+  },
+  "九": {
+    "RTK_order": 9,
+    "Joyo_order": 1
+  },
+  "十": {
+    "RTK_order": 10,
+    "Joyo_order": 1
+  },
+  "口": {
+    "RTK_order": 11,
+    "Joyo_order": 1
+  },
+  "日": {
+    "RTK_order": 12,
+    "Joyo_order": 1
+  },
+  "月": {
+    "RTK_order": 13,
+    "Joyo_order": 1
+  },
+  "田": {
+    "RTK_order": 14,
+    "Joyo_order": 1
+  },
+  "目": {
+    "RTK_order": 15,
+    "Joyo_order": 1
+  },
+  "古": {
+    "RTK_order": 16,
+    "Joyo_order": 2
+  },
+  "吾": {
+    "RTK_order": 17,
+    "Joyo_order": 99
+  },
+  "冒": {
+    "RTK_order": 18,
+    "Joyo_order": 7
+  },
+  "朋": {
+    "RTK_order": 19,
+    "Joyo_order": 99
+  },
+  "明": {
+    "RTK_order": 20,
+    "Joyo_order": 2
+  },
+  "唱": {
+    "RTK_order": 21,
+    "Joyo_order": 4
+  },
+  "晶": {
+    "RTK_order": 22,
+    "Joyo_order": 7
+  },
+  "品": {
+    "RTK_order": 23,
+    "Joyo_order": 3
+  },
+  "呂": {
+    "RTK_order": 24,
+    "Joyo_order": 7
+  },
+  "昌": {
+    "RTK_order": 25,
+    "Joyo_order": 99
+  },
+  "早": {
+    "RTK_order": 26,
+    "Joyo_order": 1
+  },
+  "旭": {
+    "RTK_order": 27,
+    "Joyo_order": 99
+  },
+  "世": {
+    "RTK_order": 28,
+    "Joyo_order": 3
+  },
+  "胃": {
+    "RTK_order": 29,
+    "Joyo_order": 4
+  },
+  "旦": {
+    "RTK_order": 30,
+    "Joyo_order": 7
+  },
+  "胆": {
+    "RTK_order": 31,
+    "Joyo_order": 7
+  },
+  "亘": {
+    "RTK_order": 32,
+    "Joyo_order": 99
+  },
+  "凹": {
+    "RTK_order": 33,
+    "Joyo_order": 7
+  },
+  "凸": {
+    "RTK_order": 34,
+    "Joyo_order": 7
+  },
+  "旧": {
+    "RTK_order": 35,
+    "Joyo_order": 5
+  },
+  "自": {
+    "RTK_order": 36,
+    "Joyo_order": 2
+  },
+  "白": {
+    "RTK_order": 37,
+    "Joyo_order": 1
+  },
+  "百": {
+    "RTK_order": 38,
+    "Joyo_order": 1
+  },
+  "中": {
+    "RTK_order": 39,
+    "Joyo_order": 1
+  },
+  "千": {
+    "RTK_order": 40,
+    "Joyo_order": 1
+  },
+  "舌": {
+    "RTK_order": 41,
+    "Joyo_order": 5
+  },
+  "升": {
+    "RTK_order": 42,
+    "Joyo_order": 7
+  },
+  "昇": {
+    "RTK_order": 43,
+    "Joyo_order": 7
+  },
+  "丸": {
+    "RTK_order": 44,
+    "Joyo_order": 2
+  },
+  "寸": {
+    "RTK_order": 45,
+    "Joyo_order": 6
+  },
+  "専": {
+    "RTK_order": 47,
+    "Joyo_order": 6
+  },
+  "博": {
+    "RTK_order": 48,
+    "Joyo_order": 4
+  },
+  "占": {
+    "RTK_order": 49,
+    "Joyo_order": 7
+  },
+  "上": {
+    "RTK_order": 50,
+    "Joyo_order": 1
+  },
+  "下": {
+    "RTK_order": 51,
+    "Joyo_order": 1
+  },
+  "卓": {
+    "RTK_order": 52,
+    "Joyo_order": 7
+  },
+  "朝": {
+    "RTK_order": 53,
+    "Joyo_order": 2
+  },
+  "只": {
+    "RTK_order": 55,
+    "Joyo_order": 99
+  },
+  "貝": {
+    "RTK_order": 56,
+    "Joyo_order": 1
+  },
+  "貞": {
+    "RTK_order": 58,
+    "Joyo_order": 7
+  },
+  "員": {
+    "RTK_order": 59,
+    "Joyo_order": 3
+  },
+  "見": {
+    "RTK_order": 61,
+    "Joyo_order": 1
+  },
+  "児": {
+    "RTK_order": 62,
+    "Joyo_order": 4
+  },
+  "元": {
+    "RTK_order": 63,
+    "Joyo_order": 2
+  },
+  "頁": {
+    "RTK_order": 64,
+    "Joyo_order": 99
+  },
+  "頑": {
+    "RTK_order": 65,
+    "Joyo_order": 7
+  },
+  "凡": {
+    "RTK_order": 66,
+    "Joyo_order": 7
+  },
+  "負": {
+    "RTK_order": 67,
+    "Joyo_order": 3
+  },
+  "万": {
+    "RTK_order": 68,
+    "Joyo_order": 2
+  },
+  "句": {
+    "RTK_order": 69,
+    "Joyo_order": 5
+  },
+  "肌": {
+    "RTK_order": 70,
+    "Joyo_order": 7
+  },
+  "旬": {
+    "RTK_order": 71,
+    "Joyo_order": 7
+  },
+  "勺": {
+    "RTK_order": 72,
+    "Joyo_order": 99
+  },
+  "的": {
+    "RTK_order": 73,
+    "Joyo_order": 4
+  },
+  "首": {
+    "RTK_order": 74,
+    "Joyo_order": 2
+  },
+  "乙": {
+    "RTK_order": 75,
+    "Joyo_order": 7
+  },
+  "乱": {
+    "RTK_order": 76,
+    "Joyo_order": 6
+  },
+  "直": {
+    "RTK_order": 77,
+    "Joyo_order": 2
+  },
+  "具": {
+    "RTK_order": 78,
+    "Joyo_order": 3
+  },
+  "真": {
+    "RTK_order": 79,
+    "Joyo_order": 3
+  },
+  "工": {
+    "RTK_order": 80,
+    "Joyo_order": 2
+  },
+  "左": {
+    "RTK_order": 81,
+    "Joyo_order": 1
+  },
+  "右": {
+    "RTK_order": 82,
+    "Joyo_order": 1
+  },
+  "有": {
+    "RTK_order": 83,
+    "Joyo_order": 3
+  },
+  "賄": {
+    "RTK_order": 84,
+    "Joyo_order": 7
+  },
+  "貢": {
+    "RTK_order": 85,
+    "Joyo_order": 7
+  },
+  "項": {
+    "RTK_order": 86,
+    "Joyo_order": 7
+  },
+  "刀": {
+    "RTK_order": 87,
+    "Joyo_order": 2
+  },
+  "刃": {
+    "RTK_order": 88,
+    "Joyo_order": 7
+  },
+  "切": {
+    "RTK_order": 89,
+    "Joyo_order": 2
+  },
+  "召": {
+    "RTK_order": 90,
+    "Joyo_order": 7
+  },
+  "昭": {
+    "RTK_order": 91,
+    "Joyo_order": 3
+  },
+  "則": {
+    "RTK_order": 92,
+    "Joyo_order": 5
+  },
+  "副": {
+    "RTK_order": 93,
+    "Joyo_order": 4
+  },
+  "別": {
+    "RTK_order": 94,
+    "Joyo_order": 4
+  },
+  "丁": {
+    "RTK_order": 95,
+    "Joyo_order": 3
+  },
+  "町": {
+    "RTK_order": 96,
+    "Joyo_order": 1
+  },
+  "可": {
+    "RTK_order": 97,
+    "Joyo_order": 5
+  },
+  "頂": {
+    "RTK_order": 98,
+    "Joyo_order": 6
+  },
+  "子": {
+    "RTK_order": 99,
+    "Joyo_order": 1
+  },
+  "孔": {
+    "RTK_order": 100,
+    "Joyo_order": 7
+  },
+  "了": {
+    "RTK_order": 101,
+    "Joyo_order": 7
+  },
+  "女": {
+    "RTK_order": 102,
+    "Joyo_order": 1
+  },
+  "好": {
+    "RTK_order": 103,
+    "Joyo_order": 4
+  },
+  "如": {
+    "RTK_order": 104,
+    "Joyo_order": 7
+  },
+  "母": {
+    "RTK_order": 105,
+    "Joyo_order": 2
+  },
+  "貫": {
+    "RTK_order": 106,
+    "Joyo_order": 7
+  },
+  "兄": {
+    "RTK_order": 107,
+    "Joyo_order": 2
+  },
+  "克": {
+    "RTK_order": 109,
+    "Joyo_order": 7
+  },
+  "小": {
+    "RTK_order": 110,
+    "Joyo_order": 1
+  },
+  "少": {
+    "RTK_order": 111,
+    "Joyo_order": 2
+  },
+  "大": {
+    "RTK_order": 112,
+    "Joyo_order": 1
+  },
+  "多": {
+    "RTK_order": 113,
+    "Joyo_order": 2
+  },
+  "夕": {
+    "RTK_order": 114,
+    "Joyo_order": 1
+  },
+  "汐": {
+    "RTK_order": 115,
+    "Joyo_order": 99
+  },
+  "外": {
+    "RTK_order": 116,
+    "Joyo_order": 2
+  },
+  "名": {
+    "RTK_order": 117,
+    "Joyo_order": 1
+  },
+  "石": {
+    "RTK_order": 118,
+    "Joyo_order": 1
+  },
+  "肖": {
+    "RTK_order": 119,
+    "Joyo_order": 7
+  },
+  "硝": {
+    "RTK_order": 120,
+    "Joyo_order": 7
+  },
+  "砕": {
+    "RTK_order": 121,
+    "Joyo_order": 7
+  },
+  "砂": {
+    "RTK_order": 122,
+    "Joyo_order": 6
+  },
+  "削": {
+    "RTK_order": 124,
+    "Joyo_order": 7
+  },
+  "光": {
+    "RTK_order": 125,
+    "Joyo_order": 2
+  },
+  "太": {
+    "RTK_order": 126,
+    "Joyo_order": 2
+  },
+  "器": {
+    "RTK_order": 127,
+    "Joyo_order": 4
+  },
+  "臭": {
+    "RTK_order": 128,
+    "Joyo_order": 7
+  },
+  "妙": {
+    "RTK_order": 130,
+    "Joyo_order": 7
+  },
+  "省": {
+    "RTK_order": 131,
+    "Joyo_order": 4
+  },
+  "厚": {
+    "RTK_order": 132,
+    "Joyo_order": 5
+  },
+  "奇": {
+    "RTK_order": 133,
+    "Joyo_order": 7
+  },
+  "川": {
+    "RTK_order": 134,
+    "Joyo_order": 1
+  },
+  "州": {
+    "RTK_order": 135,
+    "Joyo_order": 3
+  },
+  "順": {
+    "RTK_order": 136,
+    "Joyo_order": 4
+  },
+  "水": {
+    "RTK_order": 137,
+    "Joyo_order": 1
+  },
+  "氷": {
+    "RTK_order": 138,
+    "Joyo_order": 3
+  },
+  "永": {
+    "RTK_order": 139,
+    "Joyo_order": 5
+  },
+  "泉": {
+    "RTK_order": 140,
+    "Joyo_order": 6
+  },
+  "原": {
+    "RTK_order": 142,
+    "Joyo_order": 2
+  },
+  "願": {
+    "RTK_order": 143,
+    "Joyo_order": 4
+  },
+  "泳": {
+    "RTK_order": 144,
+    "Joyo_order": 3
+  },
+  "沼": {
+    "RTK_order": 145,
+    "Joyo_order": 7
+  },
+  "沖": {
+    "RTK_order": 146,
+    "Joyo_order": 7
+  },
+  "江": {
+    "RTK_order": 148,
+    "Joyo_order": 7
+  },
+  "汁": {
+    "RTK_order": 150,
+    "Joyo_order": 7
+  },
+  "潮": {
+    "RTK_order": 152,
+    "Joyo_order": 6
+  },
+  "源": {
+    "RTK_order": 153,
+    "Joyo_order": 6
+  },
+  "活": {
+    "RTK_order": 154,
+    "Joyo_order": 2
+  },
+  "消": {
+    "RTK_order": 155,
+    "Joyo_order": 3
+  },
+  "況": {
+    "RTK_order": 156,
+    "Joyo_order": 7
+  },
+  "河": {
+    "RTK_order": 157,
+    "Joyo_order": 5
+  },
+  "泊": {
+    "RTK_order": 158,
+    "Joyo_order": 7
+  },
+  "湖": {
+    "RTK_order": 159,
+    "Joyo_order": 3
+  },
+  "測": {
+    "RTK_order": 160,
+    "Joyo_order": 5
+  },
+  "土": {
+    "RTK_order": 161,
+    "Joyo_order": 1
+  },
+  "吐": {
+    "RTK_order": 162,
+    "Joyo_order": 7
+  },
+  "圧": {
+    "RTK_order": 163,
+    "Joyo_order": 5
+  },
+  "埼": {
+    "RTK_order": 164,
+    "Joyo_order": 7
+  },
+  "垣": {
+    "RTK_order": 165,
+    "Joyo_order": 7
+  },
+  "圭": {
+    "RTK_order": 167,
+    "Joyo_order": 99
+  },
+  "封": {
+    "RTK_order": 168,
+    "Joyo_order": 7
+  },
+  "涯": {
+    "RTK_order": 169,
+    "Joyo_order": 7
+  },
+  "寺": {
+    "RTK_order": 170,
+    "Joyo_order": 2
+  },
+  "時": {
+    "RTK_order": 171,
+    "Joyo_order": 2
+  },
+  "均": {
+    "RTK_order": 172,
+    "Joyo_order": 5
+  },
+  "火": {
+    "RTK_order": 173,
+    "Joyo_order": 1
+  },
+  "炎": {
+    "RTK_order": 174,
+    "Joyo_order": 7
+  },
+  "煩": {
+    "RTK_order": 175,
+    "Joyo_order": 7
+  },
+  "淡": {
+    "RTK_order": 176,
+    "Joyo_order": 7
+  },
+  "灯": {
+    "RTK_order": 177,
+    "Joyo_order": 4
+  },
+  "畑": {
+    "RTK_order": 178,
+    "Joyo_order": 3
+  },
+  "災": {
+    "RTK_order": 179,
+    "Joyo_order": 5
+  },
+  "灰": {
+    "RTK_order": 180,
+    "Joyo_order": 6
+  },
+  "点": {
+    "RTK_order": 181,
+    "Joyo_order": 2
+  },
+  "照": {
+    "RTK_order": 182,
+    "Joyo_order": 4
+  },
+  "魚": {
+    "RTK_order": 183,
+    "Joyo_order": 2
+  },
+  "漁": {
+    "RTK_order": 184,
+    "Joyo_order": 4
+  },
+  "里": {
+    "RTK_order": 185,
+    "Joyo_order": 2
+  },
+  "黒": {
+    "RTK_order": 186,
+    "Joyo_order": 2
+  },
+  "墨": {
+    "RTK_order": 187,
+    "Joyo_order": 7
+  },
+  "鯉": {
+    "RTK_order": 188,
+    "Joyo_order": 99
+  },
+  "量": {
+    "RTK_order": 189,
+    "Joyo_order": 4
+  },
+  "厘": {
+    "RTK_order": 190,
+    "Joyo_order": 7
+  },
+  "埋": {
+    "RTK_order": 191,
+    "Joyo_order": 7
+  },
+  "同": {
+    "RTK_order": 192,
+    "Joyo_order": 2
+  },
+  "洞": {
+    "RTK_order": 193,
+    "Joyo_order": 7
+  },
+  "胴": {
+    "RTK_order": 194,
+    "Joyo_order": 7
+  },
+  "向": {
+    "RTK_order": 195,
+    "Joyo_order": 3
+  },
+  "尚": {
+    "RTK_order": 196,
+    "Joyo_order": 7
+  },
+  "字": {
+    "RTK_order": 197,
+    "Joyo_order": 1
+  },
+  "守": {
+    "RTK_order": 198,
+    "Joyo_order": 3
+  },
+  "完": {
+    "RTK_order": 199,
+    "Joyo_order": 4
+  },
+  "宣": {
+    "RTK_order": 200,
+    "Joyo_order": 6
+  },
+  "宵": {
+    "RTK_order": 201,
+    "Joyo_order": 7
+  },
+  "安": {
+    "RTK_order": 202,
+    "Joyo_order": 3
+  },
+  "宴": {
+    "RTK_order": 203,
+    "Joyo_order": 7
+  },
+  "寄": {
+    "RTK_order": 204,
+    "Joyo_order": 5
+  },
+  "富": {
+    "RTK_order": 205,
+    "Joyo_order": 5
+  },
+  "貯": {
+    "RTK_order": 206,
+    "Joyo_order": 4
+  },
+  "木": {
+    "RTK_order": 207,
+    "Joyo_order": 1
+  },
+  "林": {
+    "RTK_order": 208,
+    "Joyo_order": 1
+  },
+  "森": {
+    "RTK_order": 209,
+    "Joyo_order": 1
+  },
+  "桂": {
+    "RTK_order": 210,
+    "Joyo_order": 99
+  },
+  "柏": {
+    "RTK_order": 211,
+    "Joyo_order": 99
+  },
+  "枠": {
+    "RTK_order": 212,
+    "Joyo_order": 7
+  },
+  "梢": {
+    "RTK_order": 213,
+    "Joyo_order": 99
+  },
+  "棚": {
+    "RTK_order": 214,
+    "Joyo_order": 7
+  },
+  "杏": {
+    "RTK_order": 215,
+    "Joyo_order": 99
+  },
+  "桐": {
+    "RTK_order": 216,
+    "Joyo_order": 99
+  },
+  "植": {
+    "RTK_order": 217,
+    "Joyo_order": 3
+  },
+  "枯": {
+    "RTK_order": 219,
+    "Joyo_order": 7
+  },
+  "朴": {
+    "RTK_order": 220,
+    "Joyo_order": 7
+  },
+  "村": {
+    "RTK_order": 221,
+    "Joyo_order": 1
+  },
+  "相": {
+    "RTK_order": 222,
+    "Joyo_order": 3
+  },
+  "机": {
+    "RTK_order": 223,
+    "Joyo_order": 6
+  },
+  "本": {
+    "RTK_order": 224,
+    "Joyo_order": 1
+  },
+  "札": {
+    "RTK_order": 225,
+    "Joyo_order": 4
+  },
+  "暦": {
+    "RTK_order": 226,
+    "Joyo_order": 7
+  },
+  "案": {
+    "RTK_order": 227,
+    "Joyo_order": 4
+  },
+  "燥": {
+    "RTK_order": 228,
+    "Joyo_order": 7
+  },
+  "未": {
+    "RTK_order": 229,
+    "Joyo_order": 4
+  },
+  "末": {
+    "RTK_order": 230,
+    "Joyo_order": 4
+  },
+  "沫": {
+    "RTK_order": 232,
+    "Joyo_order": 99
+  },
+  "味": {
+    "RTK_order": 233,
+    "Joyo_order": 3
+  },
+  "妹": {
+    "RTK_order": 234,
+    "Joyo_order": 2
+  },
+  "朱": {
+    "RTK_order": 235,
+    "Joyo_order": 7
+  },
+  "株": {
+    "RTK_order": 236,
+    "Joyo_order": 6
+  },
+  "若": {
+    "RTK_order": 237,
+    "Joyo_order": 6
+  },
+  "草": {
+    "RTK_order": 238,
+    "Joyo_order": 1
+  },
+  "苦": {
+    "RTK_order": 239,
+    "Joyo_order": 3
+  },
+  "寛": {
+    "RTK_order": 241,
+    "Joyo_order": 7
+  },
+  "薄": {
+    "RTK_order": 242,
+    "Joyo_order": 7
+  },
+  "葉": {
+    "RTK_order": 243,
+    "Joyo_order": 3
+  },
+  "模": {
+    "RTK_order": 244,
+    "Joyo_order": 6
+  },
+  "漠": {
+    "RTK_order": 245,
+    "Joyo_order": 7
+  },
+  "墓": {
+    "RTK_order": 246,
+    "Joyo_order": 5
+  },
+  "暮": {
+    "RTK_order": 247,
+    "Joyo_order": 6
+  },
+  "膜": {
+    "RTK_order": 248,
+    "Joyo_order": 7
+  },
+  "苗": {
+    "RTK_order": 249,
+    "Joyo_order": 7
+  },
+  "兆": {
+    "RTK_order": 250,
+    "Joyo_order": 4
+  },
+  "桃": {
+    "RTK_order": 251,
+    "Joyo_order": 7
+  },
+  "眺": {
+    "RTK_order": 252,
+    "Joyo_order": 7
+  },
+  "犬": {
+    "RTK_order": 253,
+    "Joyo_order": 1
+  },
+  "状": {
+    "RTK_order": 254,
+    "Joyo_order": 5
+  },
+  "黙": {
+    "RTK_order": 255,
+    "Joyo_order": 7
+  },
+  "然": {
+    "RTK_order": 256,
+    "Joyo_order": 4
+  },
+  "荻": {
+    "RTK_order": 257,
+    "Joyo_order": 99
+  },
+  "狩": {
+    "RTK_order": 258,
+    "Joyo_order": 7
+  },
+  "猫": {
+    "RTK_order": 259,
+    "Joyo_order": 7
+  },
+  "牛": {
+    "RTK_order": 260,
+    "Joyo_order": 2
+  },
+  "特": {
+    "RTK_order": 261,
+    "Joyo_order": 4
+  },
+  "告": {
+    "RTK_order": 262,
+    "Joyo_order": 4
+  },
+  "先": {
+    "RTK_order": 263,
+    "Joyo_order": 1
+  },
+  "洗": {
+    "RTK_order": 264,
+    "Joyo_order": 6
+  },
+  "介": {
+    "RTK_order": 265,
+    "Joyo_order": 7
+  },
+  "界": {
+    "RTK_order": 266,
+    "Joyo_order": 3
+  },
+  "茶": {
+    "RTK_order": 267,
+    "Joyo_order": 2
+  },
+  "合": {
+    "RTK_order": 269,
+    "Joyo_order": 2
+  },
+  "塔": {
+    "RTK_order": 270,
+    "Joyo_order": 7
+  },
+  "王": {
+    "RTK_order": 271,
+    "Joyo_order": 1
+  },
+  "玉": {
+    "RTK_order": 272,
+    "Joyo_order": 1
+  },
+  "宝": {
+    "RTK_order": 273,
+    "Joyo_order": 6
+  },
+  "珠": {
+    "RTK_order": 274,
+    "Joyo_order": 7
+  },
+  "現": {
+    "RTK_order": 275,
+    "Joyo_order": 5
+  },
+  "狂": {
+    "RTK_order": 277,
+    "Joyo_order": 7
+  },
+  "皇": {
+    "RTK_order": 279,
+    "Joyo_order": 6
+  },
+  "呈": {
+    "RTK_order": 280,
+    "Joyo_order": 7
+  },
+  "全": {
+    "RTK_order": 281,
+    "Joyo_order": 3
+  },
+  "栓": {
+    "RTK_order": 282,
+    "Joyo_order": 7
+  },
+  "理": {
+    "RTK_order": 283,
+    "Joyo_order": 2
+  },
+  "主": {
+    "RTK_order": 284,
+    "Joyo_order": 3
+  },
+  "注": {
+    "RTK_order": 285,
+    "Joyo_order": 3
+  },
+  "柱": {
+    "RTK_order": 286,
+    "Joyo_order": 3
+  },
+  "金": {
+    "RTK_order": 287,
+    "Joyo_order": 1
+  },
+  "銑": {
+    "RTK_order": 288,
+    "Joyo_order": 99
+  },
+  "鉢": {
+    "RTK_order": 289,
+    "Joyo_order": 7
+  },
+  "銅": {
+    "RTK_order": 290,
+    "Joyo_order": 5
+  },
+  "釣": {
+    "RTK_order": 291,
+    "Joyo_order": 7
+  },
+  "針": {
+    "RTK_order": 292,
+    "Joyo_order": 6
+  },
+  "銘": {
+    "RTK_order": 293,
+    "Joyo_order": 7
+  },
+  "鎮": {
+    "RTK_order": 294,
+    "Joyo_order": 7
+  },
+  "道": {
+    "RTK_order": 295,
+    "Joyo_order": 2
+  },
+  "導": {
+    "RTK_order": 296,
+    "Joyo_order": 5
+  },
+  "辻": {
+    "RTK_order": 297,
+    "Joyo_order": 99
+  },
+  "迅": {
+    "RTK_order": 298,
+    "Joyo_order": 7
+  },
+  "造": {
+    "RTK_order": 299,
+    "Joyo_order": 5
+  },
+  "迫": {
+    "RTK_order": 300,
+    "Joyo_order": 7
+  },
+  "逃": {
+    "RTK_order": 301,
+    "Joyo_order": 7
+  },
+  "辺": {
+    "RTK_order": 302,
+    "Joyo_order": 4
+  },
+  "巡": {
+    "RTK_order": 303,
+    "Joyo_order": 7
+  },
+  "車": {
+    "RTK_order": 304,
+    "Joyo_order": 1
+  },
+  "連": {
+    "RTK_order": 305,
+    "Joyo_order": 4
+  },
+  "軌": {
+    "RTK_order": 306,
+    "Joyo_order": 7
+  },
+  "輸": {
+    "RTK_order": 307,
+    "Joyo_order": 5
+  },
+  "前": {
+    "RTK_order": 309,
+    "Joyo_order": 2
+  },
+  "各": {
+    "RTK_order": 311,
+    "Joyo_order": 4
+  },
+  "格": {
+    "RTK_order": 312,
+    "Joyo_order": 5
+  },
+  "略": {
+    "RTK_order": 314,
+    "Joyo_order": 5
+  },
+  "客": {
+    "RTK_order": 315,
+    "Joyo_order": 3
+  },
+  "額": {
+    "RTK_order": 316,
+    "Joyo_order": 5
+  },
+  "夏": {
+    "RTK_order": 317,
+    "Joyo_order": 2
+  },
+  "処": {
+    "RTK_order": 318,
+    "Joyo_order": 6
+  },
+  "条": {
+    "RTK_order": 319,
+    "Joyo_order": 5
+  },
+  "落": {
+    "RTK_order": 320,
+    "Joyo_order": 3
+  },
+  "冗": {
+    "RTK_order": 321,
+    "Joyo_order": 7
+  },
+  "軍": {
+    "RTK_order": 323,
+    "Joyo_order": 4
+  },
+  "輝": {
+    "RTK_order": 324,
+    "Joyo_order": 7
+  },
+  "運": {
+    "RTK_order": 325,
+    "Joyo_order": 3
+  },
+  "冠": {
+    "RTK_order": 326,
+    "Joyo_order": 7
+  },
+  "夢": {
+    "RTK_order": 327,
+    "Joyo_order": 5
+  },
+  "坑": {
+    "RTK_order": 328,
+    "Joyo_order": 7
+  },
+  "高": {
+    "RTK_order": 329,
+    "Joyo_order": 2
+  },
+  "享": {
+    "RTK_order": 330,
+    "Joyo_order": 7
+  },
+  "塾": {
+    "RTK_order": 331,
+    "Joyo_order": 7
+  },
+  "熟": {
+    "RTK_order": 332,
+    "Joyo_order": 6
+  },
+  "亭": {
+    "RTK_order": 333,
+    "Joyo_order": 7
+  },
+  "京": {
+    "RTK_order": 334,
+    "Joyo_order": 2
+  },
+  "涼": {
+    "RTK_order": 335,
+    "Joyo_order": 7
+  },
+  "景": {
+    "RTK_order": 336,
+    "Joyo_order": 4
+  },
+  "鯨": {
+    "RTK_order": 337,
+    "Joyo_order": 7
+  },
+  "舎": {
+    "RTK_order": 338,
+    "Joyo_order": 5
+  },
+  "周": {
+    "RTK_order": 339,
+    "Joyo_order": 4
+  },
+  "週": {
+    "RTK_order": 340,
+    "Joyo_order": 2
+  },
+  "士": {
+    "RTK_order": 341,
+    "Joyo_order": 4
+  },
+  "吉": {
+    "RTK_order": 342,
+    "Joyo_order": 7
+  },
+  "壮": {
+    "RTK_order": 343,
+    "Joyo_order": 7
+  },
+  "荘": {
+    "RTK_order": 344,
+    "Joyo_order": 7
+  },
+  "売": {
+    "RTK_order": 345,
+    "Joyo_order": 2
+  },
+  "学": {
+    "RTK_order": 346,
+    "Joyo_order": 1
+  },
+  "覚": {
+    "RTK_order": 347,
+    "Joyo_order": 4
+  },
+  "栄": {
+    "RTK_order": 348,
+    "Joyo_order": 4
+  },
+  "書": {
+    "RTK_order": 349,
+    "Joyo_order": 2
+  },
+  "津": {
+    "RTK_order": 350,
+    "Joyo_order": 7
+  },
+  "牧": {
+    "RTK_order": 351,
+    "Joyo_order": 4
+  },
+  "攻": {
+    "RTK_order": 352,
+    "Joyo_order": 7
+  },
+  "敗": {
+    "RTK_order": 353,
+    "Joyo_order": 4
+  },
+  "枚": {
+    "RTK_order": 354,
+    "Joyo_order": 6
+  },
+  "故": {
+    "RTK_order": 355,
+    "Joyo_order": 5
+  },
+  "敬": {
+    "RTK_order": 356,
+    "Joyo_order": 6
+  },
+  "言": {
+    "RTK_order": 357,
+    "Joyo_order": 2
+  },
+  "警": {
+    "RTK_order": 358,
+    "Joyo_order": 6
+  },
+  "計": {
+    "RTK_order": 359,
+    "Joyo_order": 2
+  },
+  "獄": {
+    "RTK_order": 361,
+    "Joyo_order": 7
+  },
+  "訂": {
+    "RTK_order": 362,
+    "Joyo_order": 7
+  },
+  "討": {
+    "RTK_order": 364,
+    "Joyo_order": 6
+  },
+  "訓": {
+    "RTK_order": 365,
+    "Joyo_order": 4
+  },
+  "詔": {
+    "RTK_order": 366,
+    "Joyo_order": 7
+  },
+  "詰": {
+    "RTK_order": 367,
+    "Joyo_order": 7
+  },
+  "話": {
+    "RTK_order": 368,
+    "Joyo_order": 2
+  },
+  "詠": {
+    "RTK_order": 369,
+    "Joyo_order": 7
+  },
+  "詩": {
+    "RTK_order": 370,
+    "Joyo_order": 3
+  },
+  "語": {
+    "RTK_order": 371,
+    "Joyo_order": 2
+  },
+  "読": {
+    "RTK_order": 372,
+    "Joyo_order": 2
+  },
+  "調": {
+    "RTK_order": 373,
+    "Joyo_order": 3
+  },
+  "談": {
+    "RTK_order": 374,
+    "Joyo_order": 3
+  },
+  "諾": {
+    "RTK_order": 375,
+    "Joyo_order": 7
+  },
+  "諭": {
+    "RTK_order": 376,
+    "Joyo_order": 7
+  },
+  "式": {
+    "RTK_order": 377,
+    "Joyo_order": 3
+  },
+  "試": {
+    "RTK_order": 378,
+    "Joyo_order": 4
+  },
+  "弐": {
+    "RTK_order": 379,
+    "Joyo_order": 7
+  },
+  "域": {
+    "RTK_order": 380,
+    "Joyo_order": 6
+  },
+  "賊": {
+    "RTK_order": 381,
+    "Joyo_order": 7
+  },
+  "栽": {
+    "RTK_order": 382,
+    "Joyo_order": 7
+  },
+  "載": {
+    "RTK_order": 383,
+    "Joyo_order": 7
+  },
+  "茂": {
+    "RTK_order": 384,
+    "Joyo_order": 7
+  },
+  "成": {
+    "RTK_order": 386,
+    "Joyo_order": 4
+  },
+  "城": {
+    "RTK_order": 387,
+    "Joyo_order": 6
+  },
+  "誠": {
+    "RTK_order": 388,
+    "Joyo_order": 6
+  },
+  "威": {
+    "RTK_order": 389,
+    "Joyo_order": 7
+  },
+  "滅": {
+    "RTK_order": 390,
+    "Joyo_order": 7
+  },
+  "減": {
+    "RTK_order": 391,
+    "Joyo_order": 5
+  },
+  "桟": {
+    "RTK_order": 393,
+    "Joyo_order": 7
+  },
+  "銭": {
+    "RTK_order": 394,
+    "Joyo_order": 5
+  },
+  "浅": {
+    "RTK_order": 395,
+    "Joyo_order": 4
+  },
+  "止": {
+    "RTK_order": 396,
+    "Joyo_order": 2
+  },
+  "歩": {
+    "RTK_order": 397,
+    "Joyo_order": 2
+  },
+  "渉": {
+    "RTK_order": 398,
+    "Joyo_order": 7
+  },
+  "頻": {
+    "RTK_order": 399,
+    "Joyo_order": 7
+  },
+  "肯": {
+    "RTK_order": 400,
+    "Joyo_order": 7
+  },
+  "企": {
+    "RTK_order": 401,
+    "Joyo_order": 7
+  },
+  "歴": {
+    "RTK_order": 402,
+    "Joyo_order": 4
+  },
+  "武": {
+    "RTK_order": 403,
+    "Joyo_order": 5
+  },
+  "賦": {
+    "RTK_order": 404,
+    "Joyo_order": 7
+  },
+  "正": {
+    "RTK_order": 405,
+    "Joyo_order": 1
+  },
+  "証": {
+    "RTK_order": 406,
+    "Joyo_order": 5
+  },
+  "政": {
+    "RTK_order": 407,
+    "Joyo_order": 5
+  },
+  "定": {
+    "RTK_order": 408,
+    "Joyo_order": 3
+  },
+  "錠": {
+    "RTK_order": 409,
+    "Joyo_order": 7
+  },
+  "走": {
+    "RTK_order": 410,
+    "Joyo_order": 2
+  },
+  "超": {
+    "RTK_order": 411,
+    "Joyo_order": 7
+  },
+  "赴": {
+    "RTK_order": 412,
+    "Joyo_order": 7
+  },
+  "越": {
+    "RTK_order": 413,
+    "Joyo_order": 7
+  },
+  "是": {
+    "RTK_order": 414,
+    "Joyo_order": 7
+  },
+  "題": {
+    "RTK_order": 415,
+    "Joyo_order": 3
+  },
+  "堤": {
+    "RTK_order": 416,
+    "Joyo_order": 7
+  },
+  "建": {
+    "RTK_order": 417,
+    "Joyo_order": 4
+  },
+  "延": {
+    "RTK_order": 419,
+    "Joyo_order": 6
+  },
+  "誕": {
+    "RTK_order": 420,
+    "Joyo_order": 6
+  },
+  "礎": {
+    "RTK_order": 421,
+    "Joyo_order": 7
+  },
+  "婿": {
+    "RTK_order": 422,
+    "Joyo_order": 7
+  },
+  "衣": {
+    "RTK_order": 423,
+    "Joyo_order": 4
+  },
+  "裁": {
+    "RTK_order": 424,
+    "Joyo_order": 6
+  },
+  "装": {
+    "RTK_order": 425,
+    "Joyo_order": 6
+  },
+  "裏": {
+    "RTK_order": 426,
+    "Joyo_order": 6
+  },
+  "壊": {
+    "RTK_order": 427,
+    "Joyo_order": 7
+  },
+  "哀": {
+    "RTK_order": 428,
+    "Joyo_order": 7
+  },
+  "遠": {
+    "RTK_order": 429,
+    "Joyo_order": 2
+  },
+  "猿": {
+    "RTK_order": 430,
+    "Joyo_order": 7
+  },
+  "初": {
+    "RTK_order": 431,
+    "Joyo_order": 4
+  },
+  "布": {
+    "RTK_order": 433,
+    "Joyo_order": 5
+  },
+  "帆": {
+    "RTK_order": 434,
+    "Joyo_order": 7
+  },
+  "幅": {
+    "RTK_order": 435,
+    "Joyo_order": 7
+  },
+  "帽": {
+    "RTK_order": 436,
+    "Joyo_order": 7
+  },
+  "幕": {
+    "RTK_order": 437,
+    "Joyo_order": 6
+  },
+  "幌": {
+    "RTK_order": 438,
+    "Joyo_order": 99
+  },
+  "錦": {
+    "RTK_order": 439,
+    "Joyo_order": 7
+  },
+  "市": {
+    "RTK_order": 440,
+    "Joyo_order": 2
+  },
+  "姉": {
+    "RTK_order": 442,
+    "Joyo_order": 2
+  },
+  "肺": {
+    "RTK_order": 443,
+    "Joyo_order": 6
+  },
+  "帯": {
+    "RTK_order": 444,
+    "Joyo_order": 4
+  },
+  "滞": {
+    "RTK_order": 445,
+    "Joyo_order": 7
+  },
+  "刺": {
+    "RTK_order": 446,
+    "Joyo_order": 7
+  },
+  "制": {
+    "RTK_order": 447,
+    "Joyo_order": 5
+  },
+  "製": {
+    "RTK_order": 448,
+    "Joyo_order": 5
+  },
+  "転": {
+    "RTK_order": 449,
+    "Joyo_order": 3
+  },
+  "芸": {
+    "RTK_order": 450,
+    "Joyo_order": 4
+  },
+  "雨": {
+    "RTK_order": 451,
+    "Joyo_order": 1
+  },
+  "雲": {
+    "RTK_order": 452,
+    "Joyo_order": 2
+  },
+  "曇": {
+    "RTK_order": 453,
+    "Joyo_order": 7
+  },
+  "雷": {
+    "RTK_order": 454,
+    "Joyo_order": 7
+  },
+  "霜": {
+    "RTK_order": 455,
+    "Joyo_order": 7
+  },
+  "冬": {
+    "RTK_order": 456,
+    "Joyo_order": 2
+  },
+  "天": {
+    "RTK_order": 457,
+    "Joyo_order": 1
+  },
+  "橋": {
+    "RTK_order": 460,
+    "Joyo_order": 3
+  },
+  "嬌": {
+    "RTK_order": 461,
+    "Joyo_order": 99
+  },
+  "立": {
+    "RTK_order": 462,
+    "Joyo_order": 1
+  },
+  "泣": {
+    "RTK_order": 463,
+    "Joyo_order": 4
+  },
+  "章": {
+    "RTK_order": 464,
+    "Joyo_order": 3
+  },
+  "競": {
+    "RTK_order": 465,
+    "Joyo_order": 4
+  },
+  "帝": {
+    "RTK_order": 466,
+    "Joyo_order": 7
+  },
+  "童": {
+    "RTK_order": 468,
+    "Joyo_order": 3
+  },
+  "瞳": {
+    "RTK_order": 469,
+    "Joyo_order": 7
+  },
+  "鐘": {
+    "RTK_order": 470,
+    "Joyo_order": 7
+  },
+  "商": {
+    "RTK_order": 471,
+    "Joyo_order": 3
+  },
+  "嫡": {
+    "RTK_order": 472,
+    "Joyo_order": 7
+  },
+  "適": {
+    "RTK_order": 473,
+    "Joyo_order": 5
+  },
+  "滴": {
+    "RTK_order": 474,
+    "Joyo_order": 7
+  },
+  "敵": {
+    "RTK_order": 475,
+    "Joyo_order": 5
+  },
+  "匕": {
+    "RTK_order": 476,
+    "Joyo_order": 99
+  },
+  "北": {
+    "RTK_order": 480,
+    "Joyo_order": 2
+  },
+  "背": {
+    "RTK_order": 481,
+    "Joyo_order": 6
+  },
+  "比": {
+    "RTK_order": 482,
+    "Joyo_order": 5
+  },
+  "昆": {
+    "RTK_order": 483,
+    "Joyo_order": 7
+  },
+  "皆": {
+    "RTK_order": 484,
+    "Joyo_order": 7
+  },
+  "混": {
+    "RTK_order": 487,
+    "Joyo_order": 5
+  },
+  "渇": {
+    "RTK_order": 488,
+    "Joyo_order": 7
+  },
+  "謁": {
+    "RTK_order": 489,
+    "Joyo_order": 7
+  },
+  "褐": {
+    "RTK_order": 490,
+    "Joyo_order": 7
+  },
+  "喝": {
+    "RTK_order": 491,
+    "Joyo_order": 7
+  },
+  "旨": {
+    "RTK_order": 493,
+    "Joyo_order": 7
+  },
+  "脂": {
+    "RTK_order": 494,
+    "Joyo_order": 7
+  },
+  "壱": {
+    "RTK_order": 496,
+    "Joyo_order": 7
+  },
+  "毎": {
+    "RTK_order": 497,
+    "Joyo_order": 2
+  },
+  "敏": {
+    "RTK_order": 498,
+    "Joyo_order": 7
+  },
+  "梅": {
+    "RTK_order": 499,
+    "Joyo_order": 4
+  },
+  "海": {
+    "RTK_order": 500,
+    "Joyo_order": 2
+  },
+  "乞": {
+    "RTK_order": 501,
+    "Joyo_order": 7
+  },
+  "乾": {
+    "RTK_order": 502,
+    "Joyo_order": 7
+  },
+  "腹": {
+    "RTK_order": 503,
+    "Joyo_order": 6
+  },
+  "複": {
+    "RTK_order": 504,
+    "Joyo_order": 5
+  },
+  "欠": {
+    "RTK_order": 505,
+    "Joyo_order": 4
+  },
+  "吹": {
+    "RTK_order": 506,
+    "Joyo_order": 7
+  },
+  "炊": {
+    "RTK_order": 507,
+    "Joyo_order": 7
+  },
+  "歌": {
+    "RTK_order": 508,
+    "Joyo_order": 2
+  },
+  "軟": {
+    "RTK_order": 509,
+    "Joyo_order": 7
+  },
+  "次": {
+    "RTK_order": 510,
+    "Joyo_order": 3
+  },
+  "茨": {
+    "RTK_order": 511,
+    "Joyo_order": 7
+  },
+  "資": {
+    "RTK_order": 512,
+    "Joyo_order": 5
+  },
+  "姿": {
+    "RTK_order": 513,
+    "Joyo_order": 6
+  },
+  "諮": {
+    "RTK_order": 514,
+    "Joyo_order": 7
+  },
+  "賠": {
+    "RTK_order": 515,
+    "Joyo_order": 7
+  },
+  "培": {
+    "RTK_order": 516,
+    "Joyo_order": 7
+  },
+  "剖": {
+    "RTK_order": 517,
+    "Joyo_order": 7
+  },
+  "音": {
+    "RTK_order": 518,
+    "Joyo_order": 1
+  },
+  "暗": {
+    "RTK_order": 519,
+    "Joyo_order": 3
+  },
+  "韻": {
+    "RTK_order": 520,
+    "Joyo_order": 7
+  },
+  "識": {
+    "RTK_order": 521,
+    "Joyo_order": 5
+  },
+  "鏡": {
+    "RTK_order": 522,
+    "Joyo_order": 4
+  },
+  "境": {
+    "RTK_order": 523,
+    "Joyo_order": 5
+  },
+  "亡": {
+    "RTK_order": 524,
+    "Joyo_order": 6
+  },
+  "盲": {
+    "RTK_order": 525,
+    "Joyo_order": 7
+  },
+  "妄": {
+    "RTK_order": 526,
+    "Joyo_order": 7
+  },
+  "荒": {
+    "RTK_order": 527,
+    "Joyo_order": 7
+  },
+  "望": {
+    "RTK_order": 528,
+    "Joyo_order": 4
+  },
+  "方": {
+    "RTK_order": 529,
+    "Joyo_order": 2
+  },
+  "妨": {
+    "RTK_order": 530,
+    "Joyo_order": 7
+  },
+  "坊": {
+    "RTK_order": 531,
+    "Joyo_order": 7
+  },
+  "芳": {
+    "RTK_order": 532,
+    "Joyo_order": 7
+  },
+  "肪": {
+    "RTK_order": 533,
+    "Joyo_order": 7
+  },
+  "訪": {
+    "RTK_order": 534,
+    "Joyo_order": 6
+  },
+  "放": {
+    "RTK_order": 535,
+    "Joyo_order": 3
+  },
+  "激": {
+    "RTK_order": 536,
+    "Joyo_order": 6
+  },
+  "脱": {
+    "RTK_order": 537,
+    "Joyo_order": 7
+  },
+  "説": {
+    "RTK_order": 538,
+    "Joyo_order": 4
+  },
+  "鋭": {
+    "RTK_order": 539,
+    "Joyo_order": 7
+  },
+  "曽": {
+    "RTK_order": 540,
+    "Joyo_order": 7
+  },
+  "増": {
+    "RTK_order": 541,
+    "Joyo_order": 5
+  },
+  "贈": {
+    "RTK_order": 542,
+    "Joyo_order": 7
+  },
+  "東": {
+    "RTK_order": 543,
+    "Joyo_order": 2
+  },
+  "棟": {
+    "RTK_order": 544,
+    "Joyo_order": 7
+  },
+  "凍": {
+    "RTK_order": 545,
+    "Joyo_order": 7
+  },
+  "妊": {
+    "RTK_order": 546,
+    "Joyo_order": 7
+  },
+  "廷": {
+    "RTK_order": 547,
+    "Joyo_order": 7
+  },
+  "染": {
+    "RTK_order": 548,
+    "Joyo_order": 6
+  },
+  "燃": {
+    "RTK_order": 549,
+    "Joyo_order": 5
+  },
+  "賓": {
+    "RTK_order": 550,
+    "Joyo_order": 7
+  },
+  "歳": {
+    "RTK_order": 551,
+    "Joyo_order": 7
+  },
+  "県": {
+    "RTK_order": 552,
+    "Joyo_order": 3
+  },
+  "栃": {
+    "RTK_order": 553,
+    "Joyo_order": 7
+  },
+  "地": {
+    "RTK_order": 554,
+    "Joyo_order": 2
+  },
+  "池": {
+    "RTK_order": 555,
+    "Joyo_order": 2
+  },
+  "虫": {
+    "RTK_order": 556,
+    "Joyo_order": 1
+  },
+  "蛍": {
+    "RTK_order": 557,
+    "Joyo_order": 7
+  },
+  "蛇": {
+    "RTK_order": 558,
+    "Joyo_order": 7
+  },
+  "虹": {
+    "RTK_order": 559,
+    "Joyo_order": 7
+  },
+  "蝶": {
+    "RTK_order": 560,
+    "Joyo_order": 99
+  },
+  "独": {
+    "RTK_order": 561,
+    "Joyo_order": 5
+  },
+  "蚕": {
+    "RTK_order": 562,
+    "Joyo_order": 6
+  },
+  "風": {
+    "RTK_order": 563,
+    "Joyo_order": 2
+  },
+  "己": {
+    "RTK_order": 564,
+    "Joyo_order": 6
+  },
+  "起": {
+    "RTK_order": 565,
+    "Joyo_order": 3
+  },
+  "妃": {
+    "RTK_order": 566,
+    "Joyo_order": 7
+  },
+  "改": {
+    "RTK_order": 567,
+    "Joyo_order": 4
+  },
+  "記": {
+    "RTK_order": 568,
+    "Joyo_order": 2
+  },
+  "包": {
+    "RTK_order": 569,
+    "Joyo_order": 4
+  },
+  "胞": {
+    "RTK_order": 570,
+    "Joyo_order": 7
+  },
+  "砲": {
+    "RTK_order": 571,
+    "Joyo_order": 7
+  },
+  "泡": {
+    "RTK_order": 572,
+    "Joyo_order": 7
+  },
+  "亀": {
+    "RTK_order": 573,
+    "Joyo_order": 7
+  },
+  "電": {
+    "RTK_order": 574,
+    "Joyo_order": 2
+  },
+  "竜": {
+    "RTK_order": 575,
+    "Joyo_order": 7
+  },
+  "滝": {
+    "RTK_order": 576,
+    "Joyo_order": 7
+  },
+  "豚": {
+    "RTK_order": 577,
+    "Joyo_order": 7
+  },
+  "逐": {
+    "RTK_order": 578,
+    "Joyo_order": 7
+  },
+  "遂": {
+    "RTK_order": 579,
+    "Joyo_order": 7
+  },
+  "家": {
+    "RTK_order": 580,
+    "Joyo_order": 2
+  },
+  "嫁": {
+    "RTK_order": 581,
+    "Joyo_order": 7
+  },
+  "豪": {
+    "RTK_order": 582,
+    "Joyo_order": 7
+  },
+  "腸": {
+    "RTK_order": 583,
+    "Joyo_order": 4
+  },
+  "場": {
+    "RTK_order": 584,
+    "Joyo_order": 2
+  },
+  "湯": {
+    "RTK_order": 585,
+    "Joyo_order": 3
+  },
+  "羊": {
+    "RTK_order": 586,
+    "Joyo_order": 3
+  },
+  "美": {
+    "RTK_order": 587,
+    "Joyo_order": 3
+  },
+  "洋": {
+    "RTK_order": 588,
+    "Joyo_order": 3
+  },
+  "詳": {
+    "RTK_order": 589,
+    "Joyo_order": 7
+  },
+  "鮮": {
+    "RTK_order": 590,
+    "Joyo_order": 7
+  },
+  "達": {
+    "RTK_order": 591,
+    "Joyo_order": 4
+  },
+  "羨": {
+    "RTK_order": 592,
+    "Joyo_order": 7
+  },
+  "差": {
+    "RTK_order": 593,
+    "Joyo_order": 4
+  },
+  "着": {
+    "RTK_order": 594,
+    "Joyo_order": 3
+  },
+  "唯": {
+    "RTK_order": 595,
+    "Joyo_order": 7
+  },
+  "焦": {
+    "RTK_order": 599,
+    "Joyo_order": 7
+  },
+  "礁": {
+    "RTK_order": 600,
+    "Joyo_order": 7
+  },
+  "集": {
+    "RTK_order": 601,
+    "Joyo_order": 3
+  },
+  "准": {
+    "RTK_order": 602,
+    "Joyo_order": 7
+  },
+  "進": {
+    "RTK_order": 603,
+    "Joyo_order": 3
+  },
+  "雑": {
+    "RTK_order": 604,
+    "Joyo_order": 5
+  },
+  "雌": {
+    "RTK_order": 605,
+    "Joyo_order": 7
+  },
+  "準": {
+    "RTK_order": 606,
+    "Joyo_order": 5
+  },
+  "奮": {
+    "RTK_order": 607,
+    "Joyo_order": 6
+  },
+  "奪": {
+    "RTK_order": 608,
+    "Joyo_order": 7
+  },
+  "確": {
+    "RTK_order": 609,
+    "Joyo_order": 5
+  },
+  "午": {
+    "RTK_order": 610,
+    "Joyo_order": 2
+  },
+  "許": {
+    "RTK_order": 611,
+    "Joyo_order": 5
+  },
+  "歓": {
+    "RTK_order": 612,
+    "Joyo_order": 7
+  },
+  "権": {
+    "RTK_order": 613,
+    "Joyo_order": 6
+  },
+  "観": {
+    "RTK_order": 614,
+    "Joyo_order": 4
+  },
+  "羽": {
+    "RTK_order": 615,
+    "Joyo_order": 2
+  },
+  "習": {
+    "RTK_order": 616,
+    "Joyo_order": 3
+  },
+  "翌": {
+    "RTK_order": 617,
+    "Joyo_order": 6
+  },
+  "曜": {
+    "RTK_order": 618,
+    "Joyo_order": 2
+  },
+  "濯": {
+    "RTK_order": 619,
+    "Joyo_order": 7
+  },
+  "曰": {
+    "RTK_order": 620,
+    "Joyo_order": 99
+  },
+  "困": {
+    "RTK_order": 621,
+    "Joyo_order": 6
+  },
+  "固": {
+    "RTK_order": 622,
+    "Joyo_order": 4
+  },
+  "国": {
+    "RTK_order": 624,
+    "Joyo_order": 2
+  },
+  "団": {
+    "RTK_order": 625,
+    "Joyo_order": 5
+  },
+  "因": {
+    "RTK_order": 626,
+    "Joyo_order": 5
+  },
+  "姻": {
+    "RTK_order": 627,
+    "Joyo_order": 7
+  },
+  "園": {
+    "RTK_order": 629,
+    "Joyo_order": 2
+  },
+  "回": {
+    "RTK_order": 630,
+    "Joyo_order": 2
+  },
+  "壇": {
+    "RTK_order": 631,
+    "Joyo_order": 7
+  },
+  "店": {
+    "RTK_order": 632,
+    "Joyo_order": 2
+  },
+  "庫": {
+    "RTK_order": 633,
+    "Joyo_order": 3
+  },
+  "庭": {
+    "RTK_order": 634,
+    "Joyo_order": 3
+  },
+  "庁": {
+    "RTK_order": 635,
+    "Joyo_order": 6
+  },
+  "床": {
+    "RTK_order": 636,
+    "Joyo_order": 7
+  },
+  "麻": {
+    "RTK_order": 637,
+    "Joyo_order": 7
+  },
+  "磨": {
+    "RTK_order": 638,
+    "Joyo_order": 7
+  },
+  "心": {
+    "RTK_order": 639,
+    "Joyo_order": 2
+  },
+  "忘": {
+    "RTK_order": 640,
+    "Joyo_order": 6
+  },
+  "忍": {
+    "RTK_order": 642,
+    "Joyo_order": 7
+  },
+  "認": {
+    "RTK_order": 643,
+    "Joyo_order": 6
+  },
+  "忌": {
+    "RTK_order": 644,
+    "Joyo_order": 7
+  },
+  "志": {
+    "RTK_order": 645,
+    "Joyo_order": 5
+  },
+  "誌": {
+    "RTK_order": 646,
+    "Joyo_order": 6
+  },
+  "忠": {
+    "RTK_order": 648,
+    "Joyo_order": 6
+  },
+  "串": {
+    "RTK_order": 649,
+    "Joyo_order": 7
+  },
+  "患": {
+    "RTK_order": 650,
+    "Joyo_order": 7
+  },
+  "思": {
+    "RTK_order": 651,
+    "Joyo_order": 2
+  },
+  "恩": {
+    "RTK_order": 652,
+    "Joyo_order": 5
+  },
+  "応": {
+    "RTK_order": 653,
+    "Joyo_order": 5
+  },
+  "意": {
+    "RTK_order": 654,
+    "Joyo_order": 3
+  },
+  "想": {
+    "RTK_order": 656,
+    "Joyo_order": 3
+  },
+  "息": {
+    "RTK_order": 657,
+    "Joyo_order": 3
+  },
+  "憩": {
+    "RTK_order": 658,
+    "Joyo_order": 7
+  },
+  "恵": {
+    "RTK_order": 659,
+    "Joyo_order": 7
+  },
+  "恐": {
+    "RTK_order": 660,
+    "Joyo_order": 7
+  },
+  "惑": {
+    "RTK_order": 661,
+    "Joyo_order": 7
+  },
+  "感": {
+    "RTK_order": 662,
+    "Joyo_order": 3
+  },
+  "憂": {
+    "RTK_order": 663,
+    "Joyo_order": 7
+  },
+  "寡": {
+    "RTK_order": 664,
+    "Joyo_order": 7
+  },
+  "忙": {
+    "RTK_order": 665,
+    "Joyo_order": 7
+  },
+  "悦": {
+    "RTK_order": 666,
+    "Joyo_order": 7
+  },
+  "恒": {
+    "RTK_order": 667,
+    "Joyo_order": 7
+  },
+  "悼": {
+    "RTK_order": 668,
+    "Joyo_order": 7
+  },
+  "悟": {
+    "RTK_order": 669,
+    "Joyo_order": 7
+  },
+  "怖": {
+    "RTK_order": 670,
+    "Joyo_order": 7
+  },
+  "慌": {
+    "RTK_order": 671,
+    "Joyo_order": 7
+  },
+  "悔": {
+    "RTK_order": 672,
+    "Joyo_order": 7
+  },
+  "憎": {
+    "RTK_order": 673,
+    "Joyo_order": 7
+  },
+  "慣": {
+    "RTK_order": 674,
+    "Joyo_order": 5
+  },
+  "愉": {
+    "RTK_order": 675,
+    "Joyo_order": 7
+  },
+  "惰": {
+    "RTK_order": 676,
+    "Joyo_order": 7
+  },
+  "慎": {
+    "RTK_order": 677,
+    "Joyo_order": 7
+  },
+  "憾": {
+    "RTK_order": 678,
+    "Joyo_order": 7
+  },
+  "憶": {
+    "RTK_order": 679,
+    "Joyo_order": 7
+  },
+  "慕": {
+    "RTK_order": 683,
+    "Joyo_order": 7
+  },
+  "添": {
+    "RTK_order": 684,
+    "Joyo_order": 7
+  },
+  "必": {
+    "RTK_order": 685,
+    "Joyo_order": 4
+  },
+  "泌": {
+    "RTK_order": 686,
+    "Joyo_order": 7
+  },
+  "手": {
+    "RTK_order": 687,
+    "Joyo_order": 1
+  },
+  "看": {
+    "RTK_order": 688,
+    "Joyo_order": 6
+  },
+  "摩": {
+    "RTK_order": 689,
+    "Joyo_order": 7
+  },
+  "我": {
+    "RTK_order": 690,
+    "Joyo_order": 6
+  },
+  "義": {
+    "RTK_order": 691,
+    "Joyo_order": 5
+  },
+  "議": {
+    "RTK_order": 692,
+    "Joyo_order": 4
+  },
+  "犠": {
+    "RTK_order": 693,
+    "Joyo_order": 7
+  },
+  "抹": {
+    "RTK_order": 694,
+    "Joyo_order": 7
+  },
+  "抱": {
+    "RTK_order": 697,
+    "Joyo_order": 7
+  },
+  "搭": {
+    "RTK_order": 698,
+    "Joyo_order": 7
+  },
+  "抄": {
+    "RTK_order": 699,
+    "Joyo_order": 7
+  },
+  "抗": {
+    "RTK_order": 700,
+    "Joyo_order": 7
+  },
+  "批": {
+    "RTK_order": 701,
+    "Joyo_order": 6
+  },
+  "招": {
+    "RTK_order": 702,
+    "Joyo_order": 5
+  },
+  "拓": {
+    "RTK_order": 703,
+    "Joyo_order": 7
+  },
+  "拍": {
+    "RTK_order": 704,
+    "Joyo_order": 7
+  },
+  "打": {
+    "RTK_order": 705,
+    "Joyo_order": 3
+  },
+  "拘": {
+    "RTK_order": 706,
+    "Joyo_order": 7
+  },
+  "捨": {
+    "RTK_order": 707,
+    "Joyo_order": 6
+  },
+  "拐": {
+    "RTK_order": 708,
+    "Joyo_order": 7
+  },
+  "摘": {
+    "RTK_order": 709,
+    "Joyo_order": 7
+  },
+  "挑": {
+    "RTK_order": 710,
+    "Joyo_order": 7
+  },
+  "指": {
+    "RTK_order": 711,
+    "Joyo_order": 3
+  },
+  "持": {
+    "RTK_order": 712,
+    "Joyo_order": 3
+  },
+  "括": {
+    "RTK_order": 714,
+    "Joyo_order": 7
+  },
+  "揮": {
+    "RTK_order": 715,
+    "Joyo_order": 6
+  },
+  "推": {
+    "RTK_order": 716,
+    "Joyo_order": 6
+  },
+  "揚": {
+    "RTK_order": 717,
+    "Joyo_order": 7
+  },
+  "提": {
+    "RTK_order": 718,
+    "Joyo_order": 5
+  },
+  "損": {
+    "RTK_order": 719,
+    "Joyo_order": 5
+  },
+  "拾": {
+    "RTK_order": 720,
+    "Joyo_order": 3
+  },
+  "担": {
+    "RTK_order": 721,
+    "Joyo_order": 6
+  },
+  "拠": {
+    "RTK_order": 722,
+    "Joyo_order": 7
+  },
+  "描": {
+    "RTK_order": 723,
+    "Joyo_order": 7
+  },
+  "操": {
+    "RTK_order": 724,
+    "Joyo_order": 6
+  },
+  "接": {
+    "RTK_order": 725,
+    "Joyo_order": 5
+  },
+  "掲": {
+    "RTK_order": 726,
+    "Joyo_order": 7
+  },
+  "掛": {
+    "RTK_order": 727,
+    "Joyo_order": 7
+  },
+  "研": {
+    "RTK_order": 729,
+    "Joyo_order": 3
+  },
+  "戒": {
+    "RTK_order": 730,
+    "Joyo_order": 7
+  },
+  "械": {
+    "RTK_order": 732,
+    "Joyo_order": 4
+  },
+  "鼻": {
+    "RTK_order": 733,
+    "Joyo_order": 3
+  },
+  "刑": {
+    "RTK_order": 734,
+    "Joyo_order": 7
+  },
+  "型": {
+    "RTK_order": 735,
+    "Joyo_order": 4
+  },
+  "才": {
+    "RTK_order": 736,
+    "Joyo_order": 2
+  },
+  "財": {
+    "RTK_order": 737,
+    "Joyo_order": 5
+  },
+  "材": {
+    "RTK_order": 738,
+    "Joyo_order": 4
+  },
+  "存": {
+    "RTK_order": 739,
+    "Joyo_order": 6
+  },
+  "在": {
+    "RTK_order": 740,
+    "Joyo_order": 5
+  },
+  "乃": {
+    "RTK_order": 741,
+    "Joyo_order": 99
+  },
+  "携": {
+    "RTK_order": 742,
+    "Joyo_order": 7
+  },
+  "及": {
+    "RTK_order": 743,
+    "Joyo_order": 7
+  },
+  "吸": {
+    "RTK_order": 744,
+    "Joyo_order": 6
+  },
+  "扱": {
+    "RTK_order": 745,
+    "Joyo_order": 7
+  },
+  "丈": {
+    "RTK_order": 746,
+    "Joyo_order": 7
+  },
+  "史": {
+    "RTK_order": 747,
+    "Joyo_order": 4
+  },
+  "吏": {
+    "RTK_order": 748,
+    "Joyo_order": 7
+  },
+  "更": {
+    "RTK_order": 749,
+    "Joyo_order": 7
+  },
+  "硬": {
+    "RTK_order": 750,
+    "Joyo_order": 7
+  },
+  "又": {
+    "RTK_order": 752,
+    "Joyo_order": 7
+  },
+  "双": {
+    "RTK_order": 753,
+    "Joyo_order": 7
+  },
+  "桑": {
+    "RTK_order": 754,
+    "Joyo_order": 7
+  },
+  "隻": {
+    "RTK_order": 755,
+    "Joyo_order": 7
+  },
+  "護": {
+    "RTK_order": 756,
+    "Joyo_order": 5
+  },
+  "獲": {
+    "RTK_order": 757,
+    "Joyo_order": 7
+  },
+  "奴": {
+    "RTK_order": 758,
+    "Joyo_order": 7
+  },
+  "怒": {
+    "RTK_order": 759,
+    "Joyo_order": 7
+  },
+  "友": {
+    "RTK_order": 760,
+    "Joyo_order": 2
+  },
+  "抜": {
+    "RTK_order": 761,
+    "Joyo_order": 7
+  },
+  "投": {
+    "RTK_order": 762,
+    "Joyo_order": 3
+  },
+  "没": {
+    "RTK_order": 763,
+    "Joyo_order": 7
+  },
+  "設": {
+    "RTK_order": 765,
+    "Joyo_order": 5
+  },
+  "撃": {
+    "RTK_order": 766,
+    "Joyo_order": 7
+  },
+  "殻": {
+    "RTK_order": 767,
+    "Joyo_order": 7
+  },
+  "支": {
+    "RTK_order": 768,
+    "Joyo_order": 5
+  },
+  "技": {
+    "RTK_order": 769,
+    "Joyo_order": 5
+  },
+  "枝": {
+    "RTK_order": 770,
+    "Joyo_order": 5
+  },
+  "肢": {
+    "RTK_order": 771,
+    "Joyo_order": 7
+  },
+  "茎": {
+    "RTK_order": 772,
+    "Joyo_order": 7
+  },
+  "怪": {
+    "RTK_order": 773,
+    "Joyo_order": 7
+  },
+  "軽": {
+    "RTK_order": 774,
+    "Joyo_order": 3
+  },
+  "叔": {
+    "RTK_order": 775,
+    "Joyo_order": 7
+  },
+  "督": {
+    "RTK_order": 776,
+    "Joyo_order": 7
+  },
+  "寂": {
+    "RTK_order": 777,
+    "Joyo_order": 7
+  },
+  "淑": {
+    "RTK_order": 778,
+    "Joyo_order": 7
+  },
+  "反": {
+    "RTK_order": 779,
+    "Joyo_order": 3
+  },
+  "坂": {
+    "RTK_order": 780,
+    "Joyo_order": 3
+  },
+  "板": {
+    "RTK_order": 781,
+    "Joyo_order": 3
+  },
+  "返": {
+    "RTK_order": 782,
+    "Joyo_order": 3
+  },
+  "販": {
+    "RTK_order": 783,
+    "Joyo_order": 7
+  },
+  "爪": {
+    "RTK_order": 784,
+    "Joyo_order": 7
+  },
+  "妥": {
+    "RTK_order": 785,
+    "Joyo_order": 7
+  },
+  "乳": {
+    "RTK_order": 786,
+    "Joyo_order": 6
+  },
+  "浮": {
+    "RTK_order": 787,
+    "Joyo_order": 7
+  },
+  "将": {
+    "RTK_order": 789,
+    "Joyo_order": 6
+  },
+  "奨": {
+    "RTK_order": 790,
+    "Joyo_order": 7
+  },
+  "採": {
+    "RTK_order": 792,
+    "Joyo_order": 5
+  },
+  "菜": {
+    "RTK_order": 793,
+    "Joyo_order": 4
+  },
+  "受": {
+    "RTK_order": 794,
+    "Joyo_order": 3
+  },
+  "授": {
+    "RTK_order": 795,
+    "Joyo_order": 5
+  },
+  "愛": {
+    "RTK_order": 796,
+    "Joyo_order": 4
+  },
+  "払": {
+    "RTK_order": 798,
+    "Joyo_order": 7
+  },
+  "広": {
+    "RTK_order": 799,
+    "Joyo_order": 2
+  },
+  "拡": {
+    "RTK_order": 801,
+    "Joyo_order": 6
+  },
+  "鉱": {
+    "RTK_order": 802,
+    "Joyo_order": 5
+  },
+  "弁": {
+    "RTK_order": 803,
+    "Joyo_order": 5
+  },
+  "雄": {
+    "RTK_order": 804,
+    "Joyo_order": 7
+  },
+  "台": {
+    "RTK_order": 805,
+    "Joyo_order": 2
+  },
+  "怠": {
+    "RTK_order": 806,
+    "Joyo_order": 7
+  },
+  "治": {
+    "RTK_order": 807,
+    "Joyo_order": 4
+  },
+  "始": {
+    "RTK_order": 809,
+    "Joyo_order": 3
+  },
+  "胎": {
+    "RTK_order": 810,
+    "Joyo_order": 7
+  },
+  "窓": {
+    "RTK_order": 811,
+    "Joyo_order": 6
+  },
+  "去": {
+    "RTK_order": 812,
+    "Joyo_order": 3
+  },
+  "法": {
+    "RTK_order": 813,
+    "Joyo_order": 4
+  },
+  "会": {
+    "RTK_order": 814,
+    "Joyo_order": 2
+  },
+  "至": {
+    "RTK_order": 815,
+    "Joyo_order": 6
+  },
+  "室": {
+    "RTK_order": 816,
+    "Joyo_order": 2
+  },
+  "到": {
+    "RTK_order": 817,
+    "Joyo_order": 7
+  },
+  "致": {
+    "RTK_order": 818,
+    "Joyo_order": 7
+  },
+  "互": {
+    "RTK_order": 819,
+    "Joyo_order": 7
+  },
+  "棄": {
+    "RTK_order": 820,
+    "Joyo_order": 7
+  },
+  "育": {
+    "RTK_order": 821,
+    "Joyo_order": 3
+  },
+  "撤": {
+    "RTK_order": 822,
+    "Joyo_order": 7
+  },
+  "充": {
+    "RTK_order": 823,
+    "Joyo_order": 7
+  },
+  "銃": {
+    "RTK_order": 824,
+    "Joyo_order": 7
+  },
+  "硫": {
+    "RTK_order": 825,
+    "Joyo_order": 7
+  },
+  "流": {
+    "RTK_order": 826,
+    "Joyo_order": 3
+  },
+  "允": {
+    "RTK_order": 827,
+    "Joyo_order": 99
+  },
+  "唆": {
+    "RTK_order": 828,
+    "Joyo_order": 7
+  },
+  "出": {
+    "RTK_order": 829,
+    "Joyo_order": 1
+  },
+  "山": {
+    "RTK_order": 830,
+    "Joyo_order": 1
+  },
+  "拙": {
+    "RTK_order": 831,
+    "Joyo_order": 7
+  },
+  "岩": {
+    "RTK_order": 832,
+    "Joyo_order": 2
+  },
+  "炭": {
+    "RTK_order": 833,
+    "Joyo_order": 3
+  },
+  "岐": {
+    "RTK_order": 834,
+    "Joyo_order": 7
+  },
+  "峠": {
+    "RTK_order": 835,
+    "Joyo_order": 7
+  },
+  "崩": {
+    "RTK_order": 836,
+    "Joyo_order": 7
+  },
+  "密": {
+    "RTK_order": 837,
+    "Joyo_order": 6
+  },
+  "蜜": {
+    "RTK_order": 838,
+    "Joyo_order": 7
+  },
+  "嵐": {
+    "RTK_order": 839,
+    "Joyo_order": 7
+  },
+  "崎": {
+    "RTK_order": 840,
+    "Joyo_order": 7
+  },
+  "入": {
+    "RTK_order": 842,
+    "Joyo_order": 1
+  },
+  "込": {
+    "RTK_order": 843,
+    "Joyo_order": 7
+  },
+  "分": {
+    "RTK_order": 844,
+    "Joyo_order": 2
+  },
+  "貧": {
+    "RTK_order": 845,
+    "Joyo_order": 5
+  },
+  "頒": {
+    "RTK_order": 846,
+    "Joyo_order": 7
+  },
+  "公": {
+    "RTK_order": 847,
+    "Joyo_order": 2
+  },
+  "松": {
+    "RTK_order": 848,
+    "Joyo_order": 4
+  },
+  "翁": {
+    "RTK_order": 849,
+    "Joyo_order": 7
+  },
+  "訟": {
+    "RTK_order": 850,
+    "Joyo_order": 7
+  },
+  "谷": {
+    "RTK_order": 851,
+    "Joyo_order": 2
+  },
+  "浴": {
+    "RTK_order": 852,
+    "Joyo_order": 4
+  },
+  "容": {
+    "RTK_order": 853,
+    "Joyo_order": 5
+  },
+  "溶": {
+    "RTK_order": 854,
+    "Joyo_order": 7
+  },
+  "欲": {
+    "RTK_order": 855,
+    "Joyo_order": 6
+  },
+  "裕": {
+    "RTK_order": 856,
+    "Joyo_order": 7
+  },
+  "鉛": {
+    "RTK_order": 857,
+    "Joyo_order": 7
+  },
+  "沿": {
+    "RTK_order": 858,
+    "Joyo_order": 6
+  },
+  "賞": {
+    "RTK_order": 859,
+    "Joyo_order": 4
+  },
+  "党": {
+    "RTK_order": 860,
+    "Joyo_order": 6
+  },
+  "堂": {
+    "RTK_order": 861,
+    "Joyo_order": 4
+  },
+  "常": {
+    "RTK_order": 862,
+    "Joyo_order": 5
+  },
+  "裳": {
+    "RTK_order": 863,
+    "Joyo_order": 99
+  },
+  "掌": {
+    "RTK_order": 864,
+    "Joyo_order": 7
+  },
+  "皮": {
+    "RTK_order": 865,
+    "Joyo_order": 3
+  },
+  "波": {
+    "RTK_order": 866,
+    "Joyo_order": 3
+  },
+  "婆": {
+    "RTK_order": 867,
+    "Joyo_order": 7
+  },
+  "披": {
+    "RTK_order": 868,
+    "Joyo_order": 7
+  },
+  "破": {
+    "RTK_order": 869,
+    "Joyo_order": 5
+  },
+  "被": {
+    "RTK_order": 870,
+    "Joyo_order": 7
+  },
+  "残": {
+    "RTK_order": 871,
+    "Joyo_order": 4
+  },
+  "殉": {
+    "RTK_order": 872,
+    "Joyo_order": 7
+  },
+  "殊": {
+    "RTK_order": 873,
+    "Joyo_order": 7
+  },
+  "殖": {
+    "RTK_order": 874,
+    "Joyo_order": 7
+  },
+  "列": {
+    "RTK_order": 875,
+    "Joyo_order": 3
+  },
+  "裂": {
+    "RTK_order": 876,
+    "Joyo_order": 7
+  },
+  "烈": {
+    "RTK_order": 877,
+    "Joyo_order": 7
+  },
+  "死": {
+    "RTK_order": 878,
+    "Joyo_order": 3
+  },
+  "葬": {
+    "RTK_order": 879,
+    "Joyo_order": 7
+  },
+  "瞬": {
+    "RTK_order": 880,
+    "Joyo_order": 7
+  },
+  "耳": {
+    "RTK_order": 881,
+    "Joyo_order": 1
+  },
+  "取": {
+    "RTK_order": 882,
+    "Joyo_order": 3
+  },
+  "趣": {
+    "RTK_order": 883,
+    "Joyo_order": 7
+  },
+  "最": {
+    "RTK_order": 884,
+    "Joyo_order": 4
+  },
+  "撮": {
+    "RTK_order": 885,
+    "Joyo_order": 7
+  },
+  "恥": {
+    "RTK_order": 886,
+    "Joyo_order": 7
+  },
+  "職": {
+    "RTK_order": 887,
+    "Joyo_order": 5
+  },
+  "聖": {
+    "RTK_order": 888,
+    "Joyo_order": 6
+  },
+  "敢": {
+    "RTK_order": 889,
+    "Joyo_order": 7
+  },
+  "聴": {
+    "RTK_order": 890,
+    "Joyo_order": 7
+  },
+  "懐": {
+    "RTK_order": 891,
+    "Joyo_order": 7
+  },
+  "慢": {
+    "RTK_order": 892,
+    "Joyo_order": 7
+  },
+  "漫": {
+    "RTK_order": 893,
+    "Joyo_order": 7
+  },
+  "買": {
+    "RTK_order": 894,
+    "Joyo_order": 2
+  },
+  "置": {
+    "RTK_order": 895,
+    "Joyo_order": 4
+  },
+  "罰": {
+    "RTK_order": 896,
+    "Joyo_order": 7
+  },
+  "寧": {
+    "RTK_order": 897,
+    "Joyo_order": 7
+  },
+  "濁": {
+    "RTK_order": 898,
+    "Joyo_order": 7
+  },
+  "環": {
+    "RTK_order": 899,
+    "Joyo_order": 7
+  },
+  "還": {
+    "RTK_order": 900,
+    "Joyo_order": 7
+  },
+  "夫": {
+    "RTK_order": 901,
+    "Joyo_order": 4
+  },
+  "扶": {
+    "RTK_order": 902,
+    "Joyo_order": 7
+  },
+  "渓": {
+    "RTK_order": 903,
+    "Joyo_order": 7
+  },
+  "規": {
+    "RTK_order": 904,
+    "Joyo_order": 5
+  },
+  "替": {
+    "RTK_order": 905,
+    "Joyo_order": 7
+  },
+  "賛": {
+    "RTK_order": 906,
+    "Joyo_order": 5
+  },
+  "潜": {
+    "RTK_order": 907,
+    "Joyo_order": 7
+  },
+  "失": {
+    "RTK_order": 908,
+    "Joyo_order": 4
+  },
+  "鉄": {
+    "RTK_order": 909,
+    "Joyo_order": 3
+  },
+  "迭": {
+    "RTK_order": 910,
+    "Joyo_order": 7
+  },
+  "臣": {
+    "RTK_order": 911,
+    "Joyo_order": 4
+  },
+  "姫": {
+    "RTK_order": 912,
+    "Joyo_order": 7
+  },
+  "蔵": {
+    "RTK_order": 913,
+    "Joyo_order": 6
+  },
+  "臓": {
+    "RTK_order": 914,
+    "Joyo_order": 6
+  },
+  "賢": {
+    "RTK_order": 915,
+    "Joyo_order": 7
+  },
+  "堅": {
+    "RTK_order": 917,
+    "Joyo_order": 7
+  },
+  "臨": {
+    "RTK_order": 918,
+    "Joyo_order": 6
+  },
+  "覧": {
+    "RTK_order": 919,
+    "Joyo_order": 6
+  },
+  "巨": {
+    "RTK_order": 920,
+    "Joyo_order": 7
+  },
+  "拒": {
+    "RTK_order": 921,
+    "Joyo_order": 7
+  },
+  "力": {
+    "RTK_order": 922,
+    "Joyo_order": 1
+  },
+  "男": {
+    "RTK_order": 923,
+    "Joyo_order": 1
+  },
+  "労": {
+    "RTK_order": 924,
+    "Joyo_order": 4
+  },
+  "募": {
+    "RTK_order": 925,
+    "Joyo_order": 7
+  },
+  "劣": {
+    "RTK_order": 926,
+    "Joyo_order": 7
+  },
+  "功": {
+    "RTK_order": 927,
+    "Joyo_order": 4
+  },
+  "勧": {
+    "RTK_order": 928,
+    "Joyo_order": 7
+  },
+  "努": {
+    "RTK_order": 929,
+    "Joyo_order": 4
+  },
+  "励": {
+    "RTK_order": 931,
+    "Joyo_order": 7
+  },
+  "加": {
+    "RTK_order": 932,
+    "Joyo_order": 4
+  },
+  "賀": {
+    "RTK_order": 933,
+    "Joyo_order": 5
+  },
+  "架": {
+    "RTK_order": 934,
+    "Joyo_order": 7
+  },
+  "脇": {
+    "RTK_order": 935,
+    "Joyo_order": 7
+  },
+  "脅": {
+    "RTK_order": 936,
+    "Joyo_order": 7
+  },
+  "協": {
+    "RTK_order": 937,
+    "Joyo_order": 4
+  },
+  "行": {
+    "RTK_order": 938,
+    "Joyo_order": 2
+  },
+  "律": {
+    "RTK_order": 939,
+    "Joyo_order": 6
+  },
+  "復": {
+    "RTK_order": 940,
+    "Joyo_order": 5
+  },
+  "得": {
+    "RTK_order": 941,
+    "Joyo_order": 4
+  },
+  "従": {
+    "RTK_order": 942,
+    "Joyo_order": 6
+  },
+  "徒": {
+    "RTK_order": 943,
+    "Joyo_order": 4
+  },
+  "待": {
+    "RTK_order": 944,
+    "Joyo_order": 3
+  },
+  "往": {
+    "RTK_order": 945,
+    "Joyo_order": 5
+  },
+  "征": {
+    "RTK_order": 946,
+    "Joyo_order": 7
+  },
+  "径": {
+    "RTK_order": 947,
+    "Joyo_order": 4
+  },
+  "彼": {
+    "RTK_order": 948,
+    "Joyo_order": 7
+  },
+  "役": {
+    "RTK_order": 949,
+    "Joyo_order": 3
+  },
+  "徳": {
+    "RTK_order": 950,
+    "Joyo_order": 5
+  },
+  "徹": {
+    "RTK_order": 951,
+    "Joyo_order": 7
+  },
+  "徴": {
+    "RTK_order": 952,
+    "Joyo_order": 7
+  },
+  "懲": {
+    "RTK_order": 953,
+    "Joyo_order": 7
+  },
+  "微": {
+    "RTK_order": 954,
+    "Joyo_order": 7
+  },
+  "街": {
+    "RTK_order": 955,
+    "Joyo_order": 4
+  },
+  "衡": {
+    "RTK_order": 957,
+    "Joyo_order": 7
+  },
+  "稿": {
+    "RTK_order": 958,
+    "Joyo_order": 7
+  },
+  "稼": {
+    "RTK_order": 959,
+    "Joyo_order": 7
+  },
+  "程": {
+    "RTK_order": 960,
+    "Joyo_order": 5
+  },
+  "税": {
+    "RTK_order": 961,
+    "Joyo_order": 5
+  },
+  "稚": {
+    "RTK_order": 962,
+    "Joyo_order": 7
+  },
+  "和": {
+    "RTK_order": 963,
+    "Joyo_order": 3
+  },
+  "移": {
+    "RTK_order": 964,
+    "Joyo_order": 5
+  },
+  "秒": {
+    "RTK_order": 965,
+    "Joyo_order": 3
+  },
+  "秋": {
+    "RTK_order": 966,
+    "Joyo_order": 2
+  },
+  "愁": {
+    "RTK_order": 967,
+    "Joyo_order": 7
+  },
+  "私": {
+    "RTK_order": 968,
+    "Joyo_order": 6
+  },
+  "秩": {
+    "RTK_order": 969,
+    "Joyo_order": 7
+  },
+  "秘": {
+    "RTK_order": 970,
+    "Joyo_order": 6
+  },
+  "称": {
+    "RTK_order": 971,
+    "Joyo_order": 7
+  },
+  "利": {
+    "RTK_order": 972,
+    "Joyo_order": 4
+  },
+  "梨": {
+    "RTK_order": 973,
+    "Joyo_order": 7
+  },
+  "穫": {
+    "RTK_order": 974,
+    "Joyo_order": 7
+  },
+  "穂": {
+    "RTK_order": 975,
+    "Joyo_order": 7
+  },
+  "稲": {
+    "RTK_order": 976,
+    "Joyo_order": 7
+  },
+  "香": {
+    "RTK_order": 977,
+    "Joyo_order": 7
+  },
+  "季": {
+    "RTK_order": 978,
+    "Joyo_order": 4
+  },
+  "委": {
+    "RTK_order": 979,
+    "Joyo_order": 3
+  },
+  "秀": {
+    "RTK_order": 980,
+    "Joyo_order": 7
+  },
+  "透": {
+    "RTK_order": 981,
+    "Joyo_order": 7
+  },
+  "誘": {
+    "RTK_order": 982,
+    "Joyo_order": 7
+  },
+  "穀": {
+    "RTK_order": 984,
+    "Joyo_order": 6
+  },
+  "菌": {
+    "RTK_order": 985,
+    "Joyo_order": 7
+  },
+  "米": {
+    "RTK_order": 987,
+    "Joyo_order": 2
+  },
+  "粉": {
+    "RTK_order": 988,
+    "Joyo_order": 4
+  },
+  "粘": {
+    "RTK_order": 989,
+    "Joyo_order": 7
+  },
+  "粒": {
+    "RTK_order": 990,
+    "Joyo_order": 7
+  },
+  "粧": {
+    "RTK_order": 991,
+    "Joyo_order": 7
+  },
+  "迷": {
+    "RTK_order": 992,
+    "Joyo_order": 5
+  },
+  "粋": {
+    "RTK_order": 993,
+    "Joyo_order": 7
+  },
+  "糧": {
+    "RTK_order": 995,
+    "Joyo_order": 7
+  },
+  "菊": {
+    "RTK_order": 996,
+    "Joyo_order": 7
+  },
+  "奥": {
+    "RTK_order": 997,
+    "Joyo_order": 7
+  },
+  "数": {
+    "RTK_order": 998,
+    "Joyo_order": 2
+  },
+  "楼": {
+    "RTK_order": 999,
+    "Joyo_order": 7
+  },
+  "類": {
+    "RTK_order": 1000,
+    "Joyo_order": 4
+  },
+  "漆": {
+    "RTK_order": 1001,
+    "Joyo_order": 7
+  },
+  "様": {
+    "RTK_order": 1003,
+    "Joyo_order": 3
+  },
+  "求": {
+    "RTK_order": 1004,
+    "Joyo_order": 4
+  },
+  "球": {
+    "RTK_order": 1005,
+    "Joyo_order": 3
+  },
+  "救": {
+    "RTK_order": 1006,
+    "Joyo_order": 4
+  },
+  "竹": {
+    "RTK_order": 1007,
+    "Joyo_order": 1
+  },
+  "笑": {
+    "RTK_order": 1008,
+    "Joyo_order": 4
+  },
+  "笠": {
+    "RTK_order": 1009,
+    "Joyo_order": 99
+  },
+  "笹": {
+    "RTK_order": 1010,
+    "Joyo_order": 99
+  },
+  "筋": {
+    "RTK_order": 1012,
+    "Joyo_order": 6
+  },
+  "箱": {
+    "RTK_order": 1013,
+    "Joyo_order": 3
+  },
+  "筆": {
+    "RTK_order": 1014,
+    "Joyo_order": 3
+  },
+  "筒": {
+    "RTK_order": 1015,
+    "Joyo_order": 7
+  },
+  "等": {
+    "RTK_order": 1016,
+    "Joyo_order": 3
+  },
+  "算": {
+    "RTK_order": 1017,
+    "Joyo_order": 2
+  },
+  "答": {
+    "RTK_order": 1018,
+    "Joyo_order": 2
+  },
+  "策": {
+    "RTK_order": 1019,
+    "Joyo_order": 6
+  },
+  "簿": {
+    "RTK_order": 1020,
+    "Joyo_order": 7
+  },
+  "築": {
+    "RTK_order": 1021,
+    "Joyo_order": 5
+  },
+  "人": {
+    "RTK_order": 1023,
+    "Joyo_order": 1
+  },
+  "佐": {
+    "RTK_order": 1024,
+    "Joyo_order": 7
+  },
+  "但": {
+    "RTK_order": 1026,
+    "Joyo_order": 7
+  },
+  "住": {
+    "RTK_order": 1027,
+    "Joyo_order": 3
+  },
+  "位": {
+    "RTK_order": 1028,
+    "Joyo_order": 4
+  },
+  "仲": {
+    "RTK_order": 1029,
+    "Joyo_order": 4
+  },
+  "体": {
+    "RTK_order": 1030,
+    "Joyo_order": 2
+  },
+  "悠": {
+    "RTK_order": 1031,
+    "Joyo_order": 7
+  },
+  "件": {
+    "RTK_order": 1032,
+    "Joyo_order": 5
+  },
+  "仕": {
+    "RTK_order": 1033,
+    "Joyo_order": 3
+  },
+  "他": {
+    "RTK_order": 1034,
+    "Joyo_order": 3
+  },
+  "伏": {
+    "RTK_order": 1035,
+    "Joyo_order": 7
+  },
+  "伝": {
+    "RTK_order": 1036,
+    "Joyo_order": 4
+  },
+  "仏": {
+    "RTK_order": 1037,
+    "Joyo_order": 5
+  },
+  "休": {
+    "RTK_order": 1038,
+    "Joyo_order": 1
+  },
+  "仮": {
+    "RTK_order": 1039,
+    "Joyo_order": 5
+  },
+  "伯": {
+    "RTK_order": 1041,
+    "Joyo_order": 7
+  },
+  "俗": {
+    "RTK_order": 1042,
+    "Joyo_order": 7
+  },
+  "信": {
+    "RTK_order": 1043,
+    "Joyo_order": 4
+  },
+  "佳": {
+    "RTK_order": 1044,
+    "Joyo_order": 7
+  },
+  "依": {
+    "RTK_order": 1045,
+    "Joyo_order": 7
+  },
+  "例": {
+    "RTK_order": 1046,
+    "Joyo_order": 4
+  },
+  "個": {
+    "RTK_order": 1047,
+    "Joyo_order": 5
+  },
+  "健": {
+    "RTK_order": 1048,
+    "Joyo_order": 4
+  },
+  "側": {
+    "RTK_order": 1049,
+    "Joyo_order": 4
+  },
+  "侍": {
+    "RTK_order": 1050,
+    "Joyo_order": 7
+  },
+  "停": {
+    "RTK_order": 1051,
+    "Joyo_order": 4
+  },
+  "値": {
+    "RTK_order": 1052,
+    "Joyo_order": 6
+  },
+  "倣": {
+    "RTK_order": 1053,
+    "Joyo_order": 7
+  },
+  "倒": {
+    "RTK_order": 1055,
+    "Joyo_order": 7
+  },
+  "偵": {
+    "RTK_order": 1056,
+    "Joyo_order": 7
+  },
+  "僧": {
+    "RTK_order": 1057,
+    "Joyo_order": 7
+  },
+  "億": {
+    "RTK_order": 1058,
+    "Joyo_order": 4
+  },
+  "儀": {
+    "RTK_order": 1059,
+    "Joyo_order": 7
+  },
+  "償": {
+    "RTK_order": 1060,
+    "Joyo_order": 7
+  },
+  "仙": {
+    "RTK_order": 1061,
+    "Joyo_order": 7
+  },
+  "催": {
+    "RTK_order": 1062,
+    "Joyo_order": 7
+  },
+  "仁": {
+    "RTK_order": 1063,
+    "Joyo_order": 6
+  },
+  "侮": {
+    "RTK_order": 1064,
+    "Joyo_order": 7
+  },
+  "使": {
+    "RTK_order": 1065,
+    "Joyo_order": 3
+  },
+  "便": {
+    "RTK_order": 1066,
+    "Joyo_order": 4
+  },
+  "倍": {
+    "RTK_order": 1067,
+    "Joyo_order": 3
+  },
+  "優": {
+    "RTK_order": 1068,
+    "Joyo_order": 6
+  },
+  "伐": {
+    "RTK_order": 1069,
+    "Joyo_order": 7
+  },
+  "宿": {
+    "RTK_order": 1070,
+    "Joyo_order": 3
+  },
+  "傷": {
+    "RTK_order": 1071,
+    "Joyo_order": 6
+  },
+  "保": {
+    "RTK_order": 1072,
+    "Joyo_order": 5
+  },
+  "褒": {
+    "RTK_order": 1073,
+    "Joyo_order": 7
+  },
+  "傑": {
+    "RTK_order": 1074,
+    "Joyo_order": 7
+  },
+  "付": {
+    "RTK_order": 1075,
+    "Joyo_order": 4
+  },
+  "符": {
+    "RTK_order": 1076,
+    "Joyo_order": 7
+  },
+  "府": {
+    "RTK_order": 1077,
+    "Joyo_order": 4
+  },
+  "任": {
+    "RTK_order": 1078,
+    "Joyo_order": 5
+  },
+  "賃": {
+    "RTK_order": 1079,
+    "Joyo_order": 6
+  },
+  "代": {
+    "RTK_order": 1080,
+    "Joyo_order": 3
+  },
+  "袋": {
+    "RTK_order": 1081,
+    "Joyo_order": 7
+  },
+  "貸": {
+    "RTK_order": 1082,
+    "Joyo_order": 5
+  },
+  "化": {
+    "RTK_order": 1083,
+    "Joyo_order": 3
+  },
+  "花": {
+    "RTK_order": 1084,
+    "Joyo_order": 1
+  },
+  "貨": {
+    "RTK_order": 1085,
+    "Joyo_order": 4
+  },
+  "傾": {
+    "RTK_order": 1086,
+    "Joyo_order": 7
+  },
+  "何": {
+    "RTK_order": 1087,
+    "Joyo_order": 2
+  },
+  "荷": {
+    "RTK_order": 1088,
+    "Joyo_order": 3
+  },
+  "俊": {
+    "RTK_order": 1089,
+    "Joyo_order": 7
+  },
+  "傍": {
+    "RTK_order": 1090,
+    "Joyo_order": 7
+  },
+  "久": {
+    "RTK_order": 1092,
+    "Joyo_order": 5
+  },
+  "畝": {
+    "RTK_order": 1093,
+    "Joyo_order": 7
+  },
+  "囚": {
+    "RTK_order": 1094,
+    "Joyo_order": 7
+  },
+  "内": {
+    "RTK_order": 1095,
+    "Joyo_order": 2
+  },
+  "丙": {
+    "RTK_order": 1096,
+    "Joyo_order": 7
+  },
+  "柄": {
+    "RTK_order": 1097,
+    "Joyo_order": 7
+  },
+  "肉": {
+    "RTK_order": 1098,
+    "Joyo_order": 2
+  },
+  "腐": {
+    "RTK_order": 1099,
+    "Joyo_order": 7
+  },
+  "座": {
+    "RTK_order": 1100,
+    "Joyo_order": 6
+  },
+  "卒": {
+    "RTK_order": 1102,
+    "Joyo_order": 4
+  },
+  "傘": {
+    "RTK_order": 1103,
+    "Joyo_order": 7
+  },
+  "匁": {
+    "RTK_order": 1104,
+    "Joyo_order": 99
+  },
+  "以": {
+    "RTK_order": 1105,
+    "Joyo_order": 4
+  },
+  "似": {
+    "RTK_order": 1106,
+    "Joyo_order": 5
+  },
+  "併": {
+    "RTK_order": 1107,
+    "Joyo_order": 7
+  },
+  "瓦": {
+    "RTK_order": 1108,
+    "Joyo_order": 7
+  },
+  "瓶": {
+    "RTK_order": 1109,
+    "Joyo_order": 7
+  },
+  "宮": {
+    "RTK_order": 1110,
+    "Joyo_order": 3
+  },
+  "営": {
+    "RTK_order": 1111,
+    "Joyo_order": 5
+  },
+  "善": {
+    "RTK_order": 1112,
+    "Joyo_order": 6
+  },
+  "年": {
+    "RTK_order": 1114,
+    "Joyo_order": 1
+  },
+  "夜": {
+    "RTK_order": 1115,
+    "Joyo_order": 2
+  },
+  "液": {
+    "RTK_order": 1116,
+    "Joyo_order": 5
+  },
+  "塚": {
+    "RTK_order": 1117,
+    "Joyo_order": 7
+  },
+  "幣": {
+    "RTK_order": 1118,
+    "Joyo_order": 7
+  },
+  "弊": {
+    "RTK_order": 1120,
+    "Joyo_order": 7
+  },
+  "喚": {
+    "RTK_order": 1121,
+    "Joyo_order": 7
+  },
+  "換": {
+    "RTK_order": 1122,
+    "Joyo_order": 7
+  },
+  "融": {
+    "RTK_order": 1123,
+    "Joyo_order": 7
+  },
+  "施": {
+    "RTK_order": 1124,
+    "Joyo_order": 7
+  },
+  "旋": {
+    "RTK_order": 1125,
+    "Joyo_order": 7
+  },
+  "遊": {
+    "RTK_order": 1126,
+    "Joyo_order": 3
+  },
+  "旅": {
+    "RTK_order": 1127,
+    "Joyo_order": 3
+  },
+  "勿": {
+    "RTK_order": 1128,
+    "Joyo_order": 99
+  },
+  "物": {
+    "RTK_order": 1129,
+    "Joyo_order": 3
+  },
+  "易": {
+    "RTK_order": 1130,
+    "Joyo_order": 5
+  },
+  "賜": {
+    "RTK_order": 1131,
+    "Joyo_order": 7
+  },
+  "尿": {
+    "RTK_order": 1132,
+    "Joyo_order": 7
+  },
+  "尼": {
+    "RTK_order": 1133,
+    "Joyo_order": 7
+  },
+  "泥": {
+    "RTK_order": 1135,
+    "Joyo_order": 7
+  },
+  "塀": {
+    "RTK_order": 1136,
+    "Joyo_order": 7
+  },
+  "履": {
+    "RTK_order": 1137,
+    "Joyo_order": 7
+  },
+  "屋": {
+    "RTK_order": 1138,
+    "Joyo_order": 3
+  },
+  "握": {
+    "RTK_order": 1139,
+    "Joyo_order": 7
+  },
+  "屈": {
+    "RTK_order": 1140,
+    "Joyo_order": 7
+  },
+  "掘": {
+    "RTK_order": 1141,
+    "Joyo_order": 7
+  },
+  "堀": {
+    "RTK_order": 1142,
+    "Joyo_order": 7
+  },
+  "居": {
+    "RTK_order": 1143,
+    "Joyo_order": 5
+  },
+  "据": {
+    "RTK_order": 1144,
+    "Joyo_order": 7
+  },
+  "層": {
+    "RTK_order": 1146,
+    "Joyo_order": 6
+  },
+  "局": {
+    "RTK_order": 1147,
+    "Joyo_order": 3
+  },
+  "遅": {
+    "RTK_order": 1148,
+    "Joyo_order": 7
+  },
+  "漏": {
+    "RTK_order": 1149,
+    "Joyo_order": 7
+  },
+  "刷": {
+    "RTK_order": 1150,
+    "Joyo_order": 4
+  },
+  "尺": {
+    "RTK_order": 1151,
+    "Joyo_order": 6
+  },
+  "尽": {
+    "RTK_order": 1152,
+    "Joyo_order": 7
+  },
+  "沢": {
+    "RTK_order": 1153,
+    "Joyo_order": 7
+  },
+  "訳": {
+    "RTK_order": 1154,
+    "Joyo_order": 6
+  },
+  "択": {
+    "RTK_order": 1155,
+    "Joyo_order": 7
+  },
+  "昼": {
+    "RTK_order": 1156,
+    "Joyo_order": 2
+  },
+  "戸": {
+    "RTK_order": 1157,
+    "Joyo_order": 2
+  },
+  "肩": {
+    "RTK_order": 1158,
+    "Joyo_order": 7
+  },
+  "房": {
+    "RTK_order": 1159,
+    "Joyo_order": 7
+  },
+  "扇": {
+    "RTK_order": 1160,
+    "Joyo_order": 7
+  },
+  "炉": {
+    "RTK_order": 1161,
+    "Joyo_order": 7
+  },
+  "戻": {
+    "RTK_order": 1162,
+    "Joyo_order": 7
+  },
+  "涙": {
+    "RTK_order": 1163,
+    "Joyo_order": 7
+  },
+  "雇": {
+    "RTK_order": 1164,
+    "Joyo_order": 7
+  },
+  "顧": {
+    "RTK_order": 1165,
+    "Joyo_order": 7
+  },
+  "啓": {
+    "RTK_order": 1166,
+    "Joyo_order": 7
+  },
+  "示": {
+    "RTK_order": 1167,
+    "Joyo_order": 5
+  },
+  "礼": {
+    "RTK_order": 1168,
+    "Joyo_order": 3
+  },
+  "祥": {
+    "RTK_order": 1169,
+    "Joyo_order": 7
+  },
+  "祝": {
+    "RTK_order": 1170,
+    "Joyo_order": 4
+  },
+  "福": {
+    "RTK_order": 1171,
+    "Joyo_order": 3
+  },
+  "祉": {
+    "RTK_order": 1172,
+    "Joyo_order": 7
+  },
+  "社": {
+    "RTK_order": 1173,
+    "Joyo_order": 2
+  },
+  "視": {
+    "RTK_order": 1174,
+    "Joyo_order": 6
+  },
+  "奈": {
+    "RTK_order": 1175,
+    "Joyo_order": 7
+  },
+  "尉": {
+    "RTK_order": 1176,
+    "Joyo_order": 7
+  },
+  "慰": {
+    "RTK_order": 1177,
+    "Joyo_order": 7
+  },
+  "款": {
+    "RTK_order": 1178,
+    "Joyo_order": 7
+  },
+  "禁": {
+    "RTK_order": 1179,
+    "Joyo_order": 5
+  },
+  "襟": {
+    "RTK_order": 1180,
+    "Joyo_order": 7
+  },
+  "宗": {
+    "RTK_order": 1181,
+    "Joyo_order": 6
+  },
+  "崇": {
+    "RTK_order": 1182,
+    "Joyo_order": 7
+  },
+  "祭": {
+    "RTK_order": 1183,
+    "Joyo_order": 3
+  },
+  "察": {
+    "RTK_order": 1184,
+    "Joyo_order": 4
+  },
+  "擦": {
+    "RTK_order": 1185,
+    "Joyo_order": 7
+  },
+  "由": {
+    "RTK_order": 1186,
+    "Joyo_order": 3
+  },
+  "抽": {
+    "RTK_order": 1187,
+    "Joyo_order": 7
+  },
+  "油": {
+    "RTK_order": 1188,
+    "Joyo_order": 3
+  },
+  "袖": {
+    "RTK_order": 1189,
+    "Joyo_order": 7
+  },
+  "宙": {
+    "RTK_order": 1190,
+    "Joyo_order": 6
+  },
+  "届": {
+    "RTK_order": 1191,
+    "Joyo_order": 6
+  },
+  "笛": {
+    "RTK_order": 1192,
+    "Joyo_order": 3
+  },
+  "軸": {
+    "RTK_order": 1193,
+    "Joyo_order": 7
+  },
+  "甲": {
+    "RTK_order": 1194,
+    "Joyo_order": 7
+  },
+  "押": {
+    "RTK_order": 1195,
+    "Joyo_order": 7
+  },
+  "岬": {
+    "RTK_order": 1196,
+    "Joyo_order": 7
+  },
+  "挿": {
+    "RTK_order": 1197,
+    "Joyo_order": 7
+  },
+  "申": {
+    "RTK_order": 1198,
+    "Joyo_order": 3
+  },
+  "伸": {
+    "RTK_order": 1199,
+    "Joyo_order": 7
+  },
+  "神": {
+    "RTK_order": 1200,
+    "Joyo_order": 3
+  },
+  "捜": {
+    "RTK_order": 1201,
+    "Joyo_order": 7
+  },
+  "果": {
+    "RTK_order": 1202,
+    "Joyo_order": 4
+  },
+  "菓": {
+    "RTK_order": 1203,
+    "Joyo_order": 7
+  },
+  "課": {
+    "RTK_order": 1204,
+    "Joyo_order": 4
+  },
+  "裸": {
+    "RTK_order": 1205,
+    "Joyo_order": 7
+  },
+  "斤": {
+    "RTK_order": 1206,
+    "Joyo_order": 7
+  },
+  "析": {
+    "RTK_order": 1207,
+    "Joyo_order": 7
+  },
+  "所": {
+    "RTK_order": 1208,
+    "Joyo_order": 3
+  },
+  "祈": {
+    "RTK_order": 1209,
+    "Joyo_order": 7
+  },
+  "近": {
+    "RTK_order": 1210,
+    "Joyo_order": 2
+  },
+  "折": {
+    "RTK_order": 1211,
+    "Joyo_order": 4
+  },
+  "哲": {
+    "RTK_order": 1212,
+    "Joyo_order": 7
+  },
+  "逝": {
+    "RTK_order": 1213,
+    "Joyo_order": 7
+  },
+  "誓": {
+    "RTK_order": 1214,
+    "Joyo_order": 7
+  },
+  "暫": {
+    "RTK_order": 1216,
+    "Joyo_order": 7
+  },
+  "漸": {
+    "RTK_order": 1217,
+    "Joyo_order": 7
+  },
+  "断": {
+    "RTK_order": 1218,
+    "Joyo_order": 5
+  },
+  "質": {
+    "RTK_order": 1219,
+    "Joyo_order": 5
+  },
+  "斥": {
+    "RTK_order": 1220,
+    "Joyo_order": 7
+  },
+  "訴": {
+    "RTK_order": 1221,
+    "Joyo_order": 7
+  },
+  "昨": {
+    "RTK_order": 1222,
+    "Joyo_order": 4
+  },
+  "詐": {
+    "RTK_order": 1223,
+    "Joyo_order": 7
+  },
+  "作": {
+    "RTK_order": 1224,
+    "Joyo_order": 2
+  },
+  "雪": {
+    "RTK_order": 1225,
+    "Joyo_order": 2
+  },
+  "録": {
+    "RTK_order": 1226,
+    "Joyo_order": 4
+  },
+  "尋": {
+    "RTK_order": 1228,
+    "Joyo_order": 7
+  },
+  "急": {
+    "RTK_order": 1229,
+    "Joyo_order": 3
+  },
+  "穏": {
+    "RTK_order": 1230,
+    "Joyo_order": 7
+  },
+  "侵": {
+    "RTK_order": 1231,
+    "Joyo_order": 7
+  },
+  "浸": {
+    "RTK_order": 1232,
+    "Joyo_order": 7
+  },
+  "寝": {
+    "RTK_order": 1233,
+    "Joyo_order": 7
+  },
+  "婦": {
+    "RTK_order": 1234,
+    "Joyo_order": 5
+  },
+  "掃": {
+    "RTK_order": 1235,
+    "Joyo_order": 7
+  },
+  "当": {
+    "RTK_order": 1236,
+    "Joyo_order": 2
+  },
+  "争": {
+    "RTK_order": 1238,
+    "Joyo_order": 4
+  },
+  "浄": {
+    "RTK_order": 1239,
+    "Joyo_order": 7
+  },
+  "事": {
+    "RTK_order": 1240,
+    "Joyo_order": 3
+  },
+  "唐": {
+    "RTK_order": 1241,
+    "Joyo_order": 7
+  },
+  "糖": {
+    "RTK_order": 1242,
+    "Joyo_order": 6
+  },
+  "康": {
+    "RTK_order": 1243,
+    "Joyo_order": 4
+  },
+  "逮": {
+    "RTK_order": 1244,
+    "Joyo_order": 7
+  },
+  "伊": {
+    "RTK_order": 1245,
+    "Joyo_order": 99
+  },
+  "君": {
+    "RTK_order": 1246,
+    "Joyo_order": 3
+  },
+  "群": {
+    "RTK_order": 1247,
+    "Joyo_order": 5
+  },
+  "耐": {
+    "RTK_order": 1248,
+    "Joyo_order": 7
+  },
+  "需": {
+    "RTK_order": 1249,
+    "Joyo_order": 7
+  },
+  "儒": {
+    "RTK_order": 1250,
+    "Joyo_order": 7
+  },
+  "端": {
+    "RTK_order": 1251,
+    "Joyo_order": 7
+  },
+  "両": {
+    "RTK_order": 1252,
+    "Joyo_order": 3
+  },
+  "満": {
+    "RTK_order": 1253,
+    "Joyo_order": 4
+  },
+  "画": {
+    "RTK_order": 1254,
+    "Joyo_order": 2
+  },
+  "歯": {
+    "RTK_order": 1255,
+    "Joyo_order": 3
+  },
+  "曲": {
+    "RTK_order": 1256,
+    "Joyo_order": 3
+  },
+  "曹": {
+    "RTK_order": 1257,
+    "Joyo_order": 7
+  },
+  "遭": {
+    "RTK_order": 1258,
+    "Joyo_order": 7
+  },
+  "漕": {
+    "RTK_order": 1259,
+    "Joyo_order": 99
+  },
+  "槽": {
+    "RTK_order": 1260,
+    "Joyo_order": 7
+  },
+  "斗": {
+    "RTK_order": 1261,
+    "Joyo_order": 7
+  },
+  "料": {
+    "RTK_order": 1262,
+    "Joyo_order": 4
+  },
+  "科": {
+    "RTK_order": 1263,
+    "Joyo_order": 2
+  },
+  "図": {
+    "RTK_order": 1264,
+    "Joyo_order": 2
+  },
+  "用": {
+    "RTK_order": 1265,
+    "Joyo_order": 2
+  },
+  "庸": {
+    "RTK_order": 1266,
+    "Joyo_order": 7
+  },
+  "備": {
+    "RTK_order": 1267,
+    "Joyo_order": 5
+  },
+  "昔": {
+    "RTK_order": 1268,
+    "Joyo_order": 3
+  },
+  "錯": {
+    "RTK_order": 1269,
+    "Joyo_order": 7
+  },
+  "借": {
+    "RTK_order": 1270,
+    "Joyo_order": 4
+  },
+  "惜": {
+    "RTK_order": 1271,
+    "Joyo_order": 7
+  },
+  "措": {
+    "RTK_order": 1272,
+    "Joyo_order": 7
+  },
+  "散": {
+    "RTK_order": 1273,
+    "Joyo_order": 4
+  },
+  "廿": {
+    "RTK_order": 1274,
+    "Joyo_order": 99
+  },
+  "庶": {
+    "RTK_order": 1275,
+    "Joyo_order": 7
+  },
+  "遮": {
+    "RTK_order": 1276,
+    "Joyo_order": 7
+  },
+  "席": {
+    "RTK_order": 1277,
+    "Joyo_order": 4
+  },
+  "度": {
+    "RTK_order": 1278,
+    "Joyo_order": 3
+  },
+  "渡": {
+    "RTK_order": 1279,
+    "Joyo_order": 7
+  },
+  "奔": {
+    "RTK_order": 1280,
+    "Joyo_order": 7
+  },
+  "噴": {
+    "RTK_order": 1281,
+    "Joyo_order": 7
+  },
+  "墳": {
+    "RTK_order": 1282,
+    "Joyo_order": 7
+  },
+  "憤": {
+    "RTK_order": 1283,
+    "Joyo_order": 7
+  },
+  "焼": {
+    "RTK_order": 1284,
+    "Joyo_order": 4
+  },
+  "暁": {
+    "RTK_order": 1285,
+    "Joyo_order": 7
+  },
+  "半": {
+    "RTK_order": 1286,
+    "Joyo_order": 2
+  },
+  "伴": {
+    "RTK_order": 1287,
+    "Joyo_order": 7
+  },
+  "畔": {
+    "RTK_order": 1288,
+    "Joyo_order": 7
+  },
+  "判": {
+    "RTK_order": 1289,
+    "Joyo_order": 5
+  },
+  "券": {
+    "RTK_order": 1291,
+    "Joyo_order": 5
+  },
+  "巻": {
+    "RTK_order": 1292,
+    "Joyo_order": 6
+  },
+  "圏": {
+    "RTK_order": 1293,
+    "Joyo_order": 7
+  },
+  "勝": {
+    "RTK_order": 1294,
+    "Joyo_order": 3
+  },
+  "藤": {
+    "RTK_order": 1295,
+    "Joyo_order": 7
+  },
+  "謄": {
+    "RTK_order": 1296,
+    "Joyo_order": 7
+  },
+  "片": {
+    "RTK_order": 1297,
+    "Joyo_order": 6
+  },
+  "版": {
+    "RTK_order": 1298,
+    "Joyo_order": 5
+  },
+  "之": {
+    "RTK_order": 1299,
+    "Joyo_order": 99
+  },
+  "乏": {
+    "RTK_order": 1300,
+    "Joyo_order": 7
+  },
+  "芝": {
+    "RTK_order": 1301,
+    "Joyo_order": 7
+  },
+  "不": {
+    "RTK_order": 1302,
+    "Joyo_order": 4
+  },
+  "否": {
+    "RTK_order": 1303,
+    "Joyo_order": 6
+  },
+  "杯": {
+    "RTK_order": 1304,
+    "Joyo_order": 7
+  },
+  "矢": {
+    "RTK_order": 1305,
+    "Joyo_order": 2
+  },
+  "矯": {
+    "RTK_order": 1306,
+    "Joyo_order": 7
+  },
+  "族": {
+    "RTK_order": 1307,
+    "Joyo_order": 3
+  },
+  "知": {
+    "RTK_order": 1308,
+    "Joyo_order": 2
+  },
+  "智": {
+    "RTK_order": 1309,
+    "Joyo_order": 99
+  },
+  "矛": {
+    "RTK_order": 1311,
+    "Joyo_order": 7
+  },
+  "柔": {
+    "RTK_order": 1312,
+    "Joyo_order": 7
+  },
+  "務": {
+    "RTK_order": 1313,
+    "Joyo_order": 5
+  },
+  "霧": {
+    "RTK_order": 1314,
+    "Joyo_order": 7
+  },
+  "班": {
+    "RTK_order": 1315,
+    "Joyo_order": 6
+  },
+  "帰": {
+    "RTK_order": 1316,
+    "Joyo_order": 2
+  },
+  "弓": {
+    "RTK_order": 1317,
+    "Joyo_order": 2
+  },
+  "引": {
+    "RTK_order": 1318,
+    "Joyo_order": 2
+  },
+  "弔": {
+    "RTK_order": 1319,
+    "Joyo_order": 7
+  },
+  "弘": {
+    "RTK_order": 1320,
+    "Joyo_order": 99
+  },
+  "強": {
+    "RTK_order": 1321,
+    "Joyo_order": 2
+  },
+  "弱": {
+    "RTK_order": 1323,
+    "Joyo_order": 2
+  },
+  "沸": {
+    "RTK_order": 1325,
+    "Joyo_order": 7
+  },
+  "費": {
+    "RTK_order": 1326,
+    "Joyo_order": 4
+  },
+  "第": {
+    "RTK_order": 1327,
+    "Joyo_order": 3
+  },
+  "弟": {
+    "RTK_order": 1328,
+    "Joyo_order": 2
+  },
+  "巧": {
+    "RTK_order": 1329,
+    "Joyo_order": 7
+  },
+  "号": {
+    "RTK_order": 1330,
+    "Joyo_order": 3
+  },
+  "朽": {
+    "RTK_order": 1331,
+    "Joyo_order": 7
+  },
+  "誇": {
+    "RTK_order": 1332,
+    "Joyo_order": 7
+  },
+  "汚": {
+    "RTK_order": 1334,
+    "Joyo_order": 7
+  },
+  "与": {
+    "RTK_order": 1335,
+    "Joyo_order": 7
+  },
+  "写": {
+    "RTK_order": 1336,
+    "Joyo_order": 3
+  },
+  "身": {
+    "RTK_order": 1337,
+    "Joyo_order": 3
+  },
+  "射": {
+    "RTK_order": 1338,
+    "Joyo_order": 6
+  },
+  "謝": {
+    "RTK_order": 1339,
+    "Joyo_order": 5
+  },
+  "老": {
+    "RTK_order": 1340,
+    "Joyo_order": 4
+  },
+  "考": {
+    "RTK_order": 1341,
+    "Joyo_order": 2
+  },
+  "孝": {
+    "RTK_order": 1342,
+    "Joyo_order": 6
+  },
+  "教": {
+    "RTK_order": 1343,
+    "Joyo_order": 2
+  },
+  "拷": {
+    "RTK_order": 1344,
+    "Joyo_order": 7
+  },
+  "者": {
+    "RTK_order": 1345,
+    "Joyo_order": 3
+  },
+  "煮": {
+    "RTK_order": 1346,
+    "Joyo_order": 7
+  },
+  "著": {
+    "RTK_order": 1347,
+    "Joyo_order": 6
+  },
+  "署": {
+    "RTK_order": 1349,
+    "Joyo_order": 6
+  },
+  "暑": {
+    "RTK_order": 1350,
+    "Joyo_order": 3
+  },
+  "諸": {
+    "RTK_order": 1351,
+    "Joyo_order": 6
+  },
+  "猪": {
+    "RTK_order": 1352,
+    "Joyo_order": 99
+  },
+  "渚": {
+    "RTK_order": 1353,
+    "Joyo_order": 99
+  },
+  "賭": {
+    "RTK_order": 1354,
+    "Joyo_order": 7
+  },
+  "峡": {
+    "RTK_order": 1355,
+    "Joyo_order": 7
+  },
+  "狭": {
+    "RTK_order": 1356,
+    "Joyo_order": 7
+  },
+  "挟": {
+    "RTK_order": 1357,
+    "Joyo_order": 7
+  },
+  "追": {
+    "RTK_order": 1359,
+    "Joyo_order": 3
+  },
+  "師": {
+    "RTK_order": 1361,
+    "Joyo_order": 5
+  },
+  "帥": {
+    "RTK_order": 1362,
+    "Joyo_order": 7
+  },
+  "官": {
+    "RTK_order": 1363,
+    "Joyo_order": 4
+  },
+  "棺": {
+    "RTK_order": 1364,
+    "Joyo_order": 7
+  },
+  "管": {
+    "RTK_order": 1365,
+    "Joyo_order": 4
+  },
+  "父": {
+    "RTK_order": 1366,
+    "Joyo_order": 2
+  },
+  "交": {
+    "RTK_order": 1368,
+    "Joyo_order": 2
+  },
+  "効": {
+    "RTK_order": 1369,
+    "Joyo_order": 5
+  },
+  "較": {
+    "RTK_order": 1370,
+    "Joyo_order": 7
+  },
+  "校": {
+    "RTK_order": 1371,
+    "Joyo_order": 1
+  },
+  "足": {
+    "RTK_order": 1372,
+    "Joyo_order": 1
+  },
+  "促": {
+    "RTK_order": 1373,
+    "Joyo_order": 7
+  },
+  "距": {
+    "RTK_order": 1375,
+    "Joyo_order": 7
+  },
+  "路": {
+    "RTK_order": 1376,
+    "Joyo_order": 3
+  },
+  "露": {
+    "RTK_order": 1377,
+    "Joyo_order": 7
+  },
+  "跳": {
+    "RTK_order": 1378,
+    "Joyo_order": 7
+  },
+  "躍": {
+    "RTK_order": 1379,
+    "Joyo_order": 7
+  },
+  "践": {
+    "RTK_order": 1380,
+    "Joyo_order": 7
+  },
+  "踏": {
+    "RTK_order": 1381,
+    "Joyo_order": 7
+  },
+  "骨": {
+    "RTK_order": 1383,
+    "Joyo_order": 6
+  },
+  "滑": {
+    "RTK_order": 1384,
+    "Joyo_order": 7
+  },
+  "髄": {
+    "RTK_order": 1385,
+    "Joyo_order": 7
+  },
+  "禍": {
+    "RTK_order": 1386,
+    "Joyo_order": 7
+  },
+  "渦": {
+    "RTK_order": 1387,
+    "Joyo_order": 7
+  },
+  "過": {
+    "RTK_order": 1389,
+    "Joyo_order": 5
+  },
+  "阪": {
+    "RTK_order": 1390,
+    "Joyo_order": 7
+  },
+  "阿": {
+    "RTK_order": 1391,
+    "Joyo_order": 99
+  },
+  "際": {
+    "RTK_order": 1392,
+    "Joyo_order": 5
+  },
+  "障": {
+    "RTK_order": 1393,
+    "Joyo_order": 6
+  },
+  "随": {
+    "RTK_order": 1395,
+    "Joyo_order": 7
+  },
+  "陪": {
+    "RTK_order": 1396,
+    "Joyo_order": 7
+  },
+  "陽": {
+    "RTK_order": 1397,
+    "Joyo_order": 3
+  },
+  "陳": {
+    "RTK_order": 1398,
+    "Joyo_order": 7
+  },
+  "防": {
+    "RTK_order": 1399,
+    "Joyo_order": 5
+  },
+  "附": {
+    "RTK_order": 1400,
+    "Joyo_order": 7
+  },
+  "院": {
+    "RTK_order": 1401,
+    "Joyo_order": 3
+  },
+  "陣": {
+    "RTK_order": 1402,
+    "Joyo_order": 7
+  },
+  "隊": {
+    "RTK_order": 1403,
+    "Joyo_order": 4
+  },
+  "墜": {
+    "RTK_order": 1404,
+    "Joyo_order": 7
+  },
+  "降": {
+    "RTK_order": 1405,
+    "Joyo_order": 6
+  },
+  "階": {
+    "RTK_order": 1406,
+    "Joyo_order": 3
+  },
+  "陛": {
+    "RTK_order": 1407,
+    "Joyo_order": 6
+  },
+  "隣": {
+    "RTK_order": 1408,
+    "Joyo_order": 7
+  },
+  "隔": {
+    "RTK_order": 1409,
+    "Joyo_order": 7
+  },
+  "隠": {
+    "RTK_order": 1410,
+    "Joyo_order": 7
+  },
+  "堕": {
+    "RTK_order": 1411,
+    "Joyo_order": 7
+  },
+  "陥": {
+    "RTK_order": 1412,
+    "Joyo_order": 7
+  },
+  "穴": {
+    "RTK_order": 1413,
+    "Joyo_order": 6
+  },
+  "空": {
+    "RTK_order": 1414,
+    "Joyo_order": 1
+  },
+  "控": {
+    "RTK_order": 1415,
+    "Joyo_order": 7
+  },
+  "突": {
+    "RTK_order": 1416,
+    "Joyo_order": 7
+  },
+  "究": {
+    "RTK_order": 1417,
+    "Joyo_order": 3
+  },
+  "窒": {
+    "RTK_order": 1418,
+    "Joyo_order": 7
+  },
+  "窃": {
+    "RTK_order": 1419,
+    "Joyo_order": 7
+  },
+  "窪": {
+    "RTK_order": 1421,
+    "Joyo_order": 99
+  },
+  "搾": {
+    "RTK_order": 1422,
+    "Joyo_order": 7
+  },
+  "窯": {
+    "RTK_order": 1423,
+    "Joyo_order": 7
+  },
+  "窮": {
+    "RTK_order": 1424,
+    "Joyo_order": 7
+  },
+  "探": {
+    "RTK_order": 1425,
+    "Joyo_order": 6
+  },
+  "深": {
+    "RTK_order": 1426,
+    "Joyo_order": 3
+  },
+  "丘": {
+    "RTK_order": 1427,
+    "Joyo_order": 7
+  },
+  "岳": {
+    "RTK_order": 1428,
+    "Joyo_order": 7
+  },
+  "兵": {
+    "RTK_order": 1429,
+    "Joyo_order": 4
+  },
+  "浜": {
+    "RTK_order": 1430,
+    "Joyo_order": 7
+  },
+  "糸": {
+    "RTK_order": 1431,
+    "Joyo_order": 1
+  },
+  "織": {
+    "RTK_order": 1432,
+    "Joyo_order": 5
+  },
+  "繕": {
+    "RTK_order": 1433,
+    "Joyo_order": 7
+  },
+  "縮": {
+    "RTK_order": 1434,
+    "Joyo_order": 6
+  },
+  "繁": {
+    "RTK_order": 1435,
+    "Joyo_order": 7
+  },
+  "縦": {
+    "RTK_order": 1436,
+    "Joyo_order": 6
+  },
+  "線": {
+    "RTK_order": 1438,
+    "Joyo_order": 2
+  },
+  "締": {
+    "RTK_order": 1440,
+    "Joyo_order": 7
+  },
+  "維": {
+    "RTK_order": 1441,
+    "Joyo_order": 7
+  },
+  "羅": {
+    "RTK_order": 1442,
+    "Joyo_order": 7
+  },
+  "練": {
+    "RTK_order": 1443,
+    "Joyo_order": 3
+  },
+  "緒": {
+    "RTK_order": 1444,
+    "Joyo_order": 7
+  },
+  "続": {
+    "RTK_order": 1445,
+    "Joyo_order": 4
+  },
+  "絵": {
+    "RTK_order": 1446,
+    "Joyo_order": 2
+  },
+  "統": {
+    "RTK_order": 1447,
+    "Joyo_order": 5
+  },
+  "絞": {
+    "RTK_order": 1448,
+    "Joyo_order": 7
+  },
+  "給": {
+    "RTK_order": 1449,
+    "Joyo_order": 4
+  },
+  "絡": {
+    "RTK_order": 1450,
+    "Joyo_order": 7
+  },
+  "結": {
+    "RTK_order": 1451,
+    "Joyo_order": 4
+  },
+  "終": {
+    "RTK_order": 1452,
+    "Joyo_order": 3
+  },
+  "級": {
+    "RTK_order": 1453,
+    "Joyo_order": 3
+  },
+  "紀": {
+    "RTK_order": 1454,
+    "Joyo_order": 4
+  },
+  "紅": {
+    "RTK_order": 1455,
+    "Joyo_order": 6
+  },
+  "納": {
+    "RTK_order": 1456,
+    "Joyo_order": 6
+  },
+  "紡": {
+    "RTK_order": 1457,
+    "Joyo_order": 7
+  },
+  "紛": {
+    "RTK_order": 1458,
+    "Joyo_order": 7
+  },
+  "紹": {
+    "RTK_order": 1459,
+    "Joyo_order": 7
+  },
+  "経": {
+    "RTK_order": 1460,
+    "Joyo_order": 5
+  },
+  "紳": {
+    "RTK_order": 1461,
+    "Joyo_order": 7
+  },
+  "約": {
+    "RTK_order": 1462,
+    "Joyo_order": 4
+  },
+  "細": {
+    "RTK_order": 1463,
+    "Joyo_order": 2
+  },
+  "累": {
+    "RTK_order": 1464,
+    "Joyo_order": 7
+  },
+  "索": {
+    "RTK_order": 1465,
+    "Joyo_order": 7
+  },
+  "総": {
+    "RTK_order": 1466,
+    "Joyo_order": 5
+  },
+  "綿": {
+    "RTK_order": 1467,
+    "Joyo_order": 5
+  },
+  "絹": {
+    "RTK_order": 1468,
+    "Joyo_order": 6
+  },
+  "繰": {
+    "RTK_order": 1469,
+    "Joyo_order": 7
+  },
+  "継": {
+    "RTK_order": 1470,
+    "Joyo_order": 7
+  },
+  "緑": {
+    "RTK_order": 1471,
+    "Joyo_order": 3
+  },
+  "縁": {
+    "RTK_order": 1472,
+    "Joyo_order": 7
+  },
+  "網": {
+    "RTK_order": 1473,
+    "Joyo_order": 7
+  },
+  "緊": {
+    "RTK_order": 1474,
+    "Joyo_order": 7
+  },
+  "紫": {
+    "RTK_order": 1475,
+    "Joyo_order": 7
+  },
+  "縛": {
+    "RTK_order": 1476,
+    "Joyo_order": 7
+  },
+  "縄": {
+    "RTK_order": 1477,
+    "Joyo_order": 7
+  },
+  "幼": {
+    "RTK_order": 1478,
+    "Joyo_order": 6
+  },
+  "後": {
+    "RTK_order": 1479,
+    "Joyo_order": 2
+  },
+  "幽": {
+    "RTK_order": 1480,
+    "Joyo_order": 7
+  },
+  "幾": {
+    "RTK_order": 1481,
+    "Joyo_order": 7
+  },
+  "機": {
+    "RTK_order": 1482,
+    "Joyo_order": 4
+  },
+  "玄": {
+    "RTK_order": 1484,
+    "Joyo_order": 7
+  },
+  "畜": {
+    "RTK_order": 1485,
+    "Joyo_order": 7
+  },
+  "蓄": {
+    "RTK_order": 1486,
+    "Joyo_order": 7
+  },
+  "弦": {
+    "RTK_order": 1487,
+    "Joyo_order": 7
+  },
+  "擁": {
+    "RTK_order": 1488,
+    "Joyo_order": 7
+  },
+  "滋": {
+    "RTK_order": 1489,
+    "Joyo_order": 7
+  },
+  "慈": {
+    "RTK_order": 1490,
+    "Joyo_order": 7
+  },
+  "磁": {
+    "RTK_order": 1491,
+    "Joyo_order": 6
+  },
+  "系": {
+    "RTK_order": 1492,
+    "Joyo_order": 6
+  },
+  "係": {
+    "RTK_order": 1493,
+    "Joyo_order": 3
+  },
+  "孫": {
+    "RTK_order": 1494,
+    "Joyo_order": 4
+  },
+  "懸": {
+    "RTK_order": 1495,
+    "Joyo_order": 7
+  },
+  "却": {
+    "RTK_order": 1497,
+    "Joyo_order": 7
+  },
+  "脚": {
+    "RTK_order": 1498,
+    "Joyo_order": 7
+  },
+  "卸": {
+    "RTK_order": 1499,
+    "Joyo_order": 7
+  },
+  "御": {
+    "RTK_order": 1500,
+    "Joyo_order": 7
+  },
+  "服": {
+    "RTK_order": 1501,
+    "Joyo_order": 3
+  },
+  "命": {
+    "RTK_order": 1502,
+    "Joyo_order": 3
+  },
+  "令": {
+    "RTK_order": 1503,
+    "Joyo_order": 4
+  },
+  "零": {
+    "RTK_order": 1504,
+    "Joyo_order": 7
+  },
+  "齢": {
+    "RTK_order": 1505,
+    "Joyo_order": 7
+  },
+  "冷": {
+    "RTK_order": 1506,
+    "Joyo_order": 4
+  },
+  "領": {
+    "RTK_order": 1507,
+    "Joyo_order": 5
+  },
+  "鈴": {
+    "RTK_order": 1508,
+    "Joyo_order": 7
+  },
+  "勇": {
+    "RTK_order": 1509,
+    "Joyo_order": 4
+  },
+  "通": {
+    "RTK_order": 1511,
+    "Joyo_order": 2
+  },
+  "踊": {
+    "RTK_order": 1512,
+    "Joyo_order": 7
+  },
+  "疑": {
+    "RTK_order": 1513,
+    "Joyo_order": 6
+  },
+  "擬": {
+    "RTK_order": 1514,
+    "Joyo_order": 7
+  },
+  "凝": {
+    "RTK_order": 1515,
+    "Joyo_order": 7
+  },
+  "範": {
+    "RTK_order": 1516,
+    "Joyo_order": 7
+  },
+  "犯": {
+    "RTK_order": 1517,
+    "Joyo_order": 5
+  },
+  "厄": {
+    "RTK_order": 1519,
+    "Joyo_order": 7
+  },
+  "危": {
+    "RTK_order": 1520,
+    "Joyo_order": 6
+  },
+  "宛": {
+    "RTK_order": 1521,
+    "Joyo_order": 7
+  },
+  "腕": {
+    "RTK_order": 1522,
+    "Joyo_order": 7
+  },
+  "苑": {
+    "RTK_order": 1523,
+    "Joyo_order": 99
+  },
+  "怨": {
+    "RTK_order": 1524,
+    "Joyo_order": 7
+  },
+  "柳": {
+    "RTK_order": 1525,
+    "Joyo_order": 7
+  },
+  "卵": {
+    "RTK_order": 1526,
+    "Joyo_order": 6
+  },
+  "留": {
+    "RTK_order": 1527,
+    "Joyo_order": 5
+  },
+  "貿": {
+    "RTK_order": 1529,
+    "Joyo_order": 5
+  },
+  "印": {
+    "RTK_order": 1530,
+    "Joyo_order": 4
+  },
+  "興": {
+    "RTK_order": 1533,
+    "Joyo_order": 5
+  },
+  "酉": {
+    "RTK_order": 1534,
+    "Joyo_order": 99
+  },
+  "酒": {
+    "RTK_order": 1535,
+    "Joyo_order": 3
+  },
+  "酌": {
+    "RTK_order": 1536,
+    "Joyo_order": 7
+  },
+  "酵": {
+    "RTK_order": 1538,
+    "Joyo_order": 7
+  },
+  "酷": {
+    "RTK_order": 1539,
+    "Joyo_order": 7
+  },
+  "酬": {
+    "RTK_order": 1540,
+    "Joyo_order": 7
+  },
+  "酪": {
+    "RTK_order": 1541,
+    "Joyo_order": 7
+  },
+  "酢": {
+    "RTK_order": 1542,
+    "Joyo_order": 7
+  },
+  "酔": {
+    "RTK_order": 1543,
+    "Joyo_order": 7
+  },
+  "配": {
+    "RTK_order": 1544,
+    "Joyo_order": 3
+  },
+  "酸": {
+    "RTK_order": 1545,
+    "Joyo_order": 5
+  },
+  "猶": {
+    "RTK_order": 1546,
+    "Joyo_order": 7
+  },
+  "尊": {
+    "RTK_order": 1547,
+    "Joyo_order": 6
+  },
+  "豆": {
+    "RTK_order": 1548,
+    "Joyo_order": 3
+  },
+  "頭": {
+    "RTK_order": 1549,
+    "Joyo_order": 2
+  },
+  "短": {
+    "RTK_order": 1550,
+    "Joyo_order": 3
+  },
+  "豊": {
+    "RTK_order": 1551,
+    "Joyo_order": 5
+  },
+  "鼓": {
+    "RTK_order": 1552,
+    "Joyo_order": 7
+  },
+  "喜": {
+    "RTK_order": 1553,
+    "Joyo_order": 4
+  },
+  "樹": {
+    "RTK_order": 1554,
+    "Joyo_order": 6
+  },
+  "皿": {
+    "RTK_order": 1555,
+    "Joyo_order": 3
+  },
+  "血": {
+    "RTK_order": 1556,
+    "Joyo_order": 3
+  },
+  "盆": {
+    "RTK_order": 1557,
+    "Joyo_order": 7
+  },
+  "盟": {
+    "RTK_order": 1558,
+    "Joyo_order": 6
+  },
+  "盗": {
+    "RTK_order": 1559,
+    "Joyo_order": 7
+  },
+  "温": {
+    "RTK_order": 1560,
+    "Joyo_order": 3
+  },
+  "監": {
+    "RTK_order": 1562,
+    "Joyo_order": 7
+  },
+  "濫": {
+    "RTK_order": 1563,
+    "Joyo_order": 7
+  },
+  "鑑": {
+    "RTK_order": 1564,
+    "Joyo_order": 7
+  },
+  "猛": {
+    "RTK_order": 1566,
+    "Joyo_order": 7
+  },
+  "盛": {
+    "RTK_order": 1567,
+    "Joyo_order": 6
+  },
+  "塩": {
+    "RTK_order": 1568,
+    "Joyo_order": 4
+  },
+  "銀": {
+    "RTK_order": 1569,
+    "Joyo_order": 3
+  },
+  "恨": {
+    "RTK_order": 1570,
+    "Joyo_order": 7
+  },
+  "根": {
+    "RTK_order": 1571,
+    "Joyo_order": 3
+  },
+  "即": {
+    "RTK_order": 1572,
+    "Joyo_order": 7
+  },
+  "爵": {
+    "RTK_order": 1573,
+    "Joyo_order": 7
+  },
+  "節": {
+    "RTK_order": 1574,
+    "Joyo_order": 4
+  },
+  "退": {
+    "RTK_order": 1575,
+    "Joyo_order": 5
+  },
+  "限": {
+    "RTK_order": 1576,
+    "Joyo_order": 5
+  },
+  "眼": {
+    "RTK_order": 1577,
+    "Joyo_order": 5
+  },
+  "良": {
+    "RTK_order": 1578,
+    "Joyo_order": 4
+  },
+  "朗": {
+    "RTK_order": 1579,
+    "Joyo_order": 6
+  },
+  "浪": {
+    "RTK_order": 1580,
+    "Joyo_order": 7
+  },
+  "娘": {
+    "RTK_order": 1581,
+    "Joyo_order": 7
+  },
+  "食": {
+    "RTK_order": 1582,
+    "Joyo_order": 2
+  },
+  "飯": {
+    "RTK_order": 1583,
+    "Joyo_order": 4
+  },
+  "飲": {
+    "RTK_order": 1584,
+    "Joyo_order": 3
+  },
+  "飢": {
+    "RTK_order": 1585,
+    "Joyo_order": 7
+  },
+  "餓": {
+    "RTK_order": 1586,
+    "Joyo_order": 7
+  },
+  "飾": {
+    "RTK_order": 1587,
+    "Joyo_order": 7
+  },
+  "館": {
+    "RTK_order": 1589,
+    "Joyo_order": 3
+  },
+  "養": {
+    "RTK_order": 1591,
+    "Joyo_order": 4
+  },
+  "飽": {
+    "RTK_order": 1592,
+    "Joyo_order": 7
+  },
+  "既": {
+    "RTK_order": 1593,
+    "Joyo_order": 7
+  },
+  "概": {
+    "RTK_order": 1594,
+    "Joyo_order": 7
+  },
+  "慨": {
+    "RTK_order": 1595,
+    "Joyo_order": 7
+  },
+  "平": {
+    "RTK_order": 1596,
+    "Joyo_order": 3
+  },
+  "呼": {
+    "RTK_order": 1597,
+    "Joyo_order": 6
+  },
+  "坪": {
+    "RTK_order": 1598,
+    "Joyo_order": 7
+  },
+  "評": {
+    "RTK_order": 1599,
+    "Joyo_order": 5
+  },
+  "刈": {
+    "RTK_order": 1600,
+    "Joyo_order": 7
+  },
+  "希": {
+    "RTK_order": 1602,
+    "Joyo_order": 4
+  },
+  "凶": {
+    "RTK_order": 1603,
+    "Joyo_order": 7
+  },
+  "胸": {
+    "RTK_order": 1604,
+    "Joyo_order": 6
+  },
+  "離": {
+    "RTK_order": 1605,
+    "Joyo_order": 7
+  },
+  "殺": {
+    "RTK_order": 1607,
+    "Joyo_order": 4
+  },
+  "純": {
+    "RTK_order": 1609,
+    "Joyo_order": 6
+  },
+  "鈍": {
+    "RTK_order": 1611,
+    "Joyo_order": 7
+  },
+  "辛": {
+    "RTK_order": 1612,
+    "Joyo_order": 7
+  },
+  "辞": {
+    "RTK_order": 1613,
+    "Joyo_order": 4
+  },
+  "梓": {
+    "RTK_order": 1614,
+    "Joyo_order": 99
+  },
+  "宰": {
+    "RTK_order": 1615,
+    "Joyo_order": 7
+  },
+  "壁": {
+    "RTK_order": 1616,
+    "Joyo_order": 7
+  },
+  "避": {
+    "RTK_order": 1618,
+    "Joyo_order": 7
+  },
+  "新": {
+    "RTK_order": 1619,
+    "Joyo_order": 2
+  },
+  "薪": {
+    "RTK_order": 1620,
+    "Joyo_order": 7
+  },
+  "親": {
+    "RTK_order": 1621,
+    "Joyo_order": 2
+  },
+  "幸": {
+    "RTK_order": 1622,
+    "Joyo_order": 3
+  },
+  "執": {
+    "RTK_order": 1623,
+    "Joyo_order": 7
+  },
+  "報": {
+    "RTK_order": 1625,
+    "Joyo_order": 5
+  },
+  "叫": {
+    "RTK_order": 1626,
+    "Joyo_order": 7
+  },
+  "糾": {
+    "RTK_order": 1627,
+    "Joyo_order": 7
+  },
+  "収": {
+    "RTK_order": 1628,
+    "Joyo_order": 6
+  },
+  "卑": {
+    "RTK_order": 1629,
+    "Joyo_order": 7
+  },
+  "碑": {
+    "RTK_order": 1630,
+    "Joyo_order": 7
+  },
+  "陸": {
+    "RTK_order": 1631,
+    "Joyo_order": 4
+  },
+  "睦": {
+    "RTK_order": 1632,
+    "Joyo_order": 7
+  },
+  "勢": {
+    "RTK_order": 1633,
+    "Joyo_order": 5
+  },
+  "熱": {
+    "RTK_order": 1634,
+    "Joyo_order": 4
+  },
+  "菱": {
+    "RTK_order": 1635,
+    "Joyo_order": 99
+  },
+  "陵": {
+    "RTK_order": 1636,
+    "Joyo_order": 7
+  },
+  "亥": {
+    "RTK_order": 1637,
+    "Joyo_order": 99
+  },
+  "核": {
+    "RTK_order": 1638,
+    "Joyo_order": 7
+  },
+  "刻": {
+    "RTK_order": 1639,
+    "Joyo_order": 6
+  },
+  "該": {
+    "RTK_order": 1640,
+    "Joyo_order": 7
+  },
+  "劾": {
+    "RTK_order": 1642,
+    "Joyo_order": 7
+  },
+  "述": {
+    "RTK_order": 1643,
+    "Joyo_order": 5
+  },
+  "術": {
+    "RTK_order": 1644,
+    "Joyo_order": 5
+  },
+  "寒": {
+    "RTK_order": 1645,
+    "Joyo_order": 3
+  },
+  "醸": {
+    "RTK_order": 1647,
+    "Joyo_order": 7
+  },
+  "譲": {
+    "RTK_order": 1648,
+    "Joyo_order": 7
+  },
+  "壌": {
+    "RTK_order": 1649,
+    "Joyo_order": 7
+  },
+  "嬢": {
+    "RTK_order": 1650,
+    "Joyo_order": 7
+  },
+  "毒": {
+    "RTK_order": 1651,
+    "Joyo_order": 4
+  },
+  "素": {
+    "RTK_order": 1652,
+    "Joyo_order": 5
+  },
+  "麦": {
+    "RTK_order": 1653,
+    "Joyo_order": 2
+  },
+  "青": {
+    "RTK_order": 1654,
+    "Joyo_order": 1
+  },
+  "精": {
+    "RTK_order": 1655,
+    "Joyo_order": 5
+  },
+  "請": {
+    "RTK_order": 1656,
+    "Joyo_order": 7
+  },
+  "情": {
+    "RTK_order": 1657,
+    "Joyo_order": 5
+  },
+  "晴": {
+    "RTK_order": 1658,
+    "Joyo_order": 2
+  },
+  "清": {
+    "RTK_order": 1659,
+    "Joyo_order": 4
+  },
+  "静": {
+    "RTK_order": 1660,
+    "Joyo_order": 4
+  },
+  "責": {
+    "RTK_order": 1661,
+    "Joyo_order": 5
+  },
+  "績": {
+    "RTK_order": 1662,
+    "Joyo_order": 5
+  },
+  "積": {
+    "RTK_order": 1663,
+    "Joyo_order": 4
+  },
+  "債": {
+    "RTK_order": 1664,
+    "Joyo_order": 7
+  },
+  "漬": {
+    "RTK_order": 1665,
+    "Joyo_order": 7
+  },
+  "表": {
+    "RTK_order": 1666,
+    "Joyo_order": 3
+  },
+  "俵": {
+    "RTK_order": 1667,
+    "Joyo_order": 5
+  },
+  "潔": {
+    "RTK_order": 1668,
+    "Joyo_order": 5
+  },
+  "契": {
+    "RTK_order": 1669,
+    "Joyo_order": 7
+  },
+  "喫": {
+    "RTK_order": 1670,
+    "Joyo_order": 7
+  },
+  "害": {
+    "RTK_order": 1671,
+    "Joyo_order": 4
+  },
+  "轄": {
+    "RTK_order": 1672,
+    "Joyo_order": 7
+  },
+  "割": {
+    "RTK_order": 1673,
+    "Joyo_order": 6
+  },
+  "憲": {
+    "RTK_order": 1674,
+    "Joyo_order": 6
+  },
+  "生": {
+    "RTK_order": 1675,
+    "Joyo_order": 1
+  },
+  "星": {
+    "RTK_order": 1676,
+    "Joyo_order": 2
+  },
+  "姓": {
+    "RTK_order": 1678,
+    "Joyo_order": 7
+  },
+  "性": {
+    "RTK_order": 1679,
+    "Joyo_order": 5
+  },
+  "牲": {
+    "RTK_order": 1680,
+    "Joyo_order": 7
+  },
+  "産": {
+    "RTK_order": 1681,
+    "Joyo_order": 4
+  },
+  "隆": {
+    "RTK_order": 1682,
+    "Joyo_order": 7
+  },
+  "峰": {
+    "RTK_order": 1683,
+    "Joyo_order": 7
+  },
+  "縫": {
+    "RTK_order": 1685,
+    "Joyo_order": 7
+  },
+  "拝": {
+    "RTK_order": 1686,
+    "Joyo_order": 6
+  },
+  "寿": {
+    "RTK_order": 1687,
+    "Joyo_order": 7
+  },
+  "鋳": {
+    "RTK_order": 1688,
+    "Joyo_order": 7
+  },
+  "籍": {
+    "RTK_order": 1689,
+    "Joyo_order": 7
+  },
+  "春": {
+    "RTK_order": 1690,
+    "Joyo_order": 2
+  },
+  "椿": {
+    "RTK_order": 1691,
+    "Joyo_order": 99
+  },
+  "泰": {
+    "RTK_order": 1692,
+    "Joyo_order": 7
+  },
+  "奏": {
+    "RTK_order": 1693,
+    "Joyo_order": 6
+  },
+  "実": {
+    "RTK_order": 1694,
+    "Joyo_order": 3
+  },
+  "奉": {
+    "RTK_order": 1695,
+    "Joyo_order": 7
+  },
+  "俸": {
+    "RTK_order": 1696,
+    "Joyo_order": 7
+  },
+  "棒": {
+    "RTK_order": 1697,
+    "Joyo_order": 6
+  },
+  "謹": {
+    "RTK_order": 1698,
+    "Joyo_order": 7
+  },
+  "勤": {
+    "RTK_order": 1700,
+    "Joyo_order": 6
+  },
+  "漢": {
+    "RTK_order": 1701,
+    "Joyo_order": 3
+  },
+  "嘆": {
+    "RTK_order": 1702,
+    "Joyo_order": 7
+  },
+  "難": {
+    "RTK_order": 1703,
+    "Joyo_order": 6
+  },
+  "華": {
+    "RTK_order": 1704,
+    "Joyo_order": 7
+  },
+  "垂": {
+    "RTK_order": 1705,
+    "Joyo_order": 6
+  },
+  "睡": {
+    "RTK_order": 1707,
+    "Joyo_order": 7
+  },
+  "錘": {
+    "RTK_order": 1708,
+    "Joyo_order": 99
+  },
+  "乗": {
+    "RTK_order": 1709,
+    "Joyo_order": 3
+  },
+  "剰": {
+    "RTK_order": 1710,
+    "Joyo_order": 7
+  },
+  "今": {
+    "RTK_order": 1711,
+    "Joyo_order": 2
+  },
+  "含": {
+    "RTK_order": 1712,
+    "Joyo_order": 7
+  },
+  "吟": {
+    "RTK_order": 1714,
+    "Joyo_order": 7
+  },
+  "念": {
+    "RTK_order": 1715,
+    "Joyo_order": 4
+  },
+  "琴": {
+    "RTK_order": 1717,
+    "Joyo_order": 7
+  },
+  "陰": {
+    "RTK_order": 1718,
+    "Joyo_order": 7
+  },
+  "予": {
+    "RTK_order": 1719,
+    "Joyo_order": 3
+  },
+  "序": {
+    "RTK_order": 1720,
+    "Joyo_order": 5
+  },
+  "預": {
+    "RTK_order": 1721,
+    "Joyo_order": 5
+  },
+  "野": {
+    "RTK_order": 1722,
+    "Joyo_order": 2
+  },
+  "兼": {
+    "RTK_order": 1723,
+    "Joyo_order": 7
+  },
+  "嫌": {
+    "RTK_order": 1724,
+    "Joyo_order": 7
+  },
+  "鎌": {
+    "RTK_order": 1725,
+    "Joyo_order": 7
+  },
+  "謙": {
+    "RTK_order": 1726,
+    "Joyo_order": 7
+  },
+  "廉": {
+    "RTK_order": 1727,
+    "Joyo_order": 7
+  },
+  "西": {
+    "RTK_order": 1728,
+    "Joyo_order": 2
+  },
+  "価": {
+    "RTK_order": 1729,
+    "Joyo_order": 5
+  },
+  "要": {
+    "RTK_order": 1730,
+    "Joyo_order": 4
+  },
+  "腰": {
+    "RTK_order": 1731,
+    "Joyo_order": 7
+  },
+  "票": {
+    "RTK_order": 1732,
+    "Joyo_order": 4
+  },
+  "漂": {
+    "RTK_order": 1733,
+    "Joyo_order": 7
+  },
+  "標": {
+    "RTK_order": 1734,
+    "Joyo_order": 4
+  },
+  "栗": {
+    "RTK_order": 1735,
+    "Joyo_order": 99
+  },
+  "遷": {
+    "RTK_order": 1737,
+    "Joyo_order": 7
+  },
+  "覆": {
+    "RTK_order": 1738,
+    "Joyo_order": 7
+  },
+  "煙": {
+    "RTK_order": 1739,
+    "Joyo_order": 7
+  },
+  "南": {
+    "RTK_order": 1740,
+    "Joyo_order": 2
+  },
+  "楠": {
+    "RTK_order": 1741,
+    "Joyo_order": 99
+  },
+  "献": {
+    "RTK_order": 1742,
+    "Joyo_order": 7
+  },
+  "門": {
+    "RTK_order": 1743,
+    "Joyo_order": 2
+  },
+  "問": {
+    "RTK_order": 1744,
+    "Joyo_order": 3
+  },
+  "閲": {
+    "RTK_order": 1745,
+    "Joyo_order": 7
+  },
+  "閥": {
+    "RTK_order": 1746,
+    "Joyo_order": 7
+  },
+  "間": {
+    "RTK_order": 1747,
+    "Joyo_order": 2
+  },
+  "簡": {
+    "RTK_order": 1749,
+    "Joyo_order": 6
+  },
+  "開": {
+    "RTK_order": 1750,
+    "Joyo_order": 3
+  },
+  "閉": {
+    "RTK_order": 1751,
+    "Joyo_order": 6
+  },
+  "閣": {
+    "RTK_order": 1752,
+    "Joyo_order": 6
+  },
+  "閑": {
+    "RTK_order": 1753,
+    "Joyo_order": 7
+  },
+  "聞": {
+    "RTK_order": 1754,
+    "Joyo_order": 2
+  },
+  "潤": {
+    "RTK_order": 1755,
+    "Joyo_order": 7
+  },
+  "欄": {
+    "RTK_order": 1756,
+    "Joyo_order": 7
+  },
+  "闘": {
+    "RTK_order": 1757,
+    "Joyo_order": 7
+  },
+  "倉": {
+    "RTK_order": 1758,
+    "Joyo_order": 4
+  },
+  "創": {
+    "RTK_order": 1759,
+    "Joyo_order": 6
+  },
+  "非": {
+    "RTK_order": 1760,
+    "Joyo_order": 5
+  },
+  "俳": {
+    "RTK_order": 1761,
+    "Joyo_order": 6
+  },
+  "排": {
+    "RTK_order": 1762,
+    "Joyo_order": 7
+  },
+  "悲": {
+    "RTK_order": 1763,
+    "Joyo_order": 3
+  },
+  "罪": {
+    "RTK_order": 1764,
+    "Joyo_order": 5
+  },
+  "輩": {
+    "RTK_order": 1765,
+    "Joyo_order": 7
+  },
+  "扉": {
+    "RTK_order": 1766,
+    "Joyo_order": 7
+  },
+  "侯": {
+    "RTK_order": 1767,
+    "Joyo_order": 7
+  },
+  "候": {
+    "RTK_order": 1769,
+    "Joyo_order": 4
+  },
+  "決": {
+    "RTK_order": 1770,
+    "Joyo_order": 3
+  },
+  "快": {
+    "RTK_order": 1771,
+    "Joyo_order": 5
+  },
+  "偉": {
+    "RTK_order": 1772,
+    "Joyo_order": 7
+  },
+  "違": {
+    "RTK_order": 1773,
+    "Joyo_order": 7
+  },
+  "緯": {
+    "RTK_order": 1774,
+    "Joyo_order": 7
+  },
+  "衛": {
+    "RTK_order": 1775,
+    "Joyo_order": 5
+  },
+  "韓": {
+    "RTK_order": 1776,
+    "Joyo_order": 7
+  },
+  "干": {
+    "RTK_order": 1777,
+    "Joyo_order": 6
+  },
+  "肝": {
+    "RTK_order": 1778,
+    "Joyo_order": 7
+  },
+  "刊": {
+    "RTK_order": 1779,
+    "Joyo_order": 5
+  },
+  "汗": {
+    "RTK_order": 1780,
+    "Joyo_order": 7
+  },
+  "軒": {
+    "RTK_order": 1781,
+    "Joyo_order": 7
+  },
+  "岸": {
+    "RTK_order": 1782,
+    "Joyo_order": 3
+  },
+  "幹": {
+    "RTK_order": 1783,
+    "Joyo_order": 5
+  },
+  "芋": {
+    "RTK_order": 1784,
+    "Joyo_order": 7
+  },
+  "宇": {
+    "RTK_order": 1785,
+    "Joyo_order": 6
+  },
+  "余": {
+    "RTK_order": 1786,
+    "Joyo_order": 5
+  },
+  "除": {
+    "RTK_order": 1787,
+    "Joyo_order": 6
+  },
+  "徐": {
+    "RTK_order": 1788,
+    "Joyo_order": 7
+  },
+  "叙": {
+    "RTK_order": 1789,
+    "Joyo_order": 7
+  },
+  "途": {
+    "RTK_order": 1790,
+    "Joyo_order": 7
+  },
+  "斜": {
+    "RTK_order": 1791,
+    "Joyo_order": 7
+  },
+  "塗": {
+    "RTK_order": 1792,
+    "Joyo_order": 7
+  },
+  "束": {
+    "RTK_order": 1793,
+    "Joyo_order": 4
+  },
+  "頼": {
+    "RTK_order": 1794,
+    "Joyo_order": 7
+  },
+  "瀬": {
+    "RTK_order": 1795,
+    "Joyo_order": 7
+  },
+  "勅": {
+    "RTK_order": 1796,
+    "Joyo_order": 7
+  },
+  "疎": {
+    "RTK_order": 1797,
+    "Joyo_order": 7
+  },
+  "速": {
+    "RTK_order": 1799,
+    "Joyo_order": 3
+  },
+  "整": {
+    "RTK_order": 1800,
+    "Joyo_order": 3
+  },
+  "剣": {
+    "RTK_order": 1801,
+    "Joyo_order": 7
+  },
+  "険": {
+    "RTK_order": 1802,
+    "Joyo_order": 5
+  },
+  "検": {
+    "RTK_order": 1803,
+    "Joyo_order": 5
+  },
+  "倹": {
+    "RTK_order": 1804,
+    "Joyo_order": 7
+  },
+  "重": {
+    "RTK_order": 1805,
+    "Joyo_order": 3
+  },
+  "動": {
+    "RTK_order": 1806,
+    "Joyo_order": 3
+  },
+  "勲": {
+    "RTK_order": 1808,
+    "Joyo_order": 7
+  },
+  "働": {
+    "RTK_order": 1809,
+    "Joyo_order": 4
+  },
+  "種": {
+    "RTK_order": 1810,
+    "Joyo_order": 4
+  },
+  "衝": {
+    "RTK_order": 1811,
+    "Joyo_order": 7
+  },
+  "薫": {
+    "RTK_order": 1812,
+    "Joyo_order": 7
+  },
+  "病": {
+    "RTK_order": 1813,
+    "Joyo_order": 3
+  },
+  "痴": {
+    "RTK_order": 1814,
+    "Joyo_order": 7
+  },
+  "痘": {
+    "RTK_order": 1815,
+    "Joyo_order": 7
+  },
+  "症": {
+    "RTK_order": 1816,
+    "Joyo_order": 7
+  },
+  "疾": {
+    "RTK_order": 1819,
+    "Joyo_order": 7
+  },
+  "痢": {
+    "RTK_order": 1821,
+    "Joyo_order": 7
+  },
+  "疲": {
+    "RTK_order": 1823,
+    "Joyo_order": 7
+  },
+  "疫": {
+    "RTK_order": 1824,
+    "Joyo_order": 7
+  },
+  "痛": {
+    "RTK_order": 1825,
+    "Joyo_order": 6
+  },
+  "癖": {
+    "RTK_order": 1826,
+    "Joyo_order": 7
+  },
+  "匿": {
+    "RTK_order": 1827,
+    "Joyo_order": 7
+  },
+  "匠": {
+    "RTK_order": 1828,
+    "Joyo_order": 7
+  },
+  "医": {
+    "RTK_order": 1829,
+    "Joyo_order": 3
+  },
+  "匹": {
+    "RTK_order": 1830,
+    "Joyo_order": 7
+  },
+  "区": {
+    "RTK_order": 1831,
+    "Joyo_order": 3
+  },
+  "枢": {
+    "RTK_order": 1832,
+    "Joyo_order": 7
+  },
+  "殴": {
+    "RTK_order": 1833,
+    "Joyo_order": 7
+  },
+  "欧": {
+    "RTK_order": 1834,
+    "Joyo_order": 7
+  },
+  "抑": {
+    "RTK_order": 1835,
+    "Joyo_order": 7
+  },
+  "仰": {
+    "RTK_order": 1836,
+    "Joyo_order": 7
+  },
+  "迎": {
+    "RTK_order": 1837,
+    "Joyo_order": 7
+  },
+  "登": {
+    "RTK_order": 1838,
+    "Joyo_order": 3
+  },
+  "澄": {
+    "RTK_order": 1839,
+    "Joyo_order": 7
+  },
+  "発": {
+    "RTK_order": 1840,
+    "Joyo_order": 3
+  },
+  "廃": {
+    "RTK_order": 1841,
+    "Joyo_order": 7
+  },
+  "僚": {
+    "RTK_order": 1842,
+    "Joyo_order": 7
+  },
+  "寮": {
+    "RTK_order": 1844,
+    "Joyo_order": 7
+  },
+  "療": {
+    "RTK_order": 1845,
+    "Joyo_order": 7
+  },
+  "彫": {
+    "RTK_order": 1846,
+    "Joyo_order": 7
+  },
+  "形": {
+    "RTK_order": 1847,
+    "Joyo_order": 2
+  },
+  "影": {
+    "RTK_order": 1848,
+    "Joyo_order": 7
+  },
+  "杉": {
+    "RTK_order": 1849,
+    "Joyo_order": 7
+  },
+  "彩": {
+    "RTK_order": 1850,
+    "Joyo_order": 7
+  },
+  "彰": {
+    "RTK_order": 1851,
+    "Joyo_order": 7
+  },
+  "彦": {
+    "RTK_order": 1852,
+    "Joyo_order": 99
+  },
+  "顔": {
+    "RTK_order": 1853,
+    "Joyo_order": 2
+  },
+  "須": {
+    "RTK_order": 1854,
+    "Joyo_order": 7
+  },
+  "膨": {
+    "RTK_order": 1855,
+    "Joyo_order": 7
+  },
+  "参": {
+    "RTK_order": 1856,
+    "Joyo_order": 4
+  },
+  "惨": {
+    "RTK_order": 1857,
+    "Joyo_order": 7
+  },
+  "修": {
+    "RTK_order": 1858,
+    "Joyo_order": 5
+  },
+  "珍": {
+    "RTK_order": 1859,
+    "Joyo_order": 7
+  },
+  "診": {
+    "RTK_order": 1860,
+    "Joyo_order": 7
+  },
+  "文": {
+    "RTK_order": 1861,
+    "Joyo_order": 1
+  },
+  "対": {
+    "RTK_order": 1862,
+    "Joyo_order": 3
+  },
+  "紋": {
+    "RTK_order": 1863,
+    "Joyo_order": 7
+  },
+  "蚊": {
+    "RTK_order": 1864,
+    "Joyo_order": 7
+  },
+  "斉": {
+    "RTK_order": 1866,
+    "Joyo_order": 7
+  },
+  "剤": {
+    "RTK_order": 1867,
+    "Joyo_order": 7
+  },
+  "済": {
+    "RTK_order": 1868,
+    "Joyo_order": 6
+  },
+  "斎": {
+    "RTK_order": 1869,
+    "Joyo_order": 7
+  },
+  "粛": {
+    "RTK_order": 1870,
+    "Joyo_order": 7
+  },
+  "塁": {
+    "RTK_order": 1871,
+    "Joyo_order": 7
+  },
+  "楽": {
+    "RTK_order": 1872,
+    "Joyo_order": 2
+  },
+  "薬": {
+    "RTK_order": 1873,
+    "Joyo_order": 3
+  },
+  "率": {
+    "RTK_order": 1874,
+    "Joyo_order": 5
+  },
+  "渋": {
+    "RTK_order": 1875,
+    "Joyo_order": 7
+  },
+  "摂": {
+    "RTK_order": 1876,
+    "Joyo_order": 7
+  },
+  "央": {
+    "RTK_order": 1877,
+    "Joyo_order": 3
+  },
+  "英": {
+    "RTK_order": 1878,
+    "Joyo_order": 4
+  },
+  "映": {
+    "RTK_order": 1879,
+    "Joyo_order": 6
+  },
+  "赤": {
+    "RTK_order": 1880,
+    "Joyo_order": 1
+  },
+  "赦": {
+    "RTK_order": 1881,
+    "Joyo_order": 7
+  },
+  "変": {
+    "RTK_order": 1882,
+    "Joyo_order": 4
+  },
+  "跡": {
+    "RTK_order": 1883,
+    "Joyo_order": 7
+  },
+  "蛮": {
+    "RTK_order": 1884,
+    "Joyo_order": 7
+  },
+  "恋": {
+    "RTK_order": 1885,
+    "Joyo_order": 7
+  },
+  "湾": {
+    "RTK_order": 1886,
+    "Joyo_order": 7
+  },
+  "黄": {
+    "RTK_order": 1887,
+    "Joyo_order": 2
+  },
+  "横": {
+    "RTK_order": 1888,
+    "Joyo_order": 3
+  },
+  "把": {
+    "RTK_order": 1889,
+    "Joyo_order": 7
+  },
+  "色": {
+    "RTK_order": 1890,
+    "Joyo_order": 2
+  },
+  "絶": {
+    "RTK_order": 1891,
+    "Joyo_order": 5
+  },
+  "艶": {
+    "RTK_order": 1892,
+    "Joyo_order": 7
+  },
+  "肥": {
+    "RTK_order": 1893,
+    "Joyo_order": 5
+  },
+  "甘": {
+    "RTK_order": 1894,
+    "Joyo_order": 7
+  },
+  "紺": {
+    "RTK_order": 1895,
+    "Joyo_order": 7
+  },
+  "某": {
+    "RTK_order": 1896,
+    "Joyo_order": 7
+  },
+  "謀": {
+    "RTK_order": 1897,
+    "Joyo_order": 7
+  },
+  "媒": {
+    "RTK_order": 1898,
+    "Joyo_order": 7
+  },
+  "欺": {
+    "RTK_order": 1899,
+    "Joyo_order": 7
+  },
+  "棋": {
+    "RTK_order": 1900,
+    "Joyo_order": 7
+  },
+  "旗": {
+    "RTK_order": 1901,
+    "Joyo_order": 4
+  },
+  "期": {
+    "RTK_order": 1902,
+    "Joyo_order": 3
+  },
+  "碁": {
+    "RTK_order": 1903,
+    "Joyo_order": 7
+  },
+  "基": {
+    "RTK_order": 1904,
+    "Joyo_order": 5
+  },
+  "甚": {
+    "RTK_order": 1905,
+    "Joyo_order": 7
+  },
+  "勘": {
+    "RTK_order": 1906,
+    "Joyo_order": 7
+  },
+  "堪": {
+    "RTK_order": 1907,
+    "Joyo_order": 7
+  },
+  "貴": {
+    "RTK_order": 1908,
+    "Joyo_order": 6
+  },
+  "遺": {
+    "RTK_order": 1909,
+    "Joyo_order": 6
+  },
+  "遣": {
+    "RTK_order": 1910,
+    "Joyo_order": 7
+  },
+  "舞": {
+    "RTK_order": 1912,
+    "Joyo_order": 7
+  },
+  "無": {
+    "RTK_order": 1913,
+    "Joyo_order": 4
+  },
+  "組": {
+    "RTK_order": 1914,
+    "Joyo_order": 2
+  },
+  "粗": {
+    "RTK_order": 1915,
+    "Joyo_order": 7
+  },
+  "租": {
+    "RTK_order": 1916,
+    "Joyo_order": 7
+  },
+  "祖": {
+    "RTK_order": 1918,
+    "Joyo_order": 5
+  },
+  "阻": {
+    "RTK_order": 1919,
+    "Joyo_order": 7
+  },
+  "査": {
+    "RTK_order": 1920,
+    "Joyo_order": 5
+  },
+  "助": {
+    "RTK_order": 1921,
+    "Joyo_order": 3
+  },
+  "宜": {
+    "RTK_order": 1922,
+    "Joyo_order": 7
+  },
+  "畳": {
+    "RTK_order": 1923,
+    "Joyo_order": 7
+  },
+  "並": {
+    "RTK_order": 1924,
+    "Joyo_order": 6
+  },
+  "普": {
+    "RTK_order": 1925,
+    "Joyo_order": 7
+  },
+  "譜": {
+    "RTK_order": 1926,
+    "Joyo_order": 7
+  },
+  "湿": {
+    "RTK_order": 1927,
+    "Joyo_order": 7
+  },
+  "顕": {
+    "RTK_order": 1928,
+    "Joyo_order": 7
+  },
+  "繊": {
+    "RTK_order": 1929,
+    "Joyo_order": 7
+  },
+  "霊": {
+    "RTK_order": 1930,
+    "Joyo_order": 7
+  },
+  "業": {
+    "RTK_order": 1931,
+    "Joyo_order": 3
+  },
+  "撲": {
+    "RTK_order": 1932,
+    "Joyo_order": 7
+  },
+  "僕": {
+    "RTK_order": 1933,
+    "Joyo_order": 7
+  },
+  "共": {
+    "RTK_order": 1934,
+    "Joyo_order": 4
+  },
+  "供": {
+    "RTK_order": 1935,
+    "Joyo_order": 6
+  },
+  "異": {
+    "RTK_order": 1936,
+    "Joyo_order": 6
+  },
+  "翼": {
+    "RTK_order": 1937,
+    "Joyo_order": 7
+  },
+  "洪": {
+    "RTK_order": 1939,
+    "Joyo_order": 7
+  },
+  "港": {
+    "RTK_order": 1940,
+    "Joyo_order": 3
+  },
+  "暴": {
+    "RTK_order": 1941,
+    "Joyo_order": 5
+  },
+  "爆": {
+    "RTK_order": 1942,
+    "Joyo_order": 7
+  },
+  "恭": {
+    "RTK_order": 1943,
+    "Joyo_order": 7
+  },
+  "選": {
+    "RTK_order": 1944,
+    "Joyo_order": 4
+  },
+  "殿": {
+    "RTK_order": 1945,
+    "Joyo_order": 7
+  },
+  "井": {
+    "RTK_order": 1946,
+    "Joyo_order": 7
+  },
+  "囲": {
+    "RTK_order": 1948,
+    "Joyo_order": 4
+  },
+  "耕": {
+    "RTK_order": 1949,
+    "Joyo_order": 5
+  },
+  "亜": {
+    "RTK_order": 1950,
+    "Joyo_order": 7
+  },
+  "悪": {
+    "RTK_order": 1951,
+    "Joyo_order": 3
+  },
+  "円": {
+    "RTK_order": 1952,
+    "Joyo_order": 1
+  },
+  "角": {
+    "RTK_order": 1953,
+    "Joyo_order": 2
+  },
+  "触": {
+    "RTK_order": 1954,
+    "Joyo_order": 7
+  },
+  "解": {
+    "RTK_order": 1955,
+    "Joyo_order": 5
+  },
+  "再": {
+    "RTK_order": 1956,
+    "Joyo_order": 5
+  },
+  "講": {
+    "RTK_order": 1957,
+    "Joyo_order": 5
+  },
+  "購": {
+    "RTK_order": 1958,
+    "Joyo_order": 7
+  },
+  "構": {
+    "RTK_order": 1959,
+    "Joyo_order": 5
+  },
+  "溝": {
+    "RTK_order": 1960,
+    "Joyo_order": 7
+  },
+  "論": {
+    "RTK_order": 1961,
+    "Joyo_order": 6
+  },
+  "倫": {
+    "RTK_order": 1962,
+    "Joyo_order": 7
+  },
+  "輪": {
+    "RTK_order": 1963,
+    "Joyo_order": 4
+  },
+  "偏": {
+    "RTK_order": 1964,
+    "Joyo_order": 7
+  },
+  "遍": {
+    "RTK_order": 1965,
+    "Joyo_order": 7
+  },
+  "編": {
+    "RTK_order": 1966,
+    "Joyo_order": 5
+  },
+  "冊": {
+    "RTK_order": 1967,
+    "Joyo_order": 6
+  },
+  "典": {
+    "RTK_order": 1969,
+    "Joyo_order": 4
+  },
+  "氏": {
+    "RTK_order": 1970,
+    "Joyo_order": 4
+  },
+  "紙": {
+    "RTK_order": 1971,
+    "Joyo_order": 2
+  },
+  "婚": {
+    "RTK_order": 1972,
+    "Joyo_order": 7
+  },
+  "低": {
+    "RTK_order": 1973,
+    "Joyo_order": 4
+  },
+  "抵": {
+    "RTK_order": 1974,
+    "Joyo_order": 7
+  },
+  "底": {
+    "RTK_order": 1975,
+    "Joyo_order": 4
+  },
+  "民": {
+    "RTK_order": 1976,
+    "Joyo_order": 4
+  },
+  "眠": {
+    "RTK_order": 1977,
+    "Joyo_order": 7
+  },
+  "捕": {
+    "RTK_order": 1978,
+    "Joyo_order": 7
+  },
+  "浦": {
+    "RTK_order": 1980,
+    "Joyo_order": 7
+  },
+  "蒲": {
+    "RTK_order": 1981,
+    "Joyo_order": 99
+  },
+  "舗": {
+    "RTK_order": 1982,
+    "Joyo_order": 7
+  },
+  "補": {
+    "RTK_order": 1983,
+    "Joyo_order": 6
+  },
+  "邸": {
+    "RTK_order": 1984,
+    "Joyo_order": 7
+  },
+  "郭": {
+    "RTK_order": 1985,
+    "Joyo_order": 7
+  },
+  "郡": {
+    "RTK_order": 1986,
+    "Joyo_order": 4
+  },
+  "郊": {
+    "RTK_order": 1987,
+    "Joyo_order": 7
+  },
+  "部": {
+    "RTK_order": 1988,
+    "Joyo_order": 3
+  },
+  "都": {
+    "RTK_order": 1989,
+    "Joyo_order": 3
+  },
+  "郵": {
+    "RTK_order": 1990,
+    "Joyo_order": 6
+  },
+  "邦": {
+    "RTK_order": 1991,
+    "Joyo_order": 7
+  },
+  "郷": {
+    "RTK_order": 1993,
+    "Joyo_order": 6
+  },
+  "響": {
+    "RTK_order": 1994,
+    "Joyo_order": 7
+  },
+  "郎": {
+    "RTK_order": 1995,
+    "Joyo_order": 7
+  },
+  "廊": {
+    "RTK_order": 1996,
+    "Joyo_order": 7
+  },
+  "盾": {
+    "RTK_order": 1997,
+    "Joyo_order": 7
+  },
+  "循": {
+    "RTK_order": 1998,
+    "Joyo_order": 7
+  },
+  "派": {
+    "RTK_order": 1999,
+    "Joyo_order": 6
+  },
+  "脈": {
+    "RTK_order": 2000,
+    "Joyo_order": 4
+  },
+  "衆": {
+    "RTK_order": 2001,
+    "Joyo_order": 6
+  },
+  "逓": {
+    "RTK_order": 2002,
+    "Joyo_order": 7
+  },
+  "段": {
+    "RTK_order": 2003,
+    "Joyo_order": 6
+  },
+  "鍛": {
+    "RTK_order": 2004,
+    "Joyo_order": 7
+  },
+  "后": {
+    "RTK_order": 2005,
+    "Joyo_order": 6
+  },
+  "幻": {
+    "RTK_order": 2006,
+    "Joyo_order": 7
+  },
+  "司": {
+    "RTK_order": 2007,
+    "Joyo_order": 4
+  },
+  "伺": {
+    "RTK_order": 2008,
+    "Joyo_order": 7
+  },
+  "詞": {
+    "RTK_order": 2009,
+    "Joyo_order": 6
+  },
+  "飼": {
+    "RTK_order": 2010,
+    "Joyo_order": 5
+  },
+  "嗣": {
+    "RTK_order": 2011,
+    "Joyo_order": 7
+  },
+  "舟": {
+    "RTK_order": 2012,
+    "Joyo_order": 7
+  },
+  "舶": {
+    "RTK_order": 2013,
+    "Joyo_order": 7
+  },
+  "航": {
+    "RTK_order": 2014,
+    "Joyo_order": 4
+  },
+  "般": {
+    "RTK_order": 2016,
+    "Joyo_order": 7
+  },
+  "盤": {
+    "RTK_order": 2017,
+    "Joyo_order": 7
+  },
+  "搬": {
+    "RTK_order": 2018,
+    "Joyo_order": 7
+  },
+  "船": {
+    "RTK_order": 2019,
+    "Joyo_order": 2
+  },
+  "艦": {
+    "RTK_order": 2020,
+    "Joyo_order": 7
+  },
+  "艇": {
+    "RTK_order": 2021,
+    "Joyo_order": 7
+  },
+  "瓜": {
+    "RTK_order": 2022,
+    "Joyo_order": 99
+  },
+  "弧": {
+    "RTK_order": 2023,
+    "Joyo_order": 7
+  },
+  "孤": {
+    "RTK_order": 2024,
+    "Joyo_order": 7
+  },
+  "繭": {
+    "RTK_order": 2025,
+    "Joyo_order": 7
+  },
+  "益": {
+    "RTK_order": 2026,
+    "Joyo_order": 5
+  },
+  "暇": {
+    "RTK_order": 2027,
+    "Joyo_order": 7
+  },
+  "敷": {
+    "RTK_order": 2028,
+    "Joyo_order": 7
+  },
+  "来": {
+    "RTK_order": 2029,
+    "Joyo_order": 2
+  },
+  "気": {
+    "RTK_order": 2030,
+    "Joyo_order": 1
+  },
+  "汽": {
+    "RTK_order": 2031,
+    "Joyo_order": 2
+  },
+  "飛": {
+    "RTK_order": 2032,
+    "Joyo_order": 4
+  },
+  "沈": {
+    "RTK_order": 2033,
+    "Joyo_order": 7
+  },
+  "妻": {
+    "RTK_order": 2035,
+    "Joyo_order": 5
+  },
+  "衰": {
+    "RTK_order": 2037,
+    "Joyo_order": 7
+  },
+  "衷": {
+    "RTK_order": 2038,
+    "Joyo_order": 7
+  },
+  "面": {
+    "RTK_order": 2039,
+    "Joyo_order": 3
+  },
+  "革": {
+    "RTK_order": 2041,
+    "Joyo_order": 6
+  },
+  "靴": {
+    "RTK_order": 2042,
+    "Joyo_order": 7
+  },
+  "覇": {
+    "RTK_order": 2043,
+    "Joyo_order": 7
+  },
+  "声": {
+    "RTK_order": 2044,
+    "Joyo_order": 2
+  },
+  "呉": {
+    "RTK_order": 2046,
+    "Joyo_order": 7
+  },
+  "娯": {
+    "RTK_order": 2047,
+    "Joyo_order": 7
+  },
+  "誤": {
+    "RTK_order": 2048,
+    "Joyo_order": 6
+  },
+  "蒸": {
+    "RTK_order": 2049,
+    "Joyo_order": 6
+  },
+  "承": {
+    "RTK_order": 2050,
+    "Joyo_order": 5
+  },
+  "函": {
+    "RTK_order": 2051,
+    "Joyo_order": 99
+  },
+  "極": {
+    "RTK_order": 2052,
+    "Joyo_order": 4
+  },
+  "牙": {
+    "RTK_order": 2053,
+    "Joyo_order": 7
+  },
+  "芽": {
+    "RTK_order": 2054,
+    "Joyo_order": 4
+  },
+  "邪": {
+    "RTK_order": 2055,
+    "Joyo_order": 7
+  },
+  "雅": {
+    "RTK_order": 2056,
+    "Joyo_order": 7
+  },
+  "釈": {
+    "RTK_order": 2057,
+    "Joyo_order": 7
+  },
+  "番": {
+    "RTK_order": 2058,
+    "Joyo_order": 2
+  },
+  "審": {
+    "RTK_order": 2059,
+    "Joyo_order": 7
+  },
+  "翻": {
+    "RTK_order": 2060,
+    "Joyo_order": 7
+  },
+  "藩": {
+    "RTK_order": 2061,
+    "Joyo_order": 7
+  },
+  "毛": {
+    "RTK_order": 2062,
+    "Joyo_order": 2
+  },
+  "耗": {
+    "RTK_order": 2063,
+    "Joyo_order": 7
+  },
+  "尾": {
+    "RTK_order": 2064,
+    "Joyo_order": 7
+  },
+  "宅": {
+    "RTK_order": 2065,
+    "Joyo_order": 6
+  },
+  "託": {
+    "RTK_order": 2066,
+    "Joyo_order": 7
+  },
+  "為": {
+    "RTK_order": 2067,
+    "Joyo_order": 7
+  },
+  "偽": {
+    "RTK_order": 2068,
+    "Joyo_order": 7
+  },
+  "長": {
+    "RTK_order": 2070,
+    "Joyo_order": 2
+  },
+  "張": {
+    "RTK_order": 2071,
+    "Joyo_order": 5
+  },
+  "帳": {
+    "RTK_order": 2072,
+    "Joyo_order": 3
+  },
+  "脹": {
+    "RTK_order": 2073,
+    "Joyo_order": 99
+  },
+  "髪": {
+    "RTK_order": 2074,
+    "Joyo_order": 7
+  },
+  "展": {
+    "RTK_order": 2075,
+    "Joyo_order": 6
+  },
+  "喪": {
+    "RTK_order": 2076,
+    "Joyo_order": 7
+  },
+  "巣": {
+    "RTK_order": 2077,
+    "Joyo_order": 4
+  },
+  "単": {
+    "RTK_order": 2078,
+    "Joyo_order": 4
+  },
+  "戦": {
+    "RTK_order": 2079,
+    "Joyo_order": 4
+  },
+  "禅": {
+    "RTK_order": 2080,
+    "Joyo_order": 7
+  },
+  "弾": {
+    "RTK_order": 2081,
+    "Joyo_order": 7
+  },
+  "桜": {
+    "RTK_order": 2082,
+    "Joyo_order": 5
+  },
+  "獣": {
+    "RTK_order": 2083,
+    "Joyo_order": 7
+  },
+  "脳": {
+    "RTK_order": 2084,
+    "Joyo_order": 6
+  },
+  "悩": {
+    "RTK_order": 2085,
+    "Joyo_order": 7
+  },
+  "厳": {
+    "RTK_order": 2086,
+    "Joyo_order": 6
+  },
+  "鎖": {
+    "RTK_order": 2087,
+    "Joyo_order": 7
+  },
+  "挙": {
+    "RTK_order": 2088,
+    "Joyo_order": 4
+  },
+  "誉": {
+    "RTK_order": 2089,
+    "Joyo_order": 7
+  },
+  "猟": {
+    "RTK_order": 2090,
+    "Joyo_order": 7
+  },
+  "鳥": {
+    "RTK_order": 2091,
+    "Joyo_order": 2
+  },
+  "鳴": {
+    "RTK_order": 2092,
+    "Joyo_order": 2
+  },
+  "鶴": {
+    "RTK_order": 2093,
+    "Joyo_order": 7
+  },
+  "烏": {
+    "RTK_order": 2094,
+    "Joyo_order": 99
+  },
+  "蔦": {
+    "RTK_order": 2095,
+    "Joyo_order": 99
+  },
+  "鳩": {
+    "RTK_order": 2096,
+    "Joyo_order": 99
+  },
+  "鶏": {
+    "RTK_order": 2097,
+    "Joyo_order": 7
+  },
+  "島": {
+    "RTK_order": 2098,
+    "Joyo_order": 3
+  },
+  "暖": {
+    "RTK_order": 2099,
+    "Joyo_order": 6
+  },
+  "媛": {
+    "RTK_order": 2100,
+    "Joyo_order": 7
+  },
+  "援": {
+    "RTK_order": 2101,
+    "Joyo_order": 7
+  },
+  "緩": {
+    "RTK_order": 2102,
+    "Joyo_order": 7
+  },
+  "属": {
+    "RTK_order": 2103,
+    "Joyo_order": 5
+  },
+  "嘱": {
+    "RTK_order": 2104,
+    "Joyo_order": 7
+  },
+  "偶": {
+    "RTK_order": 2105,
+    "Joyo_order": 7
+  },
+  "遇": {
+    "RTK_order": 2106,
+    "Joyo_order": 7
+  },
+  "愚": {
+    "RTK_order": 2107,
+    "Joyo_order": 7
+  },
+  "隅": {
+    "RTK_order": 2108,
+    "Joyo_order": 7
+  },
+  "逆": {
+    "RTK_order": 2109,
+    "Joyo_order": 5
+  },
+  "塑": {
+    "RTK_order": 2110,
+    "Joyo_order": 7
+  },
+  "岡": {
+    "RTK_order": 2112,
+    "Joyo_order": 7
+  },
+  "鋼": {
+    "RTK_order": 2113,
+    "Joyo_order": 6
+  },
+  "綱": {
+    "RTK_order": 2114,
+    "Joyo_order": 7
+  },
+  "剛": {
+    "RTK_order": 2115,
+    "Joyo_order": 7
+  },
+  "缶": {
+    "RTK_order": 2116,
+    "Joyo_order": 7
+  },
+  "陶": {
+    "RTK_order": 2117,
+    "Joyo_order": 7
+  },
+  "揺": {
+    "RTK_order": 2118,
+    "Joyo_order": 7
+  },
+  "謡": {
+    "RTK_order": 2119,
+    "Joyo_order": 7
+  },
+  "就": {
+    "RTK_order": 2121,
+    "Joyo_order": 6
+  },
+  "懇": {
+    "RTK_order": 2123,
+    "Joyo_order": 7
+  },
+  "墾": {
+    "RTK_order": 2124,
+    "Joyo_order": 7
+  },
+  "免": {
+    "RTK_order": 2126,
+    "Joyo_order": 7
+  },
+  "逸": {
+    "RTK_order": 2127,
+    "Joyo_order": 7
+  },
+  "晩": {
+    "RTK_order": 2128,
+    "Joyo_order": 6
+  },
+  "勉": {
+    "RTK_order": 2129,
+    "Joyo_order": 3
+  },
+  "象": {
+    "RTK_order": 2130,
+    "Joyo_order": 4
+  },
+  "像": {
+    "RTK_order": 2131,
+    "Joyo_order": 5
+  },
+  "馬": {
+    "RTK_order": 2132,
+    "Joyo_order": 2
+  },
+  "駒": {
+    "RTK_order": 2133,
+    "Joyo_order": 7
+  },
+  "験": {
+    "RTK_order": 2134,
+    "Joyo_order": 4
+  },
+  "騎": {
+    "RTK_order": 2135,
+    "Joyo_order": 7
+  },
+  "駐": {
+    "RTK_order": 2136,
+    "Joyo_order": 7
+  },
+  "駆": {
+    "RTK_order": 2137,
+    "Joyo_order": 7
+  },
+  "駅": {
+    "RTK_order": 2138,
+    "Joyo_order": 3
+  },
+  "騒": {
+    "RTK_order": 2139,
+    "Joyo_order": 7
+  },
+  "駄": {
+    "RTK_order": 2140,
+    "Joyo_order": 7
+  },
+  "驚": {
+    "RTK_order": 2141,
+    "Joyo_order": 7
+  },
+  "篤": {
+    "RTK_order": 2142,
+    "Joyo_order": 7
+  },
+  "騰": {
+    "RTK_order": 2144,
+    "Joyo_order": 7
+  },
+  "虎": {
+    "RTK_order": 2145,
+    "Joyo_order": 7
+  },
+  "虜": {
+    "RTK_order": 2146,
+    "Joyo_order": 7
+  },
+  "膚": {
+    "RTK_order": 2147,
+    "Joyo_order": 7
+  },
+  "虚": {
+    "RTK_order": 2148,
+    "Joyo_order": 7
+  },
+  "戯": {
+    "RTK_order": 2149,
+    "Joyo_order": 7
+  },
+  "虞": {
+    "RTK_order": 2150,
+    "Joyo_order": 7
+  },
+  "慮": {
+    "RTK_order": 2151,
+    "Joyo_order": 7
+  },
+  "劇": {
+    "RTK_order": 2152,
+    "Joyo_order": 6
+  },
+  "虐": {
+    "RTK_order": 2153,
+    "Joyo_order": 7
+  },
+  "鹿": {
+    "RTK_order": 2154,
+    "Joyo_order": 7
+  },
+  "薦": {
+    "RTK_order": 2156,
+    "Joyo_order": 7
+  },
+  "慶": {
+    "RTK_order": 2157,
+    "Joyo_order": 7
+  },
+  "麗": {
+    "RTK_order": 2158,
+    "Joyo_order": 7
+  },
+  "熊": {
+    "RTK_order": 2159,
+    "Joyo_order": 7
+  },
+  "能": {
+    "RTK_order": 2160,
+    "Joyo_order": 5
+  },
+  "態": {
+    "RTK_order": 2161,
+    "Joyo_order": 5
+  },
+  "寅": {
+    "RTK_order": 2162,
+    "Joyo_order": 99
+  },
+  "演": {
+    "RTK_order": 2163,
+    "Joyo_order": 5
+  },
+  "辰": {
+    "RTK_order": 2164,
+    "Joyo_order": 99
+  },
+  "辱": {
+    "RTK_order": 2165,
+    "Joyo_order": 7
+  },
+  "震": {
+    "RTK_order": 2166,
+    "Joyo_order": 7
+  },
+  "振": {
+    "RTK_order": 2167,
+    "Joyo_order": 7
+  },
+  "娠": {
+    "RTK_order": 2168,
+    "Joyo_order": 7
+  },
+  "唇": {
+    "RTK_order": 2169,
+    "Joyo_order": 7
+  },
+  "農": {
+    "RTK_order": 2170,
+    "Joyo_order": 3
+  },
+  "濃": {
+    "RTK_order": 2171,
+    "Joyo_order": 7
+  },
+  "送": {
+    "RTK_order": 2172,
+    "Joyo_order": 3
+  },
+  "関": {
+    "RTK_order": 2173,
+    "Joyo_order": 4
+  },
+  "咲": {
+    "RTK_order": 2174,
+    "Joyo_order": 7
+  },
+  "鬼": {
+    "RTK_order": 2175,
+    "Joyo_order": 7
+  },
+  "醜": {
+    "RTK_order": 2176,
+    "Joyo_order": 7
+  },
+  "魂": {
+    "RTK_order": 2177,
+    "Joyo_order": 7
+  },
+  "魔": {
+    "RTK_order": 2178,
+    "Joyo_order": 7
+  },
+  "魅": {
+    "RTK_order": 2179,
+    "Joyo_order": 7
+  },
+  "塊": {
+    "RTK_order": 2180,
+    "Joyo_order": 7
+  },
+  "襲": {
+    "RTK_order": 2181,
+    "Joyo_order": 7
+  },
+  "嚇": {
+    "RTK_order": 2182,
+    "Joyo_order": 7
+  },
+  "朕": {
+    "RTK_order": 2183,
+    "Joyo_order": 7
+  },
+  "雰": {
+    "RTK_order": 2184,
+    "Joyo_order": 7
+  },
+  "箇": {
+    "RTK_order": 2185,
+    "Joyo_order": 7
+  },
+  "錬": {
+    "RTK_order": 2186,
+    "Joyo_order": 7
+  },
+  "遵": {
+    "RTK_order": 2187,
+    "Joyo_order": 7
+  },
+  "罷": {
+    "RTK_order": 2188,
+    "Joyo_order": 7
+  },
+  "屯": {
+    "RTK_order": 2189,
+    "Joyo_order": 7
+  },
+  "且": {
+    "RTK_order": 2190,
+    "Joyo_order": 7
+  },
+  "藻": {
+    "RTK_order": 2191,
+    "Joyo_order": 7
+  },
+  "隷": {
+    "RTK_order": 2192,
+    "Joyo_order": 7
+  },
+  "癒": {
+    "RTK_order": 2193,
+    "Joyo_order": 7
+  },
+  "丹": {
+    "RTK_order": 2196,
+    "Joyo_order": 7
+  },
+  "潟": {
+    "RTK_order": 2195,
+    "Joyo_order": 7
+  },
+  "丑": {
+    "RTK_order": 2197,
+    "Joyo_order": 99
+  },
+  "卯": {
+    "RTK_order": 2199,
+    "Joyo_order": 99
+  },
+  "巳": {
+    "RTK_order": 2200,
+    "Joyo_order": 99
+  },
+  "嘲": {
+    "RTK_order": 54,
+    "Joyo_order": 7
+  },
+  "肘": {
+    "RTK_order": 46,
+    "Joyo_order": 7
+  },
+  "唄": {
+    "RTK_order": 57,
+    "Joyo_order": 7
+  },
+  "貼": {
+    "RTK_order": 60,
+    "Joyo_order": 7
+  },
+  "呪": {
+    "RTK_order": 108,
+    "Joyo_order": 7
+  },
+  "妬": {
+    "RTK_order": 123,
+    "Joyo_order": 7
+  },
+  "嗅": {
+    "RTK_order": 129,
+    "Joyo_order": 7
+  },
+  "腺": {
+    "RTK_order": 141,
+    "Joyo_order": 7
+  },
+  "汎": {
+    "RTK_order": 147,
+    "Joyo_order": 7
+  },
+  "汰": {
+    "RTK_order": 149,
+    "Joyo_order": 7
+  },
+  "沙": {
+    "RTK_order": 151,
+    "Joyo_order": 7
+  },
+  "填": {
+    "RTK_order": 166,
+    "Joyo_order": 7
+  },
+  "椅": {
+    "RTK_order": 218,
+    "Joyo_order": 7
+  },
+  "羞": {
+    "RTK_order": 2198,
+    "Joyo_order": 7
+  },
+  "璽": {
+    "RTK_order": 2194,
+    "Joyo_order": 7
+  },
+  "麓": {
+    "RTK_order": 2155,
+    "Joyo_order": 7
+  },
+  "罵": {
+    "RTK_order": 2143,
+    "Joyo_order": 7
+  },
+  "貌": {
+    "RTK_order": 2125,
+    "Joyo_order": 7
+  },
+  "蹴": {
+    "RTK_order": 2122,
+    "Joyo_order": 7
+  },
+  "鬱": {
+    "RTK_order": 2120,
+    "Joyo_order": 7
+  },
+  "遡": {
+    "RTK_order": 2111,
+    "Joyo_order": 7
+  },
+  "畏": {
+    "RTK_order": 2069,
+    "Joyo_order": 7
+  },
+  "眉": {
+    "RTK_order": 2045,
+    "Joyo_order": 7
+  },
+  "麺": {
+    "RTK_order": 2040,
+    "Joyo_order": 7
+  },
+  "凄": {
+    "RTK_order": 2036,
+    "Joyo_order": 7
+  },
+  "枕": {
+    "RTK_order": 2034,
+    "Joyo_order": 7
+  },
+  "舷": {
+    "RTK_order": 2015,
+    "Joyo_order": 7
+  },
+  "那": {
+    "RTK_order": 1992,
+    "Joyo_order": 7
+  },
+  "哺": {
+    "RTK_order": 1979,
+    "Joyo_order": 7
+  },
+  "柵": {
+    "RTK_order": 1968,
+    "Joyo_order": 7
+  },
+  "丼": {
+    "RTK_order": 1947,
+    "Joyo_order": 7
+  },
+  "戴": {
+    "RTK_order": 1938,
+    "Joyo_order": 7
+  },
+  "狙": {
+    "RTK_order": 1917,
+    "Joyo_order": 7
+  },
+  "潰": {
+    "RTK_order": 1911,
+    "Joyo_order": 7
+  },
+  "斑": {
+    "RTK_order": 1865,
+    "Joyo_order": 7
+  },
+  "瞭": {
+    "RTK_order": 1843,
+    "Joyo_order": 7
+  },
+  "痕": {
+    "RTK_order": 1822,
+    "Joyo_order": 7
+  },
+  "嫉": {
+    "RTK_order": 1820,
+    "Joyo_order": 7
+  },
+  "痩": {
+    "RTK_order": 1818,
+    "Joyo_order": 7
+  },
+  "瘍": {
+    "RTK_order": 1817,
+    "Joyo_order": 7
+  },
+  "腫": {
+    "RTK_order": 1807,
+    "Joyo_order": 7
+  },
+  "辣": {
+    "RTK_order": 1798,
+    "Joyo_order": 7
+  },
+  "喉": {
+    "RTK_order": 1768,
+    "Joyo_order": 7
+  },
+  "闇": {
+    "RTK_order": 1748,
+    "Joyo_order": 7
+  },
+  "慄": {
+    "RTK_order": 1736,
+    "Joyo_order": 7
+  },
+  "捻": {
+    "RTK_order": 1716,
+    "Joyo_order": 7
+  },
+  "貪": {
+    "RTK_order": 1713,
+    "Joyo_order": 7
+  },
+  "唾": {
+    "RTK_order": 1706,
+    "Joyo_order": 7
+  },
+  "僅": {
+    "RTK_order": 1699,
+    "Joyo_order": 7
+  },
+  "蜂": {
+    "RTK_order": 1684,
+    "Joyo_order": 7
+  },
+  "醒": {
+    "RTK_order": 1677,
+    "Joyo_order": 7
+  },
+  "塞": {
+    "RTK_order": 1646,
+    "Joyo_order": 7
+  },
+  "骸": {
+    "RTK_order": 1641,
+    "Joyo_order": 7
+  },
+  "摯": {
+    "RTK_order": 1624,
+    "Joyo_order": 7
+  },
+  "璧": {
+    "RTK_order": 1617,
+    "Joyo_order": 7
+  },
+  "頓": {
+    "RTK_order": 1610,
+    "Joyo_order": 7
+  },
+  "爽": {
+    "RTK_order": 1608,
+    "Joyo_order": 7
+  },
+  "璃": {
+    "RTK_order": 1606,
+    "Joyo_order": 7
+  },
+  "刹": {
+    "RTK_order": 1601,
+    "Joyo_order": 7
+  },
+  "餅": {
+    "RTK_order": 1590,
+    "Joyo_order": 7
+  },
+  "餌": {
+    "RTK_order": 1588,
+    "Joyo_order": 7
+  },
+  "藍": {
+    "RTK_order": 1565,
+    "Joyo_order": 7
+  },
+  "蓋": {
+    "RTK_order": 1561,
+    "Joyo_order": 7
+  },
+  "酎": {
+    "RTK_order": 1537,
+    "Joyo_order": 7
+  },
+  "毀": {
+    "RTK_order": 1532,
+    "Joyo_order": 7
+  },
+  "臼": {
+    "RTK_order": 1531,
+    "Joyo_order": 7
+  },
+  "瑠": {
+    "RTK_order": 1528,
+    "Joyo_order": 7
+  },
+  "氾": {
+    "RTK_order": 1518,
+    "Joyo_order": 7
+  },
+  "鍋": {
+    "RTK_order": 1388,
+    "Joyo_order": 7
+  },
+  "湧": {
+    "RTK_order": 1510,
+    "Joyo_order": 7
+  },
+  "遜": {
+    "RTK_order": 1496,
+    "Joyo_order": 7
+  },
+  "畿": {
+    "RTK_order": 1483,
+    "Joyo_order": 7
+  },
+  "緻": {
+    "RTK_order": 1437,
+    "Joyo_order": 7
+  },
+  "窟": {
+    "RTK_order": 1420,
+    "Joyo_order": 7
+  },
+  "隙": {
+    "RTK_order": 1394,
+    "Joyo_order": 7
+  },
+  "踪": {
+    "RTK_order": 1382,
+    "Joyo_order": 7
+  },
+  "捉": {
+    "RTK_order": 1374,
+    "Joyo_order": 7
+  },
+  "釜": {
+    "RTK_order": 1367,
+    "Joyo_order": 7
+  },
+  "阜": {
+    "RTK_order": 1360,
+    "Joyo_order": 7
+  },
+  "頬": {
+    "RTK_order": 1358,
+    "Joyo_order": 7
+  },
+  "箸": {
+    "RTK_order": 1348,
+    "Joyo_order": 7
+  },
+  "顎": {
+    "RTK_order": 1333,
+    "Joyo_order": 7
+  },
+  "溺": {
+    "RTK_order": 1324,
+    "Joyo_order": 7
+  },
+  "弥": {
+    "RTK_order": 1322,
+    "Joyo_order": 7
+  },
+  "挨": {
+    "RTK_order": 1310,
+    "Joyo_order": 7
+  },
+  "拳": {
+    "RTK_order": 1290,
+    "Joyo_order": 7
+  },
+  "彙": {
+    "RTK_order": 1237,
+    "Joyo_order": 7
+  },
+  "剥": {
+    "RTK_order": 1227,
+    "Joyo_order": 7
+  },
+  "斬": {
+    "RTK_order": 1215,
+    "Joyo_order": 7
+  },
+  "裾": {
+    "RTK_order": 1145,
+    "Joyo_order": 7
+  },
+  "尻": {
+    "RTK_order": 1134,
+    "Joyo_order": 7
+  },
+  "蔽": {
+    "RTK_order": 1119,
+    "Joyo_order": 7
+  },
+  "膳": {
+    "RTK_order": 1113,
+    "Joyo_order": 7
+  },
+  "挫": {
+    "RTK_order": 1101,
+    "Joyo_order": 7
+  },
+  "俺": {
+    "RTK_order": 1091,
+    "Joyo_order": 7
+  },
+  "傲": {
+    "RTK_order": 1054,
+    "Joyo_order": 7
+  },
+  "伎": {
+    "RTK_order": 1040,
+    "Joyo_order": 7
+  },
+  "侶": {
+    "RTK_order": 1025,
+    "Joyo_order": 7
+  },
+  "籠": {
+    "RTK_order": 1022,
+    "Joyo_order": 7
+  },
+  "箋": {
+    "RTK_order": 1011,
+    "Joyo_order": 7
+  },
+  "膝": {
+    "RTK_order": 1002,
+    "Joyo_order": 7
+  },
+  "謎": {
+    "RTK_order": 994,
+    "Joyo_order": 7
+  },
+  "萎": {
+    "RTK_order": 986,
+    "Joyo_order": 7
+  },
+  "稽": {
+    "RTK_order": 983,
+    "Joyo_order": 7
+  },
+  "桁": {
+    "RTK_order": 956,
+    "Joyo_order": 7
+  },
+  "勃": {
+    "RTK_order": 930,
+    "Joyo_order": 7
+  },
+  "腎": {
+    "RTK_order": 916,
+    "Joyo_order": 7
+  },
+  "崖": {
+    "RTK_order": 841,
+    "Joyo_order": 7
+  },
+  "冶": {
+    "RTK_order": 808,
+    "Joyo_order": 7
+  },
+  "勾": {
+    "RTK_order": 800,
+    "Joyo_order": 7
+  },
+  "曖": {
+    "RTK_order": 797,
+    "Joyo_order": 7
+  },
+  "采": {
+    "RTK_order": 791,
+    "Joyo_order": 7
+  },
+  "淫": {
+    "RTK_order": 788,
+    "Joyo_order": 7
+  },
+  "股": {
+    "RTK_order": 764,
+    "Joyo_order": 7
+  },
+  "梗": {
+    "RTK_order": 751,
+    "Joyo_order": 7
+  },
+  "弄": {
+    "RTK_order": 731,
+    "Joyo_order": 7
+  },
+  "捗": {
+    "RTK_order": 728,
+    "Joyo_order": 7
+  },
+  "拶": {
+    "RTK_order": 713,
+    "Joyo_order": 7
+  },
+  "拉": {
+    "RTK_order": 696,
+    "Joyo_order": 7
+  },
+  "拭": {
+    "RTK_order": 695,
+    "Joyo_order": 7
+  },
+  "憬": {
+    "RTK_order": 682,
+    "Joyo_order": 7
+  },
+  "惧": {
+    "RTK_order": 680,
+    "Joyo_order": 7
+  },
+  "憧": {
+    "RTK_order": 681,
+    "Joyo_order": 7
+  },
+  "臆": {
+    "RTK_order": 655,
+    "Joyo_order": 7
+  },
+  "芯": {
+    "RTK_order": 647,
+    "Joyo_order": 7
+  },
+  "恣": {
+    "RTK_order": 641,
+    "Joyo_order": 7
+  },
+  "咽": {
+    "RTK_order": 628,
+    "Joyo_order": 7
+  },
+  "錮": {
+    "RTK_order": 623,
+    "Joyo_order": 7
+  },
+  "誰": {
+    "RTK_order": 598,
+    "Joyo_order": 7
+  },
+  "椎": {
+    "RTK_order": 597,
+    "Joyo_order": 7
+  },
+  "堆": {
+    "RTK_order": 596,
+    "Joyo_order": 7
+  },
+  "詣": {
+    "RTK_order": 495,
+    "Joyo_order": 7
+  },
+  "葛": {
+    "RTK_order": 492,
+    "Joyo_order": 7
+  },
+  "諧": {
+    "RTK_order": 486,
+    "Joyo_order": 7
+  },
+  "楷": {
+    "RTK_order": 485,
+    "Joyo_order": 7
+  },
+  "頃": {
+    "RTK_order": 479,
+    "Joyo_order": 7
+  },
+  "匂": {
+    "RTK_order": 478,
+    "Joyo_order": 7
+  },
+  "叱": {
+    "RTK_order": 477,
+    "Joyo_order": 7
+  },
+  "諦": {
+    "RTK_order": 467,
+    "Joyo_order": 7
+  },
+  "沃": {
+    "RTK_order": 459,
+    "Joyo_order": 7
+  },
+  "妖": {
+    "RTK_order": 458,
+    "Joyo_order": 7
+  },
+  "柿": {
+    "RTK_order": 441,
+    "Joyo_order": 7
+  },
+  "巾": {
+    "RTK_order": 432,
+    "Joyo_order": 7
+  },
+  "鍵": {
+    "RTK_order": 418,
+    "Joyo_order": 7
+  },
+  "蔑": {
+    "RTK_order": 392,
+    "Joyo_order": 7
+  },
+  "戚": {
+    "RTK_order": 385,
+    "Joyo_order": 7
+  },
+  "訃": {
+    "RTK_order": 363,
+    "Joyo_order": 7
+  },
+  "詮": {
+    "RTK_order": 360,
+    "Joyo_order": 7
+  },
+  "冥": {
+    "RTK_order": 322,
+    "Joyo_order": 7
+  },
+  "賂": {
+    "RTK_order": 313,
+    "Joyo_order": 7
+  },
+  "煎": {
+    "RTK_order": 310,
+    "Joyo_order": 7
+  },
+  "喩": {
+    "RTK_order": 308,
+    "Joyo_order": 7
+  },
+  "旺": {
+    "RTK_order": 278,
+    "Joyo_order": 7
+  },
+  "脊": {
+    "RTK_order": 268,
+    "Joyo_order": 7
+  },
+  "苛": {
+    "RTK_order": 240,
+    "Joyo_order": 7
+  },
+  "昧": {
+    "RTK_order": 231,
+    "Joyo_order": 7
+  },
+  "玩": {
+    "RTK_order": 276,
+    "Joyo_order": 7
+  },
+  "綻": {
+    "RTK_order": 1439,
+    "Joyo_order": 7
+  },
+  "此": {
+    "RTK_order": 2201,
+    "Joyo_order": 99
+  },
+  "柴": {
+    "RTK_order": 2202,
+    "Joyo_order": 99
+  },
+  "些": {
+    "RTK_order": 2203,
+    "Joyo_order": 99
+  },
+  "砦": {
+    "RTK_order": 2204,
+    "Joyo_order": 99
+  },
+  "髭": {
+    "RTK_order": 2205,
+    "Joyo_order": 99
+  },
+  "禽": {
+    "RTK_order": 2206,
+    "Joyo_order": 99
+  },
+  "檎": {
+    "RTK_order": 2207,
+    "Joyo_order": 99
+  },
+  "憐": {
+    "RTK_order": 2208,
+    "Joyo_order": 99
+  },
+  "燐": {
+    "RTK_order": 2209,
+    "Joyo_order": 99
+  },
+  "麟": {
+    "RTK_order": 2210,
+    "Joyo_order": 99
+  },
+  "鱗": {
+    "RTK_order": 2211,
+    "Joyo_order": 99
+  },
+  "奄": {
+    "RTK_order": 2212,
+    "Joyo_order": 99
+  },
+  "庵": {
+    "RTK_order": 2213,
+    "Joyo_order": 99
+  },
+  "掩": {
+    "RTK_order": 2214,
+    "Joyo_order": 99
+  },
+  "悛": {
+    "RTK_order": 2215,
+    "Joyo_order": 99
+  },
+  "駿": {
+    "RTK_order": 2216,
+    "Joyo_order": 99
+  },
+  "峻": {
+    "RTK_order": 2217,
+    "Joyo_order": 99
+  },
+  "竣": {
+    "RTK_order": 2218,
+    "Joyo_order": 99
+  },
+  "犀": {
+    "RTK_order": 2219,
+    "Joyo_order": 99
+  },
+  "皐": {
+    "RTK_order": 2220,
+    "Joyo_order": 99
+  },
+  "畷": {
+    "RTK_order": 2221,
+    "Joyo_order": 99
+  },
+  "綴": {
+    "RTK_order": 2222,
+    "Joyo_order": 99
+  },
+  "鎧": {
+    "RTK_order": 2223,
+    "Joyo_order": 99
+  },
+  "凱": {
+    "RTK_order": 2224,
+    "Joyo_order": 99
+  },
+  "呑": {
+    "RTK_order": 2225,
+    "Joyo_order": 99
+  },
+  "韮": {
+    "RTK_order": 2226,
+    "Joyo_order": 99
+  },
+  "籤": {
+    "RTK_order": 2227,
+    "Joyo_order": 99
+  },
+  "懺": {
+    "RTK_order": 2228,
+    "Joyo_order": 99
+  },
+  "芻": {
+    "RTK_order": 2229,
+    "Joyo_order": 99
+  },
+  "雛": {
+    "RTK_order": 2230,
+    "Joyo_order": 99
+  },
+  "趨": {
+    "RTK_order": 2231,
+    "Joyo_order": 99
+  },
+  "尤": {
+    "RTK_order": 2232,
+    "Joyo_order": 99
+  },
+  "厖": {
+    "RTK_order": 2233,
+    "Joyo_order": 99
+  },
+  "或": {
+    "RTK_order": 2234,
+    "Joyo_order": 99
+  },
+  "兎": {
+    "RTK_order": 2235,
+    "Joyo_order": 99
+  },
+  "也": {
+    "RTK_order": 2236,
+    "Joyo_order": 99
+  },
+  "巴": {
+    "RTK_order": 2237,
+    "Joyo_order": 99
+  },
+  "疋": {
+    "RTK_order": 2238,
+    "Joyo_order": 99
+  },
+  "菫": {
+    "RTK_order": 2239,
+    "Joyo_order": 99
+  },
+  "曼": {
+    "RTK_order": 2240,
+    "Joyo_order": 99
+  },
+  "云": {
+    "RTK_order": 2241,
+    "Joyo_order": 99
+  },
+  "莫": {
+    "RTK_order": 2242,
+    "Joyo_order": 99
+  },
+  "而": {
+    "RTK_order": 2243,
+    "Joyo_order": 99
+  },
+  "倭": {
+    "RTK_order": 2244,
+    "Joyo_order": 99
+  },
+  "侠": {
+    "RTK_order": 2245,
+    "Joyo_order": 99
+  },
+  "倦": {
+    "RTK_order": 2246,
+    "Joyo_order": 99
+  },
+  "俄": {
+    "RTK_order": 2247,
+    "Joyo_order": 99
+  },
+  "佃": {
+    "RTK_order": 2248,
+    "Joyo_order": 99
+  },
+  "仔": {
+    "RTK_order": 2249,
+    "Joyo_order": 99
+  },
+  "仇": {
+    "RTK_order": 2250,
+    "Joyo_order": 99
+  },
+  "伽": {
+    "RTK_order": 2251,
+    "Joyo_order": 99
+  },
+  "儲": {
+    "RTK_order": 2252,
+    "Joyo_order": 99
+  },
+  "僑": {
+    "RTK_order": 2253,
+    "Joyo_order": 99
+  },
+  "倶": {
+    "RTK_order": 2254,
+    "Joyo_order": 99
+  },
+  "侃": {
+    "RTK_order": 2255,
+    "Joyo_order": 99
+  },
+  "偲": {
+    "RTK_order": 2256,
+    "Joyo_order": 99
+  },
+  "侭": {
+    "RTK_order": 2257,
+    "Joyo_order": 99
+  },
+  "脩": {
+    "RTK_order": 2258,
+    "Joyo_order": 99
+  },
+  "倅": {
+    "RTK_order": 2259,
+    "Joyo_order": 99
+  },
+  "做": {
+    "RTK_order": 2260,
+    "Joyo_order": 99
+  },
+  "冴": {
+    "RTK_order": 2261,
+    "Joyo_order": 99
+  },
+  "凋": {
+    "RTK_order": 2262,
+    "Joyo_order": 99
+  },
+  "凌": {
+    "RTK_order": 2263,
+    "Joyo_order": 99
+  },
+  "凛": {
+    "RTK_order": 2264,
+    "Joyo_order": 99
+  },
+  "凧": {
+    "RTK_order": 2265,
+    "Joyo_order": 99
+  },
+  "凪": {
+    "RTK_order": 2266,
+    "Joyo_order": 99
+  },
+  "夙": {
+    "RTK_order": 2267,
+    "Joyo_order": 99
+  },
+  "鳳": {
+    "RTK_order": 2268,
+    "Joyo_order": 99
+  },
+  "剽": {
+    "RTK_order": 2269,
+    "Joyo_order": 99
+  },
+  "劉": {
+    "RTK_order": 2270,
+    "Joyo_order": 99
+  },
+  "剃": {
+    "RTK_order": 2271,
+    "Joyo_order": 99
+  },
+  "厭": {
+    "RTK_order": 2272,
+    "Joyo_order": 99
+  },
+  "雁": {
+    "RTK_order": 2273,
+    "Joyo_order": 99
+  },
+  "贋": {
+    "RTK_order": 2274,
+    "Joyo_order": 99
+  },
+  "厨": {
+    "RTK_order": 2275,
+    "Joyo_order": 99
+  },
+  "仄": {
+    "RTK_order": 2276,
+    "Joyo_order": 99
+  },
+  "哨": {
+    "RTK_order": 2277,
+    "Joyo_order": 99
+  },
+  "咎": {
+    "RTK_order": 2278,
+    "Joyo_order": 99
+  },
+  "囁": {
+    "RTK_order": 2279,
+    "Joyo_order": 99
+  },
+  "喋": {
+    "RTK_order": 2280,
+    "Joyo_order": 99
+  },
+  "嘩": {
+    "RTK_order": 2281,
+    "Joyo_order": 99
+  },
+  "噂": {
+    "RTK_order": 2282,
+    "Joyo_order": 99
+  },
+  "咳": {
+    "RTK_order": 2283,
+    "Joyo_order": 99
+  },
+  "喧": {
+    "RTK_order": 2284,
+    "Joyo_order": 99
+  },
+  "叩": {
+    "RTK_order": 2285,
+    "Joyo_order": 99
+  },
+  "嘘": {
+    "RTK_order": 2286,
+    "Joyo_order": 99
+  },
+  "啄": {
+    "RTK_order": 2287,
+    "Joyo_order": 99
+  },
+  "吠": {
+    "RTK_order": 2288,
+    "Joyo_order": 99
+  },
+  "吊": {
+    "RTK_order": 2289,
+    "Joyo_order": 99
+  },
+  "噛": {
+    "RTK_order": 2290,
+    "Joyo_order": 99
+  },
+  "叶": {
+    "RTK_order": 2291,
+    "Joyo_order": 99
+  },
+  "吻": {
+    "RTK_order": 2292,
+    "Joyo_order": 99
+  },
+  "吃": {
+    "RTK_order": 2293,
+    "Joyo_order": 99
+  },
+  "噺": {
+    "RTK_order": 2294,
+    "Joyo_order": 99
+  },
+  "噌": {
+    "RTK_order": 2295,
+    "Joyo_order": 99
+  },
+  "邑": {
+    "RTK_order": 2296,
+    "Joyo_order": 99
+  },
+  "呆": {
+    "RTK_order": 2297,
+    "Joyo_order": 99
+  },
+  "喰": {
+    "RTK_order": 2298,
+    "Joyo_order": 99
+  },
+  "埴": {
+    "RTK_order": 2299,
+    "Joyo_order": 99
+  },
+  "坤": {
+    "RTK_order": 2300,
+    "Joyo_order": 99
+  },
+  "壕": {
+    "RTK_order": 2301,
+    "Joyo_order": 99
+  },
+  "垢": {
+    "RTK_order": 2302,
+    "Joyo_order": 99
+  },
+  "坦": {
+    "RTK_order": 2303,
+    "Joyo_order": 99
+  },
+  "埠": {
+    "RTK_order": 2304,
+    "Joyo_order": 99
+  },
+  "堰": {
+    "RTK_order": 2305,
+    "Joyo_order": 99
+  },
+  "堵": {
+    "RTK_order": 2306,
+    "Joyo_order": 99
+  },
+  "嬰": {
+    "RTK_order": 2307,
+    "Joyo_order": 99
+  },
+  "姦": {
+    "RTK_order": 2308,
+    "Joyo_order": 99
+  },
+  "婢": {
+    "RTK_order": 2309,
+    "Joyo_order": 99
+  },
+  "婉": {
+    "RTK_order": 2310,
+    "Joyo_order": 99
+  },
+  "娼": {
+    "RTK_order": 2311,
+    "Joyo_order": 99
+  },
+  "妓": {
+    "RTK_order": 2312,
+    "Joyo_order": 99
+  },
+  "娃": {
+    "RTK_order": 2313,
+    "Joyo_order": 99
+  },
+  "姪": {
+    "RTK_order": 2314,
+    "Joyo_order": 99
+  },
+  "嬬": {
+    "RTK_order": 2315,
+    "Joyo_order": 99
+  },
+  "姥": {
+    "RTK_order": 2316,
+    "Joyo_order": 99
+  },
+  "姑": {
+    "RTK_order": 2317,
+    "Joyo_order": 99
+  },
+  "姐": {
+    "RTK_order": 2318,
+    "Joyo_order": 99
+  },
+  "嬉": {
+    "RTK_order": 2319,
+    "Joyo_order": 99
+  },
+  "孕": {
+    "RTK_order": 2320,
+    "Joyo_order": 99
+  },
+  "孜": {
+    "RTK_order": 2321,
+    "Joyo_order": 99
+  },
+  "宥": {
+    "RTK_order": 2322,
+    "Joyo_order": 99
+  },
+  "寓": {
+    "RTK_order": 2323,
+    "Joyo_order": 99
+  },
+  "宏": {
+    "RTK_order": 2324,
+    "Joyo_order": 99
+  },
+  "牢": {
+    "RTK_order": 2325,
+    "Joyo_order": 99
+  },
+  "宋": {
+    "RTK_order": 2326,
+    "Joyo_order": 99
+  },
+  "宍": {
+    "RTK_order": 2327,
+    "Joyo_order": 99
+  },
+  "屠": {
+    "RTK_order": 2328,
+    "Joyo_order": 99
+  },
+  "屁": {
+    "RTK_order": 2329,
+    "Joyo_order": 99
+  },
+  "屑": {
+    "RTK_order": 2330,
+    "Joyo_order": 99
+  },
+  "屡": {
+    "RTK_order": 2331,
+    "Joyo_order": 99
+  },
+  "屍": {
+    "RTK_order": 2332,
+    "Joyo_order": 99
+  },
+  "屏": {
+    "RTK_order": 2333,
+    "Joyo_order": 99
+  },
+  "嵩": {
+    "RTK_order": 2334,
+    "Joyo_order": 99
+  },
+  "崚": {
+    "RTK_order": 2335,
+    "Joyo_order": 99
+  },
+  "嶺": {
+    "RTK_order": 2336,
+    "Joyo_order": 99
+  },
+  "嵌": {
+    "RTK_order": 2337,
+    "Joyo_order": 99
+  },
+  "帖": {
+    "RTK_order": 2338,
+    "Joyo_order": 99
+  },
+  "幡": {
+    "RTK_order": 2339,
+    "Joyo_order": 99
+  },
+  "幟": {
+    "RTK_order": 2340,
+    "Joyo_order": 99
+  },
+  "庖": {
+    "RTK_order": 2341,
+    "Joyo_order": 99
+  },
+  "廓": {
+    "RTK_order": 2342,
+    "Joyo_order": 99
+  },
+  "庇": {
+    "RTK_order": 2343,
+    "Joyo_order": 99
+  },
+  "鷹": {
+    "RTK_order": 2344,
+    "Joyo_order": 99
+  },
+  "庄": {
+    "RTK_order": 2345,
+    "Joyo_order": 99
+  },
+  "廟": {
+    "RTK_order": 2346,
+    "Joyo_order": 99
+  },
+  "彊": {
+    "RTK_order": 2347,
+    "Joyo_order": 99
+  },
+  "弛": {
+    "RTK_order": 2348,
+    "Joyo_order": 99
+  },
+  "粥": {
+    "RTK_order": 2349,
+    "Joyo_order": 99
+  },
+  "挽": {
+    "RTK_order": 2350,
+    "Joyo_order": 99
+  },
+  "撞": {
+    "RTK_order": 2351,
+    "Joyo_order": 99
+  },
+  "扮": {
+    "RTK_order": 2352,
+    "Joyo_order": 99
+  },
+  "捏": {
+    "RTK_order": 2353,
+    "Joyo_order": 99
+  },
+  "掴": {
+    "RTK_order": 2354,
+    "Joyo_order": 99
+  },
+  "捺": {
+    "RTK_order": 2355,
+    "Joyo_order": 99
+  },
+  "掻": {
+    "RTK_order": 2356,
+    "Joyo_order": 99
+  },
+  "撰": {
+    "RTK_order": 2357,
+    "Joyo_order": 99
+  },
+  "揃": {
+    "RTK_order": 2358,
+    "Joyo_order": 99
+  },
+  "捌": {
+    "RTK_order": 2359,
+    "Joyo_order": 99
+  },
+  "按": {
+    "RTK_order": 2360,
+    "Joyo_order": 99
+  },
+  "播": {
+    "RTK_order": 2361,
+    "Joyo_order": 99
+  },
+  "揖": {
+    "RTK_order": 2362,
+    "Joyo_order": 99
+  },
+  "托": {
+    "RTK_order": 2363,
+    "Joyo_order": 99
+  },
+  "捧": {
+    "RTK_order": 2364,
+    "Joyo_order": 99
+  },
+  "撚": {
+    "RTK_order": 2365,
+    "Joyo_order": 99
+  },
+  "挺": {
+    "RTK_order": 2366,
+    "Joyo_order": 99
+  },
+  "擾": {
+    "RTK_order": 2367,
+    "Joyo_order": 99
+  },
+  "撫": {
+    "RTK_order": 2368,
+    "Joyo_order": 99
+  },
+  "撒": {
+    "RTK_order": 2369,
+    "Joyo_order": 99
+  },
+  "擢": {
+    "RTK_order": 2370,
+    "Joyo_order": 99
+  },
+  "摺": {
+    "RTK_order": 2371,
+    "Joyo_order": 99
+  },
+  "捷": {
+    "RTK_order": 2372,
+    "Joyo_order": 99
+  },
+  "抉": {
+    "RTK_order": 2373,
+    "Joyo_order": 99
+  },
+  "怯": {
+    "RTK_order": 2374,
+    "Joyo_order": 99
+  },
+  "惟": {
+    "RTK_order": 2375,
+    "Joyo_order": 99
+  },
+  "惚": {
+    "RTK_order": 2376,
+    "Joyo_order": 99
+  },
+  "怜": {
+    "RTK_order": 2377,
+    "Joyo_order": 99
+  },
+  "惇": {
+    "RTK_order": 2378,
+    "Joyo_order": 99
+  },
+  "恰": {
+    "RTK_order": 2379,
+    "Joyo_order": 99
+  },
+  "恢": {
+    "RTK_order": 2380,
+    "Joyo_order": 99
+  },
+  "悌": {
+    "RTK_order": 2381,
+    "Joyo_order": 99
+  },
+  "澪": {
+    "RTK_order": 2382,
+    "Joyo_order": 99
+  },
+  "洸": {
+    "RTK_order": 2383,
+    "Joyo_order": 99
+  },
+  "滉": {
+    "RTK_order": 2384,
+    "Joyo_order": 99
+  },
+  "漱": {
+    "RTK_order": 2385,
+    "Joyo_order": 99
+  },
+  "洲": {
+    "RTK_order": 2386,
+    "Joyo_order": 99
+  },
+  "洵": {
+    "RTK_order": 2387,
+    "Joyo_order": 99
+  },
+  "滲": {
+    "RTK_order": 2388,
+    "Joyo_order": 99
+  },
+  "洒": {
+    "RTK_order": 2389,
+    "Joyo_order": 99
+  },
+  "沐": {
+    "RTK_order": 2390,
+    "Joyo_order": 99
+  },
+  "泪": {
+    "RTK_order": 2391,
+    "Joyo_order": 99
+  },
+  "渾": {
+    "RTK_order": 2392,
+    "Joyo_order": 99
+  },
+  "涜": {
+    "RTK_order": 2393,
+    "Joyo_order": 99
+  },
+  "梁": {
+    "RTK_order": 2394,
+    "Joyo_order": 99
+  },
+  "澱": {
+    "RTK_order": 2395,
+    "Joyo_order": 99
+  },
+  "洛": {
+    "RTK_order": 2396,
+    "Joyo_order": 99
+  },
+  "汝": {
+    "RTK_order": 2397,
+    "Joyo_order": 99
+  },
+  "漉": {
+    "RTK_order": 2398,
+    "Joyo_order": 99
+  },
+  "瀕": {
+    "RTK_order": 2399,
+    "Joyo_order": 99
+  },
+  "濠": {
+    "RTK_order": 2400,
+    "Joyo_order": 99
+  },
+  "溌": {
+    "RTK_order": 2401,
+    "Joyo_order": 99
+  },
+  "湊": {
+    "RTK_order": 2402,
+    "Joyo_order": 99
+  },
+  "淋": {
+    "RTK_order": 2403,
+    "Joyo_order": 99
+  },
+  "浩": {
+    "RTK_order": 2404,
+    "Joyo_order": 99
+  },
+  "汀": {
+    "RTK_order": 2405,
+    "Joyo_order": 99
+  },
+  "鴻": {
+    "RTK_order": 2406,
+    "Joyo_order": 99
+  },
+  "潅": {
+    "RTK_order": 2407,
+    "Joyo_order": 99
+  },
+  "溢": {
+    "RTK_order": 2408,
+    "Joyo_order": 99
+  },
+  "湛": {
+    "RTK_order": 2409,
+    "Joyo_order": 99
+  },
+  "淳": {
+    "RTK_order": 2410,
+    "Joyo_order": 99
+  },
+  "渥": {
+    "RTK_order": 2411,
+    "Joyo_order": 99
+  },
+  "灘": {
+    "RTK_order": 2412,
+    "Joyo_order": 99
+  },
+  "汲": {
+    "RTK_order": 2413,
+    "Joyo_order": 99
+  },
+  "瀞": {
+    "RTK_order": 2414,
+    "Joyo_order": 99
+  },
+  "溜": {
+    "RTK_order": 2415,
+    "Joyo_order": 99
+  },
+  "渕": {
+    "RTK_order": 2416,
+    "Joyo_order": 99
+  },
+  "沌": {
+    "RTK_order": 2417,
+    "Joyo_order": 99
+  },
+  "濾": {
+    "RTK_order": 2418,
+    "Joyo_order": 99
+  },
+  "濡": {
+    "RTK_order": 2419,
+    "Joyo_order": 99
+  },
+  "淀": {
+    "RTK_order": 2420,
+    "Joyo_order": 99
+  },
+  "涅": {
+    "RTK_order": 2421,
+    "Joyo_order": 99
+  },
+  "斧": {
+    "RTK_order": 2422,
+    "Joyo_order": 99
+  },
+  "爺": {
+    "RTK_order": 2423,
+    "Joyo_order": 99
+  },
+  "猾": {
+    "RTK_order": 2424,
+    "Joyo_order": 99
+  },
+  "猥": {
+    "RTK_order": 2425,
+    "Joyo_order": 99
+  },
+  "狡": {
+    "RTK_order": 2426,
+    "Joyo_order": 99
+  },
+  "狸": {
+    "RTK_order": 2427,
+    "Joyo_order": 99
+  },
+  "狼": {
+    "RTK_order": 2428,
+    "Joyo_order": 99
+  },
+  "狽": {
+    "RTK_order": 2429,
+    "Joyo_order": 99
+  },
+  "狗": {
+    "RTK_order": 2430,
+    "Joyo_order": 99
+  },
+  "狐": {
+    "RTK_order": 2431,
+    "Joyo_order": 99
+  },
+  "狛": {
+    "RTK_order": 2432,
+    "Joyo_order": 99
+  },
+  "獅": {
+    "RTK_order": 2433,
+    "Joyo_order": 99
+  },
+  "狒": {
+    "RTK_order": 2434,
+    "Joyo_order": 99
+  },
+  "莨": {
+    "RTK_order": 2435,
+    "Joyo_order": 99
+  },
+  "茉": {
+    "RTK_order": 2436,
+    "Joyo_order": 99
+  },
+  "莉": {
+    "RTK_order": 2437,
+    "Joyo_order": 99
+  },
+  "苺": {
+    "RTK_order": 2438,
+    "Joyo_order": 99
+  },
+  "萩": {
+    "RTK_order": 2439,
+    "Joyo_order": 99
+  },
+  "藝": {
+    "RTK_order": 2440,
+    "Joyo_order": 99
+  },
+  "薙": {
+    "RTK_order": 2441,
+    "Joyo_order": 99
+  },
+  "蓑": {
+    "RTK_order": 2442,
+    "Joyo_order": 99
+  },
+  "苔": {
+    "RTK_order": 2443,
+    "Joyo_order": 99
+  },
+  "蕩": {
+    "RTK_order": 2444,
+    "Joyo_order": 99
+  },
+  "蔓": {
+    "RTK_order": 2445,
+    "Joyo_order": 99
+  },
+  "蓮": {
+    "RTK_order": 2446,
+    "Joyo_order": 99
+  },
+  "芙": {
+    "RTK_order": 2447,
+    "Joyo_order": 99
+  },
+  "蓉": {
+    "RTK_order": 2448,
+    "Joyo_order": 99
+  },
+  "蘭": {
+    "RTK_order": 2449,
+    "Joyo_order": 99
+  },
+  "芦": {
+    "RTK_order": 2450,
+    "Joyo_order": 99
+  },
+  "薯": {
+    "RTK_order": 2451,
+    "Joyo_order": 99
+  },
+  "菖": {
+    "RTK_order": 2452,
+    "Joyo_order": 99
+  },
+  "蕉": {
+    "RTK_order": 2453,
+    "Joyo_order": 99
+  },
+  "蕎": {
+    "RTK_order": 2454,
+    "Joyo_order": 99
+  },
+  "蕗": {
+    "RTK_order": 2455,
+    "Joyo_order": 99
+  },
+  "茄": {
+    "RTK_order": 2456,
+    "Joyo_order": 99
+  },
+  "蔭": {
+    "RTK_order": 2457,
+    "Joyo_order": 99
+  },
+  "蓬": {
+    "RTK_order": 2458,
+    "Joyo_order": 99
+  },
+  "芥": {
+    "RTK_order": 2459,
+    "Joyo_order": 99
+  },
+  "萌": {
+    "RTK_order": 2460,
+    "Joyo_order": 99
+  },
+  "葡": {
+    "RTK_order": 2461,
+    "Joyo_order": 99
+  },
+  "萄": {
+    "RTK_order": 2462,
+    "Joyo_order": 99
+  },
+  "蘇": {
+    "RTK_order": 2463,
+    "Joyo_order": 99
+  },
+  "蕃": {
+    "RTK_order": 2464,
+    "Joyo_order": 99
+  },
+  "苓": {
+    "RTK_order": 2465,
+    "Joyo_order": 99
+  },
+  "菰": {
+    "RTK_order": 2466,
+    "Joyo_order": 99
+  },
+  "蒙": {
+    "RTK_order": 2467,
+    "Joyo_order": 99
+  },
+  "茅": {
+    "RTK_order": 2468,
+    "Joyo_order": 99
+  },
+  "芭": {
+    "RTK_order": 2469,
+    "Joyo_order": 99
+  },
+  "苅": {
+    "RTK_order": 2470,
+    "Joyo_order": 99
+  },
+  "葱": {
+    "RTK_order": 2471,
+    "Joyo_order": 99
+  },
+  "葵": {
+    "RTK_order": 2472,
+    "Joyo_order": 99
+  },
+  "葺": {
+    "RTK_order": 2473,
+    "Joyo_order": 99
+  },
+  "蕊": {
+    "RTK_order": 2474,
+    "Joyo_order": 99
+  },
+  "茸": {
+    "RTK_order": 2475,
+    "Joyo_order": 99
+  },
+  "蒔": {
+    "RTK_order": 2476,
+    "Joyo_order": 99
+  },
+  "芹": {
+    "RTK_order": 2477,
+    "Joyo_order": 99
+  },
+  "苫": {
+    "RTK_order": 2478,
+    "Joyo_order": 99
+  },
+  "蒼": {
+    "RTK_order": 2479,
+    "Joyo_order": 99
+  },
+  "藁": {
+    "RTK_order": 2480,
+    "Joyo_order": 99
+  },
+  "蕪": {
+    "RTK_order": 2481,
+    "Joyo_order": 99
+  },
+  "藷": {
+    "RTK_order": 2482,
+    "Joyo_order": 99
+  },
+  "薮": {
+    "RTK_order": 2483,
+    "Joyo_order": 99
+  },
+  "蒜": {
+    "RTK_order": 2484,
+    "Joyo_order": 99
+  },
+  "蕨": {
+    "RTK_order": 2485,
+    "Joyo_order": 99
+  },
+  "蔚": {
+    "RTK_order": 2486,
+    "Joyo_order": 99
+  },
+  "茜": {
+    "RTK_order": 2487,
+    "Joyo_order": 99
+  },
+  "莞": {
+    "RTK_order": 2488,
+    "Joyo_order": 99
+  },
+  "蒐": {
+    "RTK_order": 2489,
+    "Joyo_order": 99
+  },
+  "菅": {
+    "RTK_order": 2490,
+    "Joyo_order": 99
+  },
+  "葦": {
+    "RTK_order": 2491,
+    "Joyo_order": 99
+  },
+  "迪": {
+    "RTK_order": 2492,
+    "Joyo_order": 99
+  },
+  "辿": {
+    "RTK_order": 2493,
+    "Joyo_order": 99
+  },
+  "這": {
+    "RTK_order": 2494,
+    "Joyo_order": 99
+  },
+  "迂": {
+    "RTK_order": 2495,
+    "Joyo_order": 99
+  },
+  "遁": {
+    "RTK_order": 2496,
+    "Joyo_order": 99
+  },
+  "逢": {
+    "RTK_order": 2497,
+    "Joyo_order": 99
+  },
+  "遥": {
+    "RTK_order": 2498,
+    "Joyo_order": 99
+  },
+  "遼": {
+    "RTK_order": 2499,
+    "Joyo_order": 99
+  },
+  "逼": {
+    "RTK_order": 2500,
+    "Joyo_order": 99
+  },
+  "迄": {
+    "RTK_order": 2501,
+    "Joyo_order": 99
+  },
+  "逗": {
+    "RTK_order": 2502,
+    "Joyo_order": 99
+  },
+  "鄭": {
+    "RTK_order": 2503,
+    "Joyo_order": 99
+  },
+  "隕": {
+    "RTK_order": 2504,
+    "Joyo_order": 99
+  },
+  "隈": {
+    "RTK_order": 2505,
+    "Joyo_order": 99
+  },
+  "憑": {
+    "RTK_order": 2506,
+    "Joyo_order": 99
+  },
+  "惹": {
+    "RTK_order": 2507,
+    "Joyo_order": 99
+  },
+  "悉": {
+    "RTK_order": 2508,
+    "Joyo_order": 99
+  },
+  "忽": {
+    "RTK_order": 2509,
+    "Joyo_order": 99
+  },
+  "惣": {
+    "RTK_order": 2510,
+    "Joyo_order": 99
+  },
+  "愈": {
+    "RTK_order": 2511,
+    "Joyo_order": 99
+  },
+  "恕": {
+    "RTK_order": 2512,
+    "Joyo_order": 99
+  },
+  "昴": {
+    "RTK_order": 2513,
+    "Joyo_order": 99
+  },
+  "晋": {
+    "RTK_order": 2514,
+    "Joyo_order": 99
+  },
+  "晟": {
+    "RTK_order": 2515,
+    "Joyo_order": 99
+  },
+  "暈": {
+    "RTK_order": 2516,
+    "Joyo_order": 99
+  },
+  "暉": {
+    "RTK_order": 2517,
+    "Joyo_order": 99
+  },
+  "旱": {
+    "RTK_order": 2518,
+    "Joyo_order": 99
+  },
+  "晏": {
+    "RTK_order": 2519,
+    "Joyo_order": 99
+  },
+  "晨": {
+    "RTK_order": 2520,
+    "Joyo_order": 99
+  },
+  "晒": {
+    "RTK_order": 2521,
+    "Joyo_order": 99
+  },
+  "晃": {
+    "RTK_order": 2522,
+    "Joyo_order": 99
+  },
+  "曝": {
+    "RTK_order": 2523,
+    "Joyo_order": 99
+  },
+  "曙": {
+    "RTK_order": 2524,
+    "Joyo_order": 99
+  },
+  "昂": {
+    "RTK_order": 2525,
+    "Joyo_order": 99
+  },
+  "昏": {
+    "RTK_order": 2526,
+    "Joyo_order": 99
+  },
+  "晦": {
+    "RTK_order": 2527,
+    "Joyo_order": 99
+  },
+  "膿": {
+    "RTK_order": 2528,
+    "Joyo_order": 99
+  },
+  "腑": {
+    "RTK_order": 2529,
+    "Joyo_order": 99
+  },
+  "胱": {
+    "RTK_order": 2530,
+    "Joyo_order": 99
+  },
+  "胚": {
+    "RTK_order": 2531,
+    "Joyo_order": 99
+  },
+  "肛": {
+    "RTK_order": 2532,
+    "Joyo_order": 99
+  },
+  "脆": {
+    "RTK_order": 2533,
+    "Joyo_order": 99
+  },
+  "肋": {
+    "RTK_order": 2534,
+    "Joyo_order": 99
+  },
+  "腔": {
+    "RTK_order": 2535,
+    "Joyo_order": 99
+  },
+  "肱": {
+    "RTK_order": 2536,
+    "Joyo_order": 99
+  },
+  "胡": {
+    "RTK_order": 2537,
+    "Joyo_order": 99
+  },
+  "楓": {
+    "RTK_order": 2538,
+    "Joyo_order": 99
+  },
+  "楊": {
+    "RTK_order": 2539,
+    "Joyo_order": 99
+  },
+  "椋": {
+    "RTK_order": 2540,
+    "Joyo_order": 99
+  },
+  "榛": {
+    "RTK_order": 2541,
+    "Joyo_order": 99
+  },
+  "櫛": {
+    "RTK_order": 2542,
+    "Joyo_order": 99
+  },
+  "槌": {
+    "RTK_order": 2543,
+    "Joyo_order": 99
+  },
+  "樵": {
+    "RTK_order": 2544,
+    "Joyo_order": 99
+  },
+  "梯": {
+    "RTK_order": 2545,
+    "Joyo_order": 99
+  },
+  "柑": {
+    "RTK_order": 2546,
+    "Joyo_order": 99
+  },
+  "杭": {
+    "RTK_order": 2547,
+    "Joyo_order": 99
+  },
+  "柊": {
+    "RTK_order": 2548,
+    "Joyo_order": 99
+  },
+  "柚": {
+    "RTK_order": 2549,
+    "Joyo_order": 99
+  },
+  "椀": {
+    "RTK_order": 2550,
+    "Joyo_order": 99
+  },
+  "栂": {
+    "RTK_order": 2551,
+    "Joyo_order": 99
+  },
+  "柾": {
+    "RTK_order": 2552,
+    "Joyo_order": 99
+  },
+  "榊": {
+    "RTK_order": 2553,
+    "Joyo_order": 99
+  },
+  "樫": {
+    "RTK_order": 2554,
+    "Joyo_order": 99
+  },
+  "槙": {
+    "RTK_order": 2555,
+    "Joyo_order": 99
+  },
+  "楢": {
+    "RTK_order": 2556,
+    "Joyo_order": 99
+  },
+  "橘": {
+    "RTK_order": 2557,
+    "Joyo_order": 99
+  },
+  "桧": {
+    "RTK_order": 2558,
+    "Joyo_order": 99
+  },
+  "棲": {
+    "RTK_order": 2559,
+    "Joyo_order": 99
+  },
+  "栖": {
+    "RTK_order": 2560,
+    "Joyo_order": 99
+  },
+  "桔": {
+    "RTK_order": 2561,
+    "Joyo_order": 99
+  },
+  "杜": {
+    "RTK_order": 2562,
+    "Joyo_order": 99
+  },
+  "杷": {
+    "RTK_order": 2563,
+    "Joyo_order": 99
+  },
+  "梶": {
+    "RTK_order": 2564,
+    "Joyo_order": 99
+  },
+  "<!--anki-->杵": {
+    "RTK_order": 2565,
+    "Joyo_order": 99
+  },
+  "杖": {
+    "RTK_order": 2566,
+    "Joyo_order": 99
+  },
+  "樽": {
+    "RTK_order": 2567,
+    "Joyo_order": 99
+  },
+  "櫓": {
+    "RTK_order": 2568,
+    "Joyo_order": 99
+  },
+  "橿": {
+    "RTK_order": 2569,
+    "Joyo_order": 99
+  },
+  "杓": {
+    "RTK_order": 2570,
+    "Joyo_order": 99
+  },
+  "李": {
+    "RTK_order": 2571,
+    "Joyo_order": 99
+  },
+  "棉": {
+    "RTK_order": 2572,
+    "Joyo_order": 99
+  },
+  "楯": {
+    "RTK_order": 2573,
+    "Joyo_order": 99
+  },
+  "榎": {
+    "RTK_order": 2574,
+    "Joyo_order": 99
+  },
+  "樺": {
+    "RTK_order": 2575,
+    "Joyo_order": 99
+  },
+  "槍": {
+    "RTK_order": 2576,
+    "Joyo_order": 99
+  },
+  "柘": {
+    "RTK_order": 2577,
+    "Joyo_order": 99
+  },
+  "梱": {
+    "RTK_order": 2578,
+    "Joyo_order": 99
+  },
+  "枇": {
+    "RTK_order": 2579,
+    "Joyo_order": 99
+  },
+  "樋": {
+    "RTK_order": 2580,
+    "Joyo_order": 99
+  },
+  "橇": {
+    "RTK_order": 2581,
+    "Joyo_order": 99
+  },
+  "槃": {
+    "RTK_order": 2582,
+    "Joyo_order": 99
+  },
+  "栞": {
+    "RTK_order": 2583,
+    "Joyo_order": 99
+  },
+  "椰": {
+    "RTK_order": 2584,
+    "Joyo_order": 99
+  },
+  "檀": {
+    "RTK_order": 2585,
+    "Joyo_order": 99
+  },
+  "樗": {
+    "RTK_order": 2586,
+    "Joyo_order": 99
+  },
+  "槻": {
+    "RTK_order": 2587,
+    "Joyo_order": 99
+  },
+  "椙": {
+    "RTK_order": 2588,
+    "Joyo_order": 99
+  },
+  "彬": {
+    "RTK_order": 2589,
+    "Joyo_order": 99
+  },
+  "桶": {
+    "RTK_order": 2590,
+    "Joyo_order": 99
+  },
+  "楕": {
+    "RTK_order": 2591,
+    "Joyo_order": 99
+  },
+  "樒": {
+    "RTK_order": 2592,
+    "Joyo_order": 99
+  },
+  "毬": {
+    "RTK_order": 2593,
+    "Joyo_order": 99
+  },
+  "燿": {
+    "RTK_order": 2594,
+    "Joyo_order": 99
+  },
+  "燎": {
+    "RTK_order": 2595,
+    "Joyo_order": 99
+  },
+  "炬": {
+    "RTK_order": 2596,
+    "Joyo_order": 99
+  },
+  "焚": {
+    "RTK_order": 2597,
+    "Joyo_order": 99
+  },
+  "灸": {
+    "RTK_order": 2598,
+    "Joyo_order": 99
+  },
+  "煽": {
+    "RTK_order": 2599,
+    "Joyo_order": 99
+  },
+  "煤": {
+    "RTK_order": 2600,
+    "Joyo_order": 99
+  },
+  "煉": {
+    "RTK_order": 2601,
+    "Joyo_order": 99
+  },
+  "燦": {
+    "RTK_order": 2602,
+    "Joyo_order": 99
+  },
+  "灼": {
+    "RTK_order": 2603,
+    "Joyo_order": 99
+  },
+  "烙": {
+    "RTK_order": 2604,
+    "Joyo_order": 99
+  },
+  "焔": {
+    "RTK_order": 2605,
+    "Joyo_order": 99
+  },
+  "烹": {
+    "RTK_order": 2606,
+    "Joyo_order": 99
+  },
+  "牽": {
+    "RTK_order": 2607,
+    "Joyo_order": 99
+  },
+  "牝": {
+    "RTK_order": 2608,
+    "Joyo_order": 99
+  },
+  "牡": {
+    "RTK_order": 2609,
+    "Joyo_order": 99
+  },
+  "琳": {
+    "RTK_order": 2610,
+    "Joyo_order": 99
+  },
+  "琉": {
+    "RTK_order": 2611,
+    "Joyo_order": 99
+  },
+  "瑳": {
+    "RTK_order": 2612,
+    "Joyo_order": 99
+  },
+  "琢": {
+    "RTK_order": 2613,
+    "Joyo_order": 99
+  },
+  "珊": {
+    "RTK_order": 2614,
+    "Joyo_order": 99
+  },
+  "瑚": {
+    "RTK_order": 2615,
+    "Joyo_order": 99
+  },
+  "瑞": {
+    "RTK_order": 2616,
+    "Joyo_order": 99
+  },
+  "玖": {
+    "RTK_order": 2617,
+    "Joyo_order": 99
+  },
+  "瑛": {
+    "RTK_order": 2618,
+    "Joyo_order": 99
+  },
+  "玲": {
+    "RTK_order": 2619,
+    "Joyo_order": 99
+  },
+  "畢": {
+    "RTK_order": 2620,
+    "Joyo_order": 99
+  },
+  "畦": {
+    "RTK_order": 2621,
+    "Joyo_order": 99
+  },
+  "痒": {
+    "RTK_order": 2622,
+    "Joyo_order": 99
+  },
+  "痰": {
+    "RTK_order": 2623,
+    "Joyo_order": 99
+  },
+  "疹": {
+    "RTK_order": 2624,
+    "Joyo_order": 99
+  },
+  "痔": {
+    "RTK_order": 2625,
+    "Joyo_order": 99
+  },
+  "癌": {
+    "RTK_order": 2626,
+    "Joyo_order": 99
+  },
+  "痺": {
+    "RTK_order": 2627,
+    "Joyo_order": 99
+  },
+  "眸": {
+    "RTK_order": 2628,
+    "Joyo_order": 99
+  },
+  "眩": {
+    "RTK_order": 2629,
+    "Joyo_order": 99
+  },
+  "雉": {
+    "RTK_order": 2630,
+    "Joyo_order": 99
+  },
+  "矩": {
+    "RTK_order": 2631,
+    "Joyo_order": 99
+  },
+  "磐": {
+    "RTK_order": 2632,
+    "Joyo_order": 99
+  },
+  "碇": {
+    "RTK_order": 2633,
+    "Joyo_order": 99
+  },
+  "碧": {
+    "RTK_order": 2634,
+    "Joyo_order": 99
+  },
+  "硯": {
+    "RTK_order": 2635,
+    "Joyo_order": 99
+  },
+  "砥": {
+    "RTK_order": 2636,
+    "Joyo_order": 99
+  },
+  "碗": {
+    "RTK_order": 2637,
+    "Joyo_order": 99
+  },
+  "碍": {
+    "RTK_order": 2638,
+    "Joyo_order": 99
+  },
+  "碩": {
+    "RTK_order": 2639,
+    "Joyo_order": 99
+  },
+  "磯": {
+    "RTK_order": 2640,
+    "Joyo_order": 99
+  },
+  "砺": {
+    "RTK_order": 2641,
+    "Joyo_order": 99
+  },
+  "碓": {
+    "RTK_order": 2642,
+    "Joyo_order": 99
+  },
+  "禦": {
+    "RTK_order": 2643,
+    "Joyo_order": 99
+  },
+  "祷": {
+    "RTK_order": 2644,
+    "Joyo_order": 99
+  },
+  "祐": {
+    "RTK_order": 2645,
+    "Joyo_order": 99
+  },
+  "祇": {
+    "RTK_order": 2646,
+    "Joyo_order": 99
+  },
+  "祢": {
+    "RTK_order": 2647,
+    "Joyo_order": 99
+  },
+  "禄": {
+    "RTK_order": 2648,
+    "Joyo_order": 99
+  },
+  "禎": {
+    "RTK_order": 2649,
+    "Joyo_order": 99
+  },
+  "秤": {
+    "RTK_order": 2650,
+    "Joyo_order": 99
+  },
+  "黍": {
+    "RTK_order": 2651,
+    "Joyo_order": 99
+  },
+  "禿": {
+    "RTK_order": 2652,
+    "Joyo_order": 99
+  },
+  "稔": {
+    "RTK_order": 2653,
+    "Joyo_order": 99
+  },
+  "稗": {
+    "RTK_order": 2654,
+    "Joyo_order": 99
+  },
+  "穣": {
+    "RTK_order": 2655,
+    "Joyo_order": 99
+  },
+  "稜": {
+    "RTK_order": 2656,
+    "Joyo_order": 99
+  },
+  "稀": {
+    "RTK_order": 2657,
+    "Joyo_order": 99
+  },
+  "穆": {
+    "RTK_order": 2658,
+    "Joyo_order": 99
+  },
+  "窺": {
+    "RTK_order": 2659,
+    "Joyo_order": 99
+  },
+  "窄": {
+    "RTK_order": 2660,
+    "Joyo_order": 99
+  },
+  "穿": {
+    "RTK_order": 2661,
+    "Joyo_order": 99
+  },
+  "竃": {
+    "RTK_order": 2662,
+    "Joyo_order": 99
+  },
+  "竪": {
+    "RTK_order": 2663,
+    "Joyo_order": 99
+  },
+  "颯": {
+    "RTK_order": 2664,
+    "Joyo_order": 99
+  },
+  "站": {
+    "RTK_order": 2665,
+    "Joyo_order": 99
+  },
+  "靖": {
+    "RTK_order": 2666,
+    "Joyo_order": 99
+  },
+  "妾": {
+    "RTK_order": 2667,
+    "Joyo_order": 99
+  },
+  "衿": {
+    "RTK_order": 2668,
+    "Joyo_order": 99
+  },
+  "袷": {
+    "RTK_order": 2669,
+    "Joyo_order": 99
+  },
+  "袴": {
+    "RTK_order": 2670,
+    "Joyo_order": 99
+  },
+  "襖": {
+    "RTK_order": 2671,
+    "Joyo_order": 99
+  },
+  "笙": {
+    "RTK_order": 2672,
+    "Joyo_order": 99
+  },
+  "筏": {
+    "RTK_order": 2673,
+    "Joyo_order": 99
+  },
+  "簾": {
+    "RTK_order": 2674,
+    "Joyo_order": 99
+  },
+  "箪": {
+    "RTK_order": 2675,
+    "Joyo_order": 99
+  },
+  "竿": {
+    "RTK_order": 2676,
+    "Joyo_order": 99
+  },
+  "箆": {
+    "RTK_order": 2677,
+    "Joyo_order": 99
+  },
+  "箔": {
+    "RTK_order": 2678,
+    "Joyo_order": 99
+  },
+  "笥": {
+    "RTK_order": 2679,
+    "Joyo_order": 99
+  },
+  "箭": {
+    "RTK_order": 2680,
+    "Joyo_order": 99
+  },
+  "筑": {
+    "RTK_order": 2681,
+    "Joyo_order": 99
+  },
+  "篠": {
+    "RTK_order": 2682,
+    "Joyo_order": 99
+  },
+  "纂": {
+    "RTK_order": 2683,
+    "Joyo_order": 99
+  },
+  "竺": {
+    "RTK_order": 2684,
+    "Joyo_order": 99
+  },
+  "箕": {
+    "RTK_order": 2685,
+    "Joyo_order": 99
+  },
+  "笈": {
+    "RTK_order": 2686,
+    "Joyo_order": 99
+  },
+  "篇": {
+    "RTK_order": 2687,
+    "Joyo_order": 99
+  },
+  "筈": {
+    "RTK_order": 2688,
+    "Joyo_order": 99
+  },
+  "簸": {
+    "RTK_order": 2689,
+    "Joyo_order": 99
+  },
+  "粕": {
+    "RTK_order": 2690,
+    "Joyo_order": 99
+  },
+  "糟": {
+    "RTK_order": 2691,
+    "Joyo_order": 99
+  },
+  "糊": {
+    "RTK_order": 2692,
+    "Joyo_order": 99
+  },
+  "籾": {
+    "RTK_order": 2693,
+    "Joyo_order": 99
+  },
+  "糠": {
+    "RTK_order": 2694,
+    "Joyo_order": 99
+  },
+  "糞": {
+    "RTK_order": 2695,
+    "Joyo_order": 99
+  },
+  "粟": {
+    "RTK_order": 2696,
+    "Joyo_order": 99
+  },
+  "繋": {
+    "RTK_order": 2697,
+    "Joyo_order": 99
+  },
+  "綸": {
+    "RTK_order": 2698,
+    "Joyo_order": 99
+  },
+  "絨": {
+    "RTK_order": 2699,
+    "Joyo_order": 99
+  },
+  "絆": {
+    "RTK_order": 2700,
+    "Joyo_order": 99
+  },
+  "緋": {
+    "RTK_order": 2701,
+    "Joyo_order": 99
+  },
+  "綜": {
+    "RTK_order": 2702,
+    "Joyo_order": 99
+  },
+  "紐": {
+    "RTK_order": 2703,
+    "Joyo_order": 99
+  },
+  "紘": {
+    "RTK_order": 2704,
+    "Joyo_order": 99
+  },
+  "纏": {
+    "RTK_order": 2705,
+    "Joyo_order": 99
+  },
+  "絢": {
+    "RTK_order": 2706,
+    "Joyo_order": 99
+  },
+  "繍": {
+    "RTK_order": 2707,
+    "Joyo_order": 99
+  },
+  "紬": {
+    "RTK_order": 2708,
+    "Joyo_order": 99
+  },
+  "綺": {
+    "RTK_order": 2709,
+    "Joyo_order": 99
+  },
+  "綾": {
+    "RTK_order": 2710,
+    "Joyo_order": 99
+  },
+  "絃": {
+    "RTK_order": 2711,
+    "Joyo_order": 99
+  },
+  "縞": {
+    "RTK_order": 2712,
+    "Joyo_order": 99
+  },
+  "綬": {
+    "RTK_order": 2713,
+    "Joyo_order": 99
+  },
+  "紗": {
+    "RTK_order": 2714,
+    "Joyo_order": 99
+  },
+  "舵": {
+    "RTK_order": 2715,
+    "Joyo_order": 99
+  },
+  "聯": {
+    "RTK_order": 2716,
+    "Joyo_order": 99
+  },
+  "聡": {
+    "RTK_order": 2717,
+    "Joyo_order": 99
+  },
+  "聘": {
+    "RTK_order": 2718,
+    "Joyo_order": 99
+  },
+  "耽": {
+    "RTK_order": 2719,
+    "Joyo_order": 99
+  },
+  "耶": {
+    "RTK_order": 2720,
+    "Joyo_order": 99
+  },
+  "蚤": {
+    "RTK_order": 2721,
+    "Joyo_order": 99
+  },
+  "蟹": {
+    "RTK_order": 2722,
+    "Joyo_order": 99
+  },
+  "蛋": {
+    "RTK_order": 2723,
+    "Joyo_order": 99
+  },
+  "蟄": {
+    "RTK_order": 2724,
+    "Joyo_order": 99
+  },
+  "蝿": {
+    "RTK_order": 2725,
+    "Joyo_order": 99
+  },
+  "蟻": {
+    "RTK_order": 2726,
+    "Joyo_order": 99
+  },
+  "蝋": {
+    "RTK_order": 2727,
+    "Joyo_order": 99
+  },
+  "蝦": {
+    "RTK_order": 2728,
+    "Joyo_order": 99
+  },
+  "蛸": {
+    "RTK_order": 2729,
+    "Joyo_order": 99
+  },
+  "螺": {
+    "RTK_order": 2730,
+    "Joyo_order": 99
+  },
+  "蝉": {
+    "RTK_order": 2731,
+    "Joyo_order": 99
+  },
+  "蛙": {
+    "RTK_order": 2732,
+    "Joyo_order": 99
+  },
+  "蛾": {
+    "RTK_order": 2733,
+    "Joyo_order": 99
+  },
+  "蛤": {
+    "RTK_order": 2734,
+    "Joyo_order": 99
+  },
+  "蛭": {
+    "RTK_order": 2735,
+    "Joyo_order": 99
+  },
+  "蛎": {
+    "RTK_order": 2736,
+    "Joyo_order": 99
+  },
+  "罫": {
+    "RTK_order": 2737,
+    "Joyo_order": 99
+  },
+  "袈": {
+    "RTK_order": 2738,
+    "Joyo_order": 99
+  },
+  "裟": {
+    "RTK_order": 2739,
+    "Joyo_order": 99
+  },
+  "截": {
+    "RTK_order": 2740,
+    "Joyo_order": 99
+  },
+  "哉": {
+    "RTK_order": 2741,
+    "Joyo_order": 99
+  },
+  "詢": {
+    "RTK_order": 2742,
+    "Joyo_order": 99
+  },
+  "諄": {
+    "RTK_order": 2743,
+    "Joyo_order": 99
+  },
+  "讐": {
+    "RTK_order": 2744,
+    "Joyo_order": 99
+  },
+  "諌": {
+    "RTK_order": 2745,
+    "Joyo_order": 99
+  },
+  "諒": {
+    "RTK_order": 2746,
+    "Joyo_order": 99
+  },
+  "讃": {
+    "RTK_order": 2747,
+    "Joyo_order": 99
+  },
+  "訊": {
+    "RTK_order": 2748,
+    "Joyo_order": 99
+  },
+  "訣": {
+    "RTK_order": 2749,
+    "Joyo_order": 99
+  },
+  "詫": {
+    "RTK_order": 2750,
+    "Joyo_order": 99
+  },
+  "誼": {
+    "RTK_order": 2751,
+    "Joyo_order": 99
+  },
+  "謬": {
+    "RTK_order": 2752,
+    "Joyo_order": 99
+  },
+  "訝": {
+    "RTK_order": 2753,
+    "Joyo_order": 99
+  },
+  "諺": {
+    "RTK_order": 2754,
+    "Joyo_order": 99
+  },
+  "誹": {
+    "RTK_order": 2755,
+    "Joyo_order": 99
+  },
+  "謂": {
+    "RTK_order": 2756,
+    "Joyo_order": 99
+  },
+  "諜": {
+    "RTK_order": 2757,
+    "Joyo_order": 99
+  },
+  "註": {
+    "RTK_order": 2758,
+    "Joyo_order": 99
+  },
+  "譬": {
+    "RTK_order": 2759,
+    "Joyo_order": 99
+  },
+  "轟": {
+    "RTK_order": 2760,
+    "Joyo_order": 99
+  },
+  "輔": {
+    "RTK_order": 2761,
+    "Joyo_order": 99
+  },
+  "輻": {
+    "RTK_order": 2762,
+    "Joyo_order": 99
+  },
+  "輯": {
+    "RTK_order": 2763,
+    "Joyo_order": 99
+  },
+  "豹": {
+    "RTK_order": 2764,
+    "Joyo_order": 99
+  },
+  "賎": {
+    "RTK_order": 2765,
+    "Joyo_order": 99
+  },
+  "貰": {
+    "RTK_order": 2766,
+    "Joyo_order": 99
+  },
+  "賑": {
+    "RTK_order": 2767,
+    "Joyo_order": 99
+  },
+  "贖": {
+    "RTK_order": 2768,
+    "Joyo_order": 99
+  },
+  "躓": {
+    "RTK_order": 2769,
+    "Joyo_order": 99
+  },
+  "蹄": {
+    "RTK_order": 2770,
+    "Joyo_order": 99
+  },
+  "蹟": {
+    "RTK_order": 2771,
+    "Joyo_order": 99
+  },
+  "跨": {
+    "RTK_order": 2772,
+    "Joyo_order": 99
+  },
+  "跪": {
+    "RTK_order": 2773,
+    "Joyo_order": 99
+  },
+  "醤": {
+    "RTK_order": 2774,
+    "Joyo_order": 99
+  },
+  "醍": {
+    "RTK_order": 2775,
+    "Joyo_order": 99
+  },
+  "醐": {
+    "RTK_order": 2776,
+    "Joyo_order": 99
+  },
+  "醇": {
+    "RTK_order": 2777,
+    "Joyo_order": 99
+  },
+  "麹": {
+    "RTK_order": 2778,
+    "Joyo_order": 99
+  },
+  "釦": {
+    "RTK_order": 2779,
+    "Joyo_order": 99
+  },
+  "銚": {
+    "RTK_order": 2780,
+    "Joyo_order": 99
+  },
+  "鋤": {
+    "RTK_order": 2781,
+    "Joyo_order": 99
+  },
+  "鋸": {
+    "RTK_order": 2782,
+    "Joyo_order": 99
+  },
+  "錐": {
+    "RTK_order": 2783,
+    "Joyo_order": 99
+  },
+  "鍬": {
+    "RTK_order": 2784,
+    "Joyo_order": 99
+  },
+  "鋲": {
+    "RTK_order": 2785,
+    "Joyo_order": 99
+  },
+  "錫": {
+    "RTK_order": 2786,
+    "Joyo_order": 99
+  },
+  "錨": {
+    "RTK_order": 2787,
+    "Joyo_order": 99
+  },
+  "釘": {
+    "RTK_order": 2788,
+    "Joyo_order": 99
+  },
+  "鑓": {
+    "RTK_order": 2789,
+    "Joyo_order": 99
+  },
+  "鋒": {
+    "RTK_order": 2790,
+    "Joyo_order": 99
+  },
+  "鎚": {
+    "RTK_order": 2791,
+    "Joyo_order": 99
+  },
+  "鉦": {
+    "RTK_order": 2792,
+    "Joyo_order": 99
+  },
+  "錆": {
+    "RTK_order": 2793,
+    "Joyo_order": 99
+  },
+  "鍾": {
+    "RTK_order": 2794,
+    "Joyo_order": 99
+  },
+  "鋏": {
+    "RTK_order": 2795,
+    "Joyo_order": 99
+  },
+  "閃": {
+    "RTK_order": 2796,
+    "Joyo_order": 99
+  },
+  "悶": {
+    "RTK_order": 2797,
+    "Joyo_order": 99
+  },
+  "閤": {
+    "RTK_order": 2798,
+    "Joyo_order": 99
+  },
+  "雫": {
+    "RTK_order": 2799,
+    "Joyo_order": 99
+  },
+  "霞": {
+    "RTK_order": 2800,
+    "Joyo_order": 99
+  },
+  "翰": {
+    "RTK_order": 2801,
+    "Joyo_order": 99
+  },
+  "斡": {
+    "RTK_order": 2802,
+    "Joyo_order": 99
+  },
+  "鞍": {
+    "RTK_order": 2803,
+    "Joyo_order": 99
+  },
+  "鞭": {
+    "RTK_order": 2804,
+    "Joyo_order": 99
+  },
+  "鞘": {
+    "RTK_order": 2805,
+    "Joyo_order": 99
+  },
+  "鞄": {
+    "RTK_order": 2806,
+    "Joyo_order": 99
+  },
+  "靭": {
+    "RTK_order": 2807,
+    "Joyo_order": 99
+  },
+  "鞠": {
+    "RTK_order": 2808,
+    "Joyo_order": 99
+  },
+  "顛": {
+    "RTK_order": 2809,
+    "Joyo_order": 99
+  },
+  "穎": {
+    "RTK_order": 2810,
+    "Joyo_order": 99
+  },
+  "頗": {
+    "RTK_order": 2811,
+    "Joyo_order": 99
+  },
+  "頌": {
+    "RTK_order": 2812,
+    "Joyo_order": 99
+  },
+  "頚": {
+    "RTK_order": 2813,
+    "Joyo_order": 99
+  },
+  "餐": {
+    "RTK_order": 2814,
+    "Joyo_order": 99
+  },
+  "饗": {
+    "RTK_order": 2815,
+    "Joyo_order": 99
+  },
+  "蝕": {
+    "RTK_order": 2816,
+    "Joyo_order": 99
+  },
+  "飴": {
+    "RTK_order": 2817,
+    "Joyo_order": 99
+  },
+  "駕": {
+    "RTK_order": 2818,
+    "Joyo_order": 99
+  },
+  "騨": {
+    "RTK_order": 2819,
+    "Joyo_order": 99
+  },
+  "馳": {
+    "RTK_order": 2820,
+    "Joyo_order": 99
+  },
+  "騙": {
+    "RTK_order": 2821,
+    "Joyo_order": 99
+  },
+  "馴": {
+    "RTK_order": 2822,
+    "Joyo_order": 99
+  },
+  "駁": {
+    "RTK_order": 2823,
+    "Joyo_order": 99
+  },
+  "駈": {
+    "RTK_order": 2824,
+    "Joyo_order": 99
+  },
+  "驢": {
+    "RTK_order": 2825,
+    "Joyo_order": 99
+  },
+  "鰻": {
+    "RTK_order": 2826,
+    "Joyo_order": 99
+  },
+  "鯛": {
+    "RTK_order": 2827,
+    "Joyo_order": 99
+  },
+  "鰯": {
+    "RTK_order": 2828,
+    "Joyo_order": 99
+  },
+  "鱒": {
+    "RTK_order": 2829,
+    "Joyo_order": 99
+  },
+  "鮭": {
+    "RTK_order": 2830,
+    "Joyo_order": 99
+  },
+  "鮪": {
+    "RTK_order": 2831,
+    "Joyo_order": 99
+  },
+  "鮎": {
+    "RTK_order": 2832,
+    "Joyo_order": 99
+  },
+  "鯵": {
+    "RTK_order": 2833,
+    "Joyo_order": 99
+  },
+  "鱈": {
+    "RTK_order": 2834,
+    "Joyo_order": 99
+  },
+  "鯖": {
+    "RTK_order": 2835,
+    "Joyo_order": 99
+  },
+  "鮫": {
+    "RTK_order": 2836,
+    "Joyo_order": 99
+  },
+  "鰹": {
+    "RTK_order": 2837,
+    "Joyo_order": 99
+  },
+  "鰍": {
+    "RTK_order": 2838,
+    "Joyo_order": 99
+  },
+  "鰐": {
+    "RTK_order": 2839,
+    "Joyo_order": 99
+  },
+  "鮒": {
+    "RTK_order": 2840,
+    "Joyo_order": 99
+  },
+  "鮨": {
+    "RTK_order": 2841,
+    "Joyo_order": 99
+  },
+  "鰭": {
+    "RTK_order": 2842,
+    "Joyo_order": 99
+  },
+  "鴎": {
+    "RTK_order": 2843,
+    "Joyo_order": 99
+  },
+  "鵬": {
+    "RTK_order": 2844,
+    "Joyo_order": 99
+  },
+  "鸚": {
+    "RTK_order": 2845,
+    "Joyo_order": 99
+  },
+  "鵡": {
+    "RTK_order": 2846,
+    "Joyo_order": 99
+  },
+  "鵜": {
+    "RTK_order": 2847,
+    "Joyo_order": 99
+  },
+  "鷺": {
+    "RTK_order": 2848,
+    "Joyo_order": 99
+  },
+  "鷲": {
+    "RTK_order": 2849,
+    "Joyo_order": 99
+  },
+  "鴨": {
+    "RTK_order": 2850,
+    "Joyo_order": 99
+  },
+  "鳶": {
+    "RTK_order": 2851,
+    "Joyo_order": 99
+  },
+  "梟": {
+    "RTK_order": 2852,
+    "Joyo_order": 99
+  },
+  "塵": {
+    "RTK_order": 2853,
+    "Joyo_order": 99
+  },
+  "麒": {
+    "RTK_order": 2854,
+    "Joyo_order": 99
+  },
+  "舅": {
+    "RTK_order": 2855,
+    "Joyo_order": 99
+  },
+  "鼠": {
+    "RTK_order": 2856,
+    "Joyo_order": 99
+  },
+  "鑿": {
+    "RTK_order": 2857,
+    "Joyo_order": 99
+  },
+  "艘": {
+    "RTK_order": 2858,
+    "Joyo_order": 99
+  },
+  "瞑": {
+    "RTK_order": 2859,
+    "Joyo_order": 99
+  },
+  "暝": {
+    "RTK_order": 2860,
+    "Joyo_order": 99
+  },
+  "坐": {
+    "RTK_order": 2861,
+    "Joyo_order": 99
+  },
+  "朔": {
+    "RTK_order": 2862,
+    "Joyo_order": 99
+  },
+  "曳": {
+    "RTK_order": 2863,
+    "Joyo_order": 99
+  },
+  "洩": {
+    "RTK_order": 2864,
+    "Joyo_order": 99
+  },
+  "彗": {
+    "RTK_order": 2865,
+    "Joyo_order": 99
+  },
+  "慧": {
+    "RTK_order": 2866,
+    "Joyo_order": 99
+  },
+  "爾": {
+    "RTK_order": 2867,
+    "Joyo_order": 99
+  },
+  "嘉": {
+    "RTK_order": 2868,
+    "Joyo_order": 99
+  },
+  "兇": {
+    "RTK_order": 2869,
+    "Joyo_order": 99
+  },
+  "兜": {
+    "RTK_order": 2870,
+    "Joyo_order": 99
+  },
+  "靄": {
+    "RTK_order": 2871,
+    "Joyo_order": 99
+  },
+  "劫": {
+    "RTK_order": 2872,
+    "Joyo_order": 99
+  },
+  "歎": {
+    "RTK_order": 2873,
+    "Joyo_order": 99
+  },
+  "輿": {
+    "RTK_order": 2874,
+    "Joyo_order": 99
+  },
+  "歪": {
+    "RTK_order": 2875,
+    "Joyo_order": 99
+  },
+  "翠": {
+    "RTK_order": 2876,
+    "Joyo_order": 99
+  },
+  "黛": {
+    "RTK_order": 2877,
+    "Joyo_order": 99
+  },
+  "鼎": {
+    "RTK_order": 2878,
+    "Joyo_order": 99
+  },
+  "鹵": {
+    "RTK_order": 2879,
+    "Joyo_order": 99
+  },
+  "鹸": {
+    "RTK_order": 2880,
+    "Joyo_order": 99
+  },
+  "虔": {
+    "RTK_order": 2881,
+    "Joyo_order": 99
+  },
+  "燕": {
+    "RTK_order": 2882,
+    "Joyo_order": 99
+  },
+  "嘗": {
+    "RTK_order": 2883,
+    "Joyo_order": 99
+  },
+  "殆": {
+    "RTK_order": 2884,
+    "Joyo_order": 99
+  },
+  "牌": {
+    "RTK_order": 2885,
+    "Joyo_order": 99
+  },
+  "覗": {
+    "RTK_order": 2886,
+    "Joyo_order": 99
+  },
+  "齟": {
+    "RTK_order": 2887,
+    "Joyo_order": 99
+  },
+  "齬": {
+    "RTK_order": 2888,
+    "Joyo_order": 99
+  },
+  "秦": {
+    "RTK_order": 2889,
+    "Joyo_order": 99
+  },
+  "雀": {
+    "RTK_order": 2890,
+    "Joyo_order": 99
+  },
+  "隼": {
+    "RTK_order": 2891,
+    "Joyo_order": 99
+  },
+  "耀": {
+    "RTK_order": 2892,
+    "Joyo_order": 99
+  },
+  "夷": {
+    "RTK_order": 2893,
+    "Joyo_order": 99
+  },
+  "嚢": {
+    "RTK_order": 2894,
+    "Joyo_order": 99
+  },
+  "暢": {
+    "RTK_order": 2895,
+    "Joyo_order": 99
+  },
+  "廻": {
+    "RTK_order": 2896,
+    "Joyo_order": 99
+  },
+  "欣": {
+    "RTK_order": 2897,
+    "Joyo_order": 99
+  },
+  "毅": {
+    "RTK_order": 2898,
+    "Joyo_order": 99
+  },
+  "斯": {
+    "RTK_order": 2899,
+    "Joyo_order": 99
+  },
+  "匙": {
+    "RTK_order": 2900,
+    "Joyo_order": 99
+  },
+  "匡": {
+    "RTK_order": 2901,
+    "Joyo_order": 99
+  },
+  "肇": {
+    "RTK_order": 2902,
+    "Joyo_order": 99
+  },
+  "麿": {
+    "RTK_order": 2903,
+    "Joyo_order": 99
+  },
+  "叢": {
+    "RTK_order": 2904,
+    "Joyo_order": 99
+  },
+  "肴": {
+    "RTK_order": 2905,
+    "Joyo_order": 99
+  },
+  "斐": {
+    "RTK_order": 2906,
+    "Joyo_order": 99
+  },
+  "卿": {
+    "RTK_order": 2907,
+    "Joyo_order": 99
+  },
+  "翫": {
+    "RTK_order": 2908,
+    "Joyo_order": 99
+  },
+  "於": {
+    "RTK_order": 2909,
+    "Joyo_order": 99
+  },
+  "套": {
+    "RTK_order": 2910,
+    "Joyo_order": 99
+  },
+  "叛": {
+    "RTK_order": 2911,
+    "Joyo_order": 99
+  },
+  "尖": {
+    "RTK_order": 2912,
+    "Joyo_order": 99
+  },
+  "壷": {
+    "RTK_order": 2913,
+    "Joyo_order": 99
+  },
+  "叡": {
+    "RTK_order": 2914,
+    "Joyo_order": 99
+  },
+  "酋": {
+    "RTK_order": 2915,
+    "Joyo_order": 99
+  },
+  "鴬": {
+    "RTK_order": 2916,
+    "Joyo_order": 99
+  },
+  "赫": {
+    "RTK_order": 2917,
+    "Joyo_order": 99
+  },
+  "臥": {
+    "RTK_order": 2918,
+    "Joyo_order": 99
+  },
+  "甥": {
+    "RTK_order": 2919,
+    "Joyo_order": 99
+  },
+  "瓢": {
+    "RTK_order": 2920,
+    "Joyo_order": 99
+  },
+  "琵": {
+    "RTK_order": 2921,
+    "Joyo_order": 99
+  },
+  "琶": {
+    "RTK_order": 2922,
+    "Joyo_order": 99
+  },
+  "叉": {
+    "RTK_order": 2923,
+    "Joyo_order": 99
+  },
+  "乖": {
+    "RTK_order": 2924,
+    "Joyo_order": 99
+  },
+  "畠": {
+    "RTK_order": 2925,
+    "Joyo_order": 99
+  },
+  "圃": {
+    "RTK_order": 2926,
+    "Joyo_order": 99
+  },
+  "丞": {
+    "RTK_order": 2927,
+    "Joyo_order": 99
+  },
+  "亮": {
+    "RTK_order": 2928,
+    "Joyo_order": 99
+  },
+  "胤": {
+    "RTK_order": 2929,
+    "Joyo_order": 99
+  },
+  "疏": {
+    "RTK_order": 2930,
+    "Joyo_order": 99
+  },
+  "膏": {
+    "RTK_order": 2931,
+    "Joyo_order": 99
+  },
+  "魁": {
+    "RTK_order": 2932,
+    "Joyo_order": 99
+  },
+  "馨": {
+    "RTK_order": 2933,
+    "Joyo_order": 99
+  },
+  "牒": {
+    "RTK_order": 2934,
+    "Joyo_order": 99
+  },
+  "瞥": {
+    "RTK_order": 2935,
+    "Joyo_order": 99
+  },
+  "睾": {
+    "RTK_order": 2936,
+    "Joyo_order": 99
+  },
+  "巫": {
+    "RTK_order": 2937,
+    "Joyo_order": 99
+  },
+  "敦": {
+    "RTK_order": 2938,
+    "Joyo_order": 99
+  },
+  "奎": {
+    "RTK_order": 2939,
+    "Joyo_order": 99
+  },
+  "翔": {
+    "RTK_order": 2940,
+    "Joyo_order": 99
+  },
+  "皓": {
+    "RTK_order": 2941,
+    "Joyo_order": 99
+  },
+  "黎": {
+    "RTK_order": 2942,
+    "Joyo_order": 99
+  },
+  "赳": {
+    "RTK_order": 2943,
+    "Joyo_order": 99
+  },
+  "已": {
+    "RTK_order": 2944,
+    "Joyo_order": 99
+  },
+  "棘": {
+    "RTK_order": 2945,
+    "Joyo_order": 99
+  },
+  "祟": {
+    "RTK_order": 2946,
+    "Joyo_order": 99
+  },
+  "甦": {
+    "RTK_order": 2947,
+    "Joyo_order": 99
+  },
+  "剪": {
+    "RTK_order": 2948,
+    "Joyo_order": 99
+  },
+  "躾": {
+    "RTK_order": 2949,
+    "Joyo_order": 99
+  },
+  "夥": {
+    "RTK_order": 2950,
+    "Joyo_order": 99
+  },
+  "鼾": {
+    "RTK_order": 2951,
+    "Joyo_order": 99
+  },
+  "陀": {
+    "RTK_order": 2952,
+    "Joyo_order": 99
+  },
+  "粁": {
+    "RTK_order": 2953,
+    "Joyo_order": 99
+  },
+  "糎": {
+    "RTK_order": 2954,
+    "Joyo_order": 99
+  },
+  "粍": {
+    "RTK_order": 2955,
+    "Joyo_order": 99
+  },
+  "噸": {
+    "RTK_order": 2956,
+    "Joyo_order": 99
+  },
+  "哩": {
+    "RTK_order": 2957,
+    "Joyo_order": 99
+  },
+  "浬": {
+    "RTK_order": 2958,
+    "Joyo_order": 99
+  },
+  "吋": {
+    "RTK_order": 2959,
+    "Joyo_order": 99
+  },
+  "呎": {
+    "RTK_order": 2960,
+    "Joyo_order": 99
+  },
+  "梵": {
+    "RTK_order": 2961,
+    "Joyo_order": 99
+  },
+  "薩": {
+    "RTK_order": 2962,
+    "Joyo_order": 99
+  },
+  "菩": {
+    "RTK_order": 2963,
+    "Joyo_order": 99
+  },
+  "唖": {
+    "RTK_order": 2964,
+    "Joyo_order": 99
+  },
+  "牟": {
+    "RTK_order": 2965,
+    "Joyo_order": 99
+  },
+  "迦": {
+    "RTK_order": 2966,
+    "Joyo_order": 99
+  },
+  "珈": {
+    "RTK_order": 2967,
+    "Joyo_order": 99
+  },
+  "琲": {
+    "RTK_order": 2968,
+    "Joyo_order": 99
+  },
+  "檜": {
+    "RTK_order": 2969,
+    "Joyo_order": 99
+  },
+  "轡": {
+    "RTK_order": 2970,
+    "Joyo_order": 99
+  },
+  "淵": {
+    "RTK_order": 2971,
+    "Joyo_order": 99
+  },
+  "伍": {
+    "RTK_order": 2972,
+    "Joyo_order": 99
+  },
+  "什": {
+    "RTK_order": 2973,
+    "Joyo_order": 99
+  },
+  "萬": {
+    "RTK_order": 2974,
+    "Joyo_order": 99
+  },
+  "邁": {
+    "RTK_order": 2975,
+    "Joyo_order": 99
+  },
+  "燭": {
+    "RTK_order": 2976,
+    "Joyo_order": 99
+  },
+  "逞": {
+    "RTK_order": 2977,
+    "Joyo_order": 99
+  },
+  "燈": {
+    "RTK_order": 2978,
+    "Joyo_order": 99
+  },
+  "裡": {
+    "RTK_order": 2979,
+    "Joyo_order": 99
+  },
+  "薗": {
+    "RTK_order": 2980,
+    "Joyo_order": 99
+  },
+  "鋪": {
+    "RTK_order": 2981,
+    "Joyo_order": 99
+  },
+  "嶋": {
+    "RTK_order": 2982,
+    "Joyo_order": 99
+  },
+  "峯": {
+    "RTK_order": 2983,
+    "Joyo_order": 99
+  },
+  "埜": {
+    "RTK_order": 2984,
+    "Joyo_order": 99
+  },
+  "龍": {
+    "RTK_order": 2985,
+    "Joyo_order": 99
+  },
+  "寵": {
+    "RTK_order": 2986,
+    "Joyo_order": 99
+  },
+  "聾": {
+    "RTK_order": 2987,
+    "Joyo_order": 99
+  },
+  "慾": {
+    "RTK_order": 2988,
+    "Joyo_order": 99
+  },
+  "嶽": {
+    "RTK_order": 2989,
+    "Joyo_order": 99
+  },
+  "國": {
+    "RTK_order": 2990,
+    "Joyo_order": 99
+  },
+  "脛": {
+    "RTK_order": 2991,
+    "Joyo_order": 99
+  },
+  "勁": {
+    "RTK_order": 2992,
+    "Joyo_order": 99
+  },
+  "祀": {
+    "RTK_order": 2993,
+    "Joyo_order": 99
+  },
+  "祓": {
+    "RTK_order": 2994,
+    "Joyo_order": 99
+  },
+  "躇": {
+    "RTK_order": 2995,
+    "Joyo_order": 99
+  },
+  "壽": {
+    "RTK_order": 2996,
+    "Joyo_order": 99
+  },
+  "躊": {
+    "RTK_order": 2997,
+    "Joyo_order": 99
+  },
+  "饅": {
+    "RTK_order": 2998,
+    "Joyo_order": 99
+  },
+  "嘔": {
+    "RTK_order": 2999,
+    "Joyo_order": 99
+  },
+  "鼈": {
+    "RTK_order": 3000,
+    "Joyo_order": 99
+  }
+}

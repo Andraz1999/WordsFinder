@@ -1,0 +1,365 @@
+{% extends "base.html" %}
+{% block title %} — Words{% endblock %}
+
+{% block extra_head %}
+<style>
+  .custom-scrollbar::-webkit-scrollbar { width: 8px; }
+  .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+  .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(109,254,156,0.3); border-radius: 10px; }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(109,254,156,0.6); }
+
+  /* ── Section nav buttons (green theme) ── */
+  .words-nav-btn {
+    clip-path: polygon(0 0, 92% 0, 100% 15%, 100% 100%, 8% 100%, 0 85%);
+    transition: all 0.2s ease;
+    min-width: 72px;
+    height: 40px;
+    padding: 0 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid rgba(109,254,156,0.35);
+    background: rgba(109,254,156,0.07);
+    color: #6dfe9c;
+    cursor: pointer;
+  }
+  .words-nav-btn:hover {
+    background: rgba(109,254,156,0.18);
+    border-color: #6dfe9c;
+    color: #6dfe9c;
+  }
+  .words-nav-btn.active {
+    background: rgba(109,254,156,0.22);
+    border-color: #6dfe9c;
+    color: #6dfe9c;
+    box-shadow: 0 0 12px rgba(109,254,156,0.2);
+  }
+  /* Known buttons — slightly dimmer shade */
+  .words-nav-btn.known-btn-style {
+    border-color: rgba(93,239,143,0.3);
+    background: rgba(93,239,143,0.05);
+    color: #5def8f;
+  }
+  .words-nav-btn.known-btn-style:hover {
+    background: rgba(93,239,143,0.16);
+    border-color: #5def8f;
+    color: #5def8f;
+  }
+  .words-nav-btn.known-btn-style.active {
+    background: rgba(93,239,143,0.2);
+    border-color: #5def8f;
+    color: #5def8f;
+    box-shadow: 0 0 12px rgba(93,239,143,0.18);
+  }
+  /* Light mode overrides — deeper greens that read on pale bg */
+  html.light .words-nav-btn {
+    border-color: rgba(0,122,61,0.4);
+    background: rgba(0,122,61,0.07);
+    color: #007a3d;
+  }
+  html.light .words-nav-btn:hover {
+    background: rgba(0,122,61,0.15);
+    border-color: #007a3d;
+    color: #007a3d;
+  }
+  html.light .words-nav-btn.active {
+    background: rgba(0,122,61,0.2);
+    border-color: #007a3d;
+    color: #007a3d;
+    box-shadow: 0 0 10px rgba(0,122,61,0.15);
+  }
+  html.light .words-nav-btn.known-btn-style {
+    border-color: rgba(0,100,48,0.35);
+    background: rgba(0,100,48,0.06);
+    color: #006430;
+  }
+  html.light .words-nav-btn.known-btn-style:hover {
+    background: rgba(0,100,48,0.14);
+    border-color: #006430;
+    color: #006430;
+  }
+  html.light .words-nav-btn.known-btn-style.active {
+    background: rgba(0,100,48,0.18);
+    border-color: #006430;
+    color: #006430;
+  }
+
+  /* Separator between regular and known nav groups */
+  .nav-separator {
+    width: 1px;
+    height: 24px;
+    background: rgba(109,254,156,0.2);
+    align-self: center;
+    margin: 0 4px;
+  }
+</style>
+{% endblock %}
+
+{% block body %}
+<main class="absolute top-16 left-0 right-0 bottom-0 overflow-y-auto custom-scrollbar" id="main-scroll">
+  <div class="-mt-16 pt-16">
+    <div class="max-w-[1200px] mx-auto px-6 pt-8 pb-12">
+      <div class="flex flex-col space-y-8">
+
+        <!-- Back -->
+        <div class="flex items-center">
+          <button onclick="window.location.href='/'"
+            class="clip-hex-btn bg-surface-container-low border border-on-surface/20 w-10 h-10 flex items-center justify-center hover:bg-surface-container-highest transition-all group">
+            <span class="material-symbols-outlined text-on-surface group-hover:text-primary">arrow_back</span>
+          </button>
+        </div>
+
+        <!-- Header -->
+        <section class="space-y-4">
+          <div class="flex justify-between items-end border-b border-outline-variant/30 pb-4">
+            <h1 class="text-6xl font-headline font-bold text-on-surface tracking-tighter">{{ text.nav_words }}</h1>
+            <div class="text-right">
+              <span class="block text-xs font-headline text-secondary tracking-widest uppercase mb-1">{{ text.total_words }}</span>
+              <span class="text-3xl font-headline font-light text-on-surface" id="total-count">—</span>
+            </div>
+          </div>
+
+          <!-- Sort controls -->
+          <div class="flex items-center gap-4 py-2">
+            <span class="text-xs font-headline text-on-surface-variant tracking-widest uppercase">{{ text.sort_label }}</span>
+            <button id="btn-desc" onclick="setSort('descending')"
+              class="clip-hex-btn px-4 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-all">
+              {{ text.sort_desc }}
+            </button>
+            <button id="btn-asc" onclick="setSort('ascending')"
+              class="clip-hex-btn px-4 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-all">
+              {{ text.sort_asc }}
+            </button>
+          </div>
+
+          <!-- Section nav (top) -->
+          <div id="section-nav-top" class="flex flex-wrap gap-2 items-center"></div>
+        </section>
+
+        <!-- Word grid -->
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6" id="words-grid">
+          <div class="text-on-surface-variant text-xs animate-pulse col-span-5">{{ text.loading }}</div>
+        </div>
+
+        <!-- Section nav (bottom) -->
+        <div id="section-nav-bottom" class="flex flex-wrap gap-2 items-center pb-4"></div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Atmospheric depth -->
+<div class="fixed inset-0 pointer-events-none -z-10">
+  <div class="absolute top-1/4 -left-20 w-96 h-96 bg-primary/5 blur-[120px]"></div>
+  <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-secondary/5 blur-[120px]"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const T = {{ text | tojson }};
+const MAX_WORDS_SHOWN = 500;
+
+let currentSort  = 'descending';
+let allWords     = [];       // all words in current sort order
+let allSections  = [];       // [{label, isKnown, words:[{word, globalIdx, count, known}]}]
+let activeSect   = 0;
+
+// ---------------------------------------------------------------------------
+// Sort buttons
+// ---------------------------------------------------------------------------
+function updateSortButtons(sort) {
+  const d = document.getElementById('btn-desc');
+  const a = document.getElementById('btn-asc');
+  const activeClass   = 'clip-hex-btn px-4 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-all bg-secondary text-black hover:brightness-110';
+  const inactiveClass = 'clip-hex-btn px-4 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-all bg-transparent border border-secondary/60 text-secondary hover:bg-secondary/20';
+  d.className = sort === 'descending' ? activeClass : inactiveClass;
+  a.className = sort === 'ascending'  ? activeClass : inactiveClass;
+}
+
+async function setSort(sort) {
+  if (sort === currentSort) return;
+  showLoading();
+  await apiPost('/api/words/sort', { sort });
+  currentSort = sort;
+  updateSortButtons(sort);
+  if (!allWords.length) {
+    document.getElementById('words-grid').innerHTML =
+      '<p class="text-on-surface-variant text-xs col-span-5">' + (T.no_words_found || 'No new words found.') + '</p>';
+    return;
+  }
+  buildAndRender();
+}
+
+// ---------------------------------------------------------------------------
+// Build sections
+// ---------------------------------------------------------------------------
+function buildSections(words) {
+  // Separate regular (count > 0 OR not marked known) from known-only (count==0 && known)
+  const regular = [];
+  const known   = [];
+
+  words.forEach((w, i) => {
+    const isKnownOnly = w.known && w.count === 0;
+    if (isKnownOnly) {
+      known.push({ word: w.word, globalIdx: i, count: w.count, known: w.known });
+    } else {
+      regular.push({ word: w.word, globalIdx: i, count: w.count, known: w.known });
+    }
+  });
+
+  const sections = [];
+
+  // Regular word chunks — labelled "1–500", "501–1000", …
+  for (let i = 0; i < regular.length; i += MAX_WORDS_SHOWN) {
+    const chunk     = regular.slice(i, i + MAX_WORDS_SHOWN);
+    const startNum  = chunk[0].globalIdx + 1;
+    const endNum    = chunk[chunk.length - 1].globalIdx + 1;
+    sections.push({ label: `${startNum}–${endNum}`, isKnown: false, words: chunk });
+  }
+
+  // Known-only chunks — labelled "Known 1", "Known 2", …
+  let knownPart = 1;
+  for (let i = 0; i < known.length; i += MAX_WORDS_SHOWN) {
+    const chunk = known.slice(i, i + MAX_WORDS_SHOWN);
+    sections.push({ label: known.length <= MAX_WORDS_SHOWN ? T.known_section : `${T.known_section} ${knownPart}`, isKnown: true, words: chunk });
+    knownPart++;
+  }
+
+  return sections;
+}
+
+// ---------------------------------------------------------------------------
+// Nav buttons
+// ---------------------------------------------------------------------------
+function renderNavButtons() {
+  const topEl    = document.getElementById('section-nav-top');
+  const bottomEl = document.getElementById('section-nav-bottom');
+
+  function makeButtons(container) {
+    container.innerHTML = '';
+    if (allSections.length <= 1) return;
+
+    let pastRegular = false;
+    allSections.forEach((sect, si) => {
+      // Insert separator between regular and known groups
+      if (sect.isKnown && !pastRegular) {
+        pastRegular = true;
+        const sep = document.createElement('div');
+        sep.className = 'nav-separator';
+        container.appendChild(sep);
+      }
+
+      const btn = document.createElement('button');
+      btn.className = 'words-nav-btn' +
+        (sect.isKnown ? ' known-btn-style' : '') +
+        (si === activeSect ? ' active' : '');
+      btn.textContent = sect.label;
+      btn.addEventListener('click', () => switchSection(si));
+      container.appendChild(btn);
+    });
+  }
+
+  makeButtons(topEl);
+  makeButtons(bottomEl);
+}
+
+function updateNavActive() {
+  // Re-render both nav bars (simplest, avoids complex index tracking with separators)
+  renderNavButtons();
+}
+
+function showLoading() {
+  document.getElementById('words-grid').innerHTML =
+    `<div class="text-on-surface-variant text-xs animate-pulse col-span-5">${T.loading}</div>`;
+}
+
+function switchSection(si) {
+  activeSect = si;
+  showLoading();
+  document.getElementById('main-scroll').scrollTo({ top: 0, behavior: 'smooth' });
+  setTimeout(() => { renderSection(allSections[si]); renderNavButtons(); }, 50);
+}
+
+// ---------------------------------------------------------------------------
+// Render one section into the grid
+// ---------------------------------------------------------------------------
+function renderSection(sect) {
+  const grid = document.getElementById('words-grid');
+  grid.innerHTML = '';
+
+  if (!sect || !sect.words.length) {
+    grid.innerHTML = '<p class="text-on-surface-variant text-xs col-span-5">No words here.</p>';
+    return;
+  }
+
+  sect.words.forEach((w, li) => {
+    const tile = document.createElement('div');
+    tile.className = 'aspect-[4/3] relative cursor-default anim-pop-in';
+    tile.style.animationDelay = (li * 0.02) + 's';
+
+    const displayNum = w.globalIdx + 1;
+
+    if (w.known && w.count === 0) {
+      // Known-only — active green style (NOT dim/grey)
+      tile.innerHTML = `
+        <div class="absolute inset-0 clip-kanji-tile flex flex-col items-center justify-center neon-border-green bg-[#f5f5f0]">
+          <span class="absolute top-2 left-3 text-[10px] font-headline font-bold text-on-surface-variant tracking-tighter">${displayNum}</span>
+          <span class="text-3xl font-light text-black mb-1 text-center px-2" style="user-select:text;cursor:text;">${w.word}</span>
+          <span class="text-[11px] font-headline text-on-surface-variant font-bold uppercase tracking-widest">${T.marked_as_known}</span>
+        </div>`;
+    } else {
+      // Regular word
+      tile.innerHTML = `
+        <div class="absolute inset-0 clip-kanji-tile flex flex-col items-center justify-center neon-border-green bg-[#f5f5f0]">
+          <span class="absolute top-2 left-3 text-[10px] font-headline font-bold text-on-surface-variant tracking-tighter">${displayNum}</span>
+          <span class="text-3xl font-light text-black mb-1 text-center px-2" style="user-select:text;cursor:text;">${w.word}</span>
+          <span class="text-[11px] font-headline text-on-surface-variant font-bold uppercase tracking-widest">${T.count_label}: ${w.count}</span>
+        </div>`;
+    }
+
+    grid.appendChild(tile);
+  });
+}
+
+// ---------------------------------------------------------------------------
+// Build & render from current allWords state
+// ---------------------------------------------------------------------------
+function buildAndRender() {
+  const sorted = currentSort === 'descending' ? allWords : [...allWords].reverse();
+  allSections  = buildSections(sorted);
+  activeSect   = 0;
+  renderNavButtons();
+  if (allSections.length > 0) renderSection(allSections[0]);
+}
+
+// ---------------------------------------------------------------------------
+// Load
+// ---------------------------------------------------------------------------
+async function loadWords() {
+  try {
+    const [words, cfg] = await Promise.all([apiGet('/api/words'), apiGet('/api/config')]);
+    allWords    = words;
+    currentSort = cfg.words?.sort || 'descending';
+    document.getElementById('total-count').textContent = words.length;
+    updateSortButtons(currentSort);
+    if (!words.length) {
+      document.getElementById('words-grid').innerHTML =
+        '<p class="text-on-surface-variant text-xs col-span-5">' + (T.no_words_found || 'No new words found.') + '</p>';
+      return;
+    }
+    buildAndRender();
+  } catch(e) {
+    console.error(e);
+  }
+}
+
+loadWords();
+</script>
+{% endblock %}

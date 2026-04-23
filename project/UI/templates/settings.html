@@ -1,0 +1,324 @@
+{% extends "base.html" %}
+{% block title %} — Settings{% endblock %}
+
+{% block body %}
+<div class="absolute top-16 left-0 right-0 bottom-0 overflow-y-auto custom-scrollbar">
+  <div class="-mt-16 pt-16">
+    <main class="pt-8 pb-12 px-6 max-w-[900px] mx-auto">
+
+      <!-- Header -->
+      <div class="flex items-center gap-6 mb-8">
+        <button onclick="window.location.href='/'"
+          class="clip-hex-btn bg-surface-container-low border border-on-surface/20 w-10 h-10 flex items-center justify-center hover:bg-surface-container-highest transition-all group">
+          <span class="material-symbols-outlined text-on-surface group-hover:text-primary">arrow_back</span>
+        </button>
+        <h1 class="text-3xl font-headline font-bold text-on-surface uppercase tracking-widest">{{ text.settings_title }}</h1>
+      </div>
+
+      <div class="space-y-10">
+
+        <!-- ── Syncing and Scanning ── -->
+        <section>
+          <div class="flex items-baseline gap-4 mb-4">
+            <h2 class="text-sm font-headline font-bold text-primary uppercase tracking-widest">{{ text.settings_sync_section }}</h2>
+            <div class="flex-1 h-px bg-outline-variant/20"></div>
+          </div>
+          <div class="space-y-4">
+
+            <!-- Decks & Fields mini editor -->
+            <div>
+              <label class="block text-xs text-on-surface-variant uppercase tracking-widest mb-2">{{ text.settings_edit_decks }}</label>
+              <div id="deck-list" class="space-y-2 mb-2"></div>
+              <button onclick="addDeck()" id="btn-add-deck"
+                class="clip-hud-btn bg-surface-container-highest/40 border border-outline-variant/40 hover:border-primary/40 px-4 py-1.5 text-xs font-bold text-on-surface-variant uppercase tracking-widest transition-all">
+                + {{ text.setup_add_deck }}
+              </button>
+            </div>
+
+            <!-- Input folder -->
+            <div>
+              <label class="block text-xs text-on-surface-variant uppercase tracking-widest mb-2">{{ text.settings_input_folder }}</label>
+              <div class="flex gap-2">
+                <div class="flex-1 clip-hud-btn flex items-center bg-surface-container-highest/30 border border-outline-variant/30 h-10 px-4 focus-within:border-primary transition-all">
+                  <input id="input-folder" class="bg-transparent border-none focus:ring-0 text-xs w-full text-on-surface placeholder:text-on-surface-variant/50 p-0 font-body"
+                    value="{{ config.subtitles.input_folder }}" />
+                </div>
+                <button onclick="browseInput()"
+                  class="clip-hud-btn bg-tertiary-container/10 border border-tertiary/40 hover:bg-tertiary-container/20 h-10 px-3 flex items-center justify-center transition-all">
+                  <span class="material-symbols-outlined text-[14px] text-tertiary">folder_open</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Output folder -->
+            <div>
+              <label class="block text-xs text-on-surface-variant uppercase tracking-widest mb-2">{{ text.settings_output_folder }}</label>
+              <div class="flex gap-2">
+                <div class="flex-1 clip-hud-btn flex items-center bg-surface-container-highest/30 border border-outline-variant/30 h-10 px-4 focus-within:border-primary transition-all">
+                  <input id="output-folder" class="bg-transparent border-none focus:ring-0 text-xs w-full text-on-surface placeholder:text-on-surface-variant/50 p-0 font-body"
+                    value="{{ config.subtitles.output_folder }}" />
+                </div>
+                <button onclick="browseOutput()"
+                  class="clip-hud-btn bg-tertiary-container/10 border border-tertiary/40 hover:bg-tertiary-container/20 h-10 px-3 flex items-center justify-center transition-all">
+                  <span class="material-symbols-outlined text-[14px] text-tertiary">folder_open</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Ignore brackets -->
+            <div class="flex items-center gap-4">
+              <label class="text-xs text-on-surface-variant uppercase tracking-widest">{{ text.settings_ignore_brackets }}</label>
+              <button id="btn-brackets" onclick="toggleBrackets()"
+                class="clip-hud-btn px-4 py-1.5 text-xs font-bold uppercase tracking-widest border transition-all">
+              </button>
+            </div>
+
+            <!-- Preferred parsing -->
+            <div class="flex items-center gap-4">
+              <label class="text-xs text-on-surface-variant uppercase tracking-widest">{{ text.settings_parsing }}</label>
+              <button id="btn-orth" onclick="setParsing('orth_base')"
+                class="clip-hud-btn px-4 py-1.5 text-xs font-bold uppercase tracking-widest border transition-all">
+                {{ text.orth_base }}
+              </button>
+              <button id="btn-lemma" onclick="setParsing('lemma')"
+                class="clip-hud-btn px-4 py-1.5 text-xs font-bold uppercase tracking-widest border transition-all">
+                {{ text.lemma }}
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── Language and Visuals ── -->
+        <section>
+          <div class="flex items-baseline gap-4 mb-4">
+            <h2 class="text-sm font-headline font-bold text-secondary uppercase tracking-widest">{{ text.settings_lang_section }}</h2>
+            <div class="flex-1 h-px bg-outline-variant/20"></div>
+          </div>
+          <div class="space-y-4">
+
+            <!-- Language -->
+            <div class="flex items-center gap-4">
+              <label class="text-xs text-on-surface-variant uppercase tracking-widest">{{ text.settings_language }}</label>
+              <button id="btn-en" onclick="setLang('en')"
+                class="clip-hud-btn px-4 py-1.5 text-xs font-bold uppercase tracking-widest border transition-all">
+                English
+              </button>
+              <button id="btn-ja" onclick="setLang('ja')"
+                class="clip-hud-btn px-4 py-1.5 text-xs font-bold uppercase tracking-widest border transition-all">
+                日本語
+              </button>
+            </div>
+
+            <!-- Dark/Light mode toggle -->
+            <div class="flex items-center gap-4">
+              <label class="text-xs text-on-surface-variant uppercase tracking-widest">{{ text.settings_theme }}</label>
+              <button id="btn-theme-dark"  onclick="setTheme('dark')"
+                class="clip-hud-btn px-4 py-1.5 text-xs font-bold uppercase tracking-widest border transition-all">
+                {{ text.dark_mode }}
+              </button>
+              <button id="btn-theme-light" onclick="setTheme('light')"
+                class="clip-hud-btn px-4 py-1.5 text-xs font-bold uppercase tracking-widest border transition-all">
+                {{ text.light_mode }}
+              </button>
+            </div>
+
+            <!-- Background folder -->
+            <div>
+              <label class="block text-xs text-on-surface-variant uppercase tracking-widest mb-2">{{ text.settings_bg_folder }}</label>
+              <div class="flex gap-2">
+                <div class="flex-1 clip-hud-btn flex items-center bg-surface-container-highest/30 border border-outline-variant/30 h-10 px-4 focus-within:border-primary transition-all">
+                  <input id="bg-folder" class="bg-transparent border-none focus:ring-0 text-xs w-full text-on-surface placeholder:text-on-surface-variant/50 p-0 font-body"
+                    value="{{ ui_cfg.get('background_folder', '') }}" />
+                </div>
+                <button onclick="browseBg()"
+                  class="clip-hud-btn bg-tertiary-container/10 border border-tertiary/40 hover:bg-tertiary-container/20 h-10 px-3 flex items-center justify-center transition-all">
+                  <span class="material-symbols-outlined text-[14px] text-tertiary">folder_open</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── Reset Database ── -->
+        <section>
+          <div class="flex items-baseline gap-4 mb-4">
+            <h2 class="text-sm font-headline font-bold text-error uppercase tracking-widest">{{ text.settings_reset_section }}</h2>
+            <div class="flex-1 h-px bg-outline-variant/20"></div>
+          </div>
+          <button onclick="resetDatabase()"
+            class="clip-hud-btn bg-error/10 border border-error/40 hover:bg-error/20 px-6 py-2.5 text-xs font-bold text-error uppercase tracking-widest transition-all">
+            {{ text.settings_reset_btn }}
+          </button>
+        </section>
+
+        <!-- ── Bottom buttons ── -->
+        <div class="flex gap-4 pt-4 border-t border-outline-variant/20">
+          <button onclick="applyChanges()"
+            class="clip-hud-btn flex-1 bg-primary/10 border border-primary/40 hover:bg-primary/20 py-3 text-sm font-headline font-bold text-primary uppercase tracking-widest transition-all">
+            {{ text.btn_apply }}
+          </button>
+          <button onclick="window.location.href='/'"
+            class="clip-hud-btn w-40 bg-surface-container-highest/50 border border-outline-variant/40 hover:bg-surface-variant py-3 text-sm font-headline font-bold text-on-surface-variant uppercase tracking-widest transition-all">
+            {{ text.btn_close }}
+          </button>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const T = {{ text | tojson }};
+let cfg    = null;
+let uiCfg  = null;
+let deckEntries = [];
+
+// Active toggle button style helpers
+const activePrimary   = 'clip-hud-btn px-4 py-1.5 text-xs font-bold uppercase tracking-widest border transition-all bg-primary/20 border-primary text-primary';
+const inactivePrimary = 'clip-hud-btn px-4 py-1.5 text-xs font-bold uppercase tracking-widest border transition-all bg-transparent border-outline-variant/40 text-on-surface-variant hover:border-primary/40';
+
+// ---------------------------------------------------------------------------
+// Init
+// ---------------------------------------------------------------------------
+(async () => {
+  [cfg, uiCfg] = await Promise.all([apiGet('/api/config'), apiGet('/api/ui-config')]);
+
+  // Deck entries
+  deckEntries = [];
+  (cfg.anki.decks_fields || []).forEach(entry => {
+    (entry.fields || []).forEach(field => {
+      deckEntries.push({ deck: entry.deck, field });
+    });
+  });
+  if (!deckEntries.length) deckEntries.push({ deck: '', field: '' });
+  renderDecks();
+
+  // Ignore brackets toggle
+  updateBracketsBtn(cfg.anki.ignore_in_brackets);
+
+  // Parsing
+  const p = cfg.words.preferred_parsing;
+  document.getElementById('btn-orth').className  = p === 'orth_base' ? activePrimary : inactivePrimary;
+  document.getElementById('btn-lemma').className = p === 'lemma'     ? activePrimary : inactivePrimary;
+
+  // Language
+  const lang = uiCfg.language || 'en';
+  document.getElementById('btn-en').className = lang === 'en' ? activePrimary : inactivePrimary;
+  document.getElementById('btn-ja').className = lang === 'ja' ? activePrimary : inactivePrimary;
+
+  // Theme — prefer localStorage, fall back to server value (needed on Linux)
+  const theme = _store.getItem('wf-theme') || uiCfg.theme || 'dark';
+  _store.setItem('wf-theme', theme);
+  _applyThemeBtnStyles(theme);
+})();
+
+// ---------------------------------------------------------------------------
+// Decks
+// ---------------------------------------------------------------------------
+function renderDecks() {
+  const list = document.getElementById('deck-list');
+  list.innerHTML = '';
+  deckEntries.forEach((e, i) => {
+    const row = document.createElement('div');
+    row.className = 'flex gap-2 items-center';
+    row.innerHTML = `
+      <div class="clip-hud-btn flex-1 flex items-center bg-surface-container-highest/30 border border-outline-variant/30 h-9 px-3 focus-within:border-primary transition-all">
+        <input class="bg-transparent border-none focus:ring-0 text-xs w-full text-on-surface placeholder:text-on-surface-variant/50 p-0 font-body"
+          placeholder="{{ text.setup_deck_placeholder }}" value="${e.deck}"
+          oninput="deckEntries[${i}].deck=this.value" />
+      </div>
+      <div class="clip-hud-btn flex-1 flex items-center bg-surface-container-highest/30 border border-outline-variant/30 h-9 px-3 focus-within:border-primary transition-all">
+        <input class="bg-transparent border-none focus:ring-0 text-xs w-full text-on-surface placeholder:text-on-surface-variant/50 p-0 font-body"
+          placeholder="{{ text.setup_field_placeholder }}" value="${e.field}"
+          oninput="deckEntries[${i}].field=this.value" />
+      </div>
+      <button onclick="removeDeck(${i})" ${deckEntries.length<=1?'disabled style="opacity:0.3"':''}
+        class="clip-hud-btn w-8 h-9 flex items-center justify-center border border-error/30 hover:bg-error/10 transition-all text-error">
+        <span class="material-symbols-outlined text-[14px]">close</span>
+      </button>`;
+    list.appendChild(row);
+  });
+  document.getElementById('btn-add-deck').style.display = deckEntries.length >= 9 ? 'none' : '';
+}
+function addDeck()      { if (deckEntries.length < 9) { deckEntries.push({deck:'',field:''}); renderDecks(); } }
+function removeDeck(i)  { if (deckEntries.length > 1) { deckEntries.splice(i,1); renderDecks(); } }
+
+// ---------------------------------------------------------------------------
+// Toggle helpers
+// ---------------------------------------------------------------------------
+function updateBracketsBtn(val) {
+  const btn = document.getElementById('btn-brackets');
+  btn.textContent = val ? 'ON' : 'OFF';
+  btn.className = val
+    ? 'clip-hud-btn px-4 py-1.5 text-xs font-bold uppercase tracking-widest border transition-all bg-secondary/20 border-secondary text-secondary'
+    : 'clip-hud-btn px-4 py-1.5 text-xs font-bold uppercase tracking-widest border transition-all bg-transparent border-outline-variant/40 text-on-surface-variant';
+}
+function toggleBrackets() {
+  cfg.anki.ignore_in_brackets = !cfg.anki.ignore_in_brackets;
+  updateBracketsBtn(cfg.anki.ignore_in_brackets);
+}
+function setParsing(val) {
+  cfg.words.preferred_parsing = val;
+  document.getElementById('btn-orth').className  = val === 'orth_base' ? activePrimary : inactivePrimary;
+  document.getElementById('btn-lemma').className = val === 'lemma'     ? activePrimary : inactivePrimary;
+}
+function setLang(val) {
+  uiCfg.language = val;
+  document.getElementById('btn-en').className = val === 'en' ? activePrimary : inactivePrimary;
+  document.getElementById('btn-ja').className = val === 'ja' ? activePrimary : inactivePrimary;
+}
+
+// ---------------------------------------------------------------------------
+// Browse helpers
+// ---------------------------------------------------------------------------
+async function browseInput()  { const r = await apiPost('/api/browse-folder',{}); if(r.path) document.getElementById('input-folder').value=r.path; }
+async function browseOutput() { const r = await apiPost('/api/browse-folder',{}); if(r.path) document.getElementById('output-folder').value=r.path; }
+async function browseBg()     { const r = await apiPost('/api/browse-folder',{}); if(r.path) document.getElementById('bg-folder').value=r.path; }
+
+// ---------------------------------------------------------------------------
+// Apply / Reset
+// ---------------------------------------------------------------------------
+async function applyChanges() {
+  // Always re-fetch the current on-disk config before saving.
+  // This ensures any server-side changes made since the page loaded
+  // (e.g. reset_database clearing last_retrieved) are preserved and
+  // not overwritten by the stale snapshot we loaded on page open.
+  const freshCfg = await apiGet('/api/config');
+
+  // Overlay only the fields the user can actually edit on this page.
+  const map = {};
+  deckEntries.forEach(e => {
+    const d = (e.deck  || 'Japanese').trim();
+    const f = (e.field || 'Expression').trim();
+    if (!map[d]) map[d] = [];
+    map[d].push(f);
+  });
+  freshCfg.anki.decks_fields        = Object.entries(map).map(([deck, fields]) => ({ deck, fields }));
+  freshCfg.anki.ignore_in_brackets  = cfg.anki.ignore_in_brackets;
+  freshCfg.subtitles.input_folder   = document.getElementById('input-folder').value.trim();
+  freshCfg.subtitles.output_folder  = document.getElementById('output-folder').value.trim();
+  freshCfg.words.preferred_parsing  = cfg.words.preferred_parsing;
+
+  uiCfg.background_folder = document.getElementById('bg-folder').value.trim();
+
+  await Promise.all([
+    apiPost('/api/config', freshCfg),
+    apiPost('/api/ui-config', uiCfg),
+  ]);
+  window.location.href = '/';
+}
+
+async function resetDatabase() {
+  showModal(T.settings_reset_section, T.settings_reset_confirm, [
+    { label: T.btn_cancel, primary: false },
+    { label: T.btn_confirm, primary: true, action: async () => {
+      await apiPost('/api/reset', {});
+      showModal(T.success_reset_title, T.success_reset_msg);
+    }}
+  ]);
+}
+</script>
+{% endblock %}

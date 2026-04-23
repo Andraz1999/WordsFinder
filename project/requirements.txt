@@ -1,0 +1,14 @@
+# dependencies for Word Finder App
+#
+# Install with:
+#   pip install -r requirements.txt
+#
+# fugashi also needs a MeCab dictionary.  
+# For the full UniDic dictionary (~600 MB):
+#   python -m unidic download  
+
+fugashi[unidic]  # dictionary library for tokenization       
+requests         # AnkiConnect HTTP calls
+srt              # .srt subtitle parser 
+flask            # UI
+pywebview        # UI

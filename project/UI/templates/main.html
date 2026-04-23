@@ -1,0 +1,287 @@
+{% extends "base.html" %}
+{% block title %}{% endblock %}
+
+<!--{% block header_right %}
+<!-- Anki Sync + Settings in header 
+<div class="flex items-center gap-3">
+  <button id="btn-sync" onclick="syncAnki()"
+    class="clip-hud-btn bg-primary/10 border border-primary/30 hover:bg-primary/20 h-9 px-4 flex items-center gap-2 transition-all">
+    <span class="material-symbols-outlined text-[14px] text-primary">sync</span>
+    <span class="text-[9px] font-bold text-primary font-headline uppercase tracking-widest">{{ text.btn_sync_anki }}</span>
+  </button>
+</div>
+{% endblock %}-->
+
+{% block body %}
+<div class="absolute top-16 left-0 right-0 bottom-0 overflow-y-auto custom-scrollbar">
+  <div class="-mt-16 pt-16">
+    <main class="pt-8 pb-12 px-6 max-w-[1200px] mx-auto">
+
+      <!-- Toolbar row -->
+      <div class="mb-8 flex flex-col gap-2">
+        
+
+        <!-- Ancy Sync and Scan Subs -->
+        <div class="flex items-center justify-end gap-3">
+          <button id="btn-sync" onclick="syncAnki()"
+            class="clip-hud-btn bg-primary-container/10 border border-primary/40 hover:bg-primary-container/20 h-10 px-4 flex items-center justify-center gap-2 transition-all">
+            <span class="material-symbols-outlined text-[14px] text-primary">sync</span>
+            <span class="text-[9px] font-bold text-primary font-headline uppercase tracking-widest">{{ text.btn_sync_anki }}</span>
+          </button>
+
+          <button onclick="scanSubs()"
+            class="clip-hud-btn bg-secondary-container/10 border border-secondary/40 hover:bg-secondary-container/20 h-10 px-4 flex items-center justify-center gap-2 transition-all">
+            <span class="material-symbols-outlined text-[16px] text-secondary">sync_alt</span>
+            <span class="text-[9px] font-bold text-secondary font-headline uppercase tracking-widest">{{ text.btn_scan_subs }}</span>
+          </button>
+        </div>
+
+        <!-- Path + Browse + Scan -->
+        <div class="flex gap-3 justify-end">
+          <div class="w-80 flex items-center clip-hud-btn bg-surface-container-highest/30 border border-outline-variant/30 h-10 px-4 focus-within:border-primary transition-all">
+            <span class="material-symbols-outlined text-[16px] text-on-surface-variant mr-3">folder_open</span>
+            <input id="path-input" class="bg-transparent border-none focus:ring-0 text-[10px] w-full text-on-surface placeholder:text-on-surface-variant/50 p-0 font-body"
+              placeholder="{{ text.placeholder_path }}" type="text" value="{{ config.subtitles.input_folder if config else '' }}"/>
+          </div>
+          <button onclick="browseFolder()"
+            class="clip-hud-btn bg-tertiary-container/10 border border-tertiary/40 hover:bg-tertiary-container/20 h-10 px-4 flex items-center justify-center gap-2 transition-all">
+            <span class="material-symbols-outlined text-[16px] text-tertiary">folder_open</span>
+            <span class="text-[9px] font-bold text-tertiary font-headline uppercase tracking-widest">{{ text.btn_browse }}</span>
+          </button>
+          
+        </div>
+        <!-- Settings row -->
+        <div class="flex justify-end">
+          <button onclick="window.location.href='/settings'"
+            class="clip-hud-btn bg-surface-container-highest/50 hover:bg-surface-variant w-10 h-8 flex items-center justify-center transition-all border border-outline-variant/30">
+            <span class="material-symbols-outlined text-[14px] text-on-surface-variant">settings</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Subs Section -->
+      <section class="mb-12">
+        <div class="flex items-baseline justify-between mb-2">
+          <h1 class="text-4xl font-headline font-light tracking-tighter text-on-surface uppercase">{{ text.nav_subs }}</h1>
+          <span class="text-[10px] font-mono text-outline-variant" id="collection-count">{{ text.total_collections }}: 00</span>
+        </div>
+        <div class="h-[1px] w-full bg-outline-variant/20 mb-8"></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="results-grid">
+          <!-- Cards inserted by JS -->
+          <div class="text-on-surface-variant text-xs animate-pulse">{{ text.loading }}</div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section>
+        <div class="flex items-baseline justify-between mb-2">
+          <h2 class="text-4xl font-headline font-light tracking-tighter text-on-surface uppercase">{{ text.nav_stats }}</h2>
+        </div>
+        <div class="h-[1px] w-full bg-outline-variant/20 mb-8"></div>
+        <div class="flex flex-col md:flex-row gap-6">
+          <!-- Kanji button -->
+          <div class="flex-1 relative group cursor-pointer h-40" onclick="window.location.href='/kanji'">
+            <div class="clip-hex-btn bg-surface-container p-[1px] group-hover:bg-tertiary transition-colors h-full w-full">
+              <div class="clip-hex-btn bg-surface-container-low h-full w-full relative overflow-hidden flex flex-col items-center justify-center">
+              <img class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40 transition-opacity" data-alt="traditional japanese calligraphy brush strokes on aged paper with moody artistic shadows" src="{{ url_for('static', filename='kanji_icon.png') }}"/>  
+                <div class="relative z-10 flex flex-col items-center gap-2">
+                  <span class="text-5xl font-headline text-tertiary drop-shadow-2xl">漢</span>
+                  <span class="text-sm font-headline font-bold tracking-[0.3em] uppercase text-tertiary">{{ text.nav_kanji }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Words button -->
+          <div class="flex-1 relative group cursor-pointer h-40" onclick="window.location.href='/words'">
+            <div class="clip-hex-btn bg-surface-container p-[1px] group-hover:bg-secondary transition-colors h-full w-full">
+              <div class="clip-hex-btn bg-surface-container-low h-full w-full relative overflow-hidden flex flex-col items-center justify-center">
+                <img class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40 transition-opacity" data-alt="macro view of digital pixelated text on a dark screen with glowing green matrix aesthetic" src="{{ url_for('static', filename='word_icon.png') }}"/>
+                <div class="relative z-10 flex flex-col items-center gap-2">
+                  <span class="text-5xl font-headline text-secondary drop-shadow-2xl">語</span>
+                  <span class="text-sm font-headline font-bold tracking-[0.3em] uppercase text-secondary">{{ text.nav_words }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<!-- Atmospheric depth -->
+<div class="fixed inset-0 pointer-events-none -z-10">
+  <div class="absolute top-1/4 -left-20 w-96 h-96 bg-primary/5 blur-[120px]"></div>
+  <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-secondary/5 blur-[120px]"></div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+const T = {{ text | tojson }};
+let resultsData = [];
+
+// ---------------------------------------------------------------------------
+// Load result cards
+// ---------------------------------------------------------------------------
+async function loadResults() {
+  try {
+    const data = await apiGet('/api/results-stats');
+    resultsData = data;
+    renderCards(data, true);
+    document.getElementById('collection-count').textContent = T.total_collections + ': ' + String(data.length).padStart(2,'0');
+  } catch(e) {
+    console.error(e);
+  }
+}
+
+function buildCard(result, idx) {
+  const total  = result.all_words_count || 1;
+  const newW   = result.new_words_count || 0;
+  const pct    = Math.round((1 - newW / total) * 100);
+  const name   = result.name || '';
+  const bgImg       = result.bg_image || '/icons/default_icon.png';
+  const isDefault   = bgImg === '/icons/default_icon.png';
+  const imgClass    = isDefault
+  ? 'w-full h-full object-contain opacity-60 group-hover:opacity-100 transition-transform duration-500'
+  : 'w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-transform duration-500';
+
+  const div = document.createElement('div');
+  div.className = 'relative group hover-zoom cursor-pointer flex flex-col anim-pop-in';
+  div.style.animationDelay = (idx * 0.07) + 's';
+  div.dataset.folder = name;
+
+  div.innerHTML = `
+    <div class="clip-hex-card overflow-hidden aspect-[16/10] bg-surface-container-high border-t border-r border-primary/20 transition-all group-hover:border-primary/60">
+      <img class="${imgClass}"
+        src="${bgImg}" onerror="this.src='/icons/default_icon.png'" alt="${name}"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+    </div>
+    <div class="clip-title-board bg-primary-container mt-[-8px] px-4 py-3 flex justify-between items-center relative z-10 shadow-lg group-hover:bg-primary transition-colors">
+      <span class="text-on-primary-container font-headline font-black text-lg uppercase tracking-tight truncate max-w-[60%]">${name}</span>
+      <div class="flex flex-col items-end">
+        <span class="text-on-primary-container font-mono text-sm font-black leading-none">${pct}%</span>
+        <div class="w-12 h-1 bg-on-primary-container/20 mt-1">
+          <div class="h-full bg-on-primary-container" style="width:${pct}%"></div>
+        </div>
+      </div>
+    </div>`;
+
+  // Left click → subs page
+  div.addEventListener('click', () => { window.location.href = '/subs/' + encodeURIComponent(name); });
+
+  // Right click → context menu
+  div.addEventListener('contextmenu', e => {
+    e.preventDefault();
+    e.stopPropagation();
+    showCtxMenu(e.clientX, e.clientY, [{
+      label: T.context_delete,
+      danger: true,
+      action: () => deleteCard(name, div)
+    }]);
+  });
+
+  return div;
+}
+
+function renderCards(data, animate) {
+  const grid = document.getElementById('results-grid');
+  grid.innerHTML = '';
+  if (!data.length) {
+    grid.innerHTML = '<p class="text-on-surface-variant text-xs col-span-3">' + T.no_results + '</p>';
+    return;
+  }
+  data.forEach((r, i) => {
+    grid.appendChild(buildCard(r, animate ? i : 0));
+  });
+}
+
+async function deleteCard(name, el) {
+  el.classList.add('anim-pop-out');
+  setTimeout(async () => {
+    await apiDelete('/api/results/' + encodeURIComponent(name));
+    resultsData = resultsData.filter(r => r.name !== name);
+    renderCards(resultsData, false);
+    document.getElementById('collection-count').textContent = T.total_collections + ': ' + String(resultsData.length).padStart(2,'0');
+  }, 280);
+}
+
+// ---------------------------------------------------------------------------
+// Anki sync
+// ---------------------------------------------------------------------------
+async function syncAnki() {
+  const btn = document.getElementById('btn-sync');
+  btn.disabled = true;
+  btn.style.opacity = '0.5';
+  showSpinner(T.spinner_syncing);
+  try {
+    const res = await apiPost('/api/sync-anki', {});
+    if (res.error === 'anki_not_open') {
+      showModal(T.error_anki_title, T.error_anki_msg);
+    } else if (res.error) {
+      showModal('Error', res.error);
+    } else {
+      const msg = T.success_sync_msg
+        .replace('{new_sentences}', res.new_sentences)
+        .replace('{new_words}', res.new_words);
+      showModal(T.success_sync_title, msg);
+    }
+  } catch(e) {
+    showModal(T.error_anki_title, T.error_anki_msg);
+  }
+  hideSpinner();
+  btn.disabled = false; btn.style.opacity = '1';
+}
+
+// ---------------------------------------------------------------------------
+// Scan subs
+// ---------------------------------------------------------------------------
+async function scanSubs() {
+  const path = document.getElementById('path-input').value.trim();
+  showSpinner(T.spinner_scanning);
+  try {
+    const res = await apiPost('/api/scan-subs', { path });
+    if (res.error) { hideSpinner(); showModal('Error', res.error); return; }
+    const msg = T.success_scan_msg
+      .replace('{unique}', res.unique)
+      .replace('{comprehension}', res.comprehension);
+    hideSpinner();
+    showModal(T.success_scan_title, msg, [{
+      label: T.btn_ok, primary: true,
+      action: () => loadResults()
+    }]);
+    // Animate new card in at position 0
+    await loadResults();
+  } catch(e) {
+    hideSpinner();
+    showModal('Error', String(e));
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Browse folder
+// ---------------------------------------------------------------------------
+async function browseFolder() {
+  try {
+    const res = await apiPost('/api/browse-folder', {});
+    if (res.path) document.getElementById('path-input').value = res.path;
+  } catch(e) {}
+}
+
+// ---------------------------------------------------------------------------
+// Init
+// ---------------------------------------------------------------------------
+loadResults();
+
+// Preload config path
+(async () => {
+  try {
+    const cfg = await apiGet('/api/config');
+    const pi = document.getElementById('path-input');
+    if (pi && !pi.value && cfg.subtitles) pi.value = cfg.subtitles.input_folder || '';
+  } catch(e) {}
+})();
+</script>
+{% endblock %}

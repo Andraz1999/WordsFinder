@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WORDS FINDER — Language Select</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+  body { font-family: 'Manrope', sans-serif; background-color: #060e20; color: #dde5ff; height: 100vh; display: flex; align-items: center; justify-content: center; margin: 0; }
+  .font-headline { font-family: 'Space Grotesk', sans-serif; }
+  .clip-hex { clip-path: polygon(0 0, 92% 0, 100% 15%, 100% 100%, 8% 100%, 0 85%); }
+  .btn-lang { clip-path: polygon(0 0, 92% 0, 100% 15%, 100% 100%, 8% 100%, 0 85%); cursor: pointer; transition: all 0.2s; }
+  .btn-lang.selected { background: rgba(129,236,255,0.2); border-color: #81ecff; }
+  .glare { position: fixed; pointer-events: none; }
+  .glare-1 { top: 10%; left: 10%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(129,236,255,0.07) 0%, transparent 70%); }
+  .glare-2 { bottom: 10%; right: 10%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(109,254,156,0.05) 0%, transparent 70%); }
+</style>
+</head>
+<body>
+<div class="glare glare-1"></div>
+<div class="glare glare-2"></div>
+
+<div class="clip-hex bg-[#0f192f] border border-[#81ecff]/20 p-10 min-w-[420px] relative">
+  <!-- Title -->
+  <div class="mb-8 text-center">
+    <div class="text-3xl font-headline font-bold text-[#81ecff] tracking-widest uppercase mb-2">WORDS FINDER</div>
+    <div class="h-px w-full bg-[#81ecff]/15 mb-6"></div>
+    <p class="text-sm text-[#a3abc3] tracking-widest uppercase">Choose your language / 言語を選んでください</p>
+    <!--<p class="text-sm text-[#a3abc3] mt-1">{{ texts['ja']['lang_select_prompt'] }}</p> -->
+  </div>
+
+  <!-- Language options -->
+  <div class="flex gap-4 mb-8">
+    <div class="btn-lang flex-1 border border-[#40485c]/80 bg-[#091327] p-5 flex flex-col items-center gap-3"
+         onclick="selectLang('en')" id="btn-en">
+      <span class="text-2xl font-headline font-bold text-[#dde5ff]">English</span>
+      <span class="text-xs text-[#6d758b] tracking-widest uppercase">EN</span>
+    </div>
+    <div class="btn-lang flex-1 border border-[#40485c]/80 bg-[#091327] p-5 flex flex-col items-center gap-3"
+         onclick="selectLang('ja')" id="btn-ja">
+      <span class="text-2xl font-headline font-bold text-[#dde5ff]">日本語</span>
+      <span class="text-xs text-[#6d758b] tracking-widest uppercase">JA</span>
+    </div>
+  </div>
+
+  <!-- Confirm -->
+  <button onclick="confirm()" class="btn-lang w-full bg-[#81ecff]/10 border border-[#81ecff]/40 py-3 text-sm font-headline font-bold text-[#81ecff] uppercase tracking-widest hover:bg-[#81ecff]/20">
+    Confirm / 確認
+  </button>
+</div>
+
+<script>
+let chosen = 'en';
+function selectLang(lang) {
+  chosen = lang;
+  document.getElementById('btn-en').classList.toggle('selected', lang === 'en');
+  document.getElementById('btn-ja').classList.toggle('selected', lang === 'ja');
+}
+selectLang('en');
+
+async function confirm() {
+  // Save ui_config
+  await fetch('/api/ui-config', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ language: chosen, theme: 'dark', background_folder: '' })
+  });
+  // Check if config.json exists / decks are set — go to setup
+  window.location.href = '/setup';
+}
+</script>
+</body>
+</html>

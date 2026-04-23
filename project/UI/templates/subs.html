@@ -1,0 +1,817 @@
+{% extends "base.html" %}
+{% block title %} — {{ folder_name }}{% endblock %}
+
+{% block extra_head %}
+<style>
+  .anime-bg-panel {
+    background-color: #050b1a;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .hex-button {
+    clip-path: polygon(0 0, 92% 0, 100% 15%, 100% 100%, 8% 100%, 0 85%);
+    transition: all 0.2s ease;
+  }
+  .hex-badge {
+    clip-path: polygon(10% 0, 100% 0, 100% 85%, 90% 100%, 0 100%, 0 15%);
+  }
+
+  /* ── Page nav buttons ── */
+  .page-nav-btn {
+    clip-path: polygon(0 0, 92% 0, 100% 15%, 100% 100%, 8% 100%, 0 85%);
+    transition: all 0.2s ease;
+    min-width: 72px;
+  }
+  .page-nav-btn.active {
+    background: rgba(129,236,255,0.18);
+    border-color: rgba(129,236,255,0.9);
+    color: #81ecff;
+  }
+
+  /* ── Foldable word block ── */
+  .word-header {
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.18s ease;
+  }
+  .word-header:hover {
+    background: rgba(129,236,255,0.08);
+  }
+
+  /* Chevron icon rotation */
+  .fold-chevron {
+    transition: transform 0.3s cubic-bezier(0.34,1.2,0.64,1);
+    opacity: 0.5;
+  }
+  .word-block-open .fold-chevron {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+
+  /* Entries accordion */
+  .word-entries-wrap {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s cubic-bezier(0.4,0,0.2,1);
+  }
+  .word-block-open .word-entries-wrap {
+    grid-template-rows: 1fr;
+  }
+  .word-entries-inner {
+    overflow: hidden;
+  }
+
+  /* ── Sentence typography ── */
+  .sentence-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    color: #e8eeff;
+    user-select: text;
+    cursor: text;
+  }
+
+  .sentence-text mark {
+    background: rgba(129,236,255,0.18);
+    color: #81ecff;
+    border-radius: 2px;
+    padding: 0 2px;
+  }
+
+  .entry-row {
+    transition: background 0.15s ease;
+  }
+  .entry-row:hover {
+    background: rgba(129,236,255,0.04);
+  }
+
+  .meta-text {
+    user-select: text;
+    cursor: text;
+  }
+
+  /* ── Inline action toast ── */
+  .action-toast {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    clip-path: polygon(0 0, 92% 0, 100% 20%, 100% 100%, 8% 100%, 0 80%);
+    animation: toastPop 1.4s cubic-bezier(0.22,1,0.36,1) forwards;
+  }
+  .action-toast.copied {
+    background: rgba(129,236,255,0.15);
+    border: 1px solid rgba(129,236,255,0.5);
+    color: #81ecff;
+  }
+  .action-toast.added {
+    background: rgba(109,254,156,0.15);
+    border: 1px solid rgba(109,254,156,0.5);
+    color: #6dfe9c;
+  }
+  @keyframes toastPop {
+    0%   { opacity: 0; transform: translateY(4px) scale(0.92); }
+    15%  { opacity: 1; transform: translateY(0)   scale(1); }
+    70%  { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-6px); }
+  }
+
+  /* ── Light mode overrides — dark mode above is untouched ── */
+  html.light .anime-bg-panel {
+    background-color: var(--bg-page);
+  }
+  html.light .page-nav-btn.active {
+    background: rgba(0,119,170,0.15);
+    border-color: #0077aa;
+    color: #0077aa;
+  }
+  html.light .bg-primary\/5 {
+    background: rgba(255,255,255,0.55) !important;
+    backdrop-filter: blur(10px);
+    border-color: rgba(0,119,170,0.18) !important;
+  }
+  html.light .word-header:hover {
+    background: rgba(0,119,170,0.07);
+  }
+  html.light .bg-primary\/10 {
+    background: rgba(0,119,170,0.08) !important;
+  }
+  html.light .border-primary\/20 {
+    border-color: rgba(0,119,170,0.15) !important;
+  }
+  html.light .sentence-text {
+    color: #1a2236;
+  }
+  html.light .sentence-text mark {
+    background: rgba(0,119,170,0.14);
+    color: #004f80;
+  }
+  html.light .text-primary\/60 { color: rgba(0,119,170,0.7) !important; }
+  html.light .text-primary\/50 { color: rgba(0,119,170,0.6) !important; }
+  html.light .entry-row:hover {
+    background: rgba(0,119,170,0.05);
+  }
+  html.light .divide-outline-variant\/10 > * + * {
+    border-color: rgba(0,119,170,0.10);
+  }
+  html.light .action-toast.copied {
+    background: rgba(0,119,170,0.12);
+    border-color: rgba(0,119,170,0.45);
+    color: #0077aa;
+  }
+  html.light .action-toast.added {
+    background: rgba(0,122,61,0.12);
+    border-color: rgba(0,122,61,0.45);
+    color: #007a3d;
+  }
+</style>
+{% endblock %}
+
+{% block body %}
+<div id="page-bg" class="absolute inset-0 anime-bg-panel -z-0"></div>
+
+<div class="absolute top-16 left-0 right-0 bottom-0 overflow-y-auto custom-scrollbar">
+  <div class="-mt-16 pt-16">
+    <main class="pt-8 pb-12 px-6 max-w-[1200px] mx-auto relative z-10">
+      <div class="grid grid-cols-12 gap-8">
+        <div class="flex flex-col space-y-8 col-span-12">
+
+          <!-- Back button -->
+          <div class="flex items-center">
+            <button onclick="window.location.href='/'"
+              class="hex-button w-10 h-10 flex items-center justify-center border border-on-surface/20 bg-surface-container-low hover:bg-surface-container-highest transition-colors group">
+              <span class="material-symbols-outlined text-on-surface group-hover:text-primary">arrow_back</span>
+            </button>
+          </div>
+
+          <!-- Header -->
+          <div class="space-y-4 pb-4 border-b border-outline-variant/30">
+            <!-- Action buttons row -->
+            <div class="flex justify-end items-center">
+              <div class="flex gap-4 items-center">
+                <button onclick="scanThisSubs()"
+                  class="hex-button bg-secondary-container/20 border border-secondary/40 hover:bg-secondary-container/40 px-4 py-1.5 flex items-center justify-center gap-2 transition-all group h-10">
+                  <span class="material-symbols-outlined text-sm text-secondary">sync_alt</span>
+                  <span class="text-[10px] font-bold text-secondary uppercase tracking-widest">{{ text.btn_scan_subs }}</span>
+                </button>
+                <button onclick="copyPrompt(event)"
+                  class="hex-button bg-tertiary-container/20 border border-tertiary/40 hover:bg-tertiary-container/40 px-4 py-1.5 flex items-center justify-center gap-2 transition-all h-10">
+                  <span class="material-symbols-outlined text-sm text-tertiary">content_copy</span>
+                  <span class="text-[10px] font-bold text-tertiary uppercase tracking-widest">{{ text.btn_copy_prompt }}</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Title and stats -->
+            <div class="flex items-end justify-between">
+              <h1 class="text-4xl font-headline font-bold text-on-surface tracking-tighter uppercase" style="user-select:text;cursor:text;">{{ folder_name }}</h1>
+              <div class="flex gap-6 items-end">
+                <div class="text-right">
+                  <span class="block text-[10px] text-on-surface-variant uppercase tracking-widest mb-1">{{ text.new_words }}</span>
+                  <span class="text-2xl font-headline font-light text-primary" id="stat-new-words">—</span>
+                </div>
+                <div class="text-right">
+                  <span class="block text-[10px] text-on-surface-variant uppercase tracking-widest mb-1">{{ text.comprehension }}</span>
+                  <span class="text-2xl font-headline font-light text-secondary" id="stat-comprehension">—</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page nav (top) -->
+          <div id="page-nav-top" class="hidden flex-wrap gap-2"></div>
+
+          <!-- Word search bar -->
+          <div class="flex items-center gap-3">
+            <div class="flex items-center clip-hud-btn bg-surface-container-highest/30 border border-outline-variant/30 h-9 px-3 focus-within:border-primary transition-all w-64">
+              <span class="material-symbols-outlined text-[14px] text-on-surface-variant mr-2">search</span>
+              <input id="word-search"
+                class="bg-transparent border-none focus:ring-0 text-[11px] w-full text-on-surface placeholder:text-on-surface-variant/50 p-0 font-body"
+                placeholder="" type="search"
+                oninput="filterWords(this.value)"/>
+            </div>
+            <span id="filter-count" class="text-[10px] font-mono text-outline-variant hidden"></span>
+          </div>
+
+          <!-- Words list -->
+          <div class="space-y-2" id="words-list">
+            <div class="text-on-surface-variant text-xs animate-pulse">{{ text.loading }}</div>
+          </div>
+
+          <!-- Page nav (bottom) -->
+          <div id="page-nav-bottom" class="hidden flex-wrap gap-2 pb-4"></div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const FOLDER  = {{ folder_name | tojson }};
+const T       = {{ text | tojson }};
+// Set localised placeholder now that T is available
+document.getElementById('word-search').placeholder = T.filter_placeholder || 'Filter words…';
+let allWords  = [];
+let wordGroups = {};
+let hasOutput = false;
+
+const MAX_SENTENCES = 1000;
+let wordBoxes   = [];   // array of arrays of word objects
+let activeBox   = 0;    // currently displayed box index
+
+// ---------------------------------------------------------------------------
+// Build boxes: each box has at most MAX_SENTENCES sentences total
+// ---------------------------------------------------------------------------
+function buildWordBoxes(words) {
+  const boxes = [];
+  let box = [];
+  let sum = 0;
+  for (const word of words) {
+    const n = word.entries.length;
+    if (sum + n > MAX_SENTENCES && box.length > 0) {
+      boxes.push(box);
+      box = [word];
+      sum = n;
+    } else {
+      box.push(word);
+      sum += n;
+    }
+  }
+  if (box.length > 0) boxes.push(box);
+  return boxes;
+}
+
+// ---------------------------------------------------------------------------
+// Load data
+// ---------------------------------------------------------------------------
+async function loadData() {
+  try {
+    const cfg = await apiGet('/api/config');
+    hasOutput = !!(cfg.subtitles && cfg.subtitles.output_folder && cfg.subtitles.output_folder.trim());
+
+    const uiCfg = await apiGet('/api/ui-config');
+    const bgFolder = uiCfg.background_folder || '';
+    if (bgFolder) {
+      const exts = ['.jpg','.jpeg','.png','.webp'];
+      for (const ext of exts) {
+        const url = '/bg/' + encodeURIComponent(FOLDER) + ext;
+        const ok = await fetch(url).then(r => r.ok).catch(() => false);
+        if (ok) {
+          const isLight = document.documentElement.classList.contains('light');
+          const overlay = isLight
+            ? 'linear-gradient(rgba(238,241,247,0.55), rgba(238,241,247,0.65))'
+            : 'linear-gradient(rgba(5,11,26,0.7), rgba(5,11,26,0.85))';
+          document.getElementById('page-bg').style.backgroundImage =
+            `${overlay}, url(${url})`;
+          break;
+        }
+      }
+    }
+
+    const data = await apiGet('/api/subs/' + encodeURIComponent(FOLDER));
+    if (data.error) { console.error(data.error); return; }
+
+    const stats = data.stats || {};
+    document.getElementById('stat-new-words').textContent = stats.new_unique_words ?? '—';
+    const total = stats.all_words_count || 1;
+    const newW  = stats.new_words_count || 0;
+    const pct   = Math.round((1 - newW / total) * 100);
+    document.getElementById('stat-comprehension').textContent = pct + '%';
+
+    const grouped = {};
+    for (const w of data.words) {
+      if (!grouped[w.word]) grouped[w.word] = { word: w.word, count: w.count, entries: [] };
+      grouped[w.word].entries.push({ title: w.title, start_time: w.start_time, end_time: w.end_time, sentence: w.sentence });
+    }
+    wordGroups = grouped;
+    allWords   = Object.values(grouped);
+
+    wordBoxes  = buildWordBoxes(allWords);
+    activeBox  = 0;
+
+    renderNavButtons();
+    renderWords(wordBoxes[0] || [], 0);
+  } catch(e) {
+    console.error(e);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Nav buttons
+// ---------------------------------------------------------------------------
+function renderNavButtons() {
+  const topEl    = document.getElementById('page-nav-top');
+  const bottomEl = document.getElementById('page-nav-bottom');
+
+  if (wordBoxes.length <= 1) {
+    topEl.classList.add('hidden');
+    bottomEl.classList.add('hidden');
+    return;
+  }
+
+  topEl.classList.remove('hidden');
+  topEl.classList.add('flex');
+  bottomEl.classList.remove('hidden');
+  bottomEl.classList.add('flex');
+
+  // Compute global start index of each box
+  const boxStarts = [];
+  let cursor = 0;
+  for (const box of wordBoxes) {
+    boxStarts.push(cursor);
+    cursor += box.length;
+  }
+
+  function makeButtons(container) {
+    container.innerHTML = '';
+    wordBoxes.forEach((box, bi) => {
+      const startId = boxStarts[bi] + 1;
+      const endId   = boxStarts[bi] + box.length;
+      const btn = document.createElement('button');
+      btn.className = 'page-nav-btn h-10 px-4 border border-on-surface/25 bg-surface-container-low ' +
+                      'hover:bg-surface-container-highest text-[10px] font-bold text-on-surface-variant ' +
+                      'uppercase tracking-widest transition-colors' +
+                      (bi === activeBox ? ' active' : '');
+      btn.textContent = startId + ' – ' + endId;
+      btn.addEventListener('click', () => switchBox(bi));
+      container.appendChild(btn);
+    });
+  }
+
+  makeButtons(topEl);
+  makeButtons(bottomEl);
+}
+
+function updateNavActive() {
+  document.querySelectorAll('.page-nav-btn').forEach((btn, i) => {
+    // Each nav row has wordBoxes.length buttons; modulo to get box index
+    const bi = i % wordBoxes.length;
+    btn.classList.toggle('active', bi === activeBox);
+  });
+}
+
+function showLoading() {
+  document.getElementById('words-list').innerHTML =
+    `<div class="text-on-surface-variant text-xs animate-pulse">${T.loading || 'Loading...'}</div>`;
+}
+
+function switchBox(bi) {
+  activeBox = bi;
+  updateNavActive();
+  showLoading();
+  document.querySelector('.overflow-y-auto').scrollTo({ top: 0, behavior: 'smooth' });
+  let offset = 0;
+  for (let i = 0; i < bi; i++) offset += wordBoxes[i].length;
+  setTimeout(() => renderWords(wordBoxes[bi] || [], offset), 50);
+}
+
+// ---------------------------------------------------------------------------
+// Toggle fold
+// ---------------------------------------------------------------------------
+function toggleBlock(idx) {
+  const block = document.getElementById('word-block-' + idx);
+  if (!block) return;
+  block.classList.toggle('word-block-open');
+}
+
+// ---------------------------------------------------------------------------
+// Strip subtitle HTML tags (e.g. <font color="..."> injected by .ass/.srt files)
+// ---------------------------------------------------------------------------
+function stripSubTags(str) {
+  if (!str) return '';
+  // Remove any HTML tags that come from subtitle formatting
+  return str.replace(/<[^>]*>/g, '');
+}
+
+// ---------------------------------------------------------------------------
+// Highlight word inside sentence
+// ---------------------------------------------------------------------------
+function highlightWord(sentence, word) {
+  const clean = stripSubTags(sentence);
+  if (!word || !clean) return clean || '';
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return clean.replace(new RegExp(escaped, 'g'), `<mark>${word}</mark>`);
+}
+
+// ---------------------------------------------------------------------------
+// Render a box of words
+// ---------------------------------------------------------------------------
+function renderWords(words, globalOffset) {
+  const list = document.getElementById('words-list');
+  list.innerHTML = '';
+  if (!words.length) {
+    list.innerHTML = '<p class="text-on-surface-variant text-xs">No new words found.</p>';
+    return;
+  }
+
+  words.forEach((g, li) => {
+    const gi = globalOffset + li;   // global display index (for ID and numbering)
+    const block = document.createElement('div');
+    block.className = 'bg-primary/5 backdrop-blur-md border border-primary/10 overflow-hidden anim-pop-in';
+    block.style.animationDelay = (li * 0.04) + 's';
+    block.id = 'word-block-' + gi;
+
+    const headerHtml = `
+      <div class="word-header flex items-center px-6 py-2.5 bg-primary/10 border-b border-primary/20 select-none">
+        <div class="flex items-center gap-3 pointer-events-none w-1/3">
+          <span class="material-symbols-outlined text-base text-primary/60 fold-chevron">expand_more</span>
+          <span class="text-primary/50 text-xs font-bold leading-none">${gi + 1}</span>
+          <span class="text-xl font-bold font-headline text-primary tracking-tight">${g.word}</span>
+        </div>
+        <div class="flex-1 text-center text-sm font-medium text-on-surface-variant pointer-events-none">
+          ${T.count_label}: <span class="text-primary font-bold">${g.count}</span>
+        </div>
+        <div class="w-1/3 flex justify-end">
+          <button class="known-btn hex-button px-4 py-1.5 border border-on-surface text-xs font-bold uppercase tracking-widest hover:bg-on-surface hover:text-background transition-all">
+            ${T.btn_already_know}
+          </button>
+        </div>
+      </div>`;
+
+    // Build entry rows as DOM elements so we can wire closures safely
+    const entriesInner = document.createElement('div');
+    entriesInner.className = 'word-entries-inner divide-y divide-outline-variant/10';
+
+    g.entries.forEach(e => {
+      const row = document.createElement('div');
+      row.className = 'entry-row flex items-center px-6 py-3';
+      row.addEventListener('contextmenu', ev => copySentenceCtx(ev, e.sentence));
+
+      const addBtnHtml = hasOutput
+        ? `<button class="entry-add-btn text-on-surface-variant hover:text-secondary transition-colors">
+             <span class="material-symbols-outlined text-lg">add_circle</span>
+           </button>`
+        : '';
+
+      row.innerHTML = `
+        <div class="w-[22%] flex flex-col gap-0.5 pr-4 shrink-0">
+          <span class="meta-text text-xs font-semibold text-on-surface-variant truncate" title="${e.title || ''}">${e.title || ''}</span>
+          <span class="meta-text text-xs font-mono text-primary/60">${(e.start_time || '').split('.')[0]}</span>
+        </div>
+        <div class="flex-grow">
+          <p class="sentence-text">${highlightWord(e.sentence, g.word)}</p>
+        </div>
+        <div class="flex items-center gap-3 ml-4 shrink-0">
+          ${addBtnHtml}
+          <button class="entry-copy-btn text-on-surface-variant hover:text-primary transition-colors">
+            <span class="material-symbols-outlined text-lg">content_copy</span>
+          </button>
+        </div>`;
+
+      row.querySelector('.entry-copy-btn').addEventListener('click', ev => {
+        ev.stopPropagation();
+        copyToClipboard(stripSubTags(e.sentence));
+        showToast(T.toast_copied, 'copied', ev.clientX, ev.clientY);
+      });
+
+      // Wire add button via closure
+      if (hasOutput) {
+        row.querySelector('.entry-add-btn').addEventListener('click', ev => {
+          ev.stopPropagation();
+          addLine(e);
+          showToast(T.toast_added, 'added', ev.clientX, ev.clientY);
+        });
+      }
+
+      entriesInner.appendChild(row);
+    });
+
+    block.innerHTML = `
+      ${headerHtml}
+      <div class="word-entries-wrap">
+      </div>`;
+    block.querySelector('.word-entries-wrap').appendChild(entriesInner);
+
+    list.appendChild(block);
+
+    // Wire events after DOM insertion
+    const header = block.querySelector('.word-header');
+    header.addEventListener('click', (e) => {
+      if (e.target.closest('.known-btn')) return;
+      block.classList.toggle('word-block-open');
+    });
+    header.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+      wordHeaderCtx(e, g.word);
+    });
+    block.querySelector('.known-btn').addEventListener('click', (e) => {
+      e.stopPropagation();
+      markKnown(g.word, e.currentTarget);
+    });
+  });
+}
+
+// ---------------------------------------------------------------------------
+// Context menus
+// ---------------------------------------------------------------------------
+function wordHeaderCtx(e, word) {
+  e.preventDefault();
+  e.stopPropagation();
+  showCtxMenu(e.clientX, e.clientY, [{
+    label: T.context_delete, danger: true,
+    action: () => removeWord(word)
+  }]);
+}
+function copySentenceCtx(e, sentence) {
+  e.preventDefault();
+  e.stopPropagation();
+  copyToClipboard(stripSubTags(sentence));
+  showToast(T.toast_copied, 'copied', e.clientX, e.clientY);
+}
+
+// ---------------------------------------------------------------------------
+// Action toast
+// ---------------------------------------------------------------------------
+function showToast(label, type, x, y) {
+  const t = document.createElement('div');
+  t.className = `action-toast ${type}`;
+  t.textContent = label;
+  t.style.left = x + 'px';
+  t.style.top  = (y - 32) + 'px';
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 1500);
+}
+
+// ---------------------------------------------------------------------------
+// Actions
+// ---------------------------------------------------------------------------
+function getBlockByWord(word) {
+  const box = wordBoxes[activeBox] || [];
+  const li  = box.findIndex(g => g.word === word);
+  if (li < 0) return null;
+  // compute globalOffset for current box
+  let offset = 0;
+  for (let i = 0; i < activeBox; i++) offset += wordBoxes[i].length;
+  return document.getElementById('word-block-' + (offset + li));
+}
+
+async function markKnown(word, btn) {
+  const block = getBlockByWord(word);
+  if (block) {
+    block.classList.add('anim-pop-out');
+    setTimeout(async () => {
+      await apiPost('/api/subs/' + encodeURIComponent(FOLDER) + '/mark-known', { word });
+      allWords   = allWords.filter(g => g.word !== word);
+      wordBoxes  = buildWordBoxes(allWords);
+      if (activeBox >= wordBoxes.length) activeBox = Math.max(0, wordBoxes.length - 1);
+      renderNavButtons();
+      let offset = 0;
+      for (let i = 0; i < activeBox; i++) offset += wordBoxes[i].length;
+      renderWords(wordBoxes[activeBox] || [], offset);
+    }, 260);
+  }
+}
+
+async function removeWord(word) {
+  const block = getBlockByWord(word);
+  if (block) {
+    block.classList.add('anim-pop-out');
+    setTimeout(async () => {
+      await apiPost('/api/subs/' + encodeURIComponent(FOLDER) + '/remove-word', { word });
+      allWords   = allWords.filter(g => g.word !== word);
+      wordBoxes  = buildWordBoxes(allWords);
+      if (activeBox >= wordBoxes.length) activeBox = Math.max(0, wordBoxes.length - 1);
+      renderNavButtons();
+      let offset = 0;
+      for (let i = 0; i < activeBox; i++) offset += wordBoxes[i].length;
+      renderWords(wordBoxes[activeBox] || [], offset);
+    }, 260);
+  }
+}
+
+async function addLine(entry) {
+  await apiPost('/api/subs/' + encodeURIComponent(FOLDER) + '/add-line', {
+    title: entry.title, start_time: entry.start_time, end_time: entry.end_time, sentence: entry.sentence
+  });
+}
+
+async function scanThisSubs() {
+  showSpinner(T.spinner_scanning);
+  const res = await apiPost('/api/subs/' + encodeURIComponent(FOLDER) + '/scan', {});
+  hideSpinner();
+  if (res.error) { showModal('Error', res.error); return; }
+  loadData();
+}
+
+function copyPrompt(ev) {
+  const words = allWords.slice(0, 200).map(g => g.word);
+  const prompt = `I will send you up to 200 words from the series "${FOLDER}".
+
+From this list:
+${words.join('、')}
+
+Your task:
+- Select the 100 most useful words for learning Japanese (or fewer if there are not enough useful ones).
+- Ignore names, fantasy terms, proper nouns, or obscure words that are not useful for general Japanese learners.
+- Focus on vocabulary that is relevant for this series and japanese in general.
+
+Output format:
+- Return ONLY a table.
+- The table must have the following columns (in this exact order):
+  id | word | pronunciation | meaning
+
+Column rules:
+- 番号: number starting from 1
+- 単語: the original word exactly as given
+- 読み方: write the reading in hiragana
+- 意味: a short and simple explanation in easy Japanese (no English)
+
+Language rules:
+- The entire table must be written in Japanese (except id numbers).
+- Use simple Japanese suitable for beginners (N5-N4 level).
+- Do NOT include romaji or English.
+
+Example:
+
+| 番号 | 単語 | 読み方 | 意味 |
+|-----|------|--------|------|
+| 1 | 料理 | りょうり | 食べるために作るもの |
+| 2 | 静か | しずか | 音が少なくて、うるさくない |
+| 3 | 走る | はしる | 足を使って速く前に進む |
+
+Now generate the table.`;
+  copyToClipboard(prompt);
+  showToast(T.toast_copied, 'copied', ev.clientX, ev.clientY);
+}
+
+// ---------------------------------------------------------------------------
+// Filter / search words
+// ---------------------------------------------------------------------------
+function filterWords(query) {
+  const q = query.trim().toLowerCase();
+  const countEl = document.getElementById('filter-count');
+  if (!q) {
+    // Restore full current box view
+    let offset = 0;
+    for (let i = 0; i < activeBox; i++) offset += wordBoxes[i].length;
+    renderWords(wordBoxes[activeBox] || [], offset);
+    countEl.classList.add('hidden');
+    return;
+  }
+  // Filter but preserve the original index from allWords
+  const filtered = allWords
+    .map((g, i) => ({ g, i }))
+    .filter(({ g }) => g.word.toLowerCase().includes(q));
+  renderWordsWithIndices(filtered.map(({ g }) => g), filtered.map(({ i }) => i));
+  const n = filtered.length;
+  countEl.textContent = n + ' ' + (T.filter_results || 'results');
+  countEl.classList.remove('hidden');
+}
+
+// Render words with explicit per-word global indices (for filter mode)
+function renderWordsWithIndices(words, indices) {
+  const list = document.getElementById('words-list');
+  list.innerHTML = '';
+  if (!words.length) {
+    list.innerHTML = `<p class="text-on-surface-variant text-xs">${T.no_words_found}</p>`;
+    return;
+  }
+  words.forEach((g, li) => {
+    const gi = indices[li];  // original global index
+    const block = document.createElement('div');
+    block.className = 'bg-primary/5 backdrop-blur-md border border-primary/10 overflow-hidden anim-pop-in';
+    block.style.animationDelay = (li * 0.04) + 's';
+    block.id = 'word-block-' + gi;
+
+    const headerHtml = `
+      <div class="word-header flex items-center px-6 py-2.5 bg-primary/10 border-b border-primary/20 select-none">
+        <div class="flex items-center gap-3 pointer-events-none w-1/3">
+          <span class="material-symbols-outlined text-base text-primary/60 fold-chevron">expand_more</span>
+          <span class="text-primary/50 text-xs font-bold leading-none">${gi + 1}</span>
+          <span class="text-xl font-bold font-headline text-primary tracking-tight">${g.word}</span>
+        </div>
+        <div class="flex-1 text-center text-sm font-medium text-on-surface-variant pointer-events-none">
+          ${T.count_label}: <span class="text-primary font-bold">${g.count}</span>
+        </div>
+        <div class="w-1/3 flex justify-end">
+          <button class="known-btn hex-button px-4 py-1.5 border border-on-surface text-xs font-bold uppercase tracking-widest hover:bg-on-surface hover:text-background transition-all">
+            ${T.btn_already_know}
+          </button>
+        </div>
+      </div>`;
+
+    const entriesInner = document.createElement('div');
+    entriesInner.className = 'word-entries-inner divide-y divide-outline-variant/10';
+
+    g.entries.forEach(e => {
+      const row = document.createElement('div');
+      row.className = 'entry-row flex items-center px-6 py-3';
+      row.addEventListener('contextmenu', ev => copySentenceCtx(ev, e.sentence));
+
+      const addBtnHtml = hasOutput
+        ? `<button class="entry-add-btn text-on-surface-variant hover:text-secondary transition-colors">
+             <span class="material-symbols-outlined text-lg">add_circle</span>
+           </button>`
+        : '';
+
+      row.innerHTML = `
+        <div class="w-[22%] flex flex-col gap-0.5 pr-4 shrink-0">
+          <span class="meta-text text-xs font-semibold text-on-surface-variant truncate" title="${e.title || ''}">${e.title || ''}</span>
+          <span class="meta-text text-xs font-mono text-primary/60">${(e.start_time || '').split('.')[0]}</span>
+        </div>
+        <div class="flex-grow">
+          <p class="sentence-text">${highlightWord(e.sentence, g.word)}</p>
+        </div>
+        <div class="flex items-center gap-3 ml-4 shrink-0">
+          ${addBtnHtml}
+          <button class="entry-copy-btn text-on-surface-variant hover:text-primary transition-colors">
+            <span class="material-symbols-outlined text-lg">content_copy</span>
+          </button>
+        </div>`;
+
+      row.querySelector('.entry-copy-btn').addEventListener('click', ev => {
+        ev.stopPropagation();
+        copyToClipboard(stripSubTags(e.sentence));
+        showToast(T.toast_copied, 'copied', ev.clientX, ev.clientY);
+      });
+      if (hasOutput) {
+        row.querySelector('.entry-add-btn').addEventListener('click', ev => {
+          ev.stopPropagation();
+          addLine(e);
+          showToast(T.toast_added, 'added', ev.clientX, ev.clientY);
+        });
+      }
+      entriesInner.appendChild(row);
+    });
+
+    block.innerHTML = `${headerHtml}<div class="word-entries-wrap"></div>`;
+    block.querySelector('.word-entries-wrap').appendChild(entriesInner);
+    list.appendChild(block);
+
+    const header = block.querySelector('.word-header');
+    header.addEventListener('click', ev => {
+      if (ev.target.closest('.known-btn')) return;
+      block.classList.toggle('word-block-open');
+    });
+    header.addEventListener('contextmenu', ev => {
+      ev.preventDefault();
+      ev.stopPropagation();
+      showCtxMenu(ev.clientX, ev.clientY, [{
+        label: T.context_delete, danger: true,
+        action: () => removeWord(g.word)
+      }]);
+    });
+    block.querySelector('.known-btn').addEventListener('click', ev => {
+      ev.stopPropagation();
+      markKnown(g.word, ev.currentTarget);
+    });
+  });
+}
+
+// ---------------------------------------------------------------------------
+// Init
+// ---------------------------------------------------------------------------
+loadData();
+</script>
+{% endblock %}

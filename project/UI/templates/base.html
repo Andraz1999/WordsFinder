@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html class="{{ ui_cfg.get('theme', 'dark') }}" lang="{{ ui_cfg.get('language', 'en') }}" data-server-theme="{{ ui_cfg.get('theme', 'dark') }}">
+<head>
+<meta charset="utf-8"/>
+<link rel="icon" type="image/png" href="/icons/default_icon.png"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WORDS FINDER{% block title %}{% endblock %}</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "on-primary-fixed": "#003840",
+        "primary-container": "#00e3fd",
+        "on-primary-fixed-variant": "#005762",
+        "tertiary-container": "#fd9000",
+        "on-error-container": "#ffa8a3",
+        "on-tertiary": "#552d00",
+        "surface-container-low": "#091327",
+        "secondary-dim": "#5def8f",
+        "tertiary": "#ffa44c",
+        "error-container": "#9f0519",
+        "on-primary-container": "#004d57",
+        "surface-container-lowest": "#000000",
+        "secondary-container": "#006d36",
+        "on-surface": "#dde5ff",
+        "surface-container-highest": "#19253f",
+        "tertiary-fixed": "#ff9727",
+        "primary-dim": "#00d4ec",
+        "surface-dim": "#060e20",
+        "secondary": "#6dfe9c",
+        "on-secondary-container": "#e3ffe4",
+        "error": "#ff716c",
+        "primary-fixed-dim": "#00d4ec",
+        "surface-variant": "#19253f",
+        "on-primary": "#005762",
+        "surface-container-high": "#141f37",
+        "error-dim": "#d7383b",
+        "on-secondary": "#005f2e",
+        "outline": "#6d758b",
+        "on-tertiary-fixed": "#281200",
+        "on-tertiary-fixed-variant": "#592f00",
+        "on-secondary-fixed-variant": "#006a34",
+        "outline-variant": "#40485c",
+        "inverse-primary": "#006976",
+        "inverse-surface": "#faf8ff",
+        "inverse-on-surface": "#4d556a",
+        "tertiary-fixed-dim": "#f18900",
+        "tertiary-dim": "#ea8400",
+        "background": "#060e20",
+        "secondary-fixed": "#6dfe9c",
+        "surface-tint": "#81ecff",
+        "surface-bright": "#1f2b48",
+        "surface-container": "#0f192f",
+        "surface": "#060e20",
+        "primary-fixed": "#00e3fd",
+        "on-error": "#490006",
+        "on-background": "#dde5ff",
+        "on-surface-variant": "#a3abc3",
+        "primary": "#81ecff",
+        "secondary-fixed-dim": "#5def8f",
+        "on-tertiary-container": "#462400",
+        "on-secondary-fixed": "#004a22"
+      },
+      fontFamily: {
+        "headline": ["Space Grotesk"],
+        "body": ["Manrope"],
+        "label": ["Manrope"]
+      },
+      borderRadius: {
+        "DEFAULT": "0px",
+        "lg": "0px",
+        "xl": "0px",
+        "full": "9999px"
+      }
+    }
+  }
+}
+</script>
+<style>
+  /* ============================================================
+     THEME TOKENS — edit these two blocks to tune each mode
+     ============================================================ */
+
+  /* DARK (default) — your original palette, untouched */
+  :root {
+    --bg-page:          #060e20;
+    --bg-surface:       #060e20;
+    --bg-container:     #0f192f;
+    --bg-container-hi:  #141f37;
+    --bg-container-lo:  #091327;
+    --bg-highest:       #19253f;
+    --bg-bright:        #1f2b48;
+    --bg-dim:           #060e20;
+    --bg-variant:       #19253f;
+
+    --text-main:        #dde5ff;
+    --text-variant:     #a3abc3;
+    --text-inverse:     #4d556a;
+
+    --outline:          #6d758b;
+    --outline-variant:  #40485c;
+
+    /* Accent hues — dark keeps original neons */
+    --primary:          #81ecff;
+    --primary-dim:      #00d4ec;
+    --primary-ctr:      #00e3fd;
+    --on-primary:       #005762;
+    --on-primary-ctr:   #004d57;
+
+    --secondary:        #6dfe9c;
+    --secondary-dim:    #5def8f;
+    --secondary-ctr:    #006d36;
+    --on-secondary:     #005f2e;
+    --on-secondary-ctr: #e3ffe4;
+
+    --tertiary:         #ffa44c;
+    --tertiary-ctr:     #fd9000;
+    --on-tertiary:      #552d00;
+    --on-tertiary-ctr:  #462400;
+
+    --error:            #ff716c;
+    --error-ctr:        #9f0519;
+    --on-error:         #490006;
+    --on-error-ctr:     #ffa8a3;
+
+    --surface-tint:     #81ecff;
+    --inverse-surface:  #faf8ff;
+    --inverse-primary:  #006976;
+
+    /* Glow blobs */
+    --blob-primary:  rgba(129,236,255,0.05);
+    --blob-secondary:rgba(109,254,156,0.05);
+
+    /* Header */
+    --header-bg:     rgba(6,14,32,0.60);
+    --header-border: rgba(129,236,255,0.15);
+
+    /* Scrollbar */
+    --scroll-thumb:  rgba(129,236,255,0.15);
+    --scroll-hover:  rgba(129,236,255,0.30);
+
+    /* Spinner filter */
+    --spinner-glow:  drop-shadow(0 0 18px rgba(129,236,255,0.5));
+
+    /* Glass */
+    --glass-bg:      rgba(15,25,47,0.6);
+
+    /* Neon border colors */
+    --neon-orange:       #FF6600;
+    --neon-orange-dim:   rgba(255,102,0,0.15);
+    --neon-green:        #6dfe9c;
+    --neon-green-dim:    rgba(109,254,156,0.15);
+
+    /* Modal */
+    --modal-bg:  #0f192f;
+    --modal-border: rgba(129,236,255,0.2);
+
+    /* Ctx menu */
+    --ctx-bg: #0f192f;
+    --ctx-border: rgba(129,236,255,0.2);
+    --ctx-hover: rgba(129,236,255,0.1);
+    --ctx-danger-hover: rgba(255,113,108,0.15);
+  }
+
+  /* LIGHT — edit these to tune light mode  */
+  html.light {
+    --bg-page:          #eef1f7;
+    --bg-surface:       #eef1f7;
+    --bg-container:     #e2e6f0;
+    --bg-container-hi:  #d8dce8;
+    --bg-container-lo:  #eaecf5;
+    --bg-highest:       #cdd2e0;
+    --bg-bright:        #f5f7fc;
+    --bg-dim:           #d4d8e4;
+    --bg-variant:       #d8dce8;
+
+    --text-main:        #141b2e;
+    --text-variant:     #3d4a62;
+    --text-inverse:     #8a94ab;
+
+    --outline:          #6b7899;
+    --outline-variant:  #b0b8cc;
+
+    /* Light accents: deeper, saturated versions that still feel "techy" */
+    --primary:          #0077aa;
+    --primary-dim:      #005f8a;
+    --primary-ctr:      #b3e8f8;
+    --on-primary:       #ffffff;
+    --on-primary-ctr:   #003d5c;
+
+    --secondary:        #007a3d;
+    --secondary-dim:    #005c2d;
+    --secondary-ctr:    #b3f0cb;
+    --on-secondary:     #ffffff;
+    --on-secondary-ctr: #00311a;
+
+    --tertiary:         #c85a00;
+    --tertiary-ctr:     #ffd8b0;
+    --on-tertiary:      #ffffff;
+    --on-tertiary-ctr:  #5a2500;
+
+    --error:            #b3191a;
+    --error-ctr:        #ffd8d8;
+    --on-error:         #ffffff;
+    --on-error-ctr:     #6b0000;
+
+    --surface-tint:     #0077aa;
+    --inverse-surface:  #1e2434;
+    --inverse-primary:  #81ecff;
+
+    --blob-primary:   rgba(0,119,170,0.06);
+    --blob-secondary: rgba(0,122,61,0.06);
+
+    --header-bg:     rgba(238,241,247,0.85);
+    --header-border: rgba(0,119,170,0.18);
+
+    --scroll-thumb:  rgba(0,119,170,0.2);
+    --scroll-hover:  rgba(0,119,170,0.4);
+
+    --spinner-glow:  drop-shadow(0 0 18px rgba(0,119,170,0.4));
+
+    --glass-bg:      rgba(230,234,244,0.7);
+
+    --neon-orange:       #c85a00;
+    --neon-orange-dim:   rgba(200,90,0,0.15);
+    --neon-green:        #007a3d;
+    --neon-green-dim:    rgba(0,122,61,0.15);
+
+    --modal-bg:  #e2e6f0;
+    --modal-border: rgba(0,119,170,0.25);
+
+    --ctx-bg: #e2e6f0;
+    --ctx-border: rgba(0,119,170,0.25);
+    --ctx-hover: rgba(0,119,170,0.1);
+    --ctx-danger-hover: rgba(179,25,26,0.12);
+  }
+
+  /* ============================================================
+     BASE STYLES using CSS vars
+     ============================================================ */
+  body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    overflow: hidden;
+    height: 100vh;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+  .font-headline { font-family: 'Space Grotesk', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+
+  /* Wire Tailwind color tokens to CSS vars so every page inherits */
+  .bg-background           { background-color: var(--bg-page) !important; }
+  .bg-surface              { background-color: var(--bg-surface) !important; }
+  .bg-surface-container    { background-color: var(--bg-container) !important; }
+  .bg-surface-container-high  { background-color: var(--bg-container-hi) !important; }
+  .bg-surface-container-low   { background-color: var(--bg-container-lo) !important; }
+  .bg-surface-container-highest { background-color: var(--bg-highest) !important; }
+  .bg-surface-bright       { background-color: var(--bg-bright) !important; }
+  .bg-surface-dim          { background-color: var(--bg-dim) !important; }
+  .bg-surface-variant      { background-color: var(--bg-variant) !important; }
+
+  .text-on-surface         { color: var(--text-main) !important; }
+  .text-on-surface-variant { color: var(--text-variant) !important; }
+  .text-on-background      { color: var(--text-main) !important; }
+
+  .text-primary    { color: var(--primary) !important; }
+  .text-secondary  { color: var(--secondary) !important; }
+  .text-tertiary   { color: var(--tertiary) !important; }
+  .text-error      { color: var(--error) !important; }
+  .text-on-primary { color: var(--on-primary) !important; }
+  .text-on-primary-container { color: var(--on-primary-ctr) !important; }
+  .text-on-secondary { color: var(--on-secondary) !important; }
+  .text-on-tertiary  { color: var(--on-tertiary) !important; }
+  .text-outline        { color: var(--outline) !important; }
+  .text-outline-variant { color: var(--outline-variant) !important; }
+
+  .border-primary          { border-color: var(--primary) !important; }
+  .border-secondary        { border-color: var(--secondary) !important; }
+  .border-tertiary         { border-color: var(--tertiary) !important; }
+  .border-error            { border-color: var(--error) !important; }
+  .border-outline-variant  { border-color: var(--outline-variant) !important; }
+  .border-on-surface       { border-color: var(--text-main) !important; }
+
+  .bg-primary-container    { background-color: var(--primary-ctr) !important; }
+  .bg-secondary-container  { background-color: var(--secondary-ctr) !important; }
+  .bg-tertiary-container   { background-color: var(--tertiary-ctr) !important; }
+  .bg-error-container      { background-color: var(--error-ctr) !important; }
+
+  /* Neon borders */
+  .neon-border-orange     { box-shadow: inset 0 0 0 4px var(--neon-orange); }
+  .neon-border-orange-dim { box-shadow: inset 0 0 0 4px var(--neon-orange-dim); }
+  .neon-border-green      { box-shadow: inset 0 0 0 4px var(--neon-green); }
+  .neon-border-green-dim  { box-shadow: inset 0 0 0 4px var(--neon-green-dim); }
+
+  /* Clip paths */
+  .clip-hex-btn   { clip-path: polygon(0 0, 92% 0, 100% 15%, 100% 100%, 8% 100%, 0 85%); }
+  .clip-hex-rev   { clip-path: polygon(8% 0, 100% 0, 100% 85%, 92% 100%, 0 100%, 0 15%); }
+  .clip-hud-btn   { clip-path: polygon(0 0, 95% 0, 100% 25%, 100% 100%, 5% 100%, 0 75%); }
+  .clip-title-board { clip-path: polygon(0 0, 100% 0, 100% 100%, 15px 100%, 0 calc(100% - 15px)); }
+  .clip-kanji-tile { clip-path: polygon(0 0, 92% 0, 100% 15%, 100% 100%, 8% 100%, 0 85%); }
+  .clip-hex-card  { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+
+  /* Scrollbar */
+  .custom-scrollbar::-webkit-scrollbar { width: 8px; }
+  .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+  .custom-scrollbar::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 10px; }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: var(--scroll-hover); }
+
+  /* Kanji orange scrollbar */
+  .scrollbar-orange::-webkit-scrollbar-thumb { background: rgba(255,102,0,0.2); }
+  .scrollbar-orange::-webkit-scrollbar-thumb:hover { background: rgba(255,102,0,0.4); }
+
+  /* Words green scrollbar */
+  .scrollbar-green::-webkit-scrollbar-thumb { background: rgba(109,254,156,0.3); }
+  .scrollbar-green::-webkit-scrollbar-thumb:hover { background: rgba(109,254,156,0.6); }
+
+  /* Hover zoom for cards */
+  .hover-zoom:hover img { transform: scale(1.05); }
+
+  /* Glass */
+  .glass-panel { background: var(--glass-bg); backdrop-filter: blur(12px); }
+
+  /* Anime background */
+  .anime-bg {
+    background-color: var(--bg-page);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  html.light .anime-bg {
+    background-color: #dde3ef;
+  }
+  html.light .bg-surface-container-lowest { background-color: #f5f7fc !important; }
+
+  /* Modal overlay */
+  #modal-overlay {
+    display: none;
+    position: fixed; inset: 0; z-index: 9998;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px);
+    align-items: center; justify-content: center;
+  }
+  #modal-overlay.active { display: flex; }
+
+  /* Context menu */
+  .ctx-menu {
+    position: fixed; z-index: 9999;
+    background: var(--ctx-bg);
+    border: 1px solid var(--ctx-border);
+    min-width: 140px;
+    padding: 4px 0;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  }
+  .ctx-menu button {
+    display: block; width: 100%; padding: 8px 16px;
+    text-align: left; font-size: 12px; color: var(--text-main);
+    background: none; border: none; cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 0.05em;
+  }
+  .ctx-menu button:hover { background: var(--ctx-hover); }
+  .ctx-menu button.danger:hover { background: var(--ctx-danger-hover); color: var(--error); }
+
+  /* Animation: card pop in */
+  @keyframes cardPopIn {
+    from { opacity: 0; transform: scale(0.7) translateY(20px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+  }
+  @keyframes cardPopOut {
+    from { opacity: 1; transform: scale(1); }
+    to   { opacity: 0; transform: scale(0.7); }
+  }
+  .anim-pop-in  { animation: cardPopIn  0.35s cubic-bezier(0.34,1.56,0.64,1) both; }
+  .anim-pop-out { animation: cardPopOut 0.25s ease-out both; }
+
+  /* ── Full-screen spinner overlay ── */
+  #spinner-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(6, 14, 32, 0.75);
+    backdrop-filter: blur(6px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    pointer-events: none;
+  }
+  #spinner-overlay.active { display: flex; pointer-events: all; }
+
+  #spinner-img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    animation: spinnerRotate 8s linear infinite;
+    filter: var(--spinner-glow);
+  }
+  #spinner-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--primary);
+    opacity: 0.7;
+    animation: spinnerPulse 1.5s ease-in-out infinite;
+  }
+  @keyframes spinnerRotate {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  @keyframes spinnerPulse {
+    0%, 100% { opacity: 0.5; }
+    50%       { opacity: 1; }
+  }
+</style>
+<!-- ── Theme bootstrap: runs synchronously to avoid flash ── -->
+<script>
+(function() {
+  const serverTheme = document.documentElement.dataset.serverTheme || 'dark';
+  try {
+    const saved = (localStorage && localStorage.getItem('wf-theme')) || serverTheme;
+    document.documentElement.classList.remove('dark', 'light');
+    document.documentElement.classList.add(saved);
+  } catch(e) {
+    document.documentElement.classList.remove('dark', 'light');
+    document.documentElement.classList.add(serverTheme);
+  }
+})();
+</script>
+{% block extra_head %}{% endblock %}
+</head>
+<body class="bg-background font-body" style="height:100vh;overflow:hidden;position:relative;">
+
+<!-- Top Navigation Bar -->
+<header class="absolute top-0 left-0 right-0 z-50 flex justify-between items-center w-full px-6 h-16 border-b transition-colors duration-250"
+  style="background: var(--header-bg); backdrop-filter: blur(16px); border-color: var(--header-border);">
+  <div class="text-2xl font-bold tracking-widest font-headline uppercase" style="color: var(--primary);">
+    {{ text.app_title }}
+  </div>
+  <!-- {% block header_right %}{% endblock %} -->
+</header>
+
+<!-- Full-screen spinner -->
+<div id="spinner-overlay">
+  <img id="spinner-img" src="/icons/default_icon.png" alt="loading"/>
+  <span id="spinner-label"></span>
+</div>
+
+<!-- Page content -->
+{% block body %}{% endblock %}
+
+<!-- Modal overlay (shared, controlled by JS) -->
+<div id="modal-overlay">
+  <div id="modal-box" class="clip-hex-btn border p-8 min-w-[340px] max-w-[520px] relative"
+    style="background: var(--bg-container); border-color: var(--primary); opacity: 0.95;">
+    <h2 id="modal-title" class="text-xl font-headline font-bold mb-4 uppercase tracking-wider" style="color:var(--text-main)"></h2>
+    <p  id="modal-body"  class="text-sm mb-6 whitespace-pre-wrap leading-relaxed" style="color:var(--text-variant)"></p>
+    <div class="flex justify-end gap-3" id="modal-buttons"></div>
+  </div>
+</div>
+
+<!-- Context menu (shared) -->
+<div id="ctx-menu" class="ctx-menu hidden"></div>
+
+<script>
+
+// ---------------------------------------------------------------------------
+// Safe localStorage shim (localStorage is null in GTK WebKit2 on Linux)
+// ---------------------------------------------------------------------------
+const _store = (function() {
+  try {
+    if (!localStorage) throw new Error();
+    localStorage.setItem('__test__', '1');
+    localStorage.removeItem('__test__');
+    return localStorage;
+  } catch(e) {
+    // Fallback: in-memory store (survives the session, not page reloads —
+    // but the server-side ui_config.json handles persistence on Linux)
+    const mem = {};
+    return { getItem: k => mem[k] ?? null, setItem: (k,v) => { mem[k]=String(v); }, removeItem: k => { delete mem[k]; } };
+  }
+})();
+
+// ---------------------------------------------------------------------------
+// Global modal helpers
+// ---------------------------------------------------------------------------
+const modalOverlay = document.getElementById('modal-overlay');
+const modalTitle   = document.getElementById('modal-title');
+const modalBody    = document.getElementById('modal-body');
+const modalButtons = document.getElementById('modal-buttons');
+
+function showModal(title, body, buttons) {
+  modalTitle.textContent   = title;
+  modalBody.textContent    = body;
+  modalButtons.innerHTML   = '';
+  (buttons || [{ label: 'OK', primary: true }]).forEach(btn => {
+    const b = document.createElement('button');
+    b.textContent = btn.label;
+    b.className   = btn.primary
+      ? 'clip-hud-btn bg-primary/20 border border-primary px-6 py-2 text-xs font-bold text-primary uppercase tracking-widest hover:bg-primary/40 transition-all'
+      : 'clip-hud-btn bg-surface-container-highest/50 border border-outline-variant/50 px-6 py-2 text-xs font-bold text-on-surface-variant uppercase tracking-widest hover:bg-surface-variant transition-all';
+    b.onclick = () => { closeModal(); btn.action && btn.action(); };
+    modalButtons.appendChild(b);
+  });
+  modalOverlay.classList.add('active');
+}
+
+function closeModal() {
+  modalOverlay.classList.remove('active');
+}
+
+// Close on backdrop click
+modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) closeModal(); });
+
+// ---------------------------------------------------------------------------
+// Context menu
+// ---------------------------------------------------------------------------
+const ctxMenu = document.getElementById('ctx-menu');
+function showCtxMenu(x, y, items) {
+  ctxMenu.innerHTML = '';
+  items.forEach(item => {
+    const b = document.createElement('button');
+    b.textContent = item.label;
+    if (item.danger) b.classList.add('danger');
+    b.onclick = () => { hideCtxMenu(); item.action(); };
+    ctxMenu.appendChild(b);
+  });
+  ctxMenu.style.left = x + 'px';
+  ctxMenu.style.top  = y + 'px';
+  ctxMenu.classList.remove('hidden');
+}
+function hideCtxMenu() { ctxMenu.classList.add('hidden'); }
+// Hide on any click outside the menu
+document.addEventListener('click', e => {
+  if (!ctxMenu.contains(e.target)) hideCtxMenu();
+});
+// Hide on a new right-click that isn't handled by a child (no stopPropagation from child)
+// Children that open a custom menu must call e.stopPropagation() so this doesn't fire
+document.addEventListener('contextmenu', e => {
+  if (!ctxMenu.contains(e.target)) hideCtxMenu();
+});
+
+// ---------------------------------------------------------------------------
+// Theme toggle (called from settings)
+// ---------------------------------------------------------------------------
+function setTheme(theme) {
+  _store.setItem('wf-theme', theme);
+  document.documentElement.classList.remove('dark', 'light');
+  document.documentElement.classList.add(theme);
+  // Also persist to server so Linux (GTK WebKit2) survives page reload
+  apiGet('/api/ui-config').then(uiCfg => {
+    uiCfg.theme = theme;
+    apiPost('/api/ui-config', uiCfg);
+  });
+  // Update buttons if on settings page
+  const btnDark  = document.getElementById('btn-theme-dark');
+  const btnLight = document.getElementById('btn-theme-light');
+  if (btnDark && btnLight) _applyThemeBtnStyles(theme);
+}
+function _applyThemeBtnStyles(theme) {
+  const active   = 'clip-hud-btn px-4 py-1.5 text-xs font-bold uppercase tracking-widest border transition-all bg-primary/20 border-primary text-primary';
+  const inactive = 'clip-hud-btn px-4 py-1.5 text-xs font-bold uppercase tracking-widest border transition-all bg-transparent border-outline-variant/40 text-on-surface-variant hover:border-primary/40';
+  document.getElementById('btn-theme-dark').className  = theme === 'dark'  ? active : inactive;
+  document.getElementById('btn-theme-light').className = theme === 'light' ? active : inactive;
+}
+
+// ---------------------------------------------------------------------------
+// Clipboard helper
+// ---------------------------------------------------------------------------
+function copyToClipboard(text) {
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(text).catch(() => _fallbackCopy(text));
+  } else {
+    _fallbackCopy(text);
+  }
+}
+function _fallbackCopy(text) {
+  const ta = document.createElement('textarea');
+  ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select(); document.execCommand('copy');
+  document.body.removeChild(ta);
+}
+
+// ---------------------------------------------------------------------------
+// Fetch helpers
+// ---------------------------------------------------------------------------
+async function apiGet(url) {
+  const r = await fetch(url);
+  return r.json();
+}
+async function apiPost(url, data) {
+  const r = await fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(data) });
+  return r.json();
+}
+async function apiDelete(url) {
+  const r = await fetch(url, { method: 'DELETE' });
+  return r.json();
+}
+
+// ---------------------------------------------------------------------------
+// Keyboard shortcuts: Ctrl+= / Ctrl+- (zoom), Ctrl+R (reload), Ctrl+F (search)
+// ---------------------------------------------------------------------------
+(function() {
+  let _zoomLevel = 1.0;
+  const ZOOM_STEP = 0.1;
+  const ZOOM_MIN  = 0.5;
+  const ZOOM_MAX  = 2.0;
+
+  function applyZoom() {
+    document.body.style.zoom = _zoomLevel;
+  }
+
+  document.addEventListener('keydown', function(e) {
+    const ctrl = e.ctrlKey || e.metaKey;
+    if (!ctrl) return;
+
+    // Ctrl+= or Ctrl++ → zoom in
+    if (e.key === '=' || e.key === '+') {
+      e.preventDefault();
+      _zoomLevel = Math.min(ZOOM_MAX, +(_zoomLevel + ZOOM_STEP).toFixed(1));
+      applyZoom();
+      return;
+    }
+    // Ctrl+- → zoom out
+    if (e.key === '-') {
+      e.preventDefault();
+      _zoomLevel = Math.max(ZOOM_MIN, +(_zoomLevel - ZOOM_STEP).toFixed(1));
+      applyZoom();
+      return;
+    }
+    // Ctrl+0 → reset zoom
+    if (e.key === '0') {
+      e.preventDefault();
+      _zoomLevel = 1.0;
+      applyZoom();
+      return;
+    }
+    // Ctrl+R → reload
+    if (e.key === 'r' || e.key === 'R') {
+      e.preventDefault();
+      window.location.reload();
+      return;
+    }
+    // Ctrl+F → focus search bar if present on page, otherwise open find bar
+    if (e.key === 'f' || e.key === 'F') {
+      const searchEl = document.getElementById('search-input') ||
+                       document.getElementById('word-search') ||
+                       document.querySelector('input[type="search"]') ||
+                       document.querySelector('input[placeholder*="earch"]') ||
+                       document.querySelector('input[placeholder*="ilter"]');
+      if (searchEl) {
+        e.preventDefault();
+        searchEl.focus();
+        searchEl.select();
+      }
+      // If no search input found, let browser handle it (native find)
+    }
+  });
+})();
+</script>
+
+<script>
+function showSpinner(label) {
+  const el = document.getElementById('spinner-overlay');
+  document.getElementById('spinner-label').textContent = label || '';
+  el.classList.add('active');
+}
+function hideSpinner() {
+  document.getElementById('spinner-overlay').classList.remove('active');
+}
+</script>
+
+{% block scripts %}{% endblock %}
+</body>
+</html>

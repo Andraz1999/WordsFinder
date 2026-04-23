@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% block title %} — Setup{% endblock %}
+
+{% block body %}
+<div class="absolute top-16 left-0 right-0 bottom-0 overflow-y-auto custom-scrollbar flex items-center justify-center">
+<div class="clip-hex-btn bg-surface-container border border-primary/20 p-8 min-w-[500px] max-w-[640px] my-8">
+
+  <h1 class="text-2xl font-headline font-bold text-primary uppercase tracking-widest mb-1">{{ text.setup_title }}</h1>
+  <p class="text-xs text-on-surface-variant mb-6">{{ text.setup_decks_title }}</p>
+  <div class="h-px w-full bg-outline-variant/20 mb-6"></div>
+
+  <!-- Deck entries list -->
+  <div id="deck-list" class="flex flex-col gap-3 mb-6"></div>
+
+  <!-- Add deck button -->
+  <button onclick="addDeck()" id="btn-add"
+    class="clip-hud-btn bg-surface-container-highest/50 border border-outline-variant/40 hover:border-primary/40 px-5 py-2 text-xs font-bold text-on-surface-variant uppercase tracking-widest transition-all mb-6">
+    + {{ text.setup_add_deck }}
+  </button>
+
+  <!-- OK -->
+  <button onclick="saveSetup()"
+    class="clip-hud-btn w-full bg-primary/10 border border-primary/40 hover:bg-primary/20 py-3 text-sm font-headline font-bold text-primary uppercase tracking-widest transition-all">
+    {{ text.btn_ok }}
+  </button>
+</div>
+</div>
+
+<style>
+  .custom-scrollbar::-webkit-scrollbar { width: 8px; }
+  .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+  .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(129,236,255,0.15); border-radius: 10px; }
+</style>
+
+<script>
+// Preload existing decks_fields from config
+const existingDecks = {{ config.anki.decks_fields | tojson }};
+let entries = [];
+
+window.addEventListener('DOMContentLoaded', () => {
+  if (existingDecks && existingDecks.length) {
+    existingDecks.forEach(entry => {
+      (entry.fields || []).forEach((field, fi) => {
+        entries.push({ deck: entry.deck, field });
+      });
+    });
+  } else {
+    entries.push({ deck: '', field: '' });
+  }
+  render();
+});
+
+function render() {
+  const list = document.getElementById('deck-list');
+  list.innerHTML = '';
+  entries.forEach((e, i) => {
+    const row = document.createElement('div');
+    row.className = 'flex gap-3 items-center';
+    row.innerHTML = `
+      <div class="clip-hud-btn flex-1 flex items-center bg-surface-container-highest/30 border border-outline-variant/30 h-10 px-4 focus-within:border-primary transition-all">
+        <input class="bg-transparent border-none focus:ring-0 text-xs w-full text-on-surface placeholder:text-on-surface-variant/50 p-0 font-body"
+          placeholder="{{ text.setup_deck_placeholder }}" value="${e.deck}"
+          oninput="entries[${i}].deck = this.value" />
+      </div>
+      <div class="clip-hud-btn flex-1 flex items-center bg-surface-container-highest/30 border border-outline-variant/30 h-10 px-4 focus-within:border-primary transition-all">
+        <input class="bg-transparent border-none focus:ring-0 text-xs w-full text-on-surface placeholder:text-on-surface-variant/50 p-0 font-body"
+          placeholder="{{ text.setup_field_placeholder }}" value="${e.field}"
+          oninput="entries[${i}].field = this.value" />
+      </div>
+      <button onclick="removeEntry(${i})" ${entries.length <= 1 ? 'disabled style="opacity:0.3"' : ''}
+        class="clip-hud-btn w-8 h-10 flex items-center justify-center border border-error/30 hover:bg-error/10 transition-all text-error text-xs">
+        <span class="material-symbols-outlined text-[16px]">close</span>
+      </button>`;
+    list.appendChild(row);
+  });
+  document.getElementById('btn-add').style.display = entries.length >= 9 ? 'none' : '';
+}
+
+function addDeck() {
+  if (entries.length < 9) { entries.push({ deck: '', field: '' }); render(); }
+}
+
+function removeEntry(i) {
+  if (entries.length > 1) { entries.splice(i, 1); render(); }
+}
+
+async function saveSetup() {
+  // Build decks_fields structure: group fields by deck
+  const map = {};
+  entries.forEach(e => {
+    const d = (e.deck || 'Japanese').trim();
+    const f = (e.field || 'Expression').trim();
+    if (!map[d]) map[d] = [];
+    map[d].push(f);
+  });
+  const decks_fields = Object.entries(map).map(([deck, fields]) => ({ deck, fields }));
+
+  const cfgRes = await fetch('/api/config');
+  const cfg = await cfgRes.json();
+  cfg.anki.decks_fields = decks_fields;
+
+  await fetch('/api/config', {
+    method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(cfg)
+  });
+  window.location.href = '/';
+}
+</script>
+{% endblock %}
