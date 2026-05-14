@@ -263,6 +263,33 @@ const T       = {{ text | tojson }};
 // Set localised placeholder now that T is available
 document.getElementById('word-search').placeholder = T.filter_placeholder || 'Filter words…';
 let allWords  = [];
+
+// ---------------------------------------------------------------------------
+// Escape key: blur search bar + close context menu
+// ---------------------------------------------------------------------------
+document.addEventListener('keydown', function(e) {
+  if (e.key !== 'Escape') return;
+  // 1. If search is focused, clear and blur it
+  const searchInput = document.getElementById('word-search');
+  if (searchInput && document.activeElement === searchInput) {
+    searchInput.value = '';
+    filterWords('');
+    searchInput.blur();
+  }
+  // 2. Close context menu — try the base.html helper first, then direct DOM fallback
+  if (typeof hideCtxMenu === 'function') {
+    hideCtxMenu();
+  } else {
+    // Common ids/classes used by base.html ctx menus
+    ['ctx-menu', 'context-menu'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = 'none';
+    });
+    document.querySelectorAll('.ctx-menu, .context-menu').forEach(el => {
+      el.style.display = 'none';
+    });
+  }
+});
 let wordGroups = {};
 let hasOutput = false;
 
@@ -691,14 +718,28 @@ Now generate the table.`;
 function filterWords(query) {
   const q = query.trim().toLowerCase();
   const countEl = document.getElementById('filter-count');
+  const topNav    = document.getElementById('page-nav-top');
+  const bottomNav = document.getElementById('page-nav-bottom');
   if (!q) {
     // Restore full current box view
     let offset = 0;
     for (let i = 0; i < activeBox; i++) offset += wordBoxes[i].length;
     renderWords(wordBoxes[activeBox] || [], offset);
     countEl.classList.add('hidden');
+    // Restore nav (only if there are multiple boxes)
+    if (wordBoxes.length > 1) {
+      topNav.classList.remove('hidden');
+      topNav.classList.add('flex');
+      bottomNav.classList.remove('hidden');
+      bottomNav.classList.add('flex');
+    }
     return;
   }
+  // Hide nav during search
+  topNav.classList.add('hidden');
+  topNav.classList.remove('flex');
+  bottomNav.classList.add('hidden');
+  bottomNav.classList.remove('flex');
   // Filter but preserve the original index from allWords
   const filtered = allWords
     .map((g, i) => ({ g, i }))

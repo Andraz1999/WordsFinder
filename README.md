@@ -56,6 +56,8 @@ Before installing Words Finder you need:
 
 ## Installation (Windows)
 
+> **Requires Windows 10 or later** (64-bit)
+
 1. Download **`WordsFinderSetup.exe`** from the [Releases](../../releases) page.
 2. Run the installer and follow the prompts. The installation is roughly **1 GB** — the majority of the space is the [UniDic](https://clrd.ninjal.ac.jp/unidic/) dictionary used for Japanese tokenisation.
 3. Launch **Words Finder** from the Start Menu or the desktop shortcut.
@@ -65,6 +67,8 @@ All user data (configuration, word databases, scan results) is stored in `%AppDa
 ---
 
 ## Installation (macOS)
+
+> **Requires macOS 13 (Ventura) or later** — supports both Apple Silicon (M1/M2/M3/M4) and Intel Macs
 
 1. Download **`WordsFinder-macOS.zip`** from the [Releases](../../releases).
 2. Unzip the file — you will get **`WordsFinder.app`**.
@@ -88,17 +92,19 @@ All user data (configuration, word databases, scan results) is stored in `~/Libr
 
 ## Installation (Linux)
 
+> **Requires a GTK3 desktop environment with WebKit2GTK** — Ubuntu 22.04+ / Debian 11+ or equivalent
+
 ### Option A — AppImage (recommended, double-click)
 
 1. Download `WordsFinder.AppImage` from the [Releases](../../releases) page.
 2. Make it executable (one time only):
-   ```bash
+```bash
    chmod +x WordsFinder.AppImage
-   ```
+```
 3. Double-click it in your file manager, or run it from the terminal:
-   ```bash
+```bash
    ./WordsFinder.AppImage
-   ```
+```
 
 First launch registers the app icon in your system so it appears correctly in file managers and the app launcher going forward.
 
@@ -114,11 +120,11 @@ First launch registers the app icon in your system so it appears correctly in fi
 
 1. Download `WordsFinderSetup.tar.gz` from the [Releases](../../releases) page.
 2. Extract and launch:
-   ```bash
+```bash
    tar -xzf WordsFinderSetup.tar.gz
    cd WordsFinder
    ./WordsFinder.sh
-   ```
+```
    `WordsFinder.sh` checks for the required GTK packages and installs any that are missing before launching.
 
 ---
@@ -252,6 +258,10 @@ The Kanji page shows all kanji encountered in your subtitle files, divided into:
 
 The sort preference is saved to your config automatically.
 
+### Search
+
+Press `Ctrl+F` (or click the search bar) to filter kanji by character. Matching tiles are shown across all sections with their original numbers preserved. Press `Escape` to clear the search and return to the normal view.
+
 ---
 
 ## Words Stats
@@ -261,6 +271,7 @@ The Words page shows all words extracted from your Anki cards.
 - Words are displayed in a paginated grid (up to 500 per page). Use the navigation buttons at the top and bottom to move between pages.
 - Words marked as **Already Know** via the Subs page appear in a separate "Known" section.
 - Use the **Descending / Ascending** sort buttons to reorder by frequency.
+- Press `Ctrl+F` (or click the search bar) to filter words by text. Matching tiles are shown across all pages with their original numbers preserved. Press `Escape` to clear the search and return to the normal view.
 
 ---
 
@@ -325,7 +336,7 @@ Deletes all stored word and kanji data. Subtitle collection results (the scan ou
 | `Ctrl -` | Zoom out |
 | `Ctrl 0` | Reset zoom |
 | `Ctrl R` | Reload the current page |
-| `Ctrl F` | Search / filter words (on the Subs page) |
+| `Ctrl F` | Search / filter words on the Subs, Words, and Kanji pages |
 
 ---
 

@@ -58,8 +58,65 @@
     box-shadow: 0 0 10px rgba(200,90,0,0.15);
   }
   .kanji-font {
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", "MS Mincho", serif;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", "MS Mincho", serif;
   }
+
+  /* ── Search bar (orange theme) ── */
+  .kanji-search-wrap {
+    clip-path: polygon(0 0, 97% 0, 100% 20%, 100% 100%, 3% 100%, 0 80%);
+    background: rgba(255,102,0,0.05);
+    border: 1px solid rgba(255,102,0,0.25);
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 12px;
+    gap: 8px;
+    transition: border-color 0.2s ease, background 0.2s ease;
+    width: 220px;
+  }
+  .kanji-search-wrap:focus-within {
+    border-color: rgba(255,102,0,0.7);
+    background: rgba(255,102,0,0.09);
+  }
+  .kanji-search-wrap .search-icon {
+    font-size: 14px;
+    color: rgba(255,102,0,0.55);
+    pointer-events: none;
+    flex-shrink: 0;
+  }
+  .kanji-search-wrap input {
+    background: transparent;
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 11px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #FF6600;
+    width: 100%;
+    -webkit-appearance: none;
+  }
+  .kanji-search-wrap input:focus,
+  .kanji-search-wrap input:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .kanji-search-wrap input::placeholder {
+    color: rgba(255,102,0,0.35);
+  }
+  html.light .kanji-search-wrap {
+    border-color: rgba(200,90,0,0.3);
+    background: rgba(200,90,0,0.05);
+  }
+  html.light .kanji-search-wrap:focus-within {
+    border-color: rgba(200,90,0,0.7);
+    background: rgba(200,90,0,0.09);
+  }
+  html.light .kanji-search-wrap .search-icon { color: rgba(200,90,0,0.5); }
+  html.light .kanji-search-wrap input { color: #c85a00; }
+  html.light .kanji-search-wrap input::placeholder { color: rgba(200,90,0,0.35); }
+
+
 </style>
 {% endblock %}
 
@@ -86,8 +143,8 @@
           </div>
         </div>
 
-        <!-- Sort controls -->
-        <div class="flex items-center gap-4 py-2">
+        <!-- Sort controls + Search bar -->
+        <div class="flex items-center gap-4 py-2 flex-wrap">
           <span class="text-xs font-headline text-on-surface-variant tracking-widest uppercase">{{ text.sort_label }}</span>
           <button id="btn-joyo" onclick="setSort('grade')"
             class="clip-hex-btn px-4 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-all">
@@ -97,9 +154,28 @@
             class="clip-hex-btn px-4 py-1 text-xs font-headline font-bold uppercase tracking-wider transition-all">
             {{ text.sort_rtk }}
           </button>
+
+          <!-- Spacer -->
+          <div class="flex-1"></div>
+
+          <!-- Search -->
+          <div class="flex items-center gap-2">
+            <div class="kanji-search-wrap">
+              <span class="material-symbols-outlined search-icon">search</span>
+              <input
+                id="kanji-search"
+                type="search"
+                placeholder="{{ text.filter_kanji_placeholder or 'Search kanji…' }}"
+                oninput="filterKanji(this.value)"
+                autocomplete="off"
+                spellcheck="false"
+              />
+            </div>
+            <span id="filter-count" class="text-[10px] font-mono text-outline-variant hidden"></span>
+          </div>
         </div>
 
-        <!-- Section nav (top) — rendered by JS -->
+        <!-- Section nav (top) — rendered by JS, hidden during search -->
         <div id="section-nav-top" class="flex flex-wrap gap-2"></div>
       </section>
 
@@ -128,6 +204,31 @@ const T = {{ text | tojson }};
 let currentSort  = 'grade';
 let activeSect   = 0;       // currently visible section index
 let allSections  = [];      // [{label, kanji:[{kanji,globalIdx,known}]}]
+let allKanjiFlat = [];      // flat list of all {kanji, globalIdx, known} in current sort order
+
+let isFiltering  = false;   // true when a search query is active
+
+// ---------------------------------------------------------------------------
+// Ctrl+F shortcut
+// ---------------------------------------------------------------------------
+document.addEventListener('keydown', function(e) {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+    const input = document.getElementById('kanji-search');
+    if (input) {
+      e.preventDefault();
+      input.focus();
+      input.select();
+    }
+  }
+  if (e.key === 'Escape') {
+    const input = document.getElementById('kanji-search');
+    if (input && document.activeElement === input) {
+      input.value = '';
+      filterKanji('');
+      input.blur();
+    }
+  }
+});
 
 // ---------------------------------------------------------------------------
 // Sort button styling
@@ -153,7 +254,7 @@ async function setSort(sort) {
 }
 
 // ---------------------------------------------------------------------------
-// Kanji tile
+// Kanji tile HTML
 // ---------------------------------------------------------------------------
 function kanjiTile(kanji, globalIdx, known) {
   const num = String(globalIdx + 1).padStart(3, '0');
@@ -180,6 +281,13 @@ function kanjiTile(kanji, globalIdx, known) {
 function renderNavButtons() {
   const topEl    = document.getElementById('section-nav-top');
   const bottomEl = document.getElementById('section-nav-bottom');
+
+  // Hide nav during search
+  if (isFiltering) {
+    topEl.innerHTML    = '';
+    bottomEl.innerHTML = '';
+    return;
+  }
 
   function makeButtons(container) {
     container.innerHTML = '';
@@ -216,7 +324,7 @@ function switchSection(si) {
 }
 
 // ---------------------------------------------------------------------------
-// Render one section into #kanji-content
+// Render one section into #kanji-content (normal paginated mode)
 // ---------------------------------------------------------------------------
 function renderSection(sect) {
   const content = document.getElementById('kanji-content');
@@ -255,7 +363,56 @@ function renderSection(sect) {
 }
 
 // ---------------------------------------------------------------------------
-// Build sections from API data
+// Filter / search kanji
+// ---------------------------------------------------------------------------
+function filterKanji(query) {
+  const q = query.trim();
+  const countEl = document.getElementById('filter-count');
+
+  if (!q) {
+    // Exit filter mode — restore paginated section view
+    isFiltering = false;
+    countEl.classList.add('hidden');
+    renderNavButtons();
+    renderSection(allSections[activeSect]);
+    return;
+  }
+
+  isFiltering = true;
+  renderNavButtons(); // clears nav during search
+
+  // Search across all kanji in the flat list (preserving globalIdx = original number)
+  const results = allKanjiFlat.filter(k => k.kanji.includes(q));
+
+  const content = document.getElementById('kanji-content');
+  content.innerHTML = '';
+
+  if (!results.length) {
+    content.innerHTML = `<p class="text-on-surface-variant text-xs">${T.no_kanji_found || 'No kanji found.'}</p>`;
+    countEl.textContent = '0 ' + (T.filter_results || 'results');
+    countEl.classList.remove('hidden');
+    return;
+  }
+
+  // Render matching kanji in a flat grid (no group headers), numbers preserved
+  const grpEl = document.createElement('section');
+  grpEl.className = 'space-y-4';
+
+  const grid = document.createElement('div');
+  grid.className = 'grid grid-cols-2 md:grid-cols-5 gap-6';
+  results.forEach(k => {
+    grid.innerHTML += kanjiTile(k.kanji, k.globalIdx, k.known);
+  });
+
+  grpEl.appendChild(grid);
+  content.appendChild(grpEl);
+
+  countEl.textContent = results.length + ' ' + (T.filter_results || 'results');
+  countEl.classList.remove('hidden');
+}
+
+// ---------------------------------------------------------------------------
+// Build sections from API data (also builds allKanjiFlat)
 // ---------------------------------------------------------------------------
 function buildSections(data) {
   const sortedKanji = data.sorted_kanji || [];
@@ -264,7 +421,6 @@ function buildSections(data) {
 
   const sections = [];
 
-  // Helper: split a flat array into chunks of chunkSize, returns labelled sections
   function splitIntoChunks(arr, chunkSize, labelFn) {
     const result = [];
     for (let i = 0; i < arr.length; i += chunkSize) {
@@ -275,14 +431,18 @@ function buildSections(data) {
     return result;
   }
 
-  // Rare kanji come from data.rare.kanji directly — they may not appear in sorted_kanji.
-  // Assign them global indices starting after the last non-rare kanji.
   const nonRareCount = sortedKanji.filter(k => !rareSet.has(k.kanji)).length;
   const rareKanji = (data.rare && data.rare.kanji ? data.rare.kanji : []).map((k, ri) => ({
     kanji: k,
     globalIdx: nonRareCount + ri,
     known: true
   }));
+
+  // Build flat list for search (non-rare first, then rare)
+  const nonRareEntries = sortedKanji
+    .filter(k => !rareSet.has(k.kanji))
+    .map((k, i) => ({ kanji: k.kanji, globalIdx: i, known: knownList[i] || false }));
+  allKanjiFlat = [...nonRareEntries, ...rareKanji];
 
   if (currentSort === 'grade') {
     const gradeMap = { 1:[], 2:[], 3:[], 4:[], 5:[], 6:[], 7:[], others:[] };
@@ -300,24 +460,20 @@ function buildSections(data) {
       }
     });
 
-    // Grades 1–6
     [1,2,3,4,5,6].forEach(g => {
       if (gradeMap[g].length > 0)
         sections.push({ label: `${T.grade_label} ${g}`, kanji: gradeMap[g] });
     });
 
-    // Grade 7+ split into 2 halves
     if (gradeMap[7].length > 0) {
       const half = Math.ceil(gradeMap[7].length / 2);
       splitIntoChunks(gradeMap[7], half, n => `${T.grade_7plus}(${n})`).forEach(s => sections.push(s));
     }
 
-    // Others — fixed 432 per chunk so 864 fits in exactly 2 buttons
     if (gradeMap.others.length > 0) {
       splitIntoChunks(gradeMap.others, 432, n => `${T.grade_others} ${n}`).forEach(s => sections.push(s));
     }
 
-    // Rare — chunks of 500
     if (rareKanji.length > 0) {
       splitIntoChunks(rareKanji, 500, n => rareKanji.length <= 500 ? T.grade_rare : `${T.grade_rare} ${n}`)
         .forEach(s => sections.push({ ...s, isRare: true }));
@@ -337,19 +493,16 @@ function buildSections(data) {
       }
     });
 
-    // RTK1 → 4 equal chunks
     if (rtk1All.length > 0) {
       const chunkSize = Math.ceil(rtk1All.length / 4);
       splitIntoChunks(rtk1All, chunkSize, n => `RTK1-${n}`).forEach(s => sections.push(s));
     }
 
-    // RTK3 → 2 equal chunks
     if (rtk3All.length > 0) {
       const chunkSize = Math.ceil(rtk3All.length / 2);
       splitIntoChunks(rtk3All, chunkSize, n => `RTK3-${n}`).forEach(s => sections.push(s));
     }
 
-    // Rare — all in one button
     if (rareKanji.length > 0)
       sections.push({ label: T.grade_rare, kanji: rareKanji, isRare: true });
   }
@@ -366,15 +519,11 @@ async function loadKanji() {
     currentSort = data.sort_by;
     updateSortButtons(currentSort);
 
-    // Update mastery display
     if (currentSort === 'grade') {
       const joyo = data.joyo || {};
       document.getElementById('mastery-display').textContent = `${joyo.known} / ${joyo.total}`;
     } else {
       const rtk1 = data.rtk1 || {};
-      const rtk3 = data.rtk3 || {};
-      //document.getElementById('mastery-display').textContent =
-      //  `${(rtk1.known||0) + (rtk3.known||0)} / ${(rtk1.total||0) + (rtk3.total||0)}`;
       document.getElementById('mastery-display').textContent =
         `${(rtk1.known||0)} / ${(rtk1.total||0)}`;
     }
@@ -384,6 +533,9 @@ async function loadKanji() {
 
     renderNavButtons();
     if (allSections.length > 0) renderSection(allSections[0]);
+
+    // Set localised placeholder
+    document.getElementById('kanji-search').placeholder = T.filter_kanji_placeholder || 'Search kanji…';
 
   } catch(e) {
     console.error(e);
